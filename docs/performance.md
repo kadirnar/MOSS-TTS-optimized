@@ -1,5 +1,13 @@
 # Performance and improvements
 
+Current 48 kHz comparisons are in [benchmark_48khz.json](benchmark_48khz.json).
+See the [README](../README.md) for the current baseline/speedup table and
+[reproduction instructions](usage.md#reproduce-the-48-khz-benchmark).
+The historical 24 kHz results below predate the output resampler and use different
+measurement boundaries. They must not be relabeled or compared as 48 kHz results.
+
+## Historical 24 kHz measurements
+
 All measurements use MOSS-TTS v1.5 **8B**, batch one, streaming voice cloning,
 **32 acoustic codebooks**, and 24 kHz mono output. The first playable chunk
 contains 1,920 samples (80 ms).

@@ -100,5 +100,23 @@
     "Historical measurements are retained separately in benchmark.json.",
     "Single-request functional smoke timings are not new qualified latency measurements.",
     "G32 still requires explicit calibrated weights and an SM90 GPU."
-  ]
+  ],
+  "output_48khz": {
+    "created_utc": "2026-09-20T19:47:04.815450+00:00",
+    "version": "0.3.0",
+    "native_sample_rate": 24000,
+    "output_sample_rate": 48000,
+    "cpu_tests_passed": 67,
+    "gpu_bf16_passed": true,
+    "gpu_gptq_passed": true,
+    "stream_vs_whole_resampling_checked": true,
+    "pitch_duration_and_stopband_checked": true,
+    "cli_wav_samples": 149760,
+    "cli_wav_seconds": 3.12,
+    "cli_wav_sha256": "2e03343eb90dfba3fcae3a62c42806103dc9c2d09aa0311166f7b311beafdb5c",
+    "benchmark_file": "benchmark_48khz.json",
+    "benchmark_sha256": "36cf3fa837c79c1fc82672dcb13e54ad66548d82748b3a0688d32b76a405b004",
+    "reference_codes_equal_across_backends": true,
+    "cached_and_fresh_voice_pcm_equal_within_each_backend": true
+  }
 }

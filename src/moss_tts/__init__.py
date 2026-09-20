@@ -3,5 +3,5 @@
 from .api import MossTTS
 from .types import AudioChunk, Voice
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 __all__ = ["MossTTS", "AudioChunk", "Voice", "__version__"]

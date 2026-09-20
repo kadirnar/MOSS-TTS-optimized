@@ -1,6 +1,7 @@
 """Public, serialized streaming API for the 8B model."""
 
 import threading
+import time
 from collections.abc import Iterator
 from contextlib import closing, contextmanager
 from pathlib import Path
@@ -17,7 +18,7 @@ class MossTTS:
     as a context manager to release its codec state when finished.
     """
 
-    sample_rate = 24000
+    sample_rate = 48000
     codebooks = 32
 
     def __init__(self, engine, encoder, *, device, preset: str):
@@ -27,6 +28,10 @@ class MossTTS:
         self.preset = preset
         self._lock = threading.Lock()
         self._closed = False
+        self._last_metrics = {}
+        from .resampling import output_resampler
+
+        self._resample_kernel = output_resampler()
 
     @classmethod
     def from_pretrained(
@@ -163,7 +168,7 @@ class MossTTS:
         max_new_tokens: int = 400,
         seed: int = 1234,
     ) -> Iterator[AudioChunk]:
-        """Yield playable 80-ms PCM chunks; generation begins on iteration."""
+        """Yield 48-kHz PCM; edge chunks are shorter to preserve filter continuity."""
         if not isinstance(text, str) or not text.strip():
             raise ValueError("text must be a nonempty string")
         if not isinstance(language, str) or not language.strip():
@@ -178,13 +183,52 @@ class MossTTS:
         def generate():
             import torch
 
+            from .resampling import StreamingResampler
+
+            started = time.perf_counter()
             with self._request(), torch.random.fork_rng(devices=[self.device.index]):
                 torch.cuda.manual_seed(seed)
                 reference = None if voice is None else voice.codes
+                resampler = StreamingResampler(self._resample_kernel)
+                emitted = 0
+                samples = 0
+                first_audio_ms = None
+                resample_ms = 0.0
                 with closing(
                     self._engine.stream(text, reference, language, max_new_tokens)
                 ) as chunks:
-                    yield from chunks
+                    for chunk in chunks:
+                        if chunk.sample_rate != 24000:
+                            raise RuntimeError("Expected the pinned 24-kHz codec output")
+                        tick = time.perf_counter()
+                        pcm = resampler.push(chunk.pcm)
+                        resample_ms += (time.perf_counter() - tick) * 1000
+                        if pcm.numel():
+                            elapsed = (time.perf_counter() - started) * 1000
+                            if first_audio_ms is None:
+                                first_audio_ms = elapsed
+                            samples += pcm.numel()
+                            yield AudioChunk(pcm, emitted, elapsed)
+                            emitted += 1
+                tick = time.perf_counter()
+                tail = resampler.flush()
+                resample_ms += (time.perf_counter() - tick) * 1000
+                if tail.numel():
+                    elapsed = (time.perf_counter() - started) * 1000
+                    if first_audio_ms is None:
+                        first_audio_ms = elapsed
+                    samples += tail.numel()
+                    yield AudioChunk(tail, emitted, elapsed)
+                    emitted += 1
+                self._last_metrics = {
+                    **self._engine.last_metrics,
+                    "ttfa_ms": first_audio_ms,
+                    "total_ms": (time.perf_counter() - started) * 1000,
+                    "resample_ms": resample_ms,
+                    "output_chunks": emitted,
+                    "output_samples": samples,
+                    "sample_rate": self.sample_rate,
+                }
 
         return generate()
 
@@ -195,7 +239,7 @@ class MossTTS:
 
         if self._closed:
             raise RuntimeError("This model is closed")
-        return deepcopy(self._engine.last_metrics)
+        return deepcopy(self._last_metrics)
 
     def close(self) -> None:
         """Release codec state and model references after active work ends."""

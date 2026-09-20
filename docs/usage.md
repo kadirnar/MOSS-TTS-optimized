@@ -2,6 +2,15 @@
 
 ## Python API
 
+Public output is 48 kHz mono. The pinned codec produces 24 kHz internally; a
+continuous Kaiser-windowed sinc filter converts it to 48 kHz without changing
+pitch or duration. Resampling cannot add bandwidth absent from the native signal.
+The filter retains context across chunks and flushes its tail at the end.
+Interior chunks have 3,840 samples (80 ms); the first has 3,772 samples and the
+final tail has 68. Consume all chunks, including the tail, for exact duration.
+`AudioChunk.elapsed_ms` and `metrics["ttfa_ms"]` include output resampling.
+
+
 ```python
 from contextlib import closing
 from moss_tts import MossTTS
@@ -12,8 +21,8 @@ with MossTTS.from_pretrained(device="cuda:0", local_files_only=True) as tts:
         "Welcome to the demonstration.", voice=voice, language="English", seed=1234,
     )) as stream:
         for chunk in stream:
-            # chunk.pcm: independent CPU float32 tensor, shape [1920].
-            # chunk.pcm16(): 3840 bytes of signed 16-bit little-endian PCM.
+            # chunk.pcm: independent CPU float32 tensor at 48 kHz.
+            # chunk.pcm16(): signed 16-bit little-endian PCM bytes.
             consume(chunk.pcm16())  # Replace with your application's audio sink.
     print(tts.metrics)
 ```
@@ -111,11 +120,11 @@ with post("/v1/voices", {
 with post("/v1/audio/speech", {
     "input": "Hello, this is streamed audio.", "voice": voice, "language": "English",
 }) as response, open("speech.pcm", "wb") as output:
-    while chunk := response.read(3840):
+    while chunk := response.read(7680):
         output.write(chunk)
 ```
 
-Responses contain raw 24 kHz mono `s16le` PCM without a WAV header. HTTP transport
+Responses contain raw 48 kHz mono `s16le` PCM without a WAV header. HTTP transport
 boundaries can differ from audio frames; buffer complete two-byte samples.
 Omit `voice` for unconditioned synthesis. The voice cache is process-local and
 holds 64 entries. Delete unused entries with `DELETE /v1/voices/{voice_id}`.
@@ -155,3 +164,20 @@ MOSS_TTS_TEST_CALIBRATION=/path/to/gptq-g32 pytest -m gpu
 Download checkpoints before these offline GPU tests. Run GPU jobs sequentially.
 The tests validate streaming and recovery; they are not statistically qualified
 performance benchmarks. See [performance](performance.md) for prior measurements.
+
+## Reproduce the 48 kHz benchmark
+
+```bash
+python examples/benchmark.py --reference reference-48k.wav \
+    --calibration checkpoints/gptq-g32 --output docs/benchmark_48khz.json
+```
+
+Each backend runs in a separate process with the same text, seed, reference and
+32 codebooks. Three warmup requests per workload precede 12 measured requests.
+TTFA ends when the first 3,772-sample 48 kHz PCM chunk is available as `s16le`
+bytes, including text processing, generation, decoding and resampling. Fresh
+voice measurements also include reading and encoding the reference WAV. Model
+loading, warmup and network transit are excluded. A forward observer exposes the
+first complete frame from the upstream generation loop; its overhead is included.
+The quantized G32 row changes weight precision. These timings do not measure full
+utterance throughput or establish equal speech quality between backends.

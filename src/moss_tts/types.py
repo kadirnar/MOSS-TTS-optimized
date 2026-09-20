@@ -17,12 +17,12 @@ class Voice:
 
 @dataclass(frozen=True)
 class AudioChunk:
-    """Independent CPU float32 mono PCM containing 80 ms of audio."""
+    """Independent CPU float32 mono PCM; public output uses 48 kHz."""
 
     pcm: "torch.Tensor" = field(repr=False)
     frame: int
     elapsed_ms: float
-    sample_rate: ClassVar[int] = 24000
+    sample_rate: int = 48000
 
     def pcm16(self) -> bytes:
         """Return signed 16-bit little-endian PCM without a container header."""

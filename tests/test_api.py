@@ -27,7 +27,7 @@ def model(monkeypatch):
                 if text == "error":
                     raise ValueError("Generation failed")
                 for frame in range(2):
-                    yield AudioChunk(torch.full((1920,), 0.25), frame, 10.0)
+                    yield AudioChunk(torch.full((1920,), 0.25), frame, 10.0, sample_rate=24000)
                 self.last_metrics = {"frames": 2, "ttfa_ms": 10.0, "step_ms": [1.0]}
             finally:
                 self.finalized += 1
@@ -60,7 +60,7 @@ def test_cancel_busy_and_recovery(model):
         tts.close()
     stream.close()
     assert engine.finalized == 1
-    assert len(list(tts.stream("Recovered"))) == 2
+    assert len(list(tts.stream("Recovered"))) == 3
     assert tts.metrics["frames"] == 2
     metrics = tts.metrics
     metrics["step_ms"].clear()
@@ -71,7 +71,7 @@ def test_generation_error_releases_lock(model):
     tts, engine = model
     with pytest.raises(ValueError, match="Generation failed"):
         list(tts.stream("error"))
-    assert len(list(tts.stream("Recovered"))) == 2
+    assert len(list(tts.stream("Recovered"))) == 3
     assert engine.finalized == 2
 
 
@@ -120,7 +120,7 @@ def test_reference_validation_and_reuse(model, tmp_path):
     sf.write(path, np.zeros(4800, dtype=np.float32), 24000)
     voice = tts.clone_voice(path)
     assert isinstance(voice, Voice) and voice.codes.shape == (4, 32)
-    assert len(list(tts.stream("Hello", voice=voice))) == 2
+    assert len(list(tts.stream("Hello", voice=voice))) == 3
     sf.write(path, np.zeros(100, dtype=np.float32), 24000)
     with pytest.raises(ValueError, match="0.2"):
         tts.clone_voice(path)
@@ -129,3 +129,20 @@ def test_reference_validation_and_reuse(model, tmp_path):
 def test_pcm16_format():
     chunk = AudioChunk(torch.tensor([-2.0, -0.5, 0.0, 0.5, 2.0]), 0, 0.0)
     assert np.frombuffer(chunk.pcm16(), dtype="<i2").tolist() == [-32767, -16383, 0, 16383, 32767]
+
+
+def test_public_output_rate_duration_and_filter_reset(model):
+    from moss_tts.resampling import output_resampler
+
+    tts, _ = model
+    first = list(tts.stream("Hello"))
+    second = list(tts.stream("Again"))
+    assert tts.sample_rate == 48000
+    assert all(chunk.sample_rate == 48000 for chunk in first)
+    pcm = torch.cat([chunk.pcm for chunk in first])
+    assert pcm.numel() == 2 * 1920 * 2
+    torch.testing.assert_close(pcm, output_resampler()(torch.full((3840,), 0.25)))
+    torch.testing.assert_close(pcm, torch.cat([chunk.pcm for chunk in second]))
+    assert tts.metrics["output_samples"] == 7680
+    assert tts.metrics["output_chunks"] == 3
+    assert tts.metrics["sample_rate"] == 48000

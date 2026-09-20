@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "moss-tts-optimized"
-version = "0.2.0"
+version = "0.3.0"
 description = "MOSS-TTS v1.5 8B streaming inference with voice cloning and Triton/CUDA kernels"
 readme = "README.md"
 requires-python = ">=3.12"

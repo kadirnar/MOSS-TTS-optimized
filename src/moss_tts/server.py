@@ -53,7 +53,7 @@ def create_app(**model_options) -> FastAPI:
                 state.clear()
             pool.shutdown(wait=True, cancel_futures=True)
 
-    app = FastAPI(title="MOSS-TTS 8B", version="0.2.0", lifespan=lifespan)
+    app = FastAPI(title="MOSS-TTS 8B", version="0.3.0", lifespan=lifespan)
 
     @app.get("/health")
     async def health():
@@ -61,7 +61,7 @@ def create_app(**model_options) -> FastAPI:
             "ready": "tts" in state,
             "model": MODEL_ID,
             "preset": model_options.get("preset", "bf16"),
-            "sample_rate": 24000,
+            "sample_rate": MossTTS.sample_rate,
             "channels": 1,
             "codebooks": 32,
             "pcm_format": "s16le",
@@ -177,7 +177,7 @@ def create_app(**model_options) -> FastAPI:
             body(),
             media_type="audio/pcm",
             headers={
-                "X-Audio-Sample-Rate": "24000",
+                "X-Audio-Sample-Rate": str(MossTTS.sample_rate),
                 "X-Audio-Channels": "1",
                 "X-Audio-Format": "s16le",
                 "X-Audio-Codebooks": "32",

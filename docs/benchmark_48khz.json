@@ -1,0 +1,441 @@
+{
+  "text": "Hello, this is a voice cloning test.",
+  "seed": 1234,
+  "rounds": 12,
+  "warmups": 3,
+  "boundary": "Warm model, complete text to first playable 48-kHz s16le PCM; includes text processing, 32-codebook generation, codec decoding, continuous resampling and PCM conversion. Fresh voice also includes reading and encoding the reference WAV. Excludes loading, graph warmup, network transport, cancellation cleanup and subsequent audio. Baseline forward observer overhead included.",
+  "backends": {
+    "base": {
+      "backend": "base",
+      "hardware": "NVIDIA H200 NVL",
+      "runtime": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "torchaudio": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "triton": "3.7.1"
+      },
+      "model_revision": "cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+      "codec_revision": "3cd226ba2947efa357ef453bcad111b6eafba782",
+      "sample_rate": 48000,
+      "native_sample_rate": 24000,
+      "codebooks": 32,
+      "first_chunk_samples": [
+        3772
+      ],
+      "reference": {
+        "sha256": "da3c05c269389385e3b583d07fdeced32d7eb0e2c37416067148e25240b2fc54",
+        "sample_rate": 48000,
+        "seconds": 3.112,
+        "codes_sha256": "80de8f7f103b45b6bdb24999e77a20627a4596e64a219a4889f0119895245b8a"
+      },
+      "peak_memory_gib": 22.72799301147461,
+      "workloads": {
+        "cached_voice": {
+          "median_ms": 920.166396535933,
+          "p95_ms": 949.158660043031,
+          "samples": [
+            {
+              "ttfa_ms": 916.7610574513674,
+              "reference_ms": 0.001044943928718567
+            },
+            {
+              "ttfa_ms": 921.0000894963741,
+              "reference_ms": 0.0003073364496231079
+            },
+            {
+              "ttfa_ms": 917.2669742256403,
+              "reference_ms": 0.0011064112186431885
+            },
+            {
+              "ttfa_ms": 932.4211031198502,
+              "reference_ms": 0.00030547380447387695
+            },
+            {
+              "ttfa_ms": 953.0001003295183,
+              "reference_ms": 0.002078711986541748
+            },
+            {
+              "ttfa_ms": 918.9446680247784,
+              "reference_ms": 0.00030547380447387695
+            },
+            {
+              "ttfa_ms": 931.8812880665064,
+              "reference_ms": 0.000910833477973938
+            },
+            {
+              "ttfa_ms": 917.3848628997803,
+              "reference_ms": 0.0002477318048477173
+            },
+            {
+              "ttfa_ms": 919.3327035754919,
+              "reference_ms": 0.0008475035429000854
+            },
+            {
+              "ttfa_ms": 946.0156634449959,
+              "reference_ms": 0.00026635825634002686
+            },
+            {
+              "ttfa_ms": 922.034764662385,
+              "reference_ms": 0.0008791685104370117
+            },
+            {
+              "ttfa_ms": 918.0285893380642,
+              "reference_ms": 0.0003166496753692627
+            }
+          ],
+          "pcm_sha256": [
+            "aa8233b100715bb6a3e151661f04ec979ac0c067489499f6b480cb529912c13b"
+          ],
+          "speedup": 1.0
+        },
+        "fresh_voice": {
+          "median_ms": 974.1729246452451,
+          "p95_ms": 990.4180200770497,
+          "samples": [
+            {
+              "ttfa_ms": 972.5731816142797,
+              "reference_ms": 53.114794194698334
+            },
+            {
+              "ttfa_ms": 976.4720406383276,
+              "reference_ms": 54.36164140701294
+            },
+            {
+              "ttfa_ms": 969.7486292570829,
+              "reference_ms": 53.64689230918884
+            },
+            {
+              "ttfa_ms": 983.5762195289135,
+              "reference_ms": 62.57087178528309
+            },
+            {
+              "ttfa_ms": 976.0965555906296,
+              "reference_ms": 53.4092728048563
+            },
+            {
+              "ttfa_ms": 974.8083800077438,
+              "reference_ms": 56.47915601730347
+            },
+            {
+              "ttfa_ms": 972.6921506226063,
+              "reference_ms": 53.91452834010124
+            },
+            {
+              "ttfa_ms": 973.5374692827463,
+              "reference_ms": 53.11937257647514
+            },
+            {
+              "ttfa_ms": 998.780220746994,
+              "reference_ms": 53.44236455857754
+            },
+            {
+              "ttfa_ms": 976.8160991370678,
+              "reference_ms": 53.28030325472355
+            },
+            {
+              "ttfa_ms": 971.7614129185677,
+              "reference_ms": 54.840752854943275
+            },
+            {
+              "ttfa_ms": 971.6294854879379,
+              "reference_ms": 54.42008934915066
+            }
+          ],
+          "pcm_sha256": [
+            "aa8233b100715bb6a3e151661f04ec979ac0c067489499f6b480cb529912c13b"
+          ],
+          "speedup": 1.0
+        }
+      }
+    },
+    "bf16": {
+      "backend": "bf16",
+      "hardware": "NVIDIA H200 NVL",
+      "runtime": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "torchaudio": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "triton": "3.7.1"
+      },
+      "model_revision": "cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+      "codec_revision": "3cd226ba2947efa357ef453bcad111b6eafba782",
+      "sample_rate": 48000,
+      "native_sample_rate": 24000,
+      "codebooks": 32,
+      "first_chunk_samples": [
+        3772
+      ],
+      "reference": {
+        "sha256": "da3c05c269389385e3b583d07fdeced32d7eb0e2c37416067148e25240b2fc54",
+        "sample_rate": 48000,
+        "seconds": 3.112,
+        "codes_sha256": "80de8f7f103b45b6bdb24999e77a20627a4596e64a219a4889f0119895245b8a"
+      },
+      "peak_memory_gib": 32.21606206893921,
+      "workloads": {
+        "cached_voice": {
+          "median_ms": 166.58621281385422,
+          "p95_ms": 166.7842524126172,
+          "samples": [
+            {
+              "ttfa_ms": 166.23511910438538,
+              "reference_ms": 0.0009350478649139404
+            },
+            {
+              "ttfa_ms": 166.3621962070465,
+              "reference_ms": 0.0002644956111907959
+            },
+            {
+              "ttfa_ms": 166.57513193786144,
+              "reference_ms": 0.0008195638656616211
+            },
+            {
+              "ttfa_ms": 166.6141338646412,
+              "reference_ms": 0.0002738088369369507
+            },
+            {
+              "ttfa_ms": 166.49110428988934,
+              "reference_ms": 0.0007189810276031494
+            },
+            {
+              "ttfa_ms": 166.6641179472208,
+              "reference_ms": 0.00026635825634002686
+            },
+            {
+              "ttfa_ms": 166.84095188975334,
+              "reference_ms": 0.0010114163160324097
+            },
+            {
+              "ttfa_ms": 166.737861931324,
+              "reference_ms": 0.00031478703022003174
+            },
+            {
+              "ttfa_ms": 166.51392355561256,
+              "reference_ms": 0.0007208436727523804
+            },
+            {
+              "ttfa_ms": 166.597293689847,
+              "reference_ms": 0.0002998858690261841
+            },
+            {
+              "ttfa_ms": 166.54393449425697,
+              "reference_ms": 0.000823289155960083
+            },
+            {
+              "ttfa_ms": 166.68968833982944,
+              "reference_ms": 0.0002980232238769531
+            }
+          ],
+          "pcm_sha256": [
+            "935a56df081dda55d0f8dc42e5e2f82c47ada76b56b47832cfcbe1a0519275b3"
+          ],
+          "speedup": 5.52366477989472
+        },
+        "fresh_voice": {
+          "median_ms": 188.37636336684227,
+          "p95_ms": 190.13476995751262,
+          "samples": [
+            {
+              "ttfa_ms": 189.6841637790203,
+              "reference_ms": 22.17012830078602
+            },
+            {
+              "ttfa_ms": 187.81385570764542,
+              "reference_ms": 21.6066837310791
+            },
+            {
+              "ttfa_ms": 187.8508124500513,
+              "reference_ms": 21.572280675172806
+            },
+            {
+              "ttfa_ms": 188.22758458554745,
+              "reference_ms": 21.683229133486748
+            },
+            {
+              "ttfa_ms": 190.2136355638504,
+              "reference_ms": 23.690903559327126
+            },
+            {
+              "ttfa_ms": 188.96646425127983,
+              "reference_ms": 21.625131368637085
+            },
+            {
+              "ttfa_ms": 190.07024355232716,
+              "reference_ms": 23.359136655926704
+            },
+            {
+              "ttfa_ms": 188.6619795113802,
+              "reference_ms": 21.905388683080673
+            },
+            {
+              "ttfa_ms": 188.5251421481371,
+              "reference_ms": 21.81553840637207
+            },
+            {
+              "ttfa_ms": 188.22705745697021,
+              "reference_ms": 21.623192355036736
+            },
+            {
+              "ttfa_ms": 188.16720508038998,
+              "reference_ms": 21.56250737607479
+            },
+            {
+              "ttfa_ms": 188.10216709971428,
+              "reference_ms": 21.543437615036964
+            }
+          ],
+          "pcm_sha256": [
+            "935a56df081dda55d0f8dc42e5e2f82c47ada76b56b47832cfcbe1a0519275b3"
+          ],
+          "speedup": 5.171418044354908
+        }
+      }
+    },
+    "gptq": {
+      "backend": "gptq",
+      "hardware": "NVIDIA H200 NVL",
+      "runtime": {
+        "python": "3.12.14",
+        "torch": "2.13.0+cu130",
+        "torchaudio": "2.11.0+cu130",
+        "transformers": "5.14.1",
+        "triton": "3.7.1"
+      },
+      "model_revision": "cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+      "codec_revision": "3cd226ba2947efa357ef453bcad111b6eafba782",
+      "sample_rate": 48000,
+      "native_sample_rate": 24000,
+      "codebooks": 32,
+      "first_chunk_samples": [
+        3772
+      ],
+      "reference": {
+        "sha256": "da3c05c269389385e3b583d07fdeced32d7eb0e2c37416067148e25240b2fc54",
+        "sample_rate": 48000,
+        "seconds": 3.112,
+        "codes_sha256": "80de8f7f103b45b6bdb24999e77a20627a4596e64a219a4889f0119895245b8a"
+      },
+      "peak_memory_gib": 36.53345727920532,
+      "workloads": {
+        "cached_voice": {
+          "median_ms": 73.04004300385714,
+          "p95_ms": 73.8707578741014,
+          "samples": [
+            {
+              "ttfa_ms": 71.78618013858795,
+              "reference_ms": 0.0007860362529754639
+            },
+            {
+              "ttfa_ms": 72.3454225808382,
+              "reference_ms": 0.00030547380447387695
+            },
+            {
+              "ttfa_ms": 73.13720136880875,
+              "reference_ms": 0.0013727694749832153
+            },
+            {
+              "ttfa_ms": 72.87314161658287,
+              "reference_ms": 0.0004507601261138916
+            },
+            {
+              "ttfa_ms": 73.36929626762867,
+              "reference_ms": 0.0014118850231170654
+            },
+            {
+              "ttfa_ms": 73.37492890655994,
+              "reference_ms": 0.0004414469003677368
+            },
+            {
+              "ttfa_ms": 72.7890096604824,
+              "reference_ms": 0.0014211982488632202
+            },
+            {
+              "ttfa_ms": 73.38445633649826,
+              "reference_ms": 0.00042282044887542725
+            },
+            {
+              "ttfa_ms": 74.06205125153065,
+              "reference_ms": 0.001169741153717041
+            },
+            {
+              "ttfa_ms": 73.7142451107502,
+              "reference_ms": 0.0004377216100692749
+            },
+            {
+              "ttfa_ms": 72.75670021772385,
+              "reference_ms": 0.0012889504432678223
+            },
+            {
+              "ttfa_ms": 72.94288463890553,
+              "reference_ms": 0.00041909515857696533
+            }
+          ],
+          "pcm_sha256": [
+            "a90e3e640683f2ad1f85432b302a1d021915c0961acebc07f7128558417e28d3"
+          ],
+          "speedup": 12.59810863593468
+        },
+        "fresh_voice": {
+          "median_ms": 95.99792771041393,
+          "p95_ms": 100.82741063088179,
+          "samples": [
+            {
+              "ttfa_ms": 93.38796138763428,
+              "reference_ms": 23.78532849252224
+            },
+            {
+              "ttfa_ms": 96.21784649789333,
+              "reference_ms": 21.712929010391235
+            },
+            {
+              "ttfa_ms": 94.13822181522846,
+              "reference_ms": 21.79993875324726
+            },
+            {
+              "ttfa_ms": 95.77800892293453,
+              "reference_ms": 22.355323657393456
+            },
+            {
+              "ttfa_ms": 95.35680152475834,
+              "reference_ms": 22.382402792572975
+            },
+            {
+              "ttfa_ms": 97.03356213867664,
+              "reference_ms": 22.751804441213608
+            },
+            {
+              "ttfa_ms": 105.44422082602978,
+              "reference_ms": 28.837144374847412
+            },
+            {
+              "ttfa_ms": 96.77945636212826,
+              "reference_ms": 22.5082878023386
+            },
+            {
+              "ttfa_ms": 96.28148376941681,
+              "reference_ms": 22.9018721729517
+            },
+            {
+              "ttfa_ms": 95.35229578614235,
+              "reference_ms": 22.53715507686138
+            },
+            {
+              "ttfa_ms": 97.05002047121525,
+              "reference_ms": 23.538200184702873
+            },
+            {
+              "ttfa_ms": 95.67493386566639,
+              "reference_ms": 22.387994453310966
+            }
+          ],
+          "pcm_sha256": [
+            "a90e3e640683f2ad1f85432b302a1d021915c0961acebc07f7128558417e28d3"
+          ],
+          "speedup": 10.147853686841263
+        }
+      }
+    }
+  }
+}

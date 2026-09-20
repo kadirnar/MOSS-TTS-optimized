@@ -10,7 +10,7 @@ from moss_tts import server
 def client(monkeypatch):
     class Chunk:
         def pcm16(self):
-            return b"\x00\x00" * 1920
+            return b"\x00\x00" * 3840
 
     class Model:
         def clone_voice(self, source):
@@ -35,10 +35,12 @@ def client(monkeypatch):
 
 def test_health_and_stream(client):
     assert client.get("/health").json()["codebooks"] == 32
+    assert client.get("/health").json()["sample_rate"] == 48000
     response = client.post("/v1/audio/speech", json={"input": "Hello"})
     assert response.status_code == 200
     assert response.headers["x-audio-format"] == "s16le"
-    assert len(response.content) == 2 * 3840
+    assert response.headers["x-audio-sample-rate"] == "48000"
+    assert len(response.content) == 2 * 7680
 
 
 def test_voice_lifecycle(client):

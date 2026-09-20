@@ -122,7 +122,7 @@ class StreamingTTS:
                     elapsed=(time.perf_counter()-start)*1000
                     if first_audio_ms is None:first_audio_ms=elapsed
                     emitted+=1
-                    yield AudioChunk(audio,emitted-1,elapsed)
+                    yield AudioChunk(audio,emitted-1,elapsed,sample_rate=24000)
             last_step=step
             if text_token in (cfg.audio_end_token_id,cfg.im_end_token_id):break
             step+=1
