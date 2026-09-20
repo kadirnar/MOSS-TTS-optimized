@@ -1,0 +1,278 @@
+{
+  "torch": "2.13.0+cu130",
+  "method": "Eight packed matrix rotation, dynamic activation quantization included. Synthetic signed INT4 weights; reference uses the same rounded INT8 activations and FP32 dequantized weights. Kernel correctness only, not a model quality test.",
+  "cases": [
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 24.09466604391734,
+          "relative_rms_vs_reference": 5.69992589589674e-05
+        },
+        {
+          "warps": 2,
+          "us": 25.429333249727886,
+          "relative_rms_vs_reference": 5.7442750403424725e-05
+        },
+        {
+          "warps": 4,
+          "us": 28.221334020296734,
+          "relative_rms_vs_reference": 5.78828330617398e-05
+        },
+        {
+          "warps": 8,
+          "us": 37.776000797748566,
+          "relative_rms_vs_reference": 5.699925168300979e-05
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 24.09466604391734,
+        "relative_rms_vs_reference": 5.69992589589674e-05
+      }
+    },
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 23.56533209482829,
+          "relative_rms_vs_reference": 2.8972084692213684e-05
+        },
+        {
+          "warps": 2,
+          "us": 25.17866591612498,
+          "relative_rms_vs_reference": 2.8972084692213684e-05
+        },
+        {
+          "warps": 4,
+          "us": 28.39733411868413,
+          "relative_rms_vs_reference": 1.4486126929114107e-05
+        },
+        {
+          "warps": 8,
+          "us": 37.258667250474296,
+          "relative_rms_vs_reference": 3.239176294300705e-05
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 23.56533209482829,
+        "relative_rms_vs_reference": 2.8972084692213684e-05
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 25.35466601451238,
+          "relative_rms_vs_reference": 2.0566389139275998e-05
+        },
+        {
+          "warps": 2,
+          "us": 23.339999218781788,
+          "relative_rms_vs_reference": 2.0566378225339577e-05
+        },
+        {
+          "warps": 4,
+          "us": 23.316000898679096,
+          "relative_rms_vs_reference": 2.0566381863318384e-05
+        },
+        {
+          "warps": 8,
+          "us": 26.61599963903427,
+          "relative_rms_vs_reference": 2.0566378225339577e-05
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 23.316000898679096,
+        "relative_rms_vs_reference": 2.0566381863318384e-05
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 25.31466633081436,
+          "relative_rms_vs_reference": 6.19460205353306e-10
+        },
+        {
+          "warps": 2,
+          "us": 23.662666479746502,
+          "relative_rms_vs_reference": 1.3163529155590936e-09
+        },
+        {
+          "warps": 4,
+          "us": 23.431998987992603,
+          "relative_rms_vs_reference": 3.09730102676653e-10
+        },
+        {
+          "warps": 8,
+          "us": 26.300000647703808,
+          "relative_rms_vs_reference": 1.3937854204115752e-09
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 23.431998987992603,
+        "relative_rms_vs_reference": 3.09730102676653e-10
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 10.821333775917688,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        },
+        {
+          "warps": 2,
+          "us": 11.853333562612534,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        },
+        {
+          "warps": 4,
+          "us": 10.81866646806399,
+          "relative_rms_vs_reference": 1.8264322534378152e-06
+        },
+        {
+          "warps": 8,
+          "us": 13.03200051188469,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 10.81866646806399,
+        "relative_rms_vs_reference": 1.8264322534378152e-06
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 10.80133393406868,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 2,
+          "us": 10.969333350658417,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        },
+        {
+          "warps": 4,
+          "us": 10.89733342329661,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        },
+        {
+          "warps": 8,
+          "us": 12.949333836634954,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 10.80133393406868,
+        "relative_rms_vs_reference": 0.0
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.158666556080183,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 2,
+          "us": 9.749333063761393,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 4,
+          "us": 8.974666396776835,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 8,
+          "us": 10.3946669648091,
+          "relative_rms_vs_reference": 3.652596569736488e-05
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 8.974666396776835,
+        "relative_rms_vs_reference": 3.6597237340174615e-05
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.249333292245865,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 2,
+          "us": 8.966666956742605,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 4,
+          "us": 9.086666628718376,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 8,
+          "us": 10.329333444436392,
+          "relative_rms_vs_reference": 0.0
+        }
+      ],
+      "best": {
+        "warps": 2,
+        "us": 8.966666956742605,
+        "relative_rms_vs_reference": 0.0
+      }
+    }
+  ]
+}

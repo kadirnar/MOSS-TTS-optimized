@@ -1,0 +1,19 @@
+{
+  "python_files": 165,
+  "all_ast_valid": true,
+  "cli_helps_passed": [
+    "benchmark_quantization",
+    "quality_generate",
+    "server",
+    "benchmark_compressed_scales_http"
+  ],
+  "temporary_port_18084_free": true,
+  "existing_supervisor_pids": [
+    54030,
+    56179
+  ],
+  "gpu_idle_after_jobs": true,
+  "gpu_memory_mib_after_jobs": 75459,
+  "codebooks": 32,
+  "native_source_sha256": "5e29ca31b1e3b41d19d04574efc3882ac21715217a350bf7de3f6cddb7f2af04"
+}

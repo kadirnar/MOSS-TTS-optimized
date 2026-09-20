@@ -1,0 +1,17 @@
+{
+  "source": "optimization/attention_native.cu",
+  "source_sha256": "31db9c5bf69459056152248ca38c9d0731b5cf1d7f00898c30e86342021d2104",
+  "library_sha256": "5c06a608d529d982ab5775a236c9484726d027d954fcaf58058827b4cd6afb04",
+  "nvcc": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Fri_Feb_21_20:23:50_PST_2025\nCuda compilation tools, release 12.8, V12.8.93\nBuild cuda_12.8.r12.8/compiler.35583870_0\n",
+  "flags": [
+    "-O3",
+    "-std=c++17",
+    "-arch=sm_90",
+    "--shared",
+    "-Xcompiler",
+    "-fPIC",
+    "-Xptxas=-v"
+  ],
+  "current_stream": true,
+  "codebooks": 32
+}

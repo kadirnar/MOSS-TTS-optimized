@@ -1,0 +1,181 @@
+{
+  "codebooks": 32,
+  "complete": true,
+  "layers": 1,
+  "configs": {
+    "control": null,
+    "g128_e0_r0": {
+      "blocks": 128,
+      "early": false,
+      "cap": null
+    },
+    "g256_e0_r0": {
+      "blocks": 256,
+      "early": false,
+      "cap": null
+    },
+    "g384_e0_r0": {
+      "blocks": 384,
+      "early": false,
+      "cap": null
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "graph_checks": [
+    {
+      "config": "control",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "resources": {
+    "control": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+    }
+  },
+  "errors": {
+    "g128_e0_r0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 89, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 43, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 164, in __init__\n    run.check_returncode()\n  File \"/venv/main/lib/python3.12/subprocess.py\", line 502, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\nsubprocess.CalledProcessError: Command '['/workspace/cuda-13.0-ptxas/ptxas', '-arch=sm_90a', '-O3', '-v', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/13fab7ccf4a2917ab0490147/kernel.ptx', '-o', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/13fab7ccf4a2917ab0490147/kernel.cubin']' returned non-zero exit status 255.\n",
+    "g256_e0_r0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 89, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 43, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 164, in __init__\n    run.check_returncode()\n  File \"/venv/main/lib/python3.12/subprocess.py\", line 502, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\nsubprocess.CalledProcessError: Command '['/workspace/cuda-13.0-ptxas/ptxas', '-arch=sm_90a', '-O3', '-v', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/bac1cceb4ac69adf56b5bcad/kernel.ptx', '-o', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/bac1cceb4ac69adf56b5bcad/kernel.cubin']' returned non-zero exit status 255.\n",
+    "g384_e0_r0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 89, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 43, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 164, in __init__\n    run.check_returncode()\n  File \"/venv/main/lib/python3.12/subprocess.py\", line 502, in check_returncode\n    raise CalledProcessError(self.returncode, self.args, self.stdout,\nsubprocess.CalledProcessError: Command '['/workspace/cuda-13.0-ptxas/ptxas', '-arch=sm_90a', '-O3', '-v', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/450d1952fc0658714570aec6/kernel.ptx', '-o', '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/450d1952fc0658714570aec6/kernel.cubin']' returned non-zero exit status 255.\n"
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 45.514668027559914
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 45.4720010360082
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 45.49333453178406
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 45.58933277924856
+      }
+    }
+  ],
+  "method": "Selected Triton 3.8 exact gate/up + selected Triton 3.7 eight-row down versus cooperative PTX composition. Both followed by selected early clustered QKV, historical-KV attention, reduction/quantization and register-preloaded output. Actual 36-layer weights and three frozen inputs, nearest saved attention metadata, synthetic layer-35 wrap; not TTFA. Bytewise intermediates and entire poisoned KV caches, private CUDA graphs, balanced rotated/reversed event rings.",
+  "summary": {
+    "control": {
+      "median_us": 45.50400127967198,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    }
+  }
+}

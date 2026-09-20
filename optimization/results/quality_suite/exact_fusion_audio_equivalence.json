@@ -1,0 +1,106 @@
+{
+  "baseline": "bf16_original",
+  "candidate": "bf16_exact_fused",
+  "all_identical": true,
+  "utterances": 16,
+  "codebooks": 32,
+  "records": [
+    {
+      "id": "zh0_0",
+      "same_wav_bytes": true,
+      "baseline_sha256": "199c4b1db599a83c07aef2e9c43bbdee0e650d424a1accc58f6fb36d3faaf2d9",
+      "fused_sha256": "199c4b1db599a83c07aef2e9c43bbdee0e650d424a1accc58f6fb36d3faaf2d9"
+    },
+    {
+      "id": "zh0_1",
+      "same_wav_bytes": true,
+      "baseline_sha256": "a32bbf411d2efd2f70d08188e0944f299bfb471aa4ee425de48e434fabcfe6c2",
+      "fused_sha256": "a32bbf411d2efd2f70d08188e0944f299bfb471aa4ee425de48e434fabcfe6c2"
+    },
+    {
+      "id": "zh0_2",
+      "same_wav_bytes": true,
+      "baseline_sha256": "4fa6b9811a0dae89861bfce21159b76090a2e5af8bd889abf659d778ab9b091e",
+      "fused_sha256": "4fa6b9811a0dae89861bfce21159b76090a2e5af8bd889abf659d778ab9b091e"
+    },
+    {
+      "id": "zh0_3",
+      "same_wav_bytes": true,
+      "baseline_sha256": "41103b86aab8e69236fdf39f248f19dad4e90003b0dc887c51de26be43bc487d",
+      "fused_sha256": "41103b86aab8e69236fdf39f248f19dad4e90003b0dc887c51de26be43bc487d"
+    },
+    {
+      "id": "zh1_0",
+      "same_wav_bytes": true,
+      "baseline_sha256": "0b5c1b1e8e57c4491bffc6daffdeae65838861c0a0224931df96b3c62fab1a35",
+      "fused_sha256": "0b5c1b1e8e57c4491bffc6daffdeae65838861c0a0224931df96b3c62fab1a35"
+    },
+    {
+      "id": "zh1_1",
+      "same_wav_bytes": true,
+      "baseline_sha256": "679b72fa1319b792c3f086020a1dfe458bf48e211ba46638f1adbc946f68288b",
+      "fused_sha256": "679b72fa1319b792c3f086020a1dfe458bf48e211ba46638f1adbc946f68288b"
+    },
+    {
+      "id": "zh1_2",
+      "same_wav_bytes": true,
+      "baseline_sha256": "9bbd0e123bbc53e5529f5d6174bd1c18800d0206423d5ed280d2569444baea7e",
+      "fused_sha256": "9bbd0e123bbc53e5529f5d6174bd1c18800d0206423d5ed280d2569444baea7e"
+    },
+    {
+      "id": "zh1_3",
+      "same_wav_bytes": true,
+      "baseline_sha256": "a9bac47e0e931d2647b84e53a81f15513394ec49b85c344f02f0e85833c8d8d6",
+      "fused_sha256": "a9bac47e0e931d2647b84e53a81f15513394ec49b85c344f02f0e85833c8d8d6"
+    },
+    {
+      "id": "en0_0",
+      "same_wav_bytes": true,
+      "baseline_sha256": "7d340dd465bbf565494dc82eb58f7efc44428732232f1f2b2790fd87baf6ec15",
+      "fused_sha256": "7d340dd465bbf565494dc82eb58f7efc44428732232f1f2b2790fd87baf6ec15"
+    },
+    {
+      "id": "en0_1",
+      "same_wav_bytes": true,
+      "baseline_sha256": "64ac0bae4c4a23c336991841fa8fc11d91ec6e06404069dae0f0b7d0bca85805",
+      "fused_sha256": "64ac0bae4c4a23c336991841fa8fc11d91ec6e06404069dae0f0b7d0bca85805"
+    },
+    {
+      "id": "en0_2",
+      "same_wav_bytes": true,
+      "baseline_sha256": "9e9e9fbfc279250f6e04911c519ae00e4c07ef5099886b3f380b1ecb3dded45e",
+      "fused_sha256": "9e9e9fbfc279250f6e04911c519ae00e4c07ef5099886b3f380b1ecb3dded45e"
+    },
+    {
+      "id": "en0_3",
+      "same_wav_bytes": true,
+      "baseline_sha256": "58f5400aafd75fe01dcdc400df789eb4aaea4d8f46206c7237a37f6906f97945",
+      "fused_sha256": "58f5400aafd75fe01dcdc400df789eb4aaea4d8f46206c7237a37f6906f97945"
+    },
+    {
+      "id": "en1_0",
+      "same_wav_bytes": true,
+      "baseline_sha256": "87d061a2bc53ab72364b895648976f8627ed6f0243647af526d3745e2fd6d647",
+      "fused_sha256": "87d061a2bc53ab72364b895648976f8627ed6f0243647af526d3745e2fd6d647"
+    },
+    {
+      "id": "en1_1",
+      "same_wav_bytes": true,
+      "baseline_sha256": "5a5b5ae2ff1f057f5f2a836cb4163c44d74e4400c77580603c8cfb8f92a6072d",
+      "fused_sha256": "5a5b5ae2ff1f057f5f2a836cb4163c44d74e4400c77580603c8cfb8f92a6072d"
+    },
+    {
+      "id": "en1_2",
+      "same_wav_bytes": true,
+      "baseline_sha256": "32ad10e4c7f768f99e52bcb727e57697cabf36c35ea047d009c6da5446dd5e9f",
+      "fused_sha256": "32ad10e4c7f768f99e52bcb727e57697cabf36c35ea047d009c6da5446dd5e9f"
+    },
+    {
+      "id": "en1_3",
+      "same_wav_bytes": true,
+      "baseline_sha256": "f6d2614824d21781ed24b28eb3498cf63c41ea425fed8053d86d3b89915feef6",
+      "fused_sha256": "f6d2614824d21781ed24b28eb3498cf63c41ea425fed8053d86d3b89915feef6"
+    }
+  ],
+  "scope": "Bitwise WAV equality to existing custom BF16 baseline on 16 sampled utterances; not a corpus-level guarantee."
+}

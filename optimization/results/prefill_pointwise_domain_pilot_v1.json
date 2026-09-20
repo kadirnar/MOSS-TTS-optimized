@@ -1,0 +1,23 @@
+{
+  "rows": [
+    {
+      "mode": 0,
+      "finite_input_mismatches": 0,
+      "all_bit_mismatches": 0,
+      "nan_masks_exact": true
+    },
+    {
+      "mode": 1,
+      "finite_input_mismatches": 0,
+      "all_bit_mismatches": 0,
+      "nan_masks_exact": true
+    },
+    {
+      "mode": 2,
+      "finite_input_mismatches": 0,
+      "all_bit_mismatches": 0,
+      "nan_masks_exact": true
+    }
+  ],
+  "note": "All 65536 BF16 gate input bit patterns plus random values, multiplied by random BF16 up values."
+}

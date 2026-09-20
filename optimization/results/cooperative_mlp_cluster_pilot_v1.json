@@ -1,0 +1,751 @@
+{
+  "codebooks": 32,
+  "complete": true,
+  "layers": 1,
+  "configs": {
+    "control": null,
+    "g384_e0_r0_c2": {
+      "blocks": 384,
+      "early": false,
+      "cap": null,
+      "cluster": 2
+    },
+    "g384_e0_r0_c4": {
+      "blocks": 384,
+      "early": false,
+      "cap": null,
+      "cluster": 4
+    },
+    "g384_e0_r0_c8": {
+      "blocks": 384,
+      "early": false,
+      "cap": null,
+      "cluster": 8
+    },
+    "g384_e1_r0_c2": {
+      "blocks": 384,
+      "early": true,
+      "cap": null,
+      "cluster": 2
+    },
+    "g384_e1_r0_c4": {
+      "blocks": 384,
+      "early": true,
+      "cap": null,
+      "cluster": 4
+    },
+    "g384_e1_r0_c8": {
+      "blocks": 384,
+      "early": true,
+      "cap": null,
+      "cluster": 8
+    },
+    "g512_e0_r128_c2": {
+      "blocks": 512,
+      "early": false,
+      "cap": 128,
+      "cluster": 2
+    },
+    "g512_e0_r128_c4": {
+      "blocks": 512,
+      "early": false,
+      "cap": 128,
+      "cluster": 4
+    },
+    "g512_e0_r128_c8": {
+      "blocks": 512,
+      "early": false,
+      "cap": 128,
+      "cluster": 8
+    },
+    "g512_e1_r128_c2": {
+      "blocks": 512,
+      "early": true,
+      "cap": 128,
+      "cluster": 2
+    },
+    "g512_e1_r128_c4": {
+      "blocks": 512,
+      "early": true,
+      "cap": 128,
+      "cluster": 4
+    },
+    "g512_e1_r128_c8": {
+      "blocks": 512,
+      "early": true,
+      "cap": 128,
+      "cluster": 8
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "graph_checks": [
+    {
+      "config": "control",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0_c2",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0_c2",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128_c2",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128_c2",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e0_r0_c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e1_r0_c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g512_e0_r128_c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g512_e1_r128_c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "resources": {
+    "control": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+    },
+    "g384_e0_r0_c2": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 155,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "cluster_size": 2,
+        "max_active_clusters": 198,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/ebf3c579cf5931cb549348f6",
+        "cubin_sha256": "55755667e7b623911301b5833f1372063c54e9602016c029bc8c9054da0ed255",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "bee5acf0b2186be477315718253ab7ce62865a43d0efec9dbe06705843baf73d",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e1_r0_c2": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 155,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "cluster_size": 2,
+        "max_active_clusters": 198,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/152ad3fb6311bafb4532b168",
+        "cubin_sha256": "4d4aca40960ed393e9564587e88c4b2df2fa902728c5c6617b47963a006eee18",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "7c88a8b6dff6ab43131db1d01af75241931a1ccf9483d4755cc6ce2ede2cccef",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g512_e0_r128_c2": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 40,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 512,
+        "cooperative_capacity": 528,
+        "cluster_size": 2,
+        "max_active_clusters": 264,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/fdd6218f6c60a6c61a973ec1",
+        "cubin_sha256": "5d06e7f6ad5432478e2eea663c656d432457a226a033d49e6dff689d3f54160f",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "2df478ca37263237b583d4a2b5473b48c59755c68e56b43994911fafc340a6ac",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g512_e1_r128_c2": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 40,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 512,
+        "cooperative_capacity": 528,
+        "cluster_size": 2,
+        "max_active_clusters": 264,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/cee926b4ec0eb041549b43a4",
+        "cubin_sha256": "7f5a8fe28142775d547dd60b8a53507b17326657c82ff57ad2c9b634c9c603c2",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "24e7d7d4743d4a75cbc85a293992e70dd686ce8b5396bc453e7a1513c11eb3b9",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    }
+  },
+  "errors": {
+    "g384_e0_r0_c4": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 155, 'local_bytes_per_thread': 0, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 3, 'sm_count': 132, 'grid_blocks': 384, 'cooperative_capacity': 396, 'cluster_size': 4, 'max_active_clusters': 92, 'dynamic_shared_bytes': 2048, 'early_release': False, 'register_cap': None, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/4749c33dd165ec5a4b2e8ebc', 'cubin_sha256': 'a8c22f5cb66ac9aab320c71c6c9199a447295c25e4ab443d5f7992024d166704', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': 'e6db79c88a53d91943f0a99d6637d87df77c67b3545d0202a4f82d86414d6abe', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g384_e0_r0_c8": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 155, 'local_bytes_per_thread': 0, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 3, 'sm_count': 132, 'grid_blocks': 384, 'cooperative_capacity': 396, 'cluster_size': 8, 'max_active_clusters': 45, 'dynamic_shared_bytes': 2048, 'early_release': False, 'register_cap': None, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/e9403e8e429c0c964da6f920', 'cubin_sha256': '83ba40a8e84d9c4a835feb5eabba1f790e50404a391c03f6598dcbb07cb16325', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': 'd406d92c1b7e12b2cae12dea67337dea69660c26b30951434ed9aa9c90903d3e', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g384_e1_r0_c4": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 155, 'local_bytes_per_thread': 0, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 3, 'sm_count': 132, 'grid_blocks': 384, 'cooperative_capacity': 396, 'cluster_size': 4, 'max_active_clusters': 92, 'dynamic_shared_bytes': 2048, 'early_release': True, 'register_cap': None, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/fcd07525c659046e5930f7b4', 'cubin_sha256': '3dfacc5a0026b95d0fce62fd0ad787e418837f4ec126e5f98e5d328bbd104a2d', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': 'ad886007afcf6a9a91f67ca221dc6c580455b05cfa1dcdca4cc2b55285c8cf6d', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g384_e1_r0_c8": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 155, 'local_bytes_per_thread': 0, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 3, 'sm_count': 132, 'grid_blocks': 384, 'cooperative_capacity': 396, 'cluster_size': 8, 'max_active_clusters': 45, 'dynamic_shared_bytes': 2048, 'early_release': True, 'register_cap': None, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/7cda571fcfdf019edd44b90d', 'cubin_sha256': '89d4e2692473ae260947886626145373214545cdd65cc5a063ffab412c4c4bf4', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': '71d475d2865252348f6ebab182dea6b909e60ae765d872181ed7523ac3a1f6f1', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g512_e0_r128_c4": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 128, 'local_bytes_per_thread': 40, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 4, 'sm_count': 132, 'grid_blocks': 512, 'cooperative_capacity': 528, 'cluster_size': 4, 'max_active_clusters': 124, 'dynamic_shared_bytes': 2048, 'early_release': False, 'register_cap': 128, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/e2e1aa585826a8db2cc514a2', 'cubin_sha256': '15e5f5be0b688b99b20f96515b0989c2461a285e987c29e0e4d14098edc094eb', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': '9a4551b5a42d6641ae0eaea7c5dcb8b5a8038b519ea2c49821d0d504aea6cf6e', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g512_e0_r128_c8": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 128, 'local_bytes_per_thread': 40, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 4, 'sm_count': 132, 'grid_blocks': 512, 'cooperative_capacity': 528, 'cluster_size': 8, 'max_active_clusters': 62, 'dynamic_shared_bytes': 2048, 'early_release': False, 'register_cap': 128, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/646fa6afb3138186ab353020', 'cubin_sha256': 'd8b65a2ddb4a88c900a8c3da5c2ddbc8df8099e0f6d8919fc5d88a6e199646b8', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': '46344a4e62ef8db2c19994b3c9858921f9b44b67f24eba78463c5a2144d94c49', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g512_e1_r128_c4": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 128, 'local_bytes_per_thread': 40, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 4, 'sm_count': 132, 'grid_blocks': 512, 'cooperative_capacity': 528, 'cluster_size': 4, 'max_active_clusters': 124, 'dynamic_shared_bytes': 2048, 'early_release': True, 'register_cap': 128, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/3cf20972f582f68e3c37ee18', 'cubin_sha256': 'c6968034fd9f1807bff95b64e860598687fdd012d248f9c761cdfc4fc5692edb', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': '36fc5ba520452a52477c366407d03753e2b13de929da0cfb50404aedd4d6b3df', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n",
+    "g512_e1_r128_c8": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 96, in main\n    candidate = Chain(ring, options)\n                ^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_cooperative_mlp.py\", line 50, in __init__\n    self.fused[key] = None if options is None else Fused(entry, down_kernel, **options)\n                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/cooperative_mlp.py\", line 223, in __init__\n    raise ValueError(('Unsafe cooperative cluster grid refused before launch', self.resources))\nValueError: ('Unsafe cooperative cluster grid refused before launch', {'registers': 128, 'local_bytes_per_thread': 40, 'static_shared_bytes': 0, 'max_active_blocks_per_sm': 4, 'sm_count': 132, 'grid_blocks': 512, 'cooperative_capacity': 528, 'cluster_size': 8, 'max_active_clusters': 62, 'dynamic_shared_bytes': 2048, 'early_release': True, 'register_cap': 128, 'build': '/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/8fbc2c5bd91115b89e12dbf6', 'cubin_sha256': '9b369e43a3ece8fcff8ada9762cb0c678f1499cd966a47d8ff29b966a49c0ea0', 'up_cubin_sha256': '1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e', 'down_cubin_sha256': 'b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba', 'ptx_sha256': '7ff91549a5e6c625f781b4f8e0986a17952714eb4fc575ecc949452fef41c5e9', 'compiler_sha256': 'daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2'})\n"
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "g384_e0_r0_c2",
+        "g384_e1_r0_c2",
+        "g512_e0_r128_c2",
+        "g512_e1_r128_c2"
+      ],
+      "us": {
+        "control": 45.37599782148997,
+        "g384_e0_r0_c2": 50.144001841545105,
+        "g384_e1_r0_c2": 51.76533261934916,
+        "g512_e0_r128_c2": 51.17866893609365,
+        "g512_e1_r128_c2": 52.49066650867462
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "g512_e1_r128_c2",
+        "g512_e0_r128_c2",
+        "g384_e1_r0_c2",
+        "g384_e0_r0_c2",
+        "control"
+      ],
+      "us": {
+        "g512_e1_r128_c2": 52.1066685517629,
+        "g512_e0_r128_c2": 51.36000116666158,
+        "g384_e1_r0_c2": 52.1066685517629,
+        "g384_e0_r0_c2": 51.125332713127136,
+        "control": 46.73066735267639
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "g384_e0_r0_c2",
+        "g384_e1_r0_c2",
+        "g512_e0_r128_c2",
+        "g512_e1_r128_c2",
+        "control"
+      ],
+      "us": {
+        "g384_e0_r0_c2": 51.38133466243744,
+        "g384_e1_r0_c2": 52.18133330345154,
+        "g512_e0_r128_c2": 51.21066669623057,
+        "g512_e1_r128_c2": 52.31999854246775,
+        "control": 46.51733239491781
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "control",
+        "g512_e1_r128_c2",
+        "g512_e0_r128_c2",
+        "g384_e1_r0_c2",
+        "g384_e0_r0_c2"
+      ],
+      "us": {
+        "control": 46.32533093293508,
+        "g512_e1_r128_c2": 52.13866631189982,
+        "g512_e0_r128_c2": 50.80533524354299,
+        "g384_e1_r0_c2": 52.1066685517629,
+        "g384_e0_r0_c2": 51.274667183558144
+      }
+    }
+  ],
+  "method": "Selected Triton 3.8 exact gate/up + selected Triton 3.7 eight-row down versus cooperative PTX composition. Both followed by selected early clustered QKV, historical-KV attention, reduction/quantization and register-preloaded output. Actual 36-layer weights and three frozen inputs, nearest saved attention metadata, synthetic layer-35 wrap; not TTFA. Bytewise intermediates and entire poisoned KV caches, private CUDA graphs, balanced rotated/reversed event rings.",
+  "summary": {
+    "control": {
+      "median_us": 46.421331663926445,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    },
+    "g384_e0_r0_c2": {
+      "median_us": 51.19999994834264,
+      "median_paired_gain_us": -4.816003143787384,
+      "faster_rounds": 0
+    },
+    "g384_e1_r0_c2": {
+      "median_us": 52.1066685517629,
+      "median_paired_gain_us": -5.722669263680775,
+      "faster_rounds": 0
+    },
+    "g512_e0_r128_c2": {
+      "median_us": 51.19466781616211,
+      "median_paired_gain_us": -4.6613340576489755,
+      "faster_rounds": 0
+    },
+    "g512_e1_r128_c2": {
+      "median_us": 52.229332427183785,
+      "median_paired_gain_us": -5.80800076325734,
+      "faster_rounds": 0
+    }
+  }
+}

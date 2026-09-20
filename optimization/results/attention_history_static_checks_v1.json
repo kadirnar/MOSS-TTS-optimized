@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-20T15:53:10.249684+00:00",
+  "root_python_files_parsed": 309,
+  "cli_help": {
+    "server": {
+      "exit_code": 0,
+      "new_flag_present": true
+    },
+    "quality": {
+      "exit_code": 0,
+      "new_flag_present": true
+    },
+    "benchmark": {
+      "exit_code": 0,
+      "new_flag_present": true
+    }
+  },
+  "source_and_archive_hashes_verified": true,
+  "archived_files": 1612,
+  "archived_python_files": 351,
+  "prior_changed_files": [
+    "optimization/GOAL_REVIEW.md",
+    "optimization/README.md",
+    "optimization/benchmark_quantization.py",
+    "optimization/quality_generate.py",
+    "optimization/server.py"
+  ],
+  "original_services": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32,
+      "cached_voices": 2
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32,
+      "cached_voices": 2
+    }
+  },
+  "temporary_port_18084_free": true,
+  "goal_reached": false
+}

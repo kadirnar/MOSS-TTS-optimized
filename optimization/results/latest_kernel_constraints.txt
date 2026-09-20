@@ -1,0 +1,9 @@
+numpy==2.3.5
+pillow==12.3.0
+filelock==4.0.1
+fsspec==2026.9.0
+typing-extensions==4.16.0
+networkx==3.6.1
+sympy==1.14.0
+jinja2==3.1.6
+setuptools==80.10.2

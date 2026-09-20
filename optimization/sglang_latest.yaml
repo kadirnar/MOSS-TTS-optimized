@@ -1,0 +1,29 @@
+# Current SGLang-Omni, batch one, first full 32-codebook frame, FP32 codec.
+config_cls: MossTTSSingleProcessPipelineConfig
+model_path: /workspace/models/moss-tts-v15
+stages:
+  preprocessing:
+    factory:
+      device: cuda
+      compute_dtype: float32
+      max_concurrency: 1
+      ref_audio_cache: true
+      codec_model_path: /workspace/models/moss-codec
+  tts_engine:
+    engine:
+      max_running_requests: 1
+      mem_fraction_static: 0.40
+      cuda_graph_max_bs: 1
+      max_total_tokens: 4096
+  vocoder:
+    factory:
+      device: cuda
+      codec_model_path: /workspace/models/moss-codec
+      dtype: float32
+      compute_dtype: float32
+      max_batch_size: 1
+      max_batch_wait_ms: 0
+      initial_chunk_frames: 1
+      stream_stride: 1
+      stream_followup_stride: 1
+      stream_holdback_tokens: 0

@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "seed": 7000,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7001,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7002,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7003,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7004,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7005,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7006,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7007,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7008,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    },
+    {
+      "seed": 7009,
+      "same_seed": true,
+      "prior_selected_pcm_exact": true
+    }
+  ],
+  "all_exact": true
+}

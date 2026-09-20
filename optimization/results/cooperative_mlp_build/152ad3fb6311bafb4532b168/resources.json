@@ -1,0 +1,20 @@
+{
+  "registers": 155,
+  "local_bytes_per_thread": 0,
+  "static_shared_bytes": 0,
+  "max_active_blocks_per_sm": 3,
+  "sm_count": 132,
+  "grid_blocks": 384,
+  "cooperative_capacity": 396,
+  "cluster_size": 2,
+  "max_active_clusters": 198,
+  "dynamic_shared_bytes": 2048,
+  "early_release": true,
+  "register_cap": null,
+  "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/152ad3fb6311bafb4532b168",
+  "cubin_sha256": "4d4aca40960ed393e9564587e88c4b2df2fa902728c5c6617b47963a006eee18",
+  "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+  "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+  "ptx_sha256": "7c88a8b6dff6ab43131db1d01af75241931a1ccf9483d4755cc6ce2ede2cccef",
+  "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+}

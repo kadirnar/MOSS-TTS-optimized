@@ -1,0 +1,6 @@
+{
+  "prior": "prefill_qkv_paired_v2.json",
+  "candidate": "prefill_pointwise_paired_v1.json",
+  "control_full_streams_exact": 20,
+  "all_previous_selected_pcm_exact": true
+}

@@ -1,0 +1,5 @@
+{
+  "reference": "norm_projection_paired_v2.json",
+  "candidate": "audio_head_paired_v1.json",
+  "all_10_previous_candidate_to_new_control_pcm_hashes_exact": true
+}

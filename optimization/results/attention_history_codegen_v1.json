@@ -1,0 +1,292 @@
+{
+  "build": "f5b2abc99a18dcb8",
+  "source_sha256": "f39abe01a8007ab368a979ae434ff5daa184ace38e609cceda1d58caba895215",
+  "so_sha256": "c9c639f756a995e869658ac1f94e996ad65cd38ca4ce4088292ea52bdd8b63b6",
+  "scope": "Corrected build uses explicit volatile global-vector loads to retain historical preloads before wait. First __ldg build had all KV loads moved after wait and supplies no performance evidence. Counts include one position load and four/eight historical vector instructions, with runtime predicates.",
+  "kernels": [
+    {
+      "name": "_Z17attention_historyILi3ELb0ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 3,
+      "packed": false,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 9,
+      "loads_before_wait": [
+        "/*0160*/                   LDG.E.CONSTANT R52, desc[UR4][R52.64] ;                            /* 0x0000000434347981 */",
+        "/*04c0*/              @!P0 LDG.E.128 R32, desc[UR4][R4.64] ;                                  /* 0x0000000404208981 */",
+        "/*04d0*/              @!P0 LDG.E.128 R28, desc[UR4][R6.64] ;                                  /* 0x00000004061c8981 */",
+        "/*0510*/              @!P0 LDG.E.128 R16, desc[UR4][R38.64] ;                                 /* 0x0000000426108981 */",
+        "/*0570*/              @!P1 LDG.E.128 R24, desc[UR4][R4.64] ;                                  /* 0x0000000404189981 */",
+        "/*0590*/              @!P1 LDG.E.128 R20, desc[UR4][R6.64] ;                                  /* 0x0000000406149981 */",
+        "/*05b0*/              @!P0 LDG.E.128 R12, desc[UR4][R38.64] ;                                 /* 0x00000004260c8981 */",
+        "/*0660*/              @!P1 LDG.E.128 R8, desc[UR4][R40.64] ;                                  /* 0x0000000428089981 */",
+        "/*0670*/              @!P1 LDG.E.128 R4, desc[UR4][R42.64] ;                                  /* 0x000000042a049981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 66,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi3ELb0ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 3,
+      "packed": false,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 9,
+      "loads_before_wait": [
+        "/*00b0*/                   LDG.E.CONSTANT R9, desc[UR4][R2.64] ;                              /* 0x0000000402097981 */",
+        "/*0410*/              @!P0 LDG.E.128 R80, desc[UR4][R10.64] ;                                 /* 0x000000040a508981 */",
+        "/*0420*/              @!P1 LDG.E.128 R12, desc[UR4][R22.64] ;                                 /* 0x00000004160c9981 */",
+        "/*0460*/              @!P0 LDG.E.128 R44, desc[UR4][R10.64] ;                                 /* 0x000000040a2c8981 */",
+        "/*04a0*/              @!P1 LDG.E.128 R32, desc[UR4][R24.64] ;                                 /* 0x0000000418209981 */",
+        "/*0560*/              @!P0 LDG.E.128 R16, desc[UR4][R10.64] ;                                 /* 0x000000040a108981 */",
+        "/*0580*/              @!P0 LDG.E.128 R20, desc[UR4][R30.64] ;                                 /* 0x000000041e148981 */",
+        "/*0600*/              @!P1 LDG.E.128 R24, desc[UR4][R36.64] ;                                 /* 0x0000000424189981 */",
+        "/*0610*/              @!P1 LDG.E.128 R28, desc[UR4][R48.64] ;                                 /* 0x00000004301c9981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 98,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi3ELb1ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 3,
+      "packed": true,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 9,
+      "loads_before_wait": [
+        "/*00f0*/                   LDG.E.CONSTANT R6, desc[UR6][R6.64] ;                              /* 0x0000000606067981 */",
+        "/*0460*/              @!P1 LDG.E.128 R8, desc[UR6][R16.64] ;                                  /* 0x0000000610089981 */",
+        "/*0470*/              @!P1 LDG.E.128 R12, desc[UR6][R24.64] ;                                 /* 0x00000006180c9981 */",
+        "/*0490*/              @!P0 LDG.E.128 R20, desc[UR6][R32.64] ;                                 /* 0x0000000620148981 */",
+        "/*04d0*/              @!P0 LDG.E.128 R16, desc[UR6][R28.64] ;                                 /* 0x000000061c108981 */",
+        "/*05d0*/              @!P1 LDG.E.128 R24, desc[UR6][R36.64] ;                                 /* 0x0000000624189981 */",
+        "/*0620*/              @!P0 LDG.E.128 R32, desc[UR6][R42.64] ;                                 /* 0x000000062a208981 */",
+        "/*0650*/              @!P0 LDG.E.128 R36, desc[UR6][R44.64] ;                                 /* 0x000000062c248981 */",
+        "/*0690*/              @!P1 LDG.E.128 R28, desc[UR6][R40.64] ;                                 /* 0x00000006281c9981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 62,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi3ELb1ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 3,
+      "packed": true,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 9,
+      "loads_before_wait": [
+        "/*0070*/                   LDG.E.CONSTANT R6, desc[UR6][R6.64] ;                              /* 0x0000000606067981 */",
+        "/*03f0*/              @!P1 LDG.E.128 R8, desc[UR6][R16.64] ;                                  /* 0x0000000610089981 */",
+        "/*0400*/              @!P1 LDG.E.128 R12, desc[UR6][R24.64] ;                                 /* 0x00000006180c9981 */",
+        "/*0420*/              @!P0 LDG.E.128 R20, desc[UR6][R32.64] ;                                 /* 0x0000000620148981 */",
+        "/*0460*/              @!P0 LDG.E.128 R16, desc[UR6][R28.64] ;                                 /* 0x000000061c108981 */",
+        "/*0560*/              @!P1 LDG.E.128 R24, desc[UR6][R36.64] ;                                 /* 0x0000000624189981 */",
+        "/*05f0*/              @!P0 LDG.E.128 R32, desc[UR6][R42.64] ;                                 /* 0x000000062a208981 */",
+        "/*0600*/              @!P1 LDG.E.128 R28, desc[UR6][R40.64] ;                                 /* 0x00000006281c9981 */",
+        "/*0610*/              @!P0 LDG.E.128 R36, desc[UR6][R44.64] ;                                 /* 0x000000062c248981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 62,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi2ELb0ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 2,
+      "packed": false,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*0080*/                   LDG.E.CONSTANT R4, desc[UR12][R4.64] ;                             /* 0x0000000c04047981 */",
+        "/*0390*/              @!P0 LDG.E.128 R4, desc[UR12][R16.64] ;                                 /* 0x0000000c10048981 */",
+        "/*0510*/              @!P0 LDG.E.128 R12, desc[UR12][R24.64] ;                                /* 0x0000000c180c8981 */",
+        "/*0540*/              @!P1 LDG.E.128 R8, desc[UR12][R20.64] ;                                 /* 0x0000000c14089981 */",
+        "/*0560*/              @!P2 LDG.E.128 R16, desc[UR12][R26.64] ;                                /* 0x0000000c1a10a981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 61,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi2ELb0ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 2,
+      "packed": false,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*0060*/                   LDG.E.CONSTANT R3, desc[UR12][R2.64] ;                             /* 0x0000000c02037981 */",
+        "/*0340*/              @!P0 LDG.E.128 R24, desc[UR12][R2.64] ;                                 /* 0x0000000c02188981 */",
+        "/*0430*/              @!P0 LDG.E.128 R20, desc[UR12][R2.64] ;                                 /* 0x0000000c02148981 */",
+        "/*04a0*/              @!P1 LDG.E.128 R12, desc[UR12][R4.64] ;                                 /* 0x0000000c040c9981 */",
+        "/*04e0*/              @!P0 LDG.E.128 R16, desc[UR12][R2.64] ;                                 /* 0x0000000c02108981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 72,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi2ELb1ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 2,
+      "packed": true,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*00a0*/                   LDG.E.CONSTANT R0, desc[UR6][R4.64] ;                              /* 0x0000000604007981 */",
+        "/*03a0*/              @!P0 LDG.E.128 R8, desc[UR6][R20.64] ;                                  /* 0x0000000614088981 */",
+        "/*0510*/              @!P0 LDG.E.128 R16, desc[UR6][R26.64] ;                                 /* 0x000000061a108981 */",
+        "/*0530*/              @!P1 LDG.E.128 R12, desc[UR6][R24.64] ;                                 /* 0x00000006180c9981 */",
+        "/*0540*/              @!P2 LDG.E.128 R20, desc[UR6][R28.64] ;                                 /* 0x000000061c14a981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 56,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi2ELb1ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 2,
+      "packed": true,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*0060*/                   LDG.E.CONSTANT R0, desc[UR6][R4.64] ;                              /* 0x0000000604007981 */",
+        "/*0330*/              @!P0 LDG.E.128 R8, desc[UR6][R20.64] ;                                  /* 0x0000000614088981 */",
+        "/*04a0*/              @!P1 LDG.E.128 R12, desc[UR6][R24.64] ;                                 /* 0x00000006180c9981 */",
+        "/*04b0*/              @!P0 LDG.E.128 R16, desc[UR6][R26.64] ;                                 /* 0x000000061a108981 */",
+        "/*04c0*/              @!P2 LDG.E.128 R20, desc[UR6][R28.64] ;                                 /* 0x000000061c14a981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 56,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi1ELb0ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 1,
+      "packed": false,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*00b0*/                   LDG.E.CONSTANT R45, desc[UR6][R2.64] ;                             /* 0x00000006022d7981 */",
+        "/*03f0*/              @!P0 LDG.E.128 R16, desc[UR6][R6.64] ;                                  /* 0x0000000606108981 */",
+        "/*0510*/              @!P0 LDG.E.128 R8, desc[UR6][R24.64] ;                                  /* 0x0000000618088981 */",
+        "/*0530*/              @!P1 LDG.E.128 R12, desc[UR6][R28.64] ;                                 /* 0x000000061c0c9981 */",
+        "/*0540*/              @!P2 LDG.E.128 R20, desc[UR6][R26.64] ;                                 /* 0x000000061a14a981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 60,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi1ELb0ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 1,
+      "packed": false,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*0060*/                   LDG.E.CONSTANT R8, desc[UR6][R8.64] ;                              /* 0x0000000608087981 */",
+        "/*03d0*/              @!P0 LDG.E.128 R12, desc[UR6][R2.64] ;                                  /* 0x00000006020c8981 */",
+        "/*0400*/              @!P0 LDG.E.128 R16, desc[UR6][R24.64] ;                                 /* 0x0000000618108981 */",
+        "/*0470*/              @!P1 LDG.E.128 R20, desc[UR6][R30.64] ;                                 /* 0x000000061e149981 */",
+        "/*04c0*/              @!P0 LDG.E.128 R24, desc[UR6][R32.64] ;                                 /* 0x0000000620188981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 72,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi1ELb1ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 1,
+      "packed": true,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*00b0*/                   LDG.E.CONSTANT R35, desc[UR6][R2.64] ;                             /* 0x0000000602237981 */",
+        "/*03a0*/              @!P0 LDG.E.128 R12, desc[UR6][R2.64] ;                                  /* 0x00000006020c8981 */",
+        "/*04f0*/              @!P0 LDG.E.128 R16, desc[UR6][R26.64] ;                                 /* 0x000000061a108981 */",
+        "/*0530*/              @!P1 LDG.E.128 R8, desc[UR6][R36.64] ;                                  /* 0x0000000624089981 */",
+        "/*0540*/              @!P2 LDG.E.128 R20, desc[UR6][R24.64] ;                                 /* 0x000000061814a981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 56,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi1ELb1ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 1,
+      "packed": true,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 5,
+      "loads_before_wait": [
+        "/*0060*/                   LDG.E.CONSTANT R3, desc[UR6][R2.64] ;                              /* 0x0000000602037981 */",
+        "/*0370*/              @!P0 LDG.E.128 R16, desc[UR6][R4.64] ;                                  /* 0x0000000604108981 */",
+        "/*0490*/              @!P1 LDG.E.128 R12, desc[UR6][R46.64] ;                                 /* 0x000000062e0c9981 */",
+        "/*04b0*/              @!P2 LDG.E.128 R20, desc[UR6][R24.64] ;                                 /* 0x000000061814a981 */",
+        "/*04c0*/              @!P0 LDG.E.128 R8, desc[UR6][R26.64] ;                                  /* 0x000000061a088981 */"
+      ],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 56,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi0ELb1ELi2EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 0,
+      "packed": true,
+      "trigger": 2,
+      "global_load_instructions_before_wait": 0,
+      "loads_before_wait": [],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 40,
+      "barriers": 1,
+      "shared_bytes": 2080
+    },
+    {
+      "name": "_Z17attention_historyILi0ELb1ELi1EEvPK13__nv_bfloat16S2_S2_PKlPfS5_ii",
+      "mode": 0,
+      "packed": true,
+      "trigger": 1,
+      "global_load_instructions_before_wait": 0,
+      "loads_before_wait": [],
+      "stack_bytes": 0,
+      "spill_store_bytes": 0,
+      "spill_load_bytes": 0,
+      "registers": 40,
+      "barriers": 1,
+      "shared_bytes": 2080
+    }
+  ]
+}

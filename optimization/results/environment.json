@@ -1,0 +1,18 @@
+{
+  "python": "3.12.14",
+  "versions": {
+    "torch": "2.9.1+cu128",
+    "torchaudio": "2.9.1+cu128",
+    "triton": "3.5.1",
+    "transformers": "5.0.0",
+    "tilelang": "0.1.14",
+    "nvidia-cutlass-dsl": "4.7.1",
+    "sglang": "0.5.7",
+    "sgl-kernel": "0.3.20",
+    "vllm": "0.12.0",
+    "faster-whisper": "1.2.1"
+  },
+  "source_commit": "934d6826b084c46a0d033402174d5f8ac4ed2519",
+  "tts_revision": "cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+  "codec_revision": "3cd226ba2947efa357ef453bcad111b6eafba782"
+}

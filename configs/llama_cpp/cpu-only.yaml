@@ -1,0 +1,45 @@
+# MOSS-TTS-Delay — llama.cpp Backend (CPU-only)
+#
+# For machines without GPU.  All computation runs on CPU.
+# Performance will be slower but no CUDA/GPU drivers required.
+#
+# Installation:
+#   pip install -e ".[llama-cpp]"
+#   pip install onnxruntime    # CPU-only ONNX Runtime
+
+# ── Model paths ──────────────────────────────────────────────────────────────
+
+backbone_gguf: weights/MOSS-TTS-GGUF/MOSS_TTS_Q4_K_M.gguf
+embedding_dir: weights/MOSS-TTS-GGUF/embeddings
+lm_head_dir: weights/MOSS-TTS-GGUF/lm_heads
+tokenizer_dir: weights/MOSS-TTS-GGUF/tokenizer
+
+# ── Audio tokenizer ──────────────────────────────────────────────────────────
+
+audio_backend: onnx
+audio_encoder_onnx: weights/MOSS-Audio-Tokenizer-ONNX/encoder.onnx
+audio_decoder_onnx: weights/MOSS-Audio-Tokenizer-ONNX/decoder.onnx
+
+# ── LM heads backend ────────────────────────────────────────────────────────
+
+heads_backend: numpy
+
+# ── Runtime settings ─────────────────────────────────────────────────────────
+
+n_ctx: 4096
+n_batch: 256
+n_threads: 8
+n_gpu_layers: 0
+max_new_tokens: 3072
+use_gpu_audio: false
+
+# ── Sampling parameters ──────────────────────────────────────────────────────
+
+text_temperature: 1.5
+text_top_p: 1.0
+text_top_k: 50
+
+audio_temperature: 1.7
+audio_top_p: 0.8
+audio_top_k: 25
+audio_repetition_penalty: 1.0

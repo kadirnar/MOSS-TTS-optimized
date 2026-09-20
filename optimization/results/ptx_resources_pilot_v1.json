@@ -1,0 +1,816 @@
+{
+  "codebooks": 32,
+  "layers": 1,
+  "configs": {
+    "control": null,
+    "cuda13_dynamic": {
+      "up": {
+        "static_shared": false
+      },
+      "down": {
+        "static_shared": false
+      },
+      "qkv": {
+        "static_shared": false
+      }
+    },
+    "cuda13_static": {
+      "up": {},
+      "down": {},
+      "qkv": {}
+    },
+    "up_r128_s0": {
+      "up": {
+        "registers": 128,
+        "shared_spilling": false
+      }
+    },
+    "up_r128_s1": {
+      "up": {
+        "registers": 128,
+        "shared_spilling": true
+      }
+    },
+    "down_r96_s1": {
+      "down": {
+        "registers": 96,
+        "shared_spilling": true
+      }
+    },
+    "qkv_r40_s1": {
+      "qkv": {
+        "registers": 40,
+        "shared_spilling": true
+      }
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_dynamic",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_dynamic",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_dynamic",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_dynamic",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_static",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_static",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_static",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "cuda13_static",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s0",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s0",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s0",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s0",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s1",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s1",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s1",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "up_r128_s1",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "down_r96_s1",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "down_r96_s1",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "down_r96_s1",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "down_r96_s1",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "qkv_r40_s1",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "qkv_r40_s1",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "qkv_r40_s1",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "qkv_r40_s1",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "resources": {
+    "control": {},
+    "cuda13_dynamic": {
+      "up_res1": {
+        "static_shared_bytes": 0,
+        "local_bytes_per_thread": 0,
+        "registers": 162,
+        "dynamic_shared_bytes": 1024,
+        "max_active_blocks_per_sm": 3,
+        "threads": 128,
+        "build": "d86cf1c3e805d61cd80ce124",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": false,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "6fff6d80cd63960aca1754d23483fa80e4cce56c68d41eecfcb0086fef757cb4",
+        "ptx_sha256": "39d7deb130bdd7be0c494c8630c3ba0b6e5f299db5f66ef8e735e12e1bb6ec75",
+        "cubin_sha256": "cc7ede246a6e548c624cb561c46aa2cdea16d0ab2a12d4c298d1e0a4ef955e59"
+      },
+      "qkv_res1": {
+        "static_shared_bytes": 0,
+        "local_bytes_per_thread": 0,
+        "registers": 56,
+        "dynamic_shared_bytes": 2048,
+        "max_active_blocks_per_sm": 9,
+        "threads": 128,
+        "build": "835e346095f285e721df67db",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": false,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "b1ca6ca55de35f447020fa3080913ebcc89b3318b072fd253674591951f171e4",
+        "ptx_sha256": "5d10c1651cd495c83ddb97a67033db693756dcbc8e76bc6ca60a41f7989fa35c",
+        "cubin_sha256": "db471738ab3bd7f082b7a36da018e1375366e201c7a2bbdc3d04aaa2f82ad12c"
+      },
+      "down": {
+        "static_shared_bytes": 0,
+        "local_bytes_per_thread": 0,
+        "registers": 128,
+        "dynamic_shared_bytes": 1024,
+        "max_active_blocks_per_sm": 8,
+        "threads": 64,
+        "build": "85804d0b2874ce2bbf8275b1",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": false,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "8d45284e317dbe235c738b5082d8f67280fd5f2890d037d1adcea21fd766d57c",
+        "ptx_sha256": "f395a07d3ee40d28631e75f98d74200f8504bc04e649b36ba34a95136574d1e4",
+        "cubin_sha256": "0984261d1e2ced05ccfb74dd0af9bf26a9aa25c751e344f9c8778548c96da3b9"
+      }
+    },
+    "cuda13_static": {
+      "up_res1": {
+        "static_shared_bytes": 1024,
+        "local_bytes_per_thread": 0,
+        "registers": 162,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "threads": 128,
+        "build": "69f7a3c987380d63d8343742",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "6fff6d80cd63960aca1754d23483fa80e4cce56c68d41eecfcb0086fef757cb4",
+        "ptx_sha256": "8d432e8f73034a715feda4628d23c46348691f83a68498ed93f480428b2da1ce",
+        "cubin_sha256": "4eb4ec652957fa39a5fdb67430c69f0ac4f04937e174be848b0cd559e83e6701"
+      },
+      "qkv_res1": {
+        "static_shared_bytes": 2048,
+        "local_bytes_per_thread": 0,
+        "registers": 56,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 9,
+        "threads": 128,
+        "build": "56ab376db4b7cda48fb353b5",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "b1ca6ca55de35f447020fa3080913ebcc89b3318b072fd253674591951f171e4",
+        "ptx_sha256": "0e9d0deb319fc868326eed8eaee59c5b54cfcccbff22b90fa8f19d5e26d6b8fe",
+        "cubin_sha256": "dc29d457a53bfc4bdb4e1d3020342c56ce12c844e6dce79820424549c188418e"
+      },
+      "down": {
+        "static_shared_bytes": 1024,
+        "local_bytes_per_thread": 0,
+        "registers": 128,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 8,
+        "threads": 64,
+        "build": "c0b5f66fa304e8ce8485212e",
+        "register_cap": null,
+        "shared_spilling": false,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "8d45284e317dbe235c738b5082d8f67280fd5f2890d037d1adcea21fd766d57c",
+        "ptx_sha256": "fd7d95fe0c664de7427fae3f464894a68ba0b98d50cfcb57f04cdfb284900737",
+        "cubin_sha256": "341eeddb00c245b28b159771f681919e2f112c4123a175ee21bb26ed75ccc7e1"
+      }
+    },
+    "up_r128_s0": {
+      "up_res1": {
+        "static_shared_bytes": 1024,
+        "local_bytes_per_thread": 304,
+        "registers": 128,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "threads": 128,
+        "build": "8b74297eb13416e095463e9c",
+        "register_cap": 128,
+        "shared_spilling": false,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "6fff6d80cd63960aca1754d23483fa80e4cce56c68d41eecfcb0086fef757cb4",
+        "ptx_sha256": "dd6c87c18648ba7cb5db5c362fd56bffcd9243752e75fd0bad1520ba430c07a5",
+        "cubin_sha256": "a2deff91487dd4cb9e637731213db407930f93d7528430fd528e3705c9e5cb71"
+      }
+    },
+    "up_r128_s1": {
+      "up_res1": {
+        "static_shared_bytes": 9216,
+        "local_bytes_per_thread": 240,
+        "registers": 128,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "threads": 128,
+        "build": "e6d53585d359e22ac7482366",
+        "register_cap": 128,
+        "shared_spilling": true,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "6fff6d80cd63960aca1754d23483fa80e4cce56c68d41eecfcb0086fef757cb4",
+        "ptx_sha256": "e246f7f9e2066a62292241c39cf37763940b4631dc33f427db8a61f46dfb0dc9",
+        "cubin_sha256": "ad0e34c7248524f526643c058b23704d0c03886cd4e1feca530cdf9517ac14a4"
+      }
+    },
+    "down_r96_s1": {
+      "down": {
+        "static_shared_bytes": 4096,
+        "local_bytes_per_thread": 120,
+        "registers": 96,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 10,
+        "threads": 64,
+        "build": "5e033872b639d11a5da6baea",
+        "register_cap": 96,
+        "shared_spilling": true,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "8d45284e317dbe235c738b5082d8f67280fd5f2890d037d1adcea21fd766d57c",
+        "ptx_sha256": "8c4b4809bf16e6ca49e5e3c488c90997128ee380b4c29fd2cfa8f40ba5627c56",
+        "cubin_sha256": "2b2bdb2950cd99f8524e6b527f0abae80969691ec54cee0fc7697420d64266d6"
+      }
+    },
+    "qkv_r40_s1": {
+      "qkv_res1": {
+        "static_shared_bytes": 9216,
+        "local_bytes_per_thread": 32,
+        "registers": 40,
+        "dynamic_shared_bytes": 0,
+        "max_active_blocks_per_sm": 12,
+        "threads": 128,
+        "build": "d220581316e37e4d9239777c",
+        "register_cap": 40,
+        "shared_spilling": true,
+        "static_shared": true,
+        "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+        "original_ptx_sha256": "b1ca6ca55de35f447020fa3080913ebcc89b3318b072fd253674591951f171e4",
+        "ptx_sha256": "28abf537a89b491b718931758bf76282d361d70d9e10ada4009a7d74d9fde25a",
+        "cubin_sha256": "8f3132c25ce6e80a83d7b9bb6a2f5a63be39f55638ed84557fcfe09eafade8db"
+      }
+    }
+  },
+  "errors": {},
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "cuda13_dynamic": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "cuda13_static": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "up_r128_s0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "up_r128_s1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "down_r96_s1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "qkv_r40_s1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "cuda13_dynamic",
+        "cuda13_static",
+        "up_r128_s0",
+        "up_r128_s1",
+        "down_r96_s1",
+        "qkv_r40_s1"
+      ],
+      "us": {
+        "control": 37.845333417256676,
+        "cuda13_dynamic": 37.8560001651446,
+        "cuda13_static": 37.72799919048945,
+        "up_r128_s0": 45.76000074545542,
+        "up_r128_s1": 44.60800190766653,
+        "down_r96_s1": 43.51999859015147,
+        "qkv_r40_s1": 40.53333401679993
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "qkv_r40_s1",
+        "down_r96_s1",
+        "up_r128_s1",
+        "up_r128_s0",
+        "cuda13_static",
+        "cuda13_dynamic"
+      ],
+      "us": {
+        "control": 37.75999943415324,
+        "qkv_r40_s1": 40.71466624736786,
+        "down_r96_s1": 43.338666359583534,
+        "up_r128_s1": 44.89600161711375,
+        "up_r128_s0": 45.706664522488914,
+        "cuda13_static": 37.72799919048945,
+        "cuda13_dynamic": 37.74933268626531
+      }
+    }
+  ],
+  "method": "Actual selected MLP/down/following-QKV dependency chains, three saved inputs per layer, rotating all selected weights. CUDA 13.0.88 PTXAS reassembles unchanged Triton instruction bodies with static shared declarations/register limits/optional shared spilling. Selected Triton 3.7/CUDA 12.8 kernels remain the control. No TTFA claim; all timing precedes any profiler initialization.",
+  "summary": {
+    "control": {
+      "median_us": 37.802666425704956,
+      "mismatches": 0,
+      "paired_gain_us": [
+        0.0,
+        0.0
+      ]
+    },
+    "cuda13_dynamic": {
+      "median_us": 37.802666425704956,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -0.010666747887924544,
+        0.010666747887924544
+      ]
+    },
+    "cuda13_static": {
+      "median_us": 37.72799919048945,
+      "mismatches": 0,
+      "paired_gain_us": [
+        0.11733422676722682,
+        0.03200024366378784
+      ]
+    },
+    "up_r128_s0": {
+      "median_us": 45.73333263397217,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -7.914667328198746,
+        -7.946665088335678
+      ]
+    },
+    "up_r128_s1": {
+      "median_us": 44.75200176239014,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -6.762668490409851,
+        -7.13600218296051
+      ]
+    },
+    "down_r96_s1": {
+      "median_us": 43.4293324748675,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -5.674665172894791,
+        -5.578666925430298
+      ]
+    },
+    "qkv_r40_s1": {
+      "median_us": 40.62400013208389,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -2.688000599543251,
+        -2.9546668132146223
+      ]
+    }
+  }
+}

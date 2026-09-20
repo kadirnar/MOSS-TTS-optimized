@@ -1,0 +1,95 @@
+{
+  "definition": "Sequential same-source temporary services, direct-load candidate followed by preceding packed-plan control; same 20 measured request seeds, text and registered reference. Compare with earlier packed stage run to retain runtime variability.",
+  "candidate": {
+    "http": {
+      "median_ms": 91.11102484166622,
+      "p95_ms": 93.2869229465723,
+      "min_ms": 90.79552441835403,
+      "samples_ms": [
+        91.11693501472473,
+        91.10511466860771,
+        90.79552441835403,
+        93.02724339067936,
+        98.22083450853825,
+        92.99514628946781,
+        92.82572194933891,
+        90.85296094417572,
+        90.87635204195976,
+        91.04134328663349,
+        91.02648310363293,
+        91.41134098172188,
+        91.18731878697872,
+        91.43171645700932,
+        90.95964394509792,
+        91.39820374548435,
+        91.04267321527004,
+        91.08949638903141,
+        91.02524444460869,
+        92.04657189548016
+      ]
+    },
+    "engine_medians": {
+      "ttfa_ms": 87.40347810089588,
+      "prepare_ms": 1.1008819565176964,
+      "prefill_ms": 8.841522969305515
+    },
+    "seed_ms": 0.2261623740196228,
+    "first_decode_ms": 2.263787027914077,
+    "first_codec_ms": 4.401407204568386,
+    "outside_engine_ms": 3.701111301779747,
+    "fresh_reference_to_pcm_ms_single_observation": 130.3323544561863,
+    "cancellation_recovery": [
+      429,
+      200
+    ],
+    "truncated": 0,
+    "stage_file_sha256": "faf1a9eeb1cf56a44361c1a143a9030195f0def8d8eee35f38cf6b70d7ce7369"
+  },
+  "control": {
+    "http": {
+      "median_ms": 93.21410581469536,
+      "p95_ms": 101.70098766684532,
+      "min_ms": 92.48628839850426,
+      "samples_ms": [
+        103.47513668239117,
+        101.60761140286922,
+        98.87043386697769,
+        94.66982446610928,
+        94.2778941243887,
+        95.95227055251598,
+        94.43794935941696,
+        94.3400040268898,
+        94.30280141532421,
+        92.66861155629158,
+        92.48628839850426,
+        93.18766370415688,
+        93.18013116717339,
+        93.24054792523384,
+        92.9664857685566,
+        92.98654645681381,
+        92.86925755441189,
+        93.04025210440159,
+        92.88245253264904,
+        92.86829270422459
+      ]
+    },
+    "engine_medians": {
+      "ttfa_ms": 90.1460088789463,
+      "prepare_ms": 1.1254558339715004,
+      "prefill_ms": 8.837275207042694
+    },
+    "seed_ms": 0.23536942899227142,
+    "first_decode_ms": 2.3489294690079987,
+    "first_codec_ms": 4.399726167321205,
+    "outside_engine_ms": 3.0332179740071297,
+    "fresh_reference_to_pcm_ms_single_observation": 144.44471523165703,
+    "cancellation_recovery": [
+      429,
+      200
+    ],
+    "truncated": 0,
+    "stage_file_sha256": "7a9c40655aea273b74370510eadb58d62e7f519644a108ecdf87a4b1568d2fe9"
+  },
+  "delta_http_median_ms": 2.1030809730291367,
+  "earlier_control_http_median_ms": 100.24933610111475
+}

@@ -1,0 +1,44 @@
+[
+  {
+    "columns": 128,
+    "actorder": false,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.0010129971196874976,
+    "rtn_mse": 0.009086849167943
+  },
+  {
+    "columns": 128,
+    "actorder": true,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.0006387936882674694,
+    "rtn_mse": 0.009086849167943
+  },
+  {
+    "columns": 256,
+    "actorder": false,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.0005236425204202533,
+    "rtn_mse": 0.01064333412796259
+  },
+  {
+    "columns": 256,
+    "actorder": true,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.0003128210664726794,
+    "rtn_mse": 0.01064333412796259
+  },
+  {
+    "columns": 512,
+    "actorder": false,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.00029646744951605797,
+    "rtn_mse": 0.008846722543239594
+  },
+  {
+    "columns": 512,
+    "actorder": true,
+    "code_agreement": 1.0,
+    "gptq_mse": 0.00013999902876093984,
+    "rtn_mse": 0.008846722543239594
+  }
+]

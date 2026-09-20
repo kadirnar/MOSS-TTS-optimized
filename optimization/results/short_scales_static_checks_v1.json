@@ -1,0 +1,59 @@
+{
+  "created_utc": "2026-09-20T07:33:41.938768+00:00",
+  "python_ast_files": 175,
+  "cli_checks": [
+    {
+      "module": "benchmark_quantization",
+      "help_passed": true
+    },
+    {
+      "module": "quality_generate",
+      "help_passed": true
+    },
+    {
+      "module": "server",
+      "help_passed": true
+    },
+    {
+      "module": "audit_short_scales_codegen",
+      "help_passed": true
+    }
+  ],
+  "original_services": {
+    "18080": {
+      "ready": true,
+      "model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_format": "signed 16-bit little endian",
+      "codebooks": 32,
+      "concurrency": 1,
+      "cached_voices": 2,
+      "llm_dtype": "bfloat16",
+      "codec_dtype": "float32",
+      "weight_quantization": "none",
+      "attention_block": 128,
+      "fused_residual": true,
+      "fused_gateup": true
+    },
+    "18083": {
+      "ready": true,
+      "model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+      "sample_rate": 24000,
+      "channels": 1,
+      "pcm_format": "signed 16-bit little endian",
+      "codebooks": 32,
+      "concurrency": 1,
+      "cached_voices": 2,
+      "llm_dtype": "bfloat16",
+      "codec_dtype": "float32",
+      "weight_quantization": "fp8_all",
+      "attention_block": 32,
+      "fused_residual": true,
+      "fused_gateup": true
+    }
+  },
+  "original_processes": "  54030 /venv/main/bin/python -u -m optimization.server --port 18080 --fused-residual --fused-gateup\n  56179 /venv/moss-vllm/bin/python -u -m optimization.server --port 18083 --weight-quantization fp8_all --attention-block 32 --fused-residual --fused-gateup\n",
+  "git_status": "?? optimization/\n",
+  "gpu_processes": "3311027, 34258 MiB\n3335774, 41184 MiB\n"
+}

@@ -1,0 +1,732 @@
+{
+  "codebooks": 32,
+  "configs": {
+    "control": {},
+    "norm_a64": {
+      "up": {
+        "activation_group": 64
+      },
+      "qkv": {
+        "activation_group": 64
+      }
+    },
+    "up_a64": {
+      "up": {
+        "activation_group": 64
+      }
+    },
+    "qkv_a64": {
+      "qkv": {
+        "activation_group": 64
+      }
+    },
+    "all_a64": {
+      "up": {
+        "activation_group": 64,
+        "rows": 64
+      },
+      "down": {
+        "activation_group": 64
+      },
+      "qkv": {
+        "activation_group": 64
+      }
+    },
+    "norm_a64_down_a32": {
+      "up": {
+        "activation_group": 64
+      },
+      "qkv": {
+        "activation_group": 64
+      },
+      "down": {}
+    }
+  },
+  "layers": 1,
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        5.359918873182323e-07,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        2.9409024136839435e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0990814871547627e-06
+      ],
+      "mismatches": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        1.3412585708749702e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.9393910356011475e-09
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        2.153037030439009e-06,
+        0.0,
+        0.0,
+        4.042463388032047e-06,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        3.52022543665953e-05
+      ],
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        3.1282286272471538e-06,
+        0.0,
+        0.0,
+        1.7028811498676077e-06,
+        0.0,
+        4.043586159241386e-06
+      ],
+      "mismatches": [
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "up_a64",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        2.153037030439009e-06,
+        0.0,
+        0.0,
+        4.042463388032047e-06,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "up_a64",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "up_a64",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        3.1282286272471538e-06,
+        0.0,
+        0.0,
+        1.7028811498676077e-06,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        4,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "qkv_a64",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        5.359918873182323e-07,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "qkv_a64",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        2.9409024136839435e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        3,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "qkv_a64",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        1.3412585708749702e-08,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "all_a64",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        2.153037030439009e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.266632466467854e-06
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "all_a64",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        5.831219823448919e-06,
+        0.0,
+        2.7534730406841845e-07
+      ],
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        2
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "all_a64",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        3.1282286272471538e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        6.31513472626466e-08
+      ],
+      "mismatches": [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64_down_a32",
+      "layer": 17,
+      "input": 0,
+      "relative_rms": [
+        0.0,
+        2.153037030439009e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64_down_a32",
+      "layer": 17,
+      "input": 10,
+      "relative_rms": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0747943646194358e-09
+      ],
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "output_quant_exact": true
+    },
+    {
+      "config": "norm_a64_down_a32",
+      "layer": 17,
+      "input": 31,
+      "relative_rms": [
+        0.0,
+        3.1282286272471538e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mismatches": [
+        0,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "output_quant_exact": true
+    }
+  ],
+  "resources": {
+    "control": {
+      "up": {
+        "registers": 162,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 56,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    },
+    "norm_a64": {
+      "up": {
+        "registers": 165,
+        "spills": 0,
+        "shared_bytes": 2048
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 62,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    },
+    "up_a64": {
+      "up": {
+        "registers": 165,
+        "spills": 0,
+        "shared_bytes": 2048
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 56,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    },
+    "qkv_a64": {
+      "up": {
+        "registers": 162,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 62,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    },
+    "all_a64": {
+      "up": {
+        "registers": 255,
+        "spills": 92,
+        "shared_bytes": 2048
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 62,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    },
+    "norm_a64_down_a32": {
+      "up": {
+        "registers": 165,
+        "spills": 0,
+        "shared_bytes": 2048
+      },
+      "down": {
+        "registers": 161,
+        "spills": 0,
+        "shared_bytes": 1024
+      },
+      "qkv": {
+        "registers": 62,
+        "spills": 0,
+        "shared_bytes": 2048
+      }
+    }
+  },
+  "errors": {},
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "norm_a64": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "up_a64": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "qkv_a64": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "all_a64": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "norm_a64_down_a32": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "norm_a64",
+        "up_a64",
+        "qkv_a64",
+        "all_a64",
+        "norm_a64_down_a32"
+      ],
+      "us": {
+        "control": 37.19466676314672,
+        "norm_a64": 40.05333284536997,
+        "up_a64": 39.103999733924866,
+        "qkv_a64": 38.25066735347112,
+        "all_a64": 53.45066885153452,
+        "norm_a64_down_a32": 40.95999896526337
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "norm_a64_down_a32",
+        "all_a64",
+        "qkv_a64",
+        "up_a64",
+        "norm_a64"
+      ],
+      "us": {
+        "control": 37.21600025892258,
+        "norm_a64_down_a32": 40.75733323891958,
+        "all_a64": 53.38666836420695,
+        "qkv_a64": 38.57066730658213,
+        "up_a64": 38.85866701602936,
+        "norm_a64": 40.37333279848099
+      }
+    }
+  ],
+  "method": "Actual layer ring with independently packed original DP4A and standalone norm/quant arithmetic reference for each mixed-precision plan. Three frozen inputs per layer, eager/private graph comparisons, rotating/reversing measurement order. Not TTFA or quality evidence.",
+  "summary": {
+    "control": {
+      "median_us": 37.20533351103465,
+      "median_paired_gain_us": 0.0,
+      "max_relative_rms": 2.9409024136839435e-05
+    },
+    "norm_a64": {
+      "median_us": 40.213332821925476,
+      "median_paired_gain_us": -3.007999310890831,
+      "max_relative_rms": 3.52022543665953e-05
+    },
+    "up_a64": {
+      "median_us": 38.98133337497711,
+      "median_paired_gain_us": -1.775999863942463,
+      "max_relative_rms": 4.042463388032047e-06
+    },
+    "qkv_a64": {
+      "median_us": 38.41066733002663,
+      "median_paired_gain_us": -1.2053338189919778,
+      "max_relative_rms": 2.9409024136839435e-05
+    },
+    "all_a64": {
+      "median_us": 53.418668607870735,
+      "median_paired_gain_us": -16.213335096836087,
+      "max_relative_rms": 5.831219823448919e-06
+    },
+    "norm_a64_down_a32": {
+      "median_us": 40.858666102091476,
+      "median_paired_gain_us": -3.6533325910568237,
+      "max_relative_rms": 3.1282286272471538e-06
+    }
+  }
+}

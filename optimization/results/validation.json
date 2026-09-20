@@ -1,0 +1,20 @@
+{
+  "codec": {
+    "frames": 140,
+    "ring_wrap_tested": true,
+    "non_default_stream_tested": true,
+    "max_abs_error": 6.299465894699097e-06,
+    "snr_db": 115.95459747314453,
+    "finite": true,
+    "reset_first_frame_error": 0.0
+  },
+  "llm_teacher_forced": {
+    "steps": 36,
+    "max_relative_rms_error": 0.00771808298304677,
+    "max_absolute_logit_error": 0.5,
+    "mean_top1_agreement": 0.8125,
+    "active_codebook_mean_top1_agreement": 0.9218444112274382,
+    "active_codebook_mean_kl_divergence": 0.0031523723882855847,
+    "note": "Floating point operation ordering changes logits; this is numerical validation, not a corpus-level WER or speaker-similarity evaluation."
+  }
+}

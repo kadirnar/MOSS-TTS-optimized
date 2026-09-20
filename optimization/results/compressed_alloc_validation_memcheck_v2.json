@@ -1,0 +1,780 @@
+{
+  "cases": [
+    {
+      "dtype": "torch.uint8",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.uint8",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 127,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.uint8",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1048591,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 127,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1048591,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 4,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 508,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 4194364,
+        "allocated_bytes": 6291456,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 8,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1016,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 8388728,
+        "allocated_bytes": 10485760,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 2,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 254,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 2097182,
+        "allocated_bytes": 4194304,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 2,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 254,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 2097182,
+        "allocated_bytes": 4194304,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 4,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 508,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 4194364,
+        "allocated_bytes": 6291456,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 1,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 8,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 127,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 1016,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 1048591,
+      "compressed": false,
+      "allocation": {
+        "logical_bytes": 8388728,
+        "allocated_bytes": 10485760,
+        "granularity": 2097152,
+        "compression_type": 0,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.uint8",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.uint8",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 127,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.uint8",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1048591,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 127,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int8",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1048591,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 4,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 508,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int32",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 4194364,
+        "allocated_bytes": 6291456,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 8,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1016,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.int64",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 8388728,
+        "allocated_bytes": 10485760,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 2,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 254,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float16",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 2097182,
+        "allocated_bytes": 4194304,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 2,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 254,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 2097182,
+        "allocated_bytes": 4194304,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 4,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 508,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float32",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 4194364,
+        "allocated_bytes": 6291456,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 1,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 8,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 127,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 1016,
+        "allocated_bytes": 2097152,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    },
+    {
+      "dtype": "torch.float64",
+      "count": 1048591,
+      "compressed": true,
+      "allocation": {
+        "logical_bytes": 8388728,
+        "allocated_bytes": 10485760,
+        "granularity": 2097152,
+        "compression_type": 1,
+        "device": 0
+      },
+      "initial_copy_exact": true,
+      "private_graph_exact": true,
+      "updated_graph_exact": true,
+      "view_lifetime_exact": true
+    }
+  ],
+  "all_exact": true,
+  "private_stream_graphs": true,
+  "final_counters": {
+    "live_bytes": 0,
+    "live_allocations": 0,
+    "cleanup_errors": 0
+  },
+  "unconsumed_capsule_cleanup": true
+}

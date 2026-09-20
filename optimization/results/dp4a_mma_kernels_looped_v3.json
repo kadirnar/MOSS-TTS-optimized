@@ -1,0 +1,375 @@
+{
+  "method": "8 distinct weight/scale pairs, prequantized input, median nine graph timings; three layers x four recorded vectors plus zero/spike, private-stream comparison against selected scaled-integer Triton kernels.",
+  "cases": {
+    "qkv": {
+      "reference_us": 6.14799993733565,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.857333282629648
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 19.69333365559578
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 12.19866673151652
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.92533348997434
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 20.849332213401794
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 12.334667146205902
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 4
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0
+        ],
+        "us": 11.857333282629648
+      }
+    },
+    "out": {
+      "reference_us": 5.152000114321709,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.319999893506369
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.332000295321146
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.814666291077932
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.378667006889978
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 20.55199940999349
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.890667180220285
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 4
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0
+        ],
+        "us": 11.319999893506369
+      }
+    },
+    "up": {
+      "reference_us": 17.258666455745697,
+      "candidates": [
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 69.2773312330246
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 38.47199926773707
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 133.80799690882364
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 69.71466541290283
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 32,
+          "warps": 8
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0,
+          0,
+          0
+        ],
+        "us": 38.47199926773707
+      }
+    },
+    "down": {
+      "reference_us": 10.186666622757912,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 32.002667586008705
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 57.34266837437948
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 32.973334193229675
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 32.033334175745644
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 4
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 60.49199899037679
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 8
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 33.001333475112915
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 4
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0
+        ],
+        "us": 32.002667586008705
+      }
+    }
+  },
+  "native_source_snapshot": "optimization/results/dp4a_mma_build/dp4a_fbc4e448cc0a0ad5.cu",
+  "native_source_sha256": "fbc4e448cc0a0ad5f98dc833fad5d092f2e15ea7c0b65723e75d185152e42a5a"
+}

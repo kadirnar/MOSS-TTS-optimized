@@ -1,0 +1,53 @@
+{
+  "checks": [
+    {
+      "k": 32,
+      "output_rows": 7,
+      "paired": false,
+      "exact": true
+    },
+    {
+      "k": 32,
+      "output_rows": 7,
+      "paired": true,
+      "exact": true
+    },
+    {
+      "k": 96,
+      "output_rows": 7,
+      "paired": false,
+      "exact": true
+    },
+    {
+      "k": 96,
+      "output_rows": 7,
+      "paired": true,
+      "exact": true
+    },
+    {
+      "k": 160,
+      "output_rows": 7,
+      "paired": false,
+      "exact": true
+    },
+    {
+      "k": 160,
+      "output_rows": 7,
+      "paired": true,
+      "exact": true
+    },
+    {
+      "k": 384,
+      "output_rows": 7,
+      "paired": false,
+      "exact": true
+    },
+    {
+      "k": 384,
+      "output_rows": 7,
+      "paired": true,
+      "exact": true
+    }
+  ],
+  "stream": "private CUDA stream"
+}

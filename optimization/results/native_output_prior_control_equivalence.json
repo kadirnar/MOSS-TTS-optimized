@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "seed": 7000,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7001,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7002,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7003,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7004,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7005,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7006,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7007,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7008,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    },
+    {
+      "seed": 7009,
+      "metadata_match": true,
+      "pcm_matches_prior_scaled": true
+    }
+  ],
+  "all_exact": true
+}

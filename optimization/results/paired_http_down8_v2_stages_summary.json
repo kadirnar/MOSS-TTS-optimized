@@ -1,0 +1,44 @@
+{
+  "cached": {
+    "control": {
+      "engine_ttfa_ms": 74.068583548069,
+      "first_llm_ms": 61.0372805967927,
+      "prefill_ms": 6.824491545557976,
+      "first_codec_ms": 4.521874710917473,
+      "prepare_ms": 1.0670078918337822,
+      "seed_ms": 0.28001517057418823
+    },
+    "down8": {
+      "engine_ttfa_ms": 73.55078309774399,
+      "first_llm_ms": 60.520319268107414,
+      "prefill_ms": 6.829023361206055,
+      "first_codec_ms": 4.524230025708675,
+      "prepare_ms": 1.051538623869419,
+      "seed_ms": 0.28147175908088684
+    },
+    "median_paired_engine_gain_ms": 0.5377959460020065
+  },
+  "fresh": {
+    "control": {
+      "engine_ttfa_ms": 74.03793279081583,
+      "first_llm_ms": 60.97496673464775,
+      "prefill_ms": 6.826447322964668,
+      "first_codec_ms": 4.523281008005142,
+      "prepare_ms": 1.15304347127676,
+      "seed_ms": 0.3237547352910042,
+      "registration_ms": 33.470082096755505
+    },
+    "down8": {
+      "engine_ttfa_ms": 73.60800914466381,
+      "first_llm_ms": 60.49941759556532,
+      "prefill_ms": 6.818484514951706,
+      "first_codec_ms": 4.522943869233131,
+      "prepare_ms": 1.148795709013939,
+      "seed_ms": 0.34851860255002975,
+      "registration_ms": 33.27702917158604
+    },
+    "median_paired_engine_gain_ms": 0.47132372856140137,
+    "median_paired_registration_gain_ms": 0.3762831911444664
+  },
+  "scope": "All measured pairs retained. Stage intervals do not explain every HTTP delay; no causal attribution to encoder changes."
+}

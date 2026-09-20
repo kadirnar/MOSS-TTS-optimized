@@ -1,0 +1,172 @@
+{
+  "method": "Twelve rotating/reversing rounds on the same eight-weight ring; each entry median of nine 24-kernel CUDA graph replays. FP32 output-projection scales.",
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "staged",
+        "layout"
+      ],
+      "us": {
+        "control": 5.114666807154815,
+        "staged": 4.994666514297326,
+        "layout": 5.097333341836929
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "layout",
+        "staged"
+      ],
+      "us": {
+        "control": 5.13066661854585,
+        "layout": 5.110666776696841,
+        "staged": 5.0093332926432295
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "layout",
+        "control",
+        "staged"
+      ],
+      "us": {
+        "layout": 5.113333463668823,
+        "control": 5.118666527171929,
+        "staged": 4.999999888241291
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "layout",
+        "staged",
+        "control"
+      ],
+      "us": {
+        "layout": 5.101333372294903,
+        "staged": 5.0200000405311584,
+        "control": 5.149333427349727
+      }
+    },
+    {
+      "round": 4,
+      "order": [
+        "staged",
+        "layout",
+        "control"
+      ],
+      "us": {
+        "staged": 4.994666514297326,
+        "layout": 5.091999967892964,
+        "control": 5.091999967892964
+      }
+    },
+    {
+      "round": 5,
+      "order": [
+        "staged",
+        "control",
+        "layout"
+      ],
+      "us": {
+        "staged": 4.995999857783318,
+        "control": 5.106666746238868,
+        "layout": 5.073333469529946
+      }
+    },
+    {
+      "round": 6,
+      "order": [
+        "control",
+        "staged",
+        "layout"
+      ],
+      "us": {
+        "control": 5.106666746238868,
+        "staged": 5.0013332317272825,
+        "layout": 5.066666752099991
+      }
+    },
+    {
+      "round": 7,
+      "order": [
+        "control",
+        "layout",
+        "staged"
+      ],
+      "us": {
+        "control": 5.079999876519044,
+        "layout": 5.072000126043956,
+        "staged": 5.005333262185256
+      }
+    },
+    {
+      "round": 8,
+      "order": [
+        "layout",
+        "control",
+        "staged"
+      ],
+      "us": {
+        "layout": 5.072000126043956,
+        "control": 5.097333341836929,
+        "staged": 4.990666794280211
+      }
+    },
+    {
+      "round": 9,
+      "order": [
+        "layout",
+        "staged",
+        "control"
+      ],
+      "us": {
+        "layout": 5.087999937434991,
+        "staged": 4.9773333594202995,
+        "control": 5.101333372294903
+      }
+    },
+    {
+      "round": 10,
+      "order": [
+        "staged",
+        "layout",
+        "control"
+      ],
+      "us": {
+        "staged": 5.007999949157238,
+        "layout": 5.073333469529946,
+        "control": 5.101333372294903
+      }
+    },
+    {
+      "round": 11,
+      "order": [
+        "staged",
+        "control",
+        "layout"
+      ],
+      "us": {
+        "staged": 4.9986665447553,
+        "control": 5.119999870657921,
+        "layout": 5.106666746238868
+      }
+    }
+  ],
+  "median_us": {
+    "control": 5.106666746238868,
+    "staged": 4.999333216498295,
+    "layout": 5.089999952663978
+  },
+  "median_paired_gain_percent": {
+    "staged": 2.242708859391844,
+    "layout": 0.364353532083575
+  },
+  "native_source": "/workspace/MOSS-TTS/optimization/results/dp4a_staged_build/dp4a_ca3428a6bed244c6.cu",
+  "promotion_threshold_percent": 2.0
+}

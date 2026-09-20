@@ -1,0 +1,248 @@
+{
+  "utterances": 48,
+  "all_wavs_exact": true,
+  "all_eight_reference_files_exact": true,
+  "records": [
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh0_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh0_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh0_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh0_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh1_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh1_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh1_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "zh1_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en0_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en0_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en0_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en0_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en1_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en1_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en1_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "qkv_load_v1",
+      "id": "en1_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_4",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_5",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_6",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh0_7",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_4",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_5",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_6",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "zh1_7",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_4",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_5",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_6",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en0_7",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_0",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_1",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_2",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_3",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_4",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_5",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_6",
+      "wav_byte_exact": true
+    },
+    {
+      "suite": "expanded_qkv_load_v1",
+      "id": "en1_7",
+      "wav_byte_exact": true
+    }
+  ],
+  "scope": "Existing matched-protocol scores apply to byte-identical artifacts; no ASR rerun and no broad quality guarantee."
+}

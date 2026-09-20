@@ -1,0 +1,341 @@
+{
+  "codebooks": 32,
+  "status": "Experimental; no service deployment",
+  "benchmarks": [
+    {
+      "tag": "g128_reference_v1",
+      "artifact": "all32_gptq_dp4a_g128_reference_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 101.73791460692883,
+        "p95_ms": 102.0712960511446,
+        "min_ms": 101.4948133379221,
+        "samples_ms": [
+          101.79516114294529,
+          101.52116231620312,
+          101.73791460692883,
+          102.14032977819443,
+          101.4948133379221
+        ]
+      },
+      "decode_median_ms": 2.6708226650953293,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_fast_a128_v1",
+      "artifact": "all32_gptq_dp4a_g128_fast_a128_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 89.03533779084682,
+        "p95_ms": 89.1003604978323,
+        "min_ms": 88.78309093415737,
+        "samples_ms": [
+          89.0763159841299,
+          89.1063716262579,
+          88.80921080708504,
+          89.03533779084682,
+          88.78309093415737
+        ]
+      },
+      "decode_median_ms": 2.2633103653788567,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_fused_a128_v1",
+      "artifact": "all32_gptq_dp4a_g128_fused_a128_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 87.06403896212578,
+        "p95_ms": 87.51789964735508,
+        "min_ms": 86.93504706025124,
+        "samples_ms": [
+          87.23767288029194,
+          87.58795633912086,
+          86.97707578539848,
+          86.93504706025124,
+          87.06403896212578
+        ]
+      },
+      "decode_median_ms": 2.2086547687649727,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_fused_a32_v1",
+      "artifact": "all32_gptq_dp4a_g128_fused_a32_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 88.24042417109013,
+        "p95_ms": 89.02890793979168,
+        "min_ms": 88.12386728823185,
+        "samples_ms": [
+          88.12386728823185,
+          88.15626055002213,
+          89.22326564788818,
+          88.25147710740566,
+          88.24042417109013
+        ]
+      },
+      "decode_median_ms": 2.192908897995949,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_fused_a32_v2",
+      "artifact": "all32_gptq_dp4a_g128_fused_a32_v2_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 84.33180674910545,
+        "p95_ms": 84.54002663493156,
+        "min_ms": 84.16841924190521,
+        "samples_ms": [
+          84.32384394109249,
+          84.55708809196949,
+          84.16841924190521,
+          84.47178080677986,
+          84.33180674910545
+        ]
+      },
+      "decode_median_ms": 2.126755192875862,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_fused_a32_triton38_v1",
+      "artifact": "all32_gptq_dp4a_g128_fused_a32_triton38_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 83.15190114080906,
+        "p95_ms": 85.5599157512188,
+        "min_ms": 83.02610367536545,
+        "samples_ms": [
+          85.59554815292358,
+          85.41738614439964,
+          83.10422860085964,
+          83.15190114080906,
+          83.02610367536545
+        ]
+      },
+      "decode_median_ms": 2.1147262305021286,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_diag_a32_v1",
+      "artifact": "all32_gptq_dp4a_g128_diag_a32_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 84.89162661135197,
+        "p95_ms": 85.34411750733852,
+        "min_ms": 84.54584330320358,
+        "samples_ms": [
+          85.4297075420618,
+          85.0017573684454,
+          84.54584330320358,
+          84.89162661135197,
+          84.60114896297455
+        ]
+      },
+      "decode_median_ms": 2.1287277340888977,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_diag_a32_triton38_v1",
+      "artifact": "all32_gptq_dp4a_g128_diag_a32_triton38_v1_b32w4_fr_recip_qf_ag_gu_nl8_db_g128p_na_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 83.3860281854868,
+        "p95_ms": 83.80242735147476,
+        "min_ms": 83.27597565948963,
+        "samples_ms": [
+          83.45375210046768,
+          83.3860281854868,
+          83.3057090640068,
+          83.88959616422653,
+          83.27597565948963
+        ]
+      },
+      "decode_median_ms": 2.0946701988577843,
+      "truncations": 0
+    },
+    {
+      "tag": "post_g128_regression_v1",
+      "artifact": "all32_gptq_dp4a_post_g128_regression_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 85.52286773920059,
+        "p95_ms": 85.71643494069576,
+        "min_ms": 85.361422970891,
+        "samples_ms": [
+          85.52286773920059,
+          85.47071553766727,
+          85.361422970891,
+          85.75535006821156,
+          85.56077443063259
+        ]
+      },
+      "decode_median_ms": 2.1579312160611153,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_residual_diag_v1",
+      "artifact": "all32_gptq_dp4a_g128_residual_diag_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_g128r_aq_na_guq_scaled_np_pb128_160_256_512.json",
+      "ttfa": {
+        "median_ms": 84.01290699839592,
+        "p95_ms": 84.07172374427319,
+        "min_ms": 83.93537439405918,
+        "samples_ms": [
+          84.07780900597572,
+          84.04738269746304,
+          84.01290699839592,
+          83.93537439405918,
+          83.9768685400486
+        ]
+      },
+      "decode_median_ms": 2.1192198619246483,
+      "truncations": 0
+    }
+  ],
+  "quality": [
+    {
+      "tag": "gptq_g128_a128_v1",
+      "artifact": "quality_suite/evaluation_g128_v1_normalized.json",
+      "mean_chinese_cer": 0.05829678362573099,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9148297756910324,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "gptq_g128_a32_v2",
+      "artifact": "quality_suite/evaluation_g128_v1_normalized.json",
+      "mean_chinese_cer": 0.09633893762183235,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9176507256925106,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "gptq_g128_diag_a128_v1",
+      "artifact": "quality_suite/evaluation_g128_diag_v1_normalized.json",
+      "mean_chinese_cer": 0.05366715399610136,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9155566170811653,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "gptq_g128_diag_a32_v1",
+      "artifact": "quality_suite/evaluation_g128_diag_v1_normalized.json",
+      "mean_chinese_cer": 0.07392178362573099,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9115110747516155,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "gptq_g128_diag_a32_triton38_v1",
+      "artifact": "quality_suite/evaluation_g128_diag_v1_normalized.json",
+      "mean_chinese_cer": 0.03804215399610136,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9118525050580502,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "expanded_bf16_v1",
+      "artifact": "quality_suite/evaluation_expanded_v1_normalized.json",
+      "mean_chinese_cer": 0.027887157819691553,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9199202489107847,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 32,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "expanded_g32_v1",
+      "artifact": "quality_suite/evaluation_expanded_v1_normalized.json",
+      "mean_chinese_cer": 0.01177055702917772,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9149093367159367,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 32,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "expanded_g128_diag_a32_triton38_v1",
+      "artifact": "quality_suite/evaluation_expanded_v1_normalized.json",
+      "mean_chinese_cer": 0.04889269283384726,
+      "mean_english_wer": 0.002976190476190476,
+      "speaker_cosine": 0.9270375352352858,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 32,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "g128_residual_diag_v1",
+      "artifact": "quality_suite/evaluation_g128_residual_v1_normalized.json",
+      "mean_chinese_cer": 0.07855141325536062,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9135882221162319,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 16,
+      "finite": true,
+      "truncations": 0
+    },
+    {
+      "tag": "expanded_g128_residual_diag_v1",
+      "artifact": "quality_suite/evaluation_g128_residual_v1_normalized.json",
+      "mean_chinese_cer": 0.019609185791719524,
+      "mean_english_wer": 0.0,
+      "speaker_cosine": 0.9203903041779995,
+      "speaker_top1_reference_accuracy": 1.0,
+      "samples": 32,
+      "finite": true,
+      "truncations": 0
+    }
+  ],
+  "sweeps": [
+    {
+      "artifact": "group128_kernels_v1.json",
+      "configs": 87,
+      "checks": 1566,
+      "exact_checks": 1253,
+      "errors": 0,
+      "max_relative_rms": 0.0003345654986333102
+    },
+    {
+      "artifact": "group128_kernels_triton38_v1.json",
+      "configs": 87,
+      "checks": 1566,
+      "exact_checks": 1100,
+      "errors": 0,
+      "max_relative_rms": 0.0003345654986333102
+    },
+    {
+      "artifact": "group128_norm_a128_v1.json",
+      "configs": 24,
+      "checks": 216,
+      "exact_checks": 84,
+      "errors": 0,
+      "max_relative_rms": 0.0001901367213577032
+    },
+    {
+      "artifact": "group128_norm_a32_v1.json",
+      "configs": 24,
+      "checks": 216,
+      "exact_checks": 123,
+      "errors": 0,
+      "max_relative_rms": 4.815726697415812e-06
+    },
+    {
+      "artifact": "group128_norm_a32_oq_v1.json",
+      "configs": 16,
+      "checks": 144,
+      "exact_checks": 105,
+      "errors": 0,
+      "max_relative_rms": 4.815726697415812e-06
+    }
+  ],
+  "quality_decision": "Retain selected G32. Full G128/Triton 3.8 regresses on expanded texts; residual-only G128 also has higher normalized Chinese error on both suites. No G128 serving deployment."
+}

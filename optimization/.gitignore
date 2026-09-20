@@ -1,0 +1,14 @@
+__pycache__/
+vendor/__pycache__/
+results/*trace.json
+results/*.so
+results/*.pt
+results/*.wav
+*.log
+# Generated tensors/audio in nested experiment folders are not source files.
+results/**/*.pt
+results/**/*.wav
+results/**/*.so
+results/**/*trace.json
+results/**/*.tar.gz
+.pytest_cache/

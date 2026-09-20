@@ -1,0 +1,30 @@
+[
+  {
+    "kernel": "scalar",
+    "k": 4096,
+    "registers": 32,
+    "spill_count": 0,
+    "shared_bytes": 16
+  },
+  {
+    "kernel": "paired",
+    "k": 4096,
+    "registers": 32,
+    "spill_count": 0,
+    "shared_bytes": 16
+  },
+  {
+    "kernel": "scalar",
+    "k": 12288,
+    "registers": 32,
+    "spill_count": 0,
+    "shared_bytes": 32
+  },
+  {
+    "kernel": "paired",
+    "k": 12288,
+    "registers": 62,
+    "spill_count": 0,
+    "shared_bytes": 32
+  }
+]

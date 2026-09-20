@@ -1,0 +1,109 @@
+{
+  "baseline": "optimization/results/quality_suite/gptq_dp4a_attention_quant",
+  "candidate": "optimization/results/quality_suite/gptq_dp4a_attention_native_vector_v2",
+  "all_wavs_exact": true,
+  "rows": [
+    {
+      "name": "en0_0.wav",
+      "equal": true,
+      "sha256": "7cb6a5d3357be29b76ebe4ee19f7440aa9ad713ad5187bc786a4d145ad9b3628"
+    },
+    {
+      "name": "en0_1.wav",
+      "equal": true,
+      "sha256": "70caa5cf753c971a1a852e693fbdc6741cddd9871dbf604b5bbc0fc65e7e3e47"
+    },
+    {
+      "name": "en0_2.wav",
+      "equal": true,
+      "sha256": "2ec1b0df5cfa1afcd1e8b5fd5ad10abf48c3db0f1a9e2f03d7a0afee8c02289d"
+    },
+    {
+      "name": "en0_3.wav",
+      "equal": true,
+      "sha256": "966b5c9cccc53b011589cfea72ce65db94d6c28707346fd773670e1d5acdbfac"
+    },
+    {
+      "name": "en0_reference.wav",
+      "equal": true,
+      "sha256": "0e7acea66f57b296f8fbc87c9cf2c030b4db4a671ae336cec5813e02ad334334"
+    },
+    {
+      "name": "en1_0.wav",
+      "equal": true,
+      "sha256": "b08fa4a1c782d1babe3e2f321ab82124c621bf841e4396ccf8c787f40e6f26b3"
+    },
+    {
+      "name": "en1_1.wav",
+      "equal": true,
+      "sha256": "538838c936fc28d07fb50c48e1ee0a92c037afefa2e6c5168106b29b7b78fb09"
+    },
+    {
+      "name": "en1_2.wav",
+      "equal": true,
+      "sha256": "2c8094ba01762adae47f0ec115527de859dc0a08b1f8e79fd8d7bd9ab5d74b78"
+    },
+    {
+      "name": "en1_3.wav",
+      "equal": true,
+      "sha256": "37782c812e8c2de79cf53a411a3c99910bdf78a4bc153d401507981323f49c19"
+    },
+    {
+      "name": "en1_reference.wav",
+      "equal": true,
+      "sha256": "8e633587017c781cfc850f1917c411c82a1bf740b02b71c19761d8cd6f66ed4c"
+    },
+    {
+      "name": "zh0_0.wav",
+      "equal": true,
+      "sha256": "4ce0d755952d68cbc647bf5ac0d4ab127709089b12ba9f9c9f4d5c2aa8625bda"
+    },
+    {
+      "name": "zh0_1.wav",
+      "equal": true,
+      "sha256": "d829653b8e91f147f514e19bc7c9636fdda6c9fb4834f8281fd8c4280f7529bb"
+    },
+    {
+      "name": "zh0_2.wav",
+      "equal": true,
+      "sha256": "093f7170b1fc10a5d872eda3ee15b7fcf1ea3b6809cae8df632e9bcfacb29811"
+    },
+    {
+      "name": "zh0_3.wav",
+      "equal": true,
+      "sha256": "d854c4132a80925eec8fe247c9517b01b4a3ec598e1b5351e2ac872d95aba083"
+    },
+    {
+      "name": "zh0_reference.wav",
+      "equal": true,
+      "sha256": "83bc8fd970c6d5b692da45fdf24770025b2d65a11b97bfdca7d56ea157671357"
+    },
+    {
+      "name": "zh1_0.wav",
+      "equal": true,
+      "sha256": "08653e94d4f9dc0bf15584e1de723274b3e17d3c277b2a44910825b770f5dc3c"
+    },
+    {
+      "name": "zh1_1.wav",
+      "equal": true,
+      "sha256": "3f1dd9ebdf4d1839c472f90f4b7d461a90cad71c712d802c829ded5f9327d115"
+    },
+    {
+      "name": "zh1_2.wav",
+      "equal": true,
+      "sha256": "1f178ecc1bf73195671e7eb433742f6582ead8e35ae313561f2030d0a258e8cc"
+    },
+    {
+      "name": "zh1_3.wav",
+      "equal": true,
+      "sha256": "4565dd8b4f6db4052eec73e6eac82acf077a25d3b38bd268da82f4298bc4b090"
+    },
+    {
+      "name": "zh1_reference.wav",
+      "equal": true,
+      "sha256": "702a93c9be062860cf8238c8d253f7fbbe311ce6eb067607b7cfab5a8977d412"
+    }
+  ],
+  "metadata_exact": true,
+  "scope": "16 generated WAVs and 4 references; identical artifacts, no new ASR run."
+}

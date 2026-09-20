@@ -1,0 +1,512 @@
+{
+  "codebooks": 32,
+  "cases": 72,
+  "checks": [
+    {
+      "layer": 0,
+      "config": "a32_nominal",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "a32_nominal",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "a32_nominal",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "a32_factored",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "a32_factored",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "a32_factored",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "selected_candidate",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "selected_candidate",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "selected_candidate",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "norm_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "norm_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "norm_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "all_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "all_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "all_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f1",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f1",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a32_f1",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a64_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a64_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 0,
+      "config": "out_a64_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_nominal",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_nominal",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_nominal",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_factored",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_factored",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "a32_factored",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "selected_candidate",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "selected_candidate",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "selected_candidate",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "norm_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "norm_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "norm_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "all_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "all_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "all_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f1",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f1",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a32_f1",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a64_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a64_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 17,
+      "config": "out_a64_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_nominal",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_nominal",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_nominal",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_factored",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_factored",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "a32_factored",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "selected_candidate",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "selected_candidate",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "selected_candidate",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "norm_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "norm_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "norm_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "all_a64",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "all_a64",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "all_a64",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f1",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f1",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a32_f1",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a64_f0",
+      "probe": "real",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a64_f0",
+      "probe": "zero",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    },
+    {
+      "layer": 35,
+      "config": "out_a64_f0",
+      "probe": "spike",
+      "own_eager_graph_bits_exact": true,
+      "finite": true
+    }
+  ],
+  "all_own_eager_graph_bits_exact": true,
+  "scope": "Three actual layers, five chained G64/G32 plans plus three attention-output plans, real/zero/spike changing inputs, private CUDA stream. Graph replay matches each candidate own eager arithmetic. This is memory/concurrency validation, not bit-equivalence to selected G32 or speech acceptance."
+}

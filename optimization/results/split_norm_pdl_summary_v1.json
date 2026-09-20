@@ -1,0 +1,760 @@
+{
+  "ring_v1": {
+    "configs": 11,
+    "checks": 1199,
+    "errors": {},
+    "all_exact": true,
+    "timings": {
+      "control": {
+        "median_us": 35.32162970966763,
+        "median_paired_gain_us": 0.0
+      },
+      "qkv_t1": {
+        "median_us": 35.81703702608745,
+        "median_paired_gain_us": -0.5311104986402739
+      },
+      "qkv_t2": {
+        "median_us": 36.44711110326979,
+        "median_paired_gain_us": -1.0872593632450815
+      },
+      "qkv_t3": {
+        "median_us": 36.540592158282244,
+        "median_paired_gain_us": -1.2362963623470726
+      },
+      "up_t1": {
+        "median_us": 40.80207480324639,
+        "median_paired_gain_us": -5.5031125192289
+      },
+      "up_t2": {
+        "median_us": 41.24548258604827,
+        "median_paired_gain_us": -5.858813171033507
+      },
+      "up_t3": {
+        "median_us": 41.33822299815991,
+        "median_paired_gain_us": -5.987555892379195
+      },
+      "both_t1": {
+        "median_us": 41.191260019938156,
+        "median_paired_gain_us": -5.815852571416784
+      },
+      "both_t2": {
+        "median_us": 42.198220888773605,
+        "median_paired_gain_us": -6.817925859380651
+      },
+      "both_t3": {
+        "median_us": 42.38829568580345,
+        "median_paired_gain_us": -7.05111026763916
+      },
+      "both_t1_no_hint": {
+        "median_us": 41.54859207294605,
+        "median_paired_gain_us": -6.2724440186112
+      }
+    },
+    "resources": {
+      "control": {
+        "up": {
+          "registers": 162,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        }
+      },
+      "qkv_t1": {
+        "up": {
+          "registers": 162,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "qkv_t2": {
+        "up": {
+          "registers": 162,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "20309e5ade8e3d4e8eb42145d8d6d30cb9ab3d502c75b2e6a6b19f7bced76074"
+        }
+      },
+      "qkv_t3": {
+        "up": {
+          "registers": 162,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "871a36b290303bfe33ffb19051030f03cfeea42889a1d40255ebd6589fa02e4a"
+        }
+      },
+      "up_t1": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_t2": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "20309e5ade8e3d4e8eb42145d8d6d30cb9ab3d502c75b2e6a6b19f7bced76074"
+        }
+      },
+      "up_t3": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "871a36b290303bfe33ffb19051030f03cfeea42889a1d40255ebd6589fa02e4a"
+        }
+      },
+      "both_t1": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "both_t2": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "20309e5ade8e3d4e8eb42145d8d6d30cb9ab3d502c75b2e6a6b19f7bced76074"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "20309e5ade8e3d4e8eb42145d8d6d30cb9ab3d502c75b2e6a6b19f7bced76074"
+        }
+      },
+      "both_t3": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "871a36b290303bfe33ffb19051030f03cfeea42889a1d40255ebd6589fa02e4a"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "871a36b290303bfe33ffb19051030f03cfeea42889a1d40255ebd6589fa02e4a"
+        }
+      },
+      "both_t1_no_hint": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "807da13e2f8b5793c378df03cc90d3724f0a333db1dc7cc83c21bd96aa81b148"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 34,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "9c8398a362017c9fa7ac6f3869663244af31c0f3b8820b1a36c7628ec8a65f63"
+        },
+        "qkv_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      }
+    }
+  },
+  "resources_v1": {
+    "configs": 8,
+    "checks": 872,
+    "errors": {},
+    "all_exact": true,
+    "timings": {
+      "control": {
+        "median_us": 35.378222112302424,
+        "median_paired_gain_us": 0.0
+      },
+      "up_uncapped": {
+        "median_us": 40.825331652605975,
+        "median_paired_gain_us": -5.4527410754451076
+      },
+      "up_r128": {
+        "median_us": 44.52636948338261,
+        "median_paired_gain_us": -9.169927349797
+      },
+      "up_r144": {
+        "median_us": 39.96696295561614,
+        "median_paired_gain_us": -4.62148145393089
+      },
+      "up_r160": {
+        "median_us": 37.766666324050334,
+        "median_paired_gain_us": -2.438371932065042
+      },
+      "up_r168": {
+        "median_us": 37.17555602391561,
+        "median_paired_gain_us": -1.7973339116131832
+      },
+      "up_r176": {
+        "median_us": 41.797629109135386,
+        "median_paired_gain_us": -6.4355554404082085
+      },
+      "up_r192": {
+        "median_us": 37.44311244399459,
+        "median_paired_gain_us": -2.0509649206090863
+      }
+    },
+    "resources": {
+      "control": {
+        "up": {
+          "registers": 162,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        }
+      },
+      "up_uncapped": {
+        "up": {
+          "registers": 192,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r128": {
+        "up": {
+          "registers": 128,
+          "spills": 64,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "9e7b8ce704cf05c2b8ece1499cb758da77e94fd7537c1d4afbf378df520fcfae"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r144": {
+        "up": {
+          "registers": 144,
+          "spills": 30,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "f85bec247f50107e04816b40187b5fbe3c4bcf7aae045741009b534dbbed000f"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r160": {
+        "up": {
+          "registers": 160,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "44aebbd98bf1c1cce85b02eed88a26c893522f1cf6624303f08ae1ca7ed54247"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r168": {
+        "up": {
+          "registers": 167,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "441bf04d975fcd6feb12eea5b3053c3f042ce11b3b689ef631f81bb555f093c9"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r176": {
+        "up": {
+          "registers": 169,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "9bc4b29f2fcfb493109e87faf4edb6cdbf54b404b6a9595cb2b20298c4216f41"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      },
+      "up_r192": {
+        "up": {
+          "registers": 168,
+          "spills": 0,
+          "shared_bytes": 64,
+          "bulk_prefetch_ptx_instructions": 2,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "502491addd73ed85c3d6c58e9f70b509ab45cc0de848f53fa3be7f70a9b69797"
+        },
+        "down": {
+          "registers": 128,
+          "spills": 0,
+          "shared_bytes": 1024,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": true,
+          "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+        },
+        "qkv": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048,
+          "bulk_prefetch_ptx_instructions": 1,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+        },
+        "up_normalizer": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 16,
+          "bulk_prefetch_ptx_instructions": 0,
+          "runtime_modulo_in_ptx": false,
+          "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+        }
+      }
+    }
+  }
+}

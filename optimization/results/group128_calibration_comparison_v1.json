@@ -1,0 +1,1018 @@
+{
+  "export": "gptq_v1_g128_d10",
+  "comparison": "gptq_v1_g32_d10",
+  "projections": 144,
+  "gptq_better_than_rtn": 140,
+  "median_g128_to_g32_mse_ratio": 1.535740699302446,
+  "median_g128_gptq_to_rtn_ratio": 0.44355835206467065,
+  "records": [
+    {
+      "name": "00_down",
+      "heldout_g128_gptq": 0.0006783860735595226,
+      "heldout_g32_gptq": 0.0004442367353476584,
+      "g128_to_g32_mse_ratio": 1.5270823405196772,
+      "g128_gptq_to_rtn_ratio": 0.08853166044682016
+    },
+    {
+      "name": "00_out",
+      "heldout_g128_gptq": 0.00012165508815087378,
+      "heldout_g32_gptq": 8.039621025091037e-05,
+      "g128_to_g32_mse_ratio": 1.5131943131547823,
+      "g128_gptq_to_rtn_ratio": 0.0958564556320627
+    },
+    {
+      "name": "00_qkv",
+      "heldout_g128_gptq": 9.922852041199803e-05,
+      "heldout_g32_gptq": 6.54703690088354e-05,
+      "g128_to_g32_mse_ratio": 1.5156248836570154,
+      "g128_gptq_to_rtn_ratio": 0.05542521635638748
+    },
+    {
+      "name": "00_up",
+      "heldout_g128_gptq": 9.71722329268232e-05,
+      "heldout_g32_gptq": 6.611969001824036e-05,
+      "g128_to_g32_mse_ratio": 1.4696413867036644,
+      "g128_gptq_to_rtn_ratio": 0.04330062541078896
+    },
+    {
+      "name": "01_down",
+      "heldout_g128_gptq": 0.0037579378113150597,
+      "heldout_g32_gptq": 0.0022803926840424538,
+      "g128_to_g32_mse_ratio": 1.6479345147930227,
+      "g128_gptq_to_rtn_ratio": 0.40074035150061066
+    },
+    {
+      "name": "01_out",
+      "heldout_g128_gptq": 0.0007935792091302574,
+      "heldout_g32_gptq": 0.0005359210190363228,
+      "g128_to_g32_mse_ratio": 1.4807764221624444,
+      "g128_gptq_to_rtn_ratio": 0.2970824331322014
+    },
+    {
+      "name": "01_qkv",
+      "heldout_g128_gptq": 0.00010280191054334864,
+      "heldout_g32_gptq": 6.907759234309196e-05,
+      "g128_to_g32_mse_ratio": 1.4882092304658798,
+      "g128_gptq_to_rtn_ratio": 0.04878959899961236
+    },
+    {
+      "name": "01_up",
+      "heldout_g128_gptq": 7.58736541683902e-06,
+      "heldout_g32_gptq": 4.9418640628573485e-06,
+      "g128_to_g32_mse_ratio": 1.535324590141005,
+      "g128_gptq_to_rtn_ratio": 0.014170262082286915
+    },
+    {
+      "name": "02_down",
+      "heldout_g128_gptq": 0.0073957559652626514,
+      "heldout_g32_gptq": 0.004388923291116953,
+      "g128_to_g32_mse_ratio": 1.6850957455172288,
+      "g128_gptq_to_rtn_ratio": 0.789222360112149
+    },
+    {
+      "name": "02_out",
+      "heldout_g128_gptq": 0.003736271755769849,
+      "heldout_g32_gptq": 0.0025559961795806885,
+      "g128_to_g32_mse_ratio": 1.4617673475485338,
+      "g128_gptq_to_rtn_ratio": 0.6534967806441514
+    },
+    {
+      "name": "02_qkv",
+      "heldout_g128_gptq": 0.00023031044111121446,
+      "heldout_g32_gptq": 0.00015257010818459094,
+      "g128_to_g32_mse_ratio": 1.5095384269674066,
+      "g128_gptq_to_rtn_ratio": 0.11751611668642543
+    },
+    {
+      "name": "02_up",
+      "heldout_g128_gptq": 1.6777861674199812e-05,
+      "heldout_g32_gptq": 1.0763319551188033e-05,
+      "g128_to_g32_mse_ratio": 1.558799921753499,
+      "g128_gptq_to_rtn_ratio": 0.021141807950567266
+    },
+    {
+      "name": "03_down",
+      "heldout_g128_gptq": 0.002335884142667055,
+      "heldout_g32_gptq": 0.0014399265637621284,
+      "g128_to_g32_mse_ratio": 1.622224494952047,
+      "g128_gptq_to_rtn_ratio": 0.3661005408009108
+    },
+    {
+      "name": "03_out",
+      "heldout_g128_gptq": 0.0025317068211734295,
+      "heldout_g32_gptq": 0.0017545352457091212,
+      "g128_to_g32_mse_ratio": 1.4429501073660125,
+      "g128_gptq_to_rtn_ratio": 0.5075082635331983
+    },
+    {
+      "name": "03_qkv",
+      "heldout_g128_gptq": 0.0005127746844664216,
+      "heldout_g32_gptq": 0.00032987940357998013,
+      "g128_to_g32_mse_ratio": 1.5544307371166264,
+      "g128_gptq_to_rtn_ratio": 0.2168892086231746
+    },
+    {
+      "name": "03_up",
+      "heldout_g128_gptq": 3.650259895948693e-05,
+      "heldout_g32_gptq": 2.4023411242524162e-05,
+      "g128_to_g32_mse_ratio": 1.5194594385860236,
+      "g128_gptq_to_rtn_ratio": 0.028700730692346285
+    },
+    {
+      "name": "04_down",
+      "heldout_g128_gptq": 0.0038834663573652506,
+      "heldout_g32_gptq": 0.0022879408206790686,
+      "g128_to_g32_mse_ratio": 1.6973631145811825,
+      "g128_gptq_to_rtn_ratio": 0.5338815217742702
+    },
+    {
+      "name": "04_out",
+      "heldout_g128_gptq": 0.006811389233916998,
+      "heldout_g32_gptq": 0.004670379683375359,
+      "g128_to_g32_mse_ratio": 1.4584230181890259,
+      "g128_gptq_to_rtn_ratio": 0.9473329198767194
+    },
+    {
+      "name": "04_qkv",
+      "heldout_g128_gptq": 0.0004249073099344969,
+      "heldout_g32_gptq": 0.0002713748544920236,
+      "g128_to_g32_mse_ratio": 1.5657578544993231,
+      "g128_gptq_to_rtn_ratio": 0.2694086876098647
+    },
+    {
+      "name": "04_up",
+      "heldout_g128_gptq": 7.01745884725824e-05,
+      "heldout_g32_gptq": 4.558900764095597e-05,
+      "g128_to_g32_mse_ratio": 1.5392874752890955,
+      "g128_gptq_to_rtn_ratio": 0.09050534159248799
+    },
+    {
+      "name": "05_down",
+      "heldout_g128_gptq": 0.0016514959279447794,
+      "heldout_g32_gptq": 0.0010188124142587185,
+      "g128_to_g32_mse_ratio": 1.6210009858845285,
+      "g128_gptq_to_rtn_ratio": 0.5468961838662441
+    },
+    {
+      "name": "05_out",
+      "heldout_g128_gptq": 0.004313815385103226,
+      "heldout_g32_gptq": 0.0029562085401266813,
+      "g128_to_g32_mse_ratio": 1.459239199991746,
+      "g128_gptq_to_rtn_ratio": 0.6396926552286584
+    },
+    {
+      "name": "05_qkv",
+      "heldout_g128_gptq": 0.0008495940710417926,
+      "heldout_g32_gptq": 0.0005450754542835057,
+      "g128_to_g32_mse_ratio": 1.558672408315602,
+      "g128_gptq_to_rtn_ratio": 0.4058228804695072
+    },
+    {
+      "name": "05_up",
+      "heldout_g128_gptq": 0.0001197333331219852,
+      "heldout_g32_gptq": 6.972077972022817e-05,
+      "g128_to_g32_mse_ratio": 1.717326363853714,
+      "g128_gptq_to_rtn_ratio": 0.3304260594460834
+    },
+    {
+      "name": "06_down",
+      "heldout_g128_gptq": 0.002309286268427968,
+      "heldout_g32_gptq": 0.0015072319656610489,
+      "g128_to_g32_mse_ratio": 1.5321372695377717,
+      "g128_gptq_to_rtn_ratio": 0.6773055687219407
+    },
+    {
+      "name": "06_out",
+      "heldout_g128_gptq": 0.0021778217051178217,
+      "heldout_g32_gptq": 0.0014896848006173968,
+      "g128_to_g32_mse_ratio": 1.4619345677791893,
+      "g128_gptq_to_rtn_ratio": 0.4600252870291252
+    },
+    {
+      "name": "06_qkv",
+      "heldout_g128_gptq": 0.00103107956238091,
+      "heldout_g32_gptq": 0.0006846466567367315,
+      "g128_to_g32_mse_ratio": 1.5060024791407005,
+      "g128_gptq_to_rtn_ratio": 0.3602715623008357
+    },
+    {
+      "name": "06_up",
+      "heldout_g128_gptq": 0.0003006246988661587,
+      "heldout_g32_gptq": 0.00019161765521857888,
+      "g128_to_g32_mse_ratio": 1.5688778704824207,
+      "g128_gptq_to_rtn_ratio": 0.31689761070768946
+    },
+    {
+      "name": "07_down",
+      "heldout_g128_gptq": 0.006061607506126165,
+      "heldout_g32_gptq": 0.00397711805999279,
+      "g128_to_g32_mse_ratio": 1.524120585481728,
+      "g128_gptq_to_rtn_ratio": 0.7936569767682904
+    },
+    {
+      "name": "07_out",
+      "heldout_g128_gptq": 0.004166088532656431,
+      "heldout_g32_gptq": 0.002846023766323924,
+      "g128_to_g32_mse_ratio": 1.4638277381771738,
+      "g128_gptq_to_rtn_ratio": 0.5401677364836512
+    },
+    {
+      "name": "07_qkv",
+      "heldout_g128_gptq": 0.0008570306235924363,
+      "heldout_g32_gptq": 0.0005646476056426764,
+      "g128_to_g32_mse_ratio": 1.5178150319383228,
+      "g128_gptq_to_rtn_ratio": 0.2889465338168736
+    },
+    {
+      "name": "07_up",
+      "heldout_g128_gptq": 0.00016890819824766368,
+      "heldout_g32_gptq": 0.00010601781832519919,
+      "g128_to_g32_mse_ratio": 1.5932057546171574,
+      "g128_gptq_to_rtn_ratio": 0.29991795155994877
+    },
+    {
+      "name": "08_down",
+      "heldout_g128_gptq": 0.007124393712729216,
+      "heldout_g32_gptq": 0.004575582221150398,
+      "g128_to_g32_mse_ratio": 1.557046375387391,
+      "g128_gptq_to_rtn_ratio": 0.8196962485234288
+    },
+    {
+      "name": "08_out",
+      "heldout_g128_gptq": 0.0054606785997748375,
+      "heldout_g32_gptq": 0.003730704775080085,
+      "g128_to_g32_mse_ratio": 1.4637123356022232,
+      "g128_gptq_to_rtn_ratio": 0.6606667942923596
+    },
+    {
+      "name": "08_qkv",
+      "heldout_g128_gptq": 0.0011998377740383148,
+      "heldout_g32_gptq": 0.0007930042338557541,
+      "g128_to_g32_mse_ratio": 1.513028206929552,
+      "g128_gptq_to_rtn_ratio": 0.3447247210083668
+    },
+    {
+      "name": "08_up",
+      "heldout_g128_gptq": 0.0030009765177965164,
+      "heldout_g32_gptq": 0.001984500791877508,
+      "g128_to_g32_mse_ratio": 1.5122072664719548,
+      "g128_gptq_to_rtn_ratio": 0.49109415068511103
+    },
+    {
+      "name": "09_down",
+      "heldout_g128_gptq": 0.00726330978795886,
+      "heldout_g32_gptq": 0.0046355645172297955,
+      "g128_to_g32_mse_ratio": 1.5668662923279515,
+      "g128_gptq_to_rtn_ratio": 0.7435213396831226
+    },
+    {
+      "name": "09_out",
+      "heldout_g128_gptq": 0.007354122586548328,
+      "heldout_g32_gptq": 0.004956644028425217,
+      "g128_to_g32_mse_ratio": 1.4836898805671987,
+      "g128_gptq_to_rtn_ratio": 0.7272113007801164
+    },
+    {
+      "name": "09_qkv",
+      "heldout_g128_gptq": 0.0013744353782385588,
+      "heldout_g32_gptq": 0.0008776712929829955,
+      "g128_to_g32_mse_ratio": 1.566002430781552,
+      "g128_gptq_to_rtn_ratio": 0.45687295968200065
+    },
+    {
+      "name": "09_up",
+      "heldout_g128_gptq": 0.002360141836106777,
+      "heldout_g32_gptq": 0.0015633952571079135,
+      "g128_to_g32_mse_ratio": 1.5096258130351154,
+      "g128_gptq_to_rtn_ratio": 0.46248629203115554
+    },
+    {
+      "name": "10_down",
+      "heldout_g128_gptq": 0.006953077856451273,
+      "heldout_g32_gptq": 0.004352197516709566,
+      "g128_to_g32_mse_ratio": 1.5976016322228122,
+      "g128_gptq_to_rtn_ratio": 0.6928045236662409
+    },
+    {
+      "name": "10_out",
+      "heldout_g128_gptq": 0.002327463822439313,
+      "heldout_g32_gptq": 0.0015873119700700045,
+      "g128_to_g32_mse_ratio": 1.466292616905463,
+      "g128_gptq_to_rtn_ratio": 0.4923974873513936
+    },
+    {
+      "name": "10_qkv",
+      "heldout_g128_gptq": 0.0012202347861602902,
+      "heldout_g32_gptq": 0.0008008289150893688,
+      "g128_to_g32_mse_ratio": 1.523714695072065,
+      "g128_gptq_to_rtn_ratio": 0.30723859032279094
+    },
+    {
+      "name": "10_up",
+      "heldout_g128_gptq": 0.0022341615986078978,
+      "heldout_g32_gptq": 0.0014759179903194308,
+      "g128_to_g32_mse_ratio": 1.5137437264548563,
+      "g128_gptq_to_rtn_ratio": 0.46686413915120273
+    },
+    {
+      "name": "11_down",
+      "heldout_g128_gptq": 0.006546531803905964,
+      "heldout_g32_gptq": 0.004209861624985933,
+      "g128_to_g32_mse_ratio": 1.5550467894364195,
+      "g128_gptq_to_rtn_ratio": 0.6375738635971966
+    },
+    {
+      "name": "11_out",
+      "heldout_g128_gptq": 0.0004749968065880239,
+      "heldout_g32_gptq": 0.00032659657881595194,
+      "g128_to_g32_mse_ratio": 1.4543839017239075,
+      "g128_gptq_to_rtn_ratio": 0.3882445357622091
+    },
+    {
+      "name": "11_qkv",
+      "heldout_g128_gptq": 0.0009750128374435008,
+      "heldout_g32_gptq": 0.0006391273927874863,
+      "g128_to_g32_mse_ratio": 1.5255375508020173,
+      "g128_gptq_to_rtn_ratio": 0.23495809449811866
+    },
+    {
+      "name": "11_up",
+      "heldout_g128_gptq": 0.0024364537093788385,
+      "heldout_g32_gptq": 0.0016288732877001166,
+      "g128_to_g32_mse_ratio": 1.4957908191980869,
+      "g128_gptq_to_rtn_ratio": 0.39061732795144744
+    },
+    {
+      "name": "12_down",
+      "heldout_g128_gptq": 0.006140062119811773,
+      "heldout_g32_gptq": 0.004097938537597656,
+      "g128_to_g32_mse_ratio": 1.4983294804151153,
+      "g128_gptq_to_rtn_ratio": 0.532228360437295
+    },
+    {
+      "name": "12_out",
+      "heldout_g128_gptq": 0.0026580237317830324,
+      "heldout_g32_gptq": 0.0018079944420605898,
+      "g128_to_g32_mse_ratio": 1.4701503887111818,
+      "g128_gptq_to_rtn_ratio": 0.36520850598918114
+    },
+    {
+      "name": "12_qkv",
+      "heldout_g128_gptq": 0.0010362439788877964,
+      "heldout_g32_gptq": 0.0006823188159614801,
+      "g128_to_g32_mse_ratio": 1.518709369647952,
+      "g128_gptq_to_rtn_ratio": 0.252325829268348
+    },
+    {
+      "name": "12_up",
+      "heldout_g128_gptq": 0.003372982842847705,
+      "heldout_g32_gptq": 0.0022507139947265387,
+      "g128_to_g32_mse_ratio": 1.4986279246277676,
+      "g128_gptq_to_rtn_ratio": 0.4277662323703696
+    },
+    {
+      "name": "13_down",
+      "heldout_g128_gptq": 0.0065476540476083755,
+      "heldout_g32_gptq": 0.004232347942888737,
+      "g128_to_g32_mse_ratio": 1.547050038409497,
+      "g128_gptq_to_rtn_ratio": 0.5888881452681612
+    },
+    {
+      "name": "13_out",
+      "heldout_g128_gptq": 0.001552628236822784,
+      "heldout_g32_gptq": 0.0010470305569469929,
+      "g128_to_g32_mse_ratio": 1.4828872247530667,
+      "g128_gptq_to_rtn_ratio": 0.3086187423770773
+    },
+    {
+      "name": "13_qkv",
+      "heldout_g128_gptq": 0.0008998652338050306,
+      "heldout_g32_gptq": 0.0005914903013035655,
+      "g128_to_g32_mse_ratio": 1.5213524749634069,
+      "g128_gptq_to_rtn_ratio": 0.24748181005773756
+    },
+    {
+      "name": "13_up",
+      "heldout_g128_gptq": 0.002538595348596573,
+      "heldout_g32_gptq": 0.001686588628217578,
+      "g128_to_g32_mse_ratio": 1.505165697268701,
+      "g128_gptq_to_rtn_ratio": 0.37021046804298563
+    },
+    {
+      "name": "14_down",
+      "heldout_g128_gptq": 0.0063787791877985,
+      "heldout_g32_gptq": 0.004131016321480274,
+      "g128_to_g32_mse_ratio": 1.54411861183661,
+      "g128_gptq_to_rtn_ratio": 0.5595009327245654
+    },
+    {
+      "name": "14_out",
+      "heldout_g128_gptq": 0.001858593081124127,
+      "heldout_g32_gptq": 0.001276763970963657,
+      "g128_to_g32_mse_ratio": 1.4557060845955152,
+      "g128_gptq_to_rtn_ratio": 0.3059848768443487
+    },
+    {
+      "name": "14_qkv",
+      "heldout_g128_gptq": 0.0007311768131330609,
+      "heldout_g32_gptq": 0.0004770894011016935,
+      "g128_to_g32_mse_ratio": 1.532578194872134,
+      "g128_gptq_to_rtn_ratio": 0.16938671101112154
+    },
+    {
+      "name": "14_up",
+      "heldout_g128_gptq": 0.0018580631585791707,
+      "heldout_g32_gptq": 0.0012312773615121841,
+      "g128_to_g32_mse_ratio": 1.5090532942936628,
+      "g128_gptq_to_rtn_ratio": 0.30389097728327197
+    },
+    {
+      "name": "15_down",
+      "heldout_g128_gptq": 0.006959579419344664,
+      "heldout_g32_gptq": 0.004534093197435141,
+      "g128_to_g32_mse_ratio": 1.5349440596592896,
+      "g128_gptq_to_rtn_ratio": 0.595329461074381
+    },
+    {
+      "name": "15_out",
+      "heldout_g128_gptq": 0.003301553661003709,
+      "heldout_g32_gptq": 0.002277107210829854,
+      "g128_to_g32_mse_ratio": 1.4498894234323347,
+      "g128_gptq_to_rtn_ratio": 0.3351833652614905
+    },
+    {
+      "name": "15_qkv",
+      "heldout_g128_gptq": 0.0007599309319630265,
+      "heldout_g32_gptq": 0.0004918291233479977,
+      "g128_to_g32_mse_ratio": 1.545111698123926,
+      "g128_gptq_to_rtn_ratio": 0.21321489667217558
+    },
+    {
+      "name": "15_up",
+      "heldout_g128_gptq": 0.0021557514555752277,
+      "heldout_g32_gptq": 0.0014225116465240717,
+      "g128_to_g32_mse_ratio": 1.5154543450261644,
+      "g128_gptq_to_rtn_ratio": 0.32955439008774323
+    },
+    {
+      "name": "16_down",
+      "heldout_g128_gptq": 0.004930151626467705,
+      "heldout_g32_gptq": 0.003193887183442712,
+      "g128_to_g32_mse_ratio": 1.5436210934518553,
+      "g128_gptq_to_rtn_ratio": 0.429981715435118
+    },
+    {
+      "name": "16_out",
+      "heldout_g128_gptq": 0.002829974051564932,
+      "heldout_g32_gptq": 0.0019517696928232908,
+      "g128_to_g32_mse_ratio": 1.4499528617391806,
+      "g128_gptq_to_rtn_ratio": 0.363887021749312
+    },
+    {
+      "name": "16_qkv",
+      "heldout_g128_gptq": 0.0008333506993949413,
+      "heldout_g32_gptq": 0.0005433143815025687,
+      "g128_to_g32_mse_ratio": 1.533827794306235,
+      "g128_gptq_to_rtn_ratio": 0.23154908657115003
+    },
+    {
+      "name": "16_up",
+      "heldout_g128_gptq": 0.0017177106346935034,
+      "heldout_g32_gptq": 0.0011378631461411715,
+      "g128_to_g32_mse_ratio": 1.5095933465450264,
+      "g128_gptq_to_rtn_ratio": 0.27523108931135737
+    },
+    {
+      "name": "17_down",
+      "heldout_g128_gptq": 0.0064919390715658665,
+      "heldout_g32_gptq": 0.0042046234011650085,
+      "g128_to_g32_mse_ratio": 1.544000128469792,
+      "g128_gptq_to_rtn_ratio": 0.5915213228987748
+    },
+    {
+      "name": "17_out",
+      "heldout_g128_gptq": 0.001001086551696062,
+      "heldout_g32_gptq": 0.0006883290479891002,
+      "g128_to_g32_mse_ratio": 1.454372083556053,
+      "g128_gptq_to_rtn_ratio": 0.27108143336358353
+    },
+    {
+      "name": "17_qkv",
+      "heldout_g128_gptq": 0.000955857103690505,
+      "heldout_g32_gptq": 0.0006378378602676094,
+      "g128_to_g32_mse_ratio": 1.498589474274024,
+      "g128_gptq_to_rtn_ratio": 0.20550063691869905
+    },
+    {
+      "name": "17_up",
+      "heldout_g128_gptq": 0.001907786587253213,
+      "heldout_g32_gptq": 0.0012554455315694213,
+      "g128_to_g32_mse_ratio": 1.51960920587953,
+      "g128_gptq_to_rtn_ratio": 0.32072803738442135
+    },
+    {
+      "name": "18_down",
+      "heldout_g128_gptq": 0.006090098060667515,
+      "heldout_g32_gptq": 0.0038259297143667936,
+      "g128_to_g32_mse_ratio": 1.5917955935778214,
+      "g128_gptq_to_rtn_ratio": 0.6106897340379484
+    },
+    {
+      "name": "18_out",
+      "heldout_g128_gptq": 0.0036808978766202927,
+      "heldout_g32_gptq": 0.002525140531361103,
+      "g128_to_g32_mse_ratio": 1.4577002075350682,
+      "g128_gptq_to_rtn_ratio": 0.31903581189165225
+    },
+    {
+      "name": "18_qkv",
+      "heldout_g128_gptq": 0.0008768407278694212,
+      "heldout_g32_gptq": 0.000567109789699316,
+      "g128_to_g32_mse_ratio": 1.5461569237489725,
+      "g128_gptq_to_rtn_ratio": 0.24081908173552058
+    },
+    {
+      "name": "18_up",
+      "heldout_g128_gptq": 0.001778368721716106,
+      "heldout_g32_gptq": 0.0011609200155362487,
+      "g128_to_g32_mse_ratio": 1.5318615390524102,
+      "g128_gptq_to_rtn_ratio": 0.3417416924448234
+    },
+    {
+      "name": "19_down",
+      "heldout_g128_gptq": 0.006514180451631546,
+      "heldout_g32_gptq": 0.004117333795875311,
+      "g128_to_g32_mse_ratio": 1.5821356184813977,
+      "g128_gptq_to_rtn_ratio": 0.6091235447690323
+    },
+    {
+      "name": "19_out",
+      "heldout_g128_gptq": 0.004327894188463688,
+      "heldout_g32_gptq": 0.0029427369590848684,
+      "g128_to_g32_mse_ratio": 1.4707037185578338,
+      "g128_gptq_to_rtn_ratio": 0.5057755532218228
+    },
+    {
+      "name": "19_qkv",
+      "heldout_g128_gptq": 0.0007467347895726562,
+      "heldout_g32_gptq": 0.0004814115527551621,
+      "g128_to_g32_mse_ratio": 1.5511359985007112,
+      "g128_gptq_to_rtn_ratio": 0.1822006903989507
+    },
+    {
+      "name": "19_up",
+      "heldout_g128_gptq": 0.0017669126391410828,
+      "heldout_g32_gptq": 0.001150216325186193,
+      "g128_to_g32_mse_ratio": 1.536156808463887,
+      "g128_gptq_to_rtn_ratio": 0.3607405227102809
+    },
+    {
+      "name": "20_down",
+      "heldout_g128_gptq": 0.0067271459847688675,
+      "heldout_g32_gptq": 0.004210797604173422,
+      "g128_to_g32_mse_ratio": 1.5975942368024132,
+      "g128_gptq_to_rtn_ratio": 0.7213474759642151
+    },
+    {
+      "name": "20_out",
+      "heldout_g128_gptq": 0.0034128916449844837,
+      "heldout_g32_gptq": 0.0023628317285329103,
+      "g128_to_g32_mse_ratio": 1.4444074047979536,
+      "g128_gptq_to_rtn_ratio": 0.45084983606000717
+    },
+    {
+      "name": "20_qkv",
+      "heldout_g128_gptq": 0.0011030775494873524,
+      "heldout_g32_gptq": 0.0007059199269860983,
+      "g128_to_g32_mse_ratio": 1.5626100175368407,
+      "g128_gptq_to_rtn_ratio": 0.2754681208266366
+    },
+    {
+      "name": "20_up",
+      "heldout_g128_gptq": 0.00207451730966568,
+      "heldout_g32_gptq": 0.0013514020247384906,
+      "g128_to_g32_mse_ratio": 1.535085246055569,
+      "g128_gptq_to_rtn_ratio": 0.4294284831604451
+    },
+    {
+      "name": "21_down",
+      "heldout_g128_gptq": 0.005943881813436747,
+      "heldout_g32_gptq": 0.0036924600135535,
+      "g128_to_g32_mse_ratio": 1.6097349169982083,
+      "g128_gptq_to_rtn_ratio": 0.7330869070900966
+    },
+    {
+      "name": "21_out",
+      "heldout_g128_gptq": 0.006095734424889088,
+      "heldout_g32_gptq": 0.004170677624642849,
+      "g128_to_g32_mse_ratio": 1.4615693116322048,
+      "g128_gptq_to_rtn_ratio": 0.6504352784479257
+    },
+    {
+      "name": "21_qkv",
+      "heldout_g128_gptq": 0.0008099679835140705,
+      "heldout_g32_gptq": 0.0005100321141071618,
+      "g128_to_g32_mse_ratio": 1.5880725176138415,
+      "g128_gptq_to_rtn_ratio": 0.22444800073500112
+    },
+    {
+      "name": "21_up",
+      "heldout_g128_gptq": 0.001944517600350082,
+      "heldout_g32_gptq": 0.001260485383681953,
+      "g128_to_g32_mse_ratio": 1.5426736601022935,
+      "g128_gptq_to_rtn_ratio": 0.46525342253452395
+    },
+    {
+      "name": "22_down",
+      "heldout_g128_gptq": 0.005649650003761053,
+      "heldout_g32_gptq": 0.003523506922647357,
+      "g128_to_g32_mse_ratio": 1.603416745813071,
+      "g128_gptq_to_rtn_ratio": 0.6993659751324368
+    },
+    {
+      "name": "22_out",
+      "heldout_g128_gptq": 0.008598380722105503,
+      "heldout_g32_gptq": 0.00586728984490037,
+      "g128_to_g32_mse_ratio": 1.4654774094003378,
+      "g128_gptq_to_rtn_ratio": 0.7231711954744429
+    },
+    {
+      "name": "22_qkv",
+      "heldout_g128_gptq": 0.000816133338958025,
+      "heldout_g32_gptq": 0.0005118244444020092,
+      "g128_to_g32_mse_ratio": 1.5945571726484369,
+      "g128_gptq_to_rtn_ratio": 0.213623292910707
+    },
+    {
+      "name": "22_up",
+      "heldout_g128_gptq": 0.0017195643158629537,
+      "heldout_g32_gptq": 0.0011129454942420125,
+      "g128_to_g32_mse_ratio": 1.5450570802967198,
+      "g128_gptq_to_rtn_ratio": 0.49150005536924635
+    },
+    {
+      "name": "23_down",
+      "heldout_g128_gptq": 0.007196793332695961,
+      "heldout_g32_gptq": 0.004577020648866892,
+      "g128_to_g32_mse_ratio": 1.5723751070420957,
+      "g128_gptq_to_rtn_ratio": 0.6287883337214694
+    },
+    {
+      "name": "23_out",
+      "heldout_g128_gptq": 0.004213232081383467,
+      "heldout_g32_gptq": 0.0028577034827321768,
+      "g128_to_g32_mse_ratio": 1.4743419346486235,
+      "g128_gptq_to_rtn_ratio": 0.514955475062996
+    },
+    {
+      "name": "23_qkv",
+      "heldout_g128_gptq": 0.0009297277429141104,
+      "heldout_g32_gptq": 0.0006005650502629578,
+      "g128_to_g32_mse_ratio": 1.5480883253313333,
+      "g128_gptq_to_rtn_ratio": 0.290080910132567
+    },
+    {
+      "name": "23_up",
+      "heldout_g128_gptq": 0.0015068287029862404,
+      "heldout_g32_gptq": 0.000977277522906661,
+      "g128_to_g32_mse_ratio": 1.541863664790494,
+      "g128_gptq_to_rtn_ratio": 0.33037500164631584
+    },
+    {
+      "name": "24_down",
+      "heldout_g128_gptq": 0.007683259434998035,
+      "heldout_g32_gptq": 0.004679898731410503,
+      "g128_to_g32_mse_ratio": 1.6417576268113672,
+      "g128_gptq_to_rtn_ratio": 0.6813093819311695
+    },
+    {
+      "name": "24_out",
+      "heldout_g128_gptq": 0.003980641253292561,
+      "heldout_g32_gptq": 0.0027336881030350924,
+      "g128_to_g32_mse_ratio": 1.4561431674934062,
+      "g128_gptq_to_rtn_ratio": 0.38631087561867905
+    },
+    {
+      "name": "24_qkv",
+      "heldout_g128_gptq": 0.00165406649466604,
+      "heldout_g32_gptq": 0.0010522132506594062,
+      "g128_to_g32_mse_ratio": 1.571987896587941,
+      "g128_gptq_to_rtn_ratio": 0.35438710183987776
+    },
+    {
+      "name": "24_up",
+      "heldout_g128_gptq": 0.0023127037566155195,
+      "heldout_g32_gptq": 0.0014964326983317733,
+      "g128_to_g32_mse_ratio": 1.5454779618179468,
+      "g128_gptq_to_rtn_ratio": 0.4098701296343383
+    },
+    {
+      "name": "25_down",
+      "heldout_g128_gptq": 0.0059969462454319,
+      "heldout_g32_gptq": 0.003799632890149951,
+      "g128_to_g32_mse_ratio": 1.5782962246111185,
+      "g128_gptq_to_rtn_ratio": 0.7275114688176056
+    },
+    {
+      "name": "25_out",
+      "heldout_g128_gptq": 0.004948189482092857,
+      "heldout_g32_gptq": 0.0033632616978138685,
+      "g128_to_g32_mse_ratio": 1.4712472375578733,
+      "g128_gptq_to_rtn_ratio": 0.48899951321655255
+    },
+    {
+      "name": "25_qkv",
+      "heldout_g128_gptq": 0.0010596099309623241,
+      "heldout_g32_gptq": 0.0006739062373526394,
+      "g128_to_g32_mse_ratio": 1.5723402933987907,
+      "g128_gptq_to_rtn_ratio": 0.21113401996809833
+    },
+    {
+      "name": "25_up",
+      "heldout_g128_gptq": 0.0020211022347211838,
+      "heldout_g32_gptq": 0.0013005959335714579,
+      "g128_to_g32_mse_ratio": 1.5539816652903133,
+      "g128_gptq_to_rtn_ratio": 0.44815449869145385
+    },
+    {
+      "name": "26_down",
+      "heldout_g128_gptq": 0.006738119758665562,
+      "heldout_g32_gptq": 0.004316750913858414,
+      "g128_to_g32_mse_ratio": 1.5609239201255816,
+      "g128_gptq_to_rtn_ratio": 0.8023062281022272
+    },
+    {
+      "name": "26_out",
+      "heldout_g128_gptq": 0.00906972773373127,
+      "heldout_g32_gptq": 0.006177340634167194,
+      "g128_to_g32_mse_ratio": 1.4682252883329974,
+      "g128_gptq_to_rtn_ratio": 0.8223087679899511
+    },
+    {
+      "name": "26_qkv",
+      "heldout_g128_gptq": 0.001785311964340508,
+      "heldout_g32_gptq": 0.0011496265651658177,
+      "g128_to_g32_mse_ratio": 1.5529494693635593,
+      "g128_gptq_to_rtn_ratio": 0.2907311631268942
+    },
+    {
+      "name": "26_up",
+      "heldout_g128_gptq": 0.003028758568689227,
+      "heldout_g32_gptq": 0.0018764083506539464,
+      "g128_to_g32_mse_ratio": 1.6141255007918056,
+      "g128_gptq_to_rtn_ratio": 0.5568857033191082
+    },
+    {
+      "name": "27_down",
+      "heldout_g128_gptq": 0.005466545466333628,
+      "heldout_g32_gptq": 0.003497435711324215,
+      "g128_to_g32_mse_ratio": 1.563015282492172,
+      "g128_gptq_to_rtn_ratio": 0.7753195357613166
+    },
+    {
+      "name": "27_out",
+      "heldout_g128_gptq": 0.012991598807275295,
+      "heldout_g32_gptq": 0.008916576392948627,
+      "g128_to_g32_mse_ratio": 1.4570164864565351,
+      "g128_gptq_to_rtn_ratio": 1.0791193807497537
+    },
+    {
+      "name": "27_qkv",
+      "heldout_g128_gptq": 0.0010470765409991145,
+      "heldout_g32_gptq": 0.0006300556706264615,
+      "g128_to_g32_mse_ratio": 1.6618794017963698,
+      "g128_gptq_to_rtn_ratio": 0.2280888304747924
+    },
+    {
+      "name": "27_up",
+      "heldout_g128_gptq": 0.0027187843807041645,
+      "heldout_g32_gptq": 0.0016914522275328636,
+      "g128_to_g32_mse_ratio": 1.6073669338387155,
+      "g128_gptq_to_rtn_ratio": 0.5717089996692271
+    },
+    {
+      "name": "28_down",
+      "heldout_g128_gptq": 0.00723095191642642,
+      "heldout_g32_gptq": 0.004593382589519024,
+      "g128_to_g32_mse_ratio": 1.574210677100071,
+      "g128_gptq_to_rtn_ratio": 0.62435707109814
+    },
+    {
+      "name": "28_out",
+      "heldout_g128_gptq": 0.007581320591270924,
+      "heldout_g32_gptq": 0.005161712411791086,
+      "g128_to_g32_mse_ratio": 1.4687607496211217,
+      "g128_gptq_to_rtn_ratio": 0.8267619666670052
+    },
+    {
+      "name": "28_qkv",
+      "heldout_g128_gptq": 0.0006664285319857299,
+      "heldout_g32_gptq": 0.00043611638830043375,
+      "g128_to_g32_mse_ratio": 1.5280978882330782,
+      "g128_gptq_to_rtn_ratio": 0.20289309335670835
+    },
+    {
+      "name": "28_up",
+      "heldout_g128_gptq": 0.002609708346426487,
+      "heldout_g32_gptq": 0.001647367374971509,
+      "g128_to_g32_mse_ratio": 1.5841690117674094,
+      "g128_gptq_to_rtn_ratio": 0.5000351540138389
+    },
+    {
+      "name": "29_down",
+      "heldout_g128_gptq": 0.0024381871335208416,
+      "heldout_g32_gptq": 0.0015431186184287071,
+      "g128_to_g32_mse_ratio": 1.5800386985179047,
+      "g128_gptq_to_rtn_ratio": 0.4943059112033687
+    },
+    {
+      "name": "29_out",
+      "heldout_g128_gptq": 0.0038566121365875006,
+      "heldout_g32_gptq": 0.002632110146805644,
+      "g128_to_g32_mse_ratio": 1.4652168494042412,
+      "g128_gptq_to_rtn_ratio": 0.3972859630842127
+    },
+    {
+      "name": "29_qkv",
+      "heldout_g128_gptq": 0.0021394614595919847,
+      "heldout_g32_gptq": 0.0013528912095353007,
+      "g128_to_g32_mse_ratio": 1.5813994832052016,
+      "g128_gptq_to_rtn_ratio": 0.4389622054378875
+    },
+    {
+      "name": "29_up",
+      "heldout_g128_gptq": 0.0031436069402843714,
+      "heldout_g32_gptq": 0.001989586278796196,
+      "g128_to_g32_mse_ratio": 1.5800304685386242,
+      "g128_gptq_to_rtn_ratio": 0.5166371557072807
+    },
+    {
+      "name": "30_down",
+      "heldout_g128_gptq": 0.003067121608182788,
+      "heldout_g32_gptq": 0.0019655954092741013,
+      "g128_to_g32_mse_ratio": 1.5604033229378993,
+      "g128_gptq_to_rtn_ratio": 0.6320929874134046
+    },
+    {
+      "name": "30_out",
+      "heldout_g128_gptq": 0.007826192304491997,
+      "heldout_g32_gptq": 0.005363058298826218,
+      "g128_to_g32_mse_ratio": 1.4592778725162976,
+      "g128_gptq_to_rtn_ratio": 0.7519318602884653
+    },
+    {
+      "name": "30_qkv",
+      "heldout_g128_gptq": 0.0009761925903148949,
+      "heldout_g32_gptq": 0.0006242331000976264,
+      "g128_to_g32_mse_ratio": 1.563827022569332,
+      "g128_gptq_to_rtn_ratio": 0.18559052426310513
+    },
+    {
+      "name": "30_up",
+      "heldout_g128_gptq": 0.0023259324952960014,
+      "heldout_g32_gptq": 0.0014581630239263177,
+      "g128_to_g32_mse_ratio": 1.5951114224753054,
+      "g128_gptq_to_rtn_ratio": 0.527360183725546
+    },
+    {
+      "name": "31_down",
+      "heldout_g128_gptq": 0.007224996108561754,
+      "heldout_g32_gptq": 0.004489349201321602,
+      "g128_to_g32_mse_ratio": 1.6093638040976666,
+      "g128_gptq_to_rtn_ratio": 0.7178746404394724
+    },
+    {
+      "name": "31_out",
+      "heldout_g128_gptq": 0.013357308693230152,
+      "heldout_g32_gptq": 0.009147091768682003,
+      "g128_to_g32_mse_ratio": 1.4602792921530725,
+      "g128_gptq_to_rtn_ratio": 1.0602033859414897
+    },
+    {
+      "name": "31_qkv",
+      "heldout_g128_gptq": 0.0008480336982756853,
+      "heldout_g32_gptq": 0.0005472123157233,
+      "g128_to_g32_mse_ratio": 1.5497343058786286,
+      "g128_gptq_to_rtn_ratio": 0.19989049117184543
+    },
+    {
+      "name": "31_up",
+      "heldout_g128_gptq": 0.001742955413646996,
+      "heldout_g32_gptq": 0.001068400451913476,
+      "g128_to_g32_mse_ratio": 1.6313690344527751,
+      "g128_gptq_to_rtn_ratio": 0.5097868880692308
+    },
+    {
+      "name": "32_down",
+      "heldout_g128_gptq": 0.009352129884064198,
+      "heldout_g32_gptq": 0.005890679080039263,
+      "g128_to_g32_mse_ratio": 1.5876149009295315,
+      "g128_gptq_to_rtn_ratio": 0.6463577317544478
+    },
+    {
+      "name": "32_out",
+      "heldout_g128_gptq": 0.01287369430065155,
+      "heldout_g32_gptq": 0.008812898769974709,
+      "g128_to_g32_mse_ratio": 1.4607786423817615,
+      "g128_gptq_to_rtn_ratio": 0.9835720345546763
+    },
+    {
+      "name": "32_qkv",
+      "heldout_g128_gptq": 0.0002914851647801697,
+      "heldout_g32_gptq": 0.0001839857141021639,
+      "g128_to_g32_mse_ratio": 1.5842815090432147,
+      "g128_gptq_to_rtn_ratio": 0.16911450486137625
+    },
+    {
+      "name": "32_up",
+      "heldout_g128_gptq": 0.001959617715328932,
+      "heldout_g32_gptq": 0.0012190971756353974,
+      "g128_to_g32_mse_ratio": 1.6074335618959765,
+      "g128_gptq_to_rtn_ratio": 0.49847817905995706
+    },
+    {
+      "name": "33_down",
+      "heldout_g128_gptq": 0.0076172975823283195,
+      "heldout_g32_gptq": 0.004906649701297283,
+      "g128_to_g32_mse_ratio": 1.5524437337180115,
+      "g128_gptq_to_rtn_ratio": 0.7551044958338673
+    },
+    {
+      "name": "33_out",
+      "heldout_g128_gptq": 0.012793739326298237,
+      "heldout_g32_gptq": 0.00875045731663704,
+      "g128_to_g32_mse_ratio": 1.4620652228054185,
+      "g128_gptq_to_rtn_ratio": 1.0339942498389791
+    },
+    {
+      "name": "33_qkv",
+      "heldout_g128_gptq": 0.0024081680458039045,
+      "heldout_g32_gptq": 0.0015696118352934718,
+      "g128_to_g32_mse_ratio": 1.534244321847667,
+      "g128_gptq_to_rtn_ratio": 0.25345873169610916
+    },
+    {
+      "name": "33_up",
+      "heldout_g128_gptq": 0.0021568534430116415,
+      "heldout_g32_gptq": 0.0013189096935093403,
+      "g128_to_g32_mse_ratio": 1.635330647447673,
+      "g128_gptq_to_rtn_ratio": 0.5254167889892022
+    },
+    {
+      "name": "34_down",
+      "heldout_g128_gptq": 0.010023631155490875,
+      "heldout_g32_gptq": 0.0063074142672121525,
+      "g128_to_g32_mse_ratio": 1.589182306860157,
+      "g128_gptq_to_rtn_ratio": 0.6637857860259383
+    },
+    {
+      "name": "34_out",
+      "heldout_g128_gptq": 0.01219109632074833,
+      "heldout_g32_gptq": 0.008349454030394554,
+      "g128_to_g32_mse_ratio": 1.4601070053645457,
+      "g128_gptq_to_rtn_ratio": 1.1481074775576792
+    },
+    {
+      "name": "34_qkv",
+      "heldout_g128_gptq": 0.0012920682784169912,
+      "heldout_g32_gptq": 0.0008346838294528425,
+      "g128_to_g32_mse_ratio": 1.547973295785515,
+      "g128_gptq_to_rtn_ratio": 0.21086534728242254
+    },
+    {
+      "name": "34_up",
+      "heldout_g128_gptq": 0.0010365997441112995,
+      "heldout_g32_gptq": 0.0006514947745017707,
+      "g128_to_g32_mse_ratio": 1.5911098364588372,
+      "g128_gptq_to_rtn_ratio": 0.5342450688076491
+    },
+    {
+      "name": "35_down",
+      "heldout_g128_gptq": 0.00036211981205269694,
+      "heldout_g32_gptq": 0.00022524231462739408,
+      "g128_to_g32_mse_ratio": 1.6076899789088552,
+      "g128_gptq_to_rtn_ratio": 0.047638160191158775
+    },
+    {
+      "name": "35_out",
+      "heldout_g128_gptq": 0.0011234062258154154,
+      "heldout_g32_gptq": 0.0007637215312570333,
+      "g128_to_g32_mse_ratio": 1.470963145384111,
+      "g128_gptq_to_rtn_ratio": 0.91233014562512
+    },
+    {
+      "name": "35_qkv",
+      "heldout_g128_gptq": 0.001065663993358612,
+      "heldout_g32_gptq": 0.0006723658298142254,
+      "g128_to_g32_mse_ratio": 1.5849466854272694,
+      "g128_gptq_to_rtn_ratio": 0.4986290129383397
+    },
+    {
+      "name": "35_up",
+      "heldout_g128_gptq": 0.0012930129887536168,
+      "heldout_g32_gptq": 0.000865218520630151,
+      "g128_to_g32_mse_ratio": 1.494435172067164,
+      "g128_gptq_to_rtn_ratio": 0.4292807264577901
+    }
+  ]
+}

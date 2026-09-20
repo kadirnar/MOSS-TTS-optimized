@@ -1,0 +1,126 @@
+{
+  "vllm": "0.29.0",
+  "torch": "2.13.0+cu130",
+  "cases": [
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 27.272000908851624,
+      "relative_rms_vs_dequantized_bf16": 0.00014386631664820015
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 20.297333598136902,
+      "relative_rms_vs_dequantized_bf16": 5.828902430948801e-05
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 12.158667047818502,
+      "relative_rms_vs_dequantized_bf16": 0.00015775753126945347
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 10.059999922911325,
+      "relative_rms_vs_dequantized_bf16": 9.203312600902791e-08
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 27.707998951276142,
+      "relative_rms_vs_dequantized_bf16": 9.91746928775683e-05
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 20.23066704471906,
+      "relative_rms_vs_dequantized_bf16": 0.0001121078894357197
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 12.058666596810022,
+      "relative_rms_vs_dequantized_bf16": 6.596388175239554e-06
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 10.0853331387043,
+      "relative_rms_vs_dequantized_bf16": 4.7356163122458383e-05
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 37.3306671778361,
+      "relative_rms_vs_dequantized_bf16": 0.00011612473463173956
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 25.48266698916753,
+      "relative_rms_vs_dequantized_bf16": 5.595526454271749e-05
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 15.1719997326533,
+      "relative_rms_vs_dequantized_bf16": 0.00017997348913922906
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 11.962667107582092,
+      "relative_rms_vs_dequantized_bf16": 0.00019596934725996107
+    }
+  ]
+}

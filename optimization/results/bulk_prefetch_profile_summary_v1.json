@@ -1,0 +1,16 @@
+{
+  "kernel_events": 13937,
+  "counts": {
+    "other": 5621,
+    "projection": 4752,
+    "llm_attention": 3564
+  },
+  "interval_classes_us": {
+    "no_kernel": 21819.130859375,
+    "other": 24190.5390625,
+    "projection": 39932.9443359375,
+    "llm_attention+projection": 9226.533203125,
+    "llm_attention": 6743.0615234375
+  },
+  "scope": "Post-timing 34-step truncated request, 33 full LLM steps and two codec chunks. Resident intervals include PDL dependency waits; not utilization or pure arithmetic time. No speedup derived by subtracting separate profile traces."
+}

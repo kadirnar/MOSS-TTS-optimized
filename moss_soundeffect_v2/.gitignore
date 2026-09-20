@@ -1,0 +1,33 @@
+# Python build & install artifacts
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+*.so
+
+# Generated outputs
+output/
+cache/
+*.wav
+*.mp3
+*.flac
+
+# Model weights — must come from HuggingFace, never from this repo
+*.safetensors
+*.pth
+*.ckpt
+*.bin
+
+# Local environment
+.env
+.venv/
+venv/
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*~

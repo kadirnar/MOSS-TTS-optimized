@@ -1,0 +1,26 @@
+{
+  "control": {
+    "registration_http_ms": 35.603851079940796,
+    "registration_response": {
+      "voice": "0ae4dde38f8b4dcd8bfa153a26e5be32",
+      "reference_encode_ms": 23.48886989057064
+    },
+    "engine_ttfa_median_ms": 74.14078246802092,
+    "first_audio_graph_median_ms": 61.19163800030947,
+    "completed_metric_rows": 23,
+    "measured_complete_rows": 20,
+    "method": "Completed stage records in sequential request order, excluding fresh request and one warmup; next twenty match the measured client requests."
+  },
+  "cluster": {
+    "registration_http_ms": 32.45781920850277,
+    "registration_response": {
+      "voice": "383b87a380b34b09bf4b97382d4e5941",
+      "reference_encode_ms": 22.974707186222076
+    },
+    "engine_ttfa_median_ms": 74.01801366358995,
+    "first_audio_graph_median_ms": 61.03987526148558,
+    "completed_metric_rows": 23,
+    "measured_complete_rows": 20,
+    "method": "Completed stage records in sequential request order, excluding fresh request and one warmup; next twenty match the measured client requests."
+  }
+}

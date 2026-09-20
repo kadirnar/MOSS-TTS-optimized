@@ -1,0 +1,764 @@
+{
+  "codebooks": 32,
+  "all_exact": true,
+  "checks": [
+    {
+      "variant": "static",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 0,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 0,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 0,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 17,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 17,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 17,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "static",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "up_r128_s1",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "down_r112_s1",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "qkv_r48_s1",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_branches",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 35,
+      "source": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 35,
+      "source": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "variant": "parallel_rows",
+      "layer": 35,
+      "source": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "cases": 54,
+  "scope": "Six configurations, layers 0/17/35, three changing inputs per private captured graph. Selected control and all returned residual, projection and quantized buffers compared. PDL graph edge types checked. Rejected performance experiments only; no model promotion or full-quality claim."
+}

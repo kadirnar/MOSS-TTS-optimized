@@ -1,0 +1,2762 @@
+{
+  "codebooks": 32,
+  "complete": true,
+  "layers": 1,
+  "configs": {
+    "control": null,
+    "g128_e0_r0": {
+      "blocks": 128,
+      "early": false,
+      "cap": null
+    },
+    "g128_e0_r128": {
+      "blocks": 128,
+      "early": false,
+      "cap": 128
+    },
+    "g128_e0_r160": {
+      "blocks": 128,
+      "early": false,
+      "cap": 160
+    },
+    "g128_e1_r0": {
+      "blocks": 128,
+      "early": true,
+      "cap": null
+    },
+    "g128_e1_r128": {
+      "blocks": 128,
+      "early": true,
+      "cap": 128
+    },
+    "g128_e1_r160": {
+      "blocks": 128,
+      "early": true,
+      "cap": 160
+    },
+    "g256_e0_r0": {
+      "blocks": 256,
+      "early": false,
+      "cap": null
+    },
+    "g256_e0_r128": {
+      "blocks": 256,
+      "early": false,
+      "cap": 128
+    },
+    "g256_e0_r160": {
+      "blocks": 256,
+      "early": false,
+      "cap": 160
+    },
+    "g256_e1_r0": {
+      "blocks": 256,
+      "early": true,
+      "cap": null
+    },
+    "g256_e1_r128": {
+      "blocks": 256,
+      "early": true,
+      "cap": 128
+    },
+    "g256_e1_r160": {
+      "blocks": 256,
+      "early": true,
+      "cap": 160
+    },
+    "g384_e0_r0": {
+      "blocks": 384,
+      "early": false,
+      "cap": null
+    },
+    "g384_e0_r128": {
+      "blocks": 384,
+      "early": false,
+      "cap": 128
+    },
+    "g384_e0_r160": {
+      "blocks": 384,
+      "early": false,
+      "cap": 160
+    },
+    "g384_e1_r0": {
+      "blocks": 384,
+      "early": true,
+      "cap": null
+    },
+    "g384_e1_r128": {
+      "blocks": 384,
+      "early": true,
+      "cap": 128
+    },
+    "g384_e1_r160": {
+      "blocks": 384,
+      "early": true,
+      "cap": 160
+    },
+    "g512_e0_r128": {
+      "blocks": 512,
+      "early": false,
+      "cap": 128
+    },
+    "g512_e1_r128": {
+      "blocks": 512,
+      "early": true,
+      "cap": 128
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "graph_checks": [
+    {
+      "config": "control",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "control",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e0_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g128_e1_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e0_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g256_e1_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e0_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r0",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g384_e1_r160",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e0_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 0,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 1,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 31,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 32,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 127,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 128,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 144,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    },
+    {
+      "config": "g512_e1_r128",
+      "position": 255,
+      "outputs_exact": true,
+      "whole_cache_exact": true
+    }
+  ],
+  "edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e0_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e0_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e0_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e1_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e1_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g128_e1_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e0_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e0_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e0_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e1_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e1_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g256_e1_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e0_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e0_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e0_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e1_r0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e1_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g384_e1_r160": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g512_e0_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "g512_e1_r128": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "resources": {
+    "control": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+    },
+    "g128_e0_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 155,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/c39ae8010d60a345d9dc03fb",
+        "cubin_sha256": "7da780acbda1699a0bc318ffc1511c43d6ec1b0852c31725127038eb3639d1b4",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "8dc27c33b2976133a52f532cf27bb3761da3f30fcad8934e142882808c853f6d",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g128_e0_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/4d052cd11bfdae567de05c23",
+        "cubin_sha256": "8a398e9492eed08dfd42329a7379c4bdbc9771cbbc40f17162a2e5ee4fe596b5",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "c299a5ee6071cfdb22f2120570e96eb6b9f77c3daef9a4a0aa11226451c9c638",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g128_e0_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 40,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/3ae0161664707f3dd3e9d86b",
+        "cubin_sha256": "daa390cc132061eefd5a3ebff307eff9a9d0f3f66a07293d529d845c94836e18",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "43fb032d56337fc246dbcac4e97ecfbbc2414118a533fb524392cfc5c8a9ad6a",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g128_e1_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 148,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/292312bb376074c322a72d19",
+        "cubin_sha256": "b323742fb654ceaa2b1e54719ca7c05456c2c3fb042282141186e6cdeabcd275",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "110975666127cfce058149462a038e59894e1900266e99428107fb1fe7163e58",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g128_e1_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/d1758217e37377a0cdec5eb2",
+        "cubin_sha256": "1e1d64b8ce26034f33b73b0a6471baf15e406e606c1a32136e51b2ff411dd76c",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "c2e0728b54a910b92267adf46d14b1996b3736fd2ff714dd086e6287d7871549",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g128_e1_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 128,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/56570f0659e52f407122b0ba",
+        "cubin_sha256": "92371521c39ad3a21cb526122f5de5c98eb375c201e8c0f4aa02169fd70f4a1d",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "921306864f026d83183aa341934891803bfc1416f533ed16485021ea2d948418",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e0_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 155,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/98dd7e0de7f9033756a97a03",
+        "cubin_sha256": "b7c3271a1c3c33fa44487f1943848dde4c107b13bf4eba3259372497c5b6949b",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "6db99935c4bed4ae83a0bcac77dda95afa297f4243c52ea63656e3f482bd0d32",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e0_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/4015dff087b839a2987a937a",
+        "cubin_sha256": "2ee2f3e0135eafa513ef9887bd4246611ca994443906a9a6ddfaaf4fe165c083",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "8bdd2d196b5d5f3ec55c4c7d444f13dc4c640e7a2bdbf8bb963bb326d9d8e1dd",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e0_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 40,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/ea48fc332e111a9dc123bff9",
+        "cubin_sha256": "d3d5766fb680d3c9496fce67e1aa70638303c8f86dbf241bfd809f47b9543dd5",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "870a027cbb3ee6b97a48b45d7cb4746b6666f4cb3d58f46e5fa2aaaa08239781",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e1_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 148,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/6ada072eb25878b2c673322b",
+        "cubin_sha256": "7aa6236590f659b2e489b82d0eba23c4f7cce2a1ca002c662c1eff6d656159d9",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "d7e8234fafd68e0d827192ea3c2bb5ac5aaa19b025aa1d83eeddaa666cf9cad0",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e1_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/f9468c38121d049e9124de38",
+        "cubin_sha256": "c2037af3f678a584ef7797f086e0ad79f6e000a0b2a6b83ebcb7bfc52fb15b9b",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "924ededf787187d7205325baa9d922bafb89ab549a17ae0d751a65e78bd3bbdc",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g256_e1_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 256,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/cd6cd1080a84aefabef7eea1",
+        "cubin_sha256": "58a789d101cab1b91b9c0aa44bca74c01e5694b29dcca2849146d76f5d389bfd",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "8cd2e5bcfe35af40daa0372724e2f61d825971d7f759d03ecf289d427cbe91cc",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e0_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 155,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/8857558df772dd8d851923bd",
+        "cubin_sha256": "d6e98330e08238ce566d377482492aa7c23cf957e8baee7b5bdac92088dec31e",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "4752ed3b325abb054daeae42115e69916fade0891ce9e341aa3ca38a6248e90f",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e0_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/9551ea43ca2743e15f0d7201",
+        "cubin_sha256": "7f31cd2f10a7747353f40da37ec5122ad34f3f31ef28f1e8f391de305e5e6253",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "82a42e0c608992ee5a6e7298fcb1381951560168e2ad2d94d16097865e364e2c",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e0_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 40,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/53f5e7e3c6ad79e33a9a7b98",
+        "cubin_sha256": "14ca883cbbbccfa667ce4088eaff8daf95a9bdded8686ab503b37ba7f556b196",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "b0c86543c4026a419c3c423d80c3639e02db1ab431359ef5785aa65fe9ed1ff6",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e1_r0": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 148,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": null,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/ba53daff0257ad2518ae462b",
+        "cubin_sha256": "eadd4ef3a599fb4d1b5c5745c28196358504437754c031e404acfbca6f96e210",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "9856d49d5c45a8dba65a812b33d0e8f137bde0fc189bd3c44c9339fcd6685e8a",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e1_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/9f5d8d83e842fc700851469f",
+        "cubin_sha256": "e98d72a285796fdfac6b072b9ea86e6ce29f8e4d0c4c13295f25f336aaba5c86",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "021b146a50bcf531dc51e98ed9362122f4fc875a15df8c429334c22a48e7702a",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g384_e1_r160": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 160,
+        "local_bytes_per_thread": 0,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 3,
+        "sm_count": 132,
+        "grid_blocks": 384,
+        "cooperative_capacity": 396,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 160,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/9e2b55b5a3cc64035d5aff5c",
+        "cubin_sha256": "7e28212e9d4f6ec148a7bc931146bf11baa6b224e8bc2c14c1fa271488426f99",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "fae3077a2349f51e949bf82992d02fbc7ec0d589bbec4060c999977100d877ec",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g512_e0_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 512,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": false,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/be4911ae35a46dfd87f4b621",
+        "cubin_sha256": "27c9939d3ef73b84888386834211dfb6f224f97f105c8796ad5070c85f40648d",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "ec8f676979351398a5444c51cdc9309c1b2d2a9f084f5ee4f0d54e30dbb97b1a",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    },
+    "g512_e1_r128": {
+      "down_source_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "(True, 1e-06)": {
+        "registers": 128,
+        "local_bytes_per_thread": 24,
+        "static_shared_bytes": 0,
+        "max_active_blocks_per_sm": 4,
+        "sm_count": 132,
+        "grid_blocks": 512,
+        "cooperative_capacity": 528,
+        "dynamic_shared_bytes": 2048,
+        "early_release": true,
+        "register_cap": 128,
+        "build": "/workspace/MOSS-TTS/optimization/results/cooperative_mlp_build/78376032871bab3097e1b60e",
+        "cubin_sha256": "2ef29b7804c438e950b30bd3ba261d0b64accf8753af060950db7b2d0ab362cc",
+        "up_cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e",
+        "down_cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+        "ptx_sha256": "66e1b7829e731fcbefe51d1199081520de338405e422aa05480893ba7ac24283",
+        "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2"
+      }
+    }
+  },
+  "errors": {},
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "g128_e0_r0",
+        "g128_e0_r128",
+        "g128_e0_r160",
+        "g128_e1_r0",
+        "g128_e1_r128",
+        "g128_e1_r160",
+        "g256_e0_r0",
+        "g256_e0_r128",
+        "g256_e0_r160",
+        "g256_e1_r0",
+        "g256_e1_r128",
+        "g256_e1_r160",
+        "g384_e0_r0",
+        "g384_e0_r128",
+        "g384_e0_r160",
+        "g384_e1_r0",
+        "g384_e1_r128",
+        "g384_e1_r160",
+        "g512_e0_r128",
+        "g512_e1_r128"
+      ],
+      "us": {
+        "control": 46.5280016263326,
+        "g128_e0_r0": 62.67733375231425,
+        "g128_e0_r128": 63.59466910362244,
+        "g128_e0_r160": 62.23999957243601,
+        "g128_e1_r0": 62.78400123119354,
+        "g128_e1_r128": 64.26666676998138,
+        "g128_e1_r160": 61.09866499900818,
+        "g256_e0_r0": 53.9626677831014,
+        "g256_e0_r128": 55.09333312511444,
+        "g256_e0_r160": 56.13866448402405,
+        "g256_e1_r0": 54.68800167242686,
+        "g256_e1_r128": 56.30933245023092,
+        "g256_e1_r160": 54.28266525268555,
+        "g384_e0_r0": 50.91199775536855,
+        "g384_e0_r128": 51.872000098228455,
+        "g384_e0_r160": 52.36266553401947,
+        "g384_e1_r0": 51.33866767088572,
+        "g384_e1_r128": 52.76800195376078,
+        "g384_e1_r160": 50.80533524354299,
+        "g512_e0_r128": 50.474668542544045,
+        "g512_e1_r128": 51.17866893609365
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "g512_e1_r128",
+        "g512_e0_r128",
+        "g384_e1_r160",
+        "g384_e1_r128",
+        "g384_e1_r0",
+        "g384_e0_r160",
+        "g384_e0_r128",
+        "g384_e0_r0",
+        "g256_e1_r160",
+        "g256_e1_r128",
+        "g256_e1_r0",
+        "g256_e0_r160",
+        "g256_e0_r128",
+        "g256_e0_r0",
+        "g128_e1_r160",
+        "g128_e1_r128",
+        "g128_e1_r0",
+        "g128_e0_r160",
+        "g128_e0_r128",
+        "g128_e0_r0",
+        "control"
+      ],
+      "us": {
+        "g512_e1_r128": 50.82666873931885,
+        "g512_e0_r128": 50.26133358478546,
+        "g384_e1_r160": 51.10399921735128,
+        "g384_e1_r128": 52.522664268811546,
+        "g384_e1_r0": 50.96533397833506,
+        "g384_e0_r160": 52.18133330345154,
+        "g384_e0_r128": 51.967998345692955,
+        "g384_e0_r0": 51.039998730023704,
+        "g256_e1_r160": 54.29333448410034,
+        "g256_e1_r128": 57.461331288019814,
+        "g256_e1_r0": 53.90933156013489,
+        "g256_e0_r160": 55.306668082873024,
+        "g256_e0_r128": 54.07999952634176,
+        "g256_e0_r0": 53.74933282534281,
+        "g128_e1_r160": 61.333333452542625,
+        "g128_e1_r128": 64.1599992911021,
+        "g128_e1_r0": 62.22933530807495,
+        "g128_e0_r160": 61.941335598627724,
+        "g128_e0_r128": 63.9573335647583,
+        "g128_e0_r0": 62.35733131567637,
+        "control": 46.69866462548574
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "g128_e0_r0",
+        "g128_e0_r128",
+        "g128_e0_r160",
+        "g128_e1_r0",
+        "g128_e1_r128",
+        "g128_e1_r160",
+        "g256_e0_r0",
+        "g256_e0_r128",
+        "g256_e0_r160",
+        "g256_e1_r0",
+        "g256_e1_r128",
+        "g256_e1_r160",
+        "g384_e0_r0",
+        "g384_e0_r128",
+        "g384_e0_r160",
+        "g384_e1_r0",
+        "g384_e1_r128",
+        "g384_e1_r160",
+        "g512_e0_r128",
+        "g512_e1_r128",
+        "control"
+      ],
+      "us": {
+        "g128_e0_r0": 62.18666831652323,
+        "g128_e0_r128": 63.893333077430725,
+        "g128_e0_r160": 62.29333579540253,
+        "g128_e1_r0": 62.9013329744339,
+        "g128_e1_r128": 64.04266754786174,
+        "g128_e1_r160": 61.42933170000712,
+        "g256_e0_r0": 53.81333331267039,
+        "g256_e0_r128": 55.04000186920166,
+        "g256_e0_r160": 55.97866574923197,
+        "g256_e1_r0": 54.45333321889242,
+        "g256_e1_r128": 56.10666672388712,
+        "g256_e1_r160": 54.485330979029335,
+        "g384_e0_r0": 50.96533397833506,
+        "g384_e0_r128": 52.03199883302053,
+        "g384_e0_r160": 51.94666484991709,
+        "g384_e1_r0": 51.10399921735128,
+        "g384_e1_r128": 52.4586687485377,
+        "g384_e1_r160": 51.23200019200643,
+        "g512_e0_r128": 50.5920002857844,
+        "g512_e1_r128": 51.274667183558144,
+        "control": 45.46133180459341
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "control",
+        "g512_e1_r128",
+        "g512_e0_r128",
+        "g384_e1_r160",
+        "g384_e1_r128",
+        "g384_e1_r0",
+        "g384_e0_r160",
+        "g384_e0_r128",
+        "g384_e0_r0",
+        "g256_e1_r160",
+        "g256_e1_r128",
+        "g256_e1_r0",
+        "g256_e0_r160",
+        "g256_e0_r128",
+        "g256_e0_r0",
+        "g128_e1_r160",
+        "g128_e1_r128",
+        "g128_e1_r0",
+        "g128_e0_r160",
+        "g128_e0_r128",
+        "g128_e0_r0"
+      ],
+      "us": {
+        "control": 45.52533229192098,
+        "g512_e1_r128": 50.901333491007485,
+        "g512_e0_r128": 49.15200173854828,
+        "g384_e1_r160": 51.24266445636749,
+        "g384_e1_r128": 52.5439977645874,
+        "g384_e1_r0": 51.21066669623057,
+        "g384_e0_r160": 52.14933554331461,
+        "g384_e0_r128": 52.07466582457224,
+        "g384_e0_r0": 51.370665431022644,
+        "g256_e1_r160": 54.655998945236206,
+        "g256_e1_r128": 56.320001681645714,
+        "g256_e1_r0": 54.560000697771706,
+        "g256_e0_r160": 56.373332937558494,
+        "g256_e0_r128": 55.1146666208903,
+        "g256_e0_r0": 53.354665637016296,
+        "g128_e1_r160": 61.57866617043813,
+        "g128_e1_r128": 63.722665111223854,
+        "g128_e1_r0": 62.28266656398773,
+        "g128_e0_r160": 62.60266900062561,
+        "g128_e0_r128": 63.59466910362244,
+        "g128_e0_r0": 62.538668513298035
+      }
+    }
+  ],
+  "method": "Selected Triton 3.8 exact gate/up + selected Triton 3.7 eight-row down versus cooperative PTX composition. Both followed by selected early clustered QKV, historical-KV attention, reduction/quantization and register-preloaded output. Actual 36-layer weights and three frozen inputs, nearest saved attention metadata, synthetic layer-35 wrap; not TTFA. Bytewise intermediates and entire poisoned KV caches, private CUDA graphs, balanced rotated/reversed event rings.",
+  "summary": {
+    "control": {
+      "median_us": 46.02666695912679,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    },
+    "g128_e0_r0": {
+      "median_us": 62.4479999144872,
+      "median_paired_gain_us": -16.437334318955735,
+      "faster_rounds": 0
+    },
+    "g128_e0_r128": {
+      "median_us": 63.74400109052658,
+      "median_paired_gain_us": -17.664002875487007,
+      "faster_rounds": 0
+    },
+    "g128_e0_r160": {
+      "median_us": 62.266667683919266,
+      "median_paired_gain_us": -16.272000968456265,
+      "faster_rounds": 0
+    },
+    "g128_e1_r0": {
+      "median_us": 62.53333389759064,
+      "median_paired_gain_us": -16.506666938463844,
+      "faster_rounds": 0
+    },
+    "g128_e1_r128": {
+      "median_us": 64.10133341948192,
+      "median_paired_gain_us": -17.967998981475827,
+      "faster_rounds": 0
+    },
+    "g128_e1_r160": {
+      "median_us": 61.38133257627487,
+      "median_paired_gain_us": -15.301334361235298,
+      "faster_rounds": 0
+    },
+    "g256_e0_r0": {
+      "median_us": 53.7813330690066,
+      "median_paired_gain_us": -7.6319997509320565,
+      "faster_rounds": 0
+    },
+    "g256_e0_r128": {
+      "median_us": 55.06666749715805,
+      "median_paired_gain_us": -9.072000781695046,
+      "faster_rounds": 0
+    },
+    "g256_e0_r160": {
+      "median_us": 56.058665116628006,
+      "median_paired_gain_us": -10.063998401165005,
+      "faster_rounds": 0
+    },
+    "g256_e1_r0": {
+      "median_us": 54.50666695833206,
+      "median_paired_gain_us": -8.576000730196633,
+      "faster_rounds": 0
+    },
+    "g256_e1_r128": {
+      "median_us": 56.314667065938316,
+      "median_paired_gain_us": -10.704000790913895,
+      "faster_rounds": 0
+    },
+    "g256_e1_r160": {
+      "median_us": 54.389332731564835,
+      "median_paired_gain_us": -8.389331400394436,
+      "faster_rounds": 0
+    },
+    "g384_e0_r0": {
+      "median_us": 51.00266635417938,
+      "median_paired_gain_us": -4.943999151388802,
+      "faster_rounds": 0
+    },
+    "g384_e0_r128": {
+      "median_us": 51.99999858935674,
+      "median_paired_gain_us": -5.946666002273556,
+      "faster_rounds": 0
+    },
+    "g384_e0_r160": {
+      "median_us": 52.16533442338307,
+      "median_paired_gain_us": -6.159998476505276,
+      "faster_rounds": 0
+    },
+    "g384_e1_r0": {
+      "median_us": 51.157332956790924,
+      "median_paired_gain_us": -5.226666728655495,
+      "faster_rounds": 0
+    },
+    "g384_e1_r128": {
+      "median_us": 52.53333101669948,
+      "median_paired_gain_us": -6.618668635686234,
+      "faster_rounds": 0
+    },
+    "g384_e1_r160": {
+      "median_us": 51.167999704678856,
+      "median_paired_gain_us": -5.061333378156025,
+      "faster_rounds": 0
+    },
+    "g512_e0_r128": {
+      "median_us": 50.36800106366475,
+      "median_paired_gain_us": -3.786668181419369,
+      "faster_rounds": 0
+    },
+    "g512_e1_r128": {
+      "median_us": 51.04000121355057,
+      "median_paired_gain_us": -5.013334254423775,
+      "faster_rounds": 0
+    }
+  }
+}

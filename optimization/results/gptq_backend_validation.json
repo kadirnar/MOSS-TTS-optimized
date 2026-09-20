@@ -1,0 +1,117 @@
+{
+  "calibration": "optimization/results/gptq_v1_g32_d10",
+  "torch": "2.13.0+cu130",
+  "private_stream": true,
+  "nibble_roundtrip": "exact",
+  "scope": "Kernel/packing correctness against explicitly dequantized weights, not quality acceptance.",
+  "cases": [
+    {
+      "projection": "00_qkv",
+      "shape": [
+        6144,
+        4096
+      ],
+      "marlin_relative_rms": 5.058480746811256e-05,
+      "dp4a_relative_rms": 9.28143748524235e-08
+    },
+    {
+      "projection": "00_out",
+      "shape": [
+        4096,
+        4096
+      ],
+      "marlin_relative_rms": 4.155991994991837e-09,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "00_up",
+      "shape": [
+        24576,
+        4096
+      ],
+      "marlin_relative_rms": 5.2251398301450536e-05,
+      "dp4a_relative_rms": 6.100960035837488e-06
+    },
+    {
+      "projection": "00_down",
+      "shape": [
+        4096,
+        12288
+      ],
+      "marlin_relative_rms": 1.9405866623856127e-05,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "17_qkv",
+      "shape": [
+        6144,
+        4096
+      ],
+      "marlin_relative_rms": 7.487156381102977e-06,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "17_out",
+      "shape": [
+        4096,
+        4096
+      ],
+      "marlin_relative_rms": 1.7622917312110076e-06,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "17_up",
+      "shape": [
+        24576,
+        4096
+      ],
+      "marlin_relative_rms": 0.00014405498222913593,
+      "dp4a_relative_rms": 4.567035648506135e-05
+    },
+    {
+      "projection": "17_down",
+      "shape": [
+        4096,
+        12288
+      ],
+      "marlin_relative_rms": 0.00012838705151807517,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "35_qkv",
+      "shape": [
+        6144,
+        4096
+      ],
+      "marlin_relative_rms": 8.39503773022443e-05,
+      "dp4a_relative_rms": 1.0217368981102481e-05
+    },
+    {
+      "projection": "35_out",
+      "shape": [
+        4096,
+        4096
+      ],
+      "marlin_relative_rms": 1.3560885463448358e-06,
+      "dp4a_relative_rms": 0.0
+    },
+    {
+      "projection": "35_up",
+      "shape": [
+        24576,
+        4096
+      ],
+      "marlin_relative_rms": 0.000439168798038736,
+      "dp4a_relative_rms": 2.935313547780538e-09
+    },
+    {
+      "projection": "35_down",
+      "shape": [
+        4096,
+        12288
+      ],
+      "marlin_relative_rms": 4.25150319642853e-05,
+      "dp4a_relative_rms": 0.0
+    }
+  ]
+}

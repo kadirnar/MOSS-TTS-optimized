@@ -1,0 +1,40 @@
+[
+  {
+    "package": "torch",
+    "latest": "2.14.0",
+    "installed": "2.13.0",
+    "requires": [
+      "filelock",
+      "typing-extensions>=4.10.0",
+      "setuptools>=77.0.3",
+      "sympy>=1.13.3",
+      "networkx>=2.5.1",
+      "jinja2",
+      "fsspec>=0.8.5",
+      "cuda-toolkit[cublas,cudart,cufft,cufile,cupti,curand,cusolver,cusparse,nvjitlink,nvrtc,nvtx]==13.0.3; platform_system == \"Linux\"",
+      "cuda-bindings<14,>=13.0.3; platform_system == \"Linux\" and python_version < \"3.15\"",
+      "nvidia-cudnn-cu13==9.24.0.43; platform_system == \"Linux\"",
+      "nvidia-cusparselt-cu13==0.8.1; platform_system == \"Linux\"",
+      "nvidia-nccl-cu13==2.30.7; platform_system == \"Linux\"",
+      "nvidia-nvshmem-cu13==3.4.5; platform_system == \"Linux\"",
+      "triton~=3.8.0; platform_system == \"Linux\" and python_version < \"3.15\"",
+      "optree>=0.13.0; extra == \"optree\"",
+      "opt-einsum>=3.3; extra == \"opt-einsum\"",
+      "pyyaml; extra == \"pyyaml\""
+    ]
+  },
+  {
+    "package": "torchaudio",
+    "latest": "2.11.0",
+    "installed": "2.11.0",
+    "requires": null
+  },
+  {
+    "package": "triton",
+    "latest": "3.8.0",
+    "installed": "3.7.1",
+    "requires": [
+      "importlib-metadata; python_version < \"3.10\""
+    ]
+  }
+]

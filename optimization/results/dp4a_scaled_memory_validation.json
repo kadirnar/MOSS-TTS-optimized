@@ -1,0 +1,162 @@
+{
+  "integer": [
+    {
+      "mode": 1,
+      "dots": 102401,
+      "exact": true
+    },
+    {
+      "mode": 2,
+      "dots": 102401,
+      "exact": true
+    }
+  ],
+  "graphs": [
+    {
+      "fused": false,
+      "n": 5,
+      "k": 32,
+      "rows": 4,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 5,
+      "k": 32,
+      "rows": 4,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 37,
+      "k": 96,
+      "rows": 4,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 37,
+      "k": 96,
+      "rows": 4,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 65,
+      "k": 160,
+      "rows": 4,
+      "warps": 2,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 65,
+      "k": 160,
+      "rows": 4,
+      "warps": 2,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 4096,
+      "k": 12288,
+      "rows": 4,
+      "warps": 2,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": false,
+      "n": 4096,
+      "k": 12288,
+      "rows": 4,
+      "warps": 2,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 32,
+      "k": 32,
+      "rows": 32,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 32,
+      "k": 32,
+      "rows": 32,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 96,
+      "k": 96,
+      "rows": 64,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 96,
+      "k": 96,
+      "rows": 64,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 160,
+      "k": 160,
+      "rows": 32,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 160,
+      "k": 160,
+      "rows": 32,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 12288,
+      "k": 4096,
+      "rows": 32,
+      "warps": 4,
+      "mode": 1,
+      "exact": true
+    },
+    {
+      "fused": true,
+      "n": 12288,
+      "k": 4096,
+      "rows": 32,
+      "warps": 4,
+      "mode": 2,
+      "exact": true
+    }
+  ],
+  "all_exact": true,
+  "private_stream": true
+}

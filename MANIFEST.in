@@ -1,0 +1,21 @@
+include README.md
+include LICENSE
+include pyproject.toml
+
+graft assets
+graft docs
+graft moss_tts_delay
+graft moss_tts_local
+graft moss_tts_realtime
+graft moss_audio_tokenizer
+
+prune .git
+prune .github
+prune .vscode
+prune moss_tts.egg-info
+
+global-exclude __pycache__
+global-exclude __pycache__/*
+global-exclude *.py[cod]
+global-exclude .DS_Store
+global-exclude *.so

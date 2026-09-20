@@ -1,0 +1,54 @@
+{
+  "address_control": {
+    "registers": 56,
+    "spills": 0,
+    "shared_bytes": 2048,
+    "cubin_sha256": "65b49916b8e0658a25edae37857fd26e6c8d6ad5de774719337a321c2197ce19",
+    "runtime_modulo_in_ptx": true,
+    "prefetch_ptx_lines_zero_based": [
+      75
+    ],
+    "wait_ptx_lines_zero_based": [
+      82
+    ],
+    "all_hints_precede_wait": true,
+    "prefetch_sass_lines": [
+      "/*0260*/                   @!UP0 UBLKPF.L2 [UR4], UR8 ;                          /* 0x00000000040083bc */"
+    ],
+    "pdl_wait_sass_lines": [
+      "/*0270*/                   ACQBULK ;                                             /* 0x000000000000782e */"
+    ]
+  },
+  "address_candidate": {
+    "registers": 56,
+    "spills": 0,
+    "shared_bytes": 2048,
+    "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54",
+    "runtime_modulo_in_ptx": false,
+    "prefetch_ptx_lines_zero_based": [
+      71
+    ],
+    "wait_ptx_lines_zero_based": [
+      78
+    ],
+    "all_hints_precede_wait": true,
+    "prefetch_sass_lines": [
+      "/*0130*/                   @!UP0 UBLKPF.L2 [UR4], UR8 ;                          /* 0x00000000040083bc */"
+    ],
+    "pdl_wait_sass_lines": [
+      "/*0140*/                   ACQBULK ;                                             /* 0x000000000000782e */"
+    ]
+  },
+  "prefill": {
+    "registers": 27,
+    "spills": 0,
+    "shared_bytes": 16,
+    "cubin_sha256": "66ceb4eba7a75dfa2d4560f0bd6244fdc549796ee14076faf738ffd66f390cfd",
+    "runtime_modulo_in_ptx": false,
+    "prefetch_ptx_lines_zero_based": [],
+    "wait_ptx_lines_zero_based": [],
+    "all_hints_precede_wait": false,
+    "prefetch_sass_lines": [],
+    "pdl_wait_sass_lines": []
+  }
+}

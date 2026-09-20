@@ -1,0 +1,25 @@
+{
+  "separate_us": 32.086665431658425,
+  "fused": {
+    "2": {
+      "us": 27.75466690460841,
+      "relative_rms_vs_existing": 0.0,
+      "bitwise_equal": true
+    },
+    "4": {
+      "us": 28.062666455904644,
+      "relative_rms_vs_existing": 0.0,
+      "bitwise_equal": true
+    },
+    "8": {
+      "us": 31.734667718410492,
+      "relative_rms_vs_existing": 4.3475141865201294e-05,
+      "bitwise_equal": false
+    },
+    "16": {
+      "us": 44.26133135954539,
+      "relative_rms_vs_existing": 4.3475141865201294e-05,
+      "bitwise_equal": false
+    }
+  }
+}

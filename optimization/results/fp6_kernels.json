@@ -1,0 +1,181 @@
+{
+  "torch": "2.9.1+cu128",
+  "source": "https://github.com/usyd-fsalab/fp6_llm",
+  "source_commit": "12e83379f16a4ee1494be00db6956aab56baf620",
+  "build_change": "Native sm90 cubin instead of upstream sm80; all kernel code unchanged.",
+  "method": "FP6_e3m2 weights, FP16 internal activations, BF16 input/output conversions included. Eight-matrix HBM rotation and graph timing; non-default-stream validation. Synthetic packed FP6 values, actual model projection shapes.",
+  "cases": [
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "trials": [
+        {
+          "split_k": 1,
+          "us": 67.13066498438518,
+          "relative_rms_vs_dequantized_fp16": 0.0
+        },
+        {
+          "split_k": 2,
+          "us": 46.53733472029368,
+          "relative_rms_vs_dequantized_fp16": 0.00010631365876179188
+        },
+        {
+          "split_k": 4,
+          "us": 37.13866571585337,
+          "relative_rms_vs_dequantized_fp16": 0.00012545227946247905
+        },
+        {
+          "split_k": 8,
+          "us": 41.02800041437149,
+          "relative_rms_vs_dequantized_fp16": 0.00012558956223074347
+        },
+        {
+          "split_k": 16,
+          "us": 43.335999051729836,
+          "relative_rms_vs_dequantized_fp16": 0.00013371475506573915
+        },
+        {
+          "split_k": 32,
+          "us": 50.026665131251015,
+          "relative_rms_vs_dequantized_fp16": 0.00013591439346782863
+        }
+      ],
+      "best": {
+        "split_k": 4,
+        "us": 37.13866571585337,
+        "relative_rms_vs_dequantized_fp16": 0.00012545227946247905
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "trials": [
+        {
+          "split_k": 1,
+          "us": 170.3853408495585,
+          "relative_rms_vs_dequantized_fp16": 0.00012535005225799978
+        },
+        {
+          "split_k": 2,
+          "us": 93.29600135485332,
+          "relative_rms_vs_dequantized_fp16": 4.032105425721966e-05
+        },
+        {
+          "split_k": 4,
+          "us": 53.43466500441233,
+          "relative_rms_vs_dequantized_fp16": 4.0307986637344584e-05
+        },
+        {
+          "split_k": 8,
+          "us": 35.0653330485026,
+          "relative_rms_vs_dequantized_fp16": 4.102867387700826e-05
+        },
+        {
+          "split_k": 16,
+          "us": 27.729332447052002,
+          "relative_rms_vs_dequantized_fp16": 4.102863749722019e-05
+        },
+        {
+          "split_k": 32,
+          "us": 28.27333410580953,
+          "relative_rms_vs_dequantized_fp16": 3.669791476568207e-05
+        }
+      ],
+      "best": {
+        "split_k": 16,
+        "us": 27.729332447052002,
+        "relative_rms_vs_dequantized_fp16": 4.102863749722019e-05
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "trials": [
+        {
+          "split_k": 1,
+          "us": 63.762664794921875,
+          "relative_rms_vs_dequantized_fp16": 0.0
+        },
+        {
+          "split_k": 2,
+          "us": 38.68400057156881,
+          "relative_rms_vs_dequantized_fp16": 0.00014546541206073016
+        },
+        {
+          "split_k": 4,
+          "us": 25.721333920955658,
+          "relative_rms_vs_dequantized_fp16": 0.0001460780913475901
+        },
+        {
+          "split_k": 8,
+          "us": 20.83733429511388,
+          "relative_rms_vs_dequantized_fp16": 0.00014414565521292388
+        },
+        {
+          "split_k": 16,
+          "us": 19.58533376455307,
+          "relative_rms_vs_dequantized_fp16": 0.00014610854850616306
+        },
+        {
+          "split_k": 32,
+          "us": 23.789333800474804,
+          "relative_rms_vs_dequantized_fp16": 0.00014611042570322752
+        }
+      ],
+      "best": {
+        "split_k": 16,
+        "us": 19.58533376455307,
+        "relative_rms_vs_dequantized_fp16": 0.00014610854850616306
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "trials": [
+        {
+          "split_k": 1,
+          "us": 62.980001171429954,
+          "relative_rms_vs_dequantized_fp16": 2.6271734441252192e-06
+        },
+        {
+          "split_k": 2,
+          "us": 38.361333310604095,
+          "relative_rms_vs_dequantized_fp16": 1.751518880155345e-06
+        },
+        {
+          "split_k": 4,
+          "us": 25.006666779518127,
+          "relative_rms_vs_dequantized_fp16": 0.0
+        },
+        {
+          "split_k": 8,
+          "us": 19.13199946284294,
+          "relative_rms_vs_dequantized_fp16": 8.548164398547442e-10
+        },
+        {
+          "split_k": 16,
+          "us": 17.865333706140518,
+          "relative_rms_vs_dequantized_fp16": 1.7096328797094884e-09
+        },
+        {
+          "split_k": 32,
+          "us": 19.38933382431666,
+          "relative_rms_vs_dequantized_fp16": 1.7096328797094884e-09
+        }
+      ],
+      "best": {
+        "split_k": 16,
+        "us": 17.865333706140518,
+        "relative_rms_vs_dequantized_fp16": 1.7096328797094884e-09
+      }
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "previous": "optimization/results/all32_gptq_dp4a_prefill_pointwise_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pdl_apdl_cc_fag_bulk_pqkv_ppw_pb128_160_256_512.json",
+  "candidate": "optimization/results/all32_gptq_dp4a_output_preload_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pdl_apdl_cc_fag_bulk_pqkv_ppw_opre_pb128_160_256_512.json",
+  "all_36_step_diagnostics_exact": true,
+  "wav_exact": true,
+  "candidate_ttfa": {
+    "median_ms": 72.7680865675211,
+    "p95_ms": 74.06069561839104,
+    "min_ms": 72.65044189989567,
+    "samples_ms": [
+      73.18882271647453,
+      74.27866384387016,
+      72.7680865675211,
+      72.67100550234318,
+      72.65044189989567
+    ]
+  },
+  "scope": "Independent five-run entry-point validation without audio-head buckets; not an isolated gain measurement."
+}

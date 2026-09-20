@@ -1,0 +1,55 @@
+{
+  "codebooks": 32,
+  "candidate": "all32_gptq_dp4a_attention_pdl_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pdl_apdl_pb128_160_256_512.json",
+  "control": "all32_gptq_dp4a_projection_pdl_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pdl_pb128_160_256_512.json",
+  "all_36_teacher_forced_diagnostics_exact": true,
+  "saved_wav_exact": true,
+  "saved_wav_sha256": "b2ba92da2b6dfd4fc71a144fe384f4a294cd3fc7f729b99e727abbef26510ec7",
+  "candidate_ttfa": {
+    "median_ms": 80.53836412727833,
+    "p95_ms": 80.66019006073475,
+    "min_ms": 80.2950244396925,
+    "samples_ms": [
+      80.53836412727833,
+      80.46546764671803,
+      80.2950244396925,
+      80.55776543915272,
+      80.68579621613026
+    ]
+  },
+  "candidate_decode": {
+    "median_ms": 1.9990475848317146,
+    "p95_ms": 2.0031376741826534,
+    "min_ms": 1.9932743161916733,
+    "samples_ms": [
+      2.0015574991703033,
+      2.004247158765793,
+      1.9959434866905212,
+      2.003079280257225,
+      1.99815072119236,
+      1.9982699304819107,
+      1.998763531446457,
+      1.9974801689386368,
+      2.000240609049797,
+      2.0003989338874817,
+      1.9981451332569122,
+      1.9955914467573166,
+      1.9932743161916733,
+      2.0003654062747955,
+      2.00013630092144,
+      1.9977036863565445,
+      1.9985809922218323,
+      2.002378925681114,
+      2.0016655325889587,
+      1.9993316382169724
+    ]
+  },
+  "attention_pdl": {
+    "pdl": true,
+    "qk": 1,
+    "attention": 2,
+    "reduce": 1,
+    "preload": false
+  },
+  "scope": "Independent benchmark CLI without audio-head buckets; exact comparison to preceding projection-PDL CLI output, not BF16 equality. Five request samples; no matched speedup claim."
+}

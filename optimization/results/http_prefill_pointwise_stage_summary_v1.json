@@ -1,0 +1,20 @@
+{
+  "control": {
+    "engine_median_ms": 75.34831762313843,
+    "prefill_median_ms": 7.40840844810009,
+    "first32_median_ms": 61.82858441025019,
+    "first_codec_median_ms": 4.51821181923151,
+    "voice_registration_http_ms": 37.119295448064804,
+    "fresh_reference_to_pcm_single_ms": 119.70103718340397,
+    "validation_errors_checked": true
+  },
+  "pointwise": {
+    "engine_median_ms": 74.88229032605886,
+    "prefill_median_ms": 6.835339590907097,
+    "first32_median_ms": 61.81707140058279,
+    "first_codec_median_ms": 4.525427706539631,
+    "voice_registration_http_ms": 35.47199070453644,
+    "fresh_reference_to_pcm_single_ms": 117.88695119321346,
+    "validation_errors_checked": true
+  }
+}

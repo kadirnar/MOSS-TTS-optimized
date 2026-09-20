@@ -1,0 +1,836 @@
+{
+  "method": "8 distinct weight/scale pairs, prequantized input, median nine graph timings; three layers x four recorded vectors plus zero/spike, private-stream comparison against selected scaled-integer Triton kernels.",
+  "cases": {
+    "qkv": {
+      "reference_us": 6.0893334448337555,
+      "candidates": [
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 12.38266626993815
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 12.558666368325552
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.854666724801064
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.0679998199145
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.593333264191946
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.160000210007032
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.82800034681956
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.994666109482447
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.797333265344301
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.41066692272822
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.630666881799698
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.150666495164236
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.877333124478659
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 11.989332735538483
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.742666492859522
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.778666456540426
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.326666593551636
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.533333281675974
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "warps": 2,
+          "repeat": 4,
+          "cache": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0
+        ],
+        "us": 8.593333264191946
+      }
+    },
+    "out": {
+      "reference_us": 5.056000004212062,
+      "candidates": [
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.702666809161505
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 9.029333169261614
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 6.849333023031552
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.098666702707608
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.510666425029437
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.057333528995514
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.678666626413664
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.86266678571701
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 6.864000111818314
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.266666740179062
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.5439997017383575
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.10933361450831
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.747999866803488
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.878666907548904
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 6.886666640639305
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.257333025336266
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 7.666666681567828
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0
+          ],
+          "us": 8.011999850471815
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "warps": 2,
+          "repeat": 2,
+          "cache": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0
+        ],
+        "us": 6.849333023031552
+      }
+    },
+    "up": {
+      "reference_us": 17.165333032608032,
+      "candidates": [
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 25.302665928999584
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 26.935999592145283
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 20.637333393096924
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "first_mismatches": [
+            0,
+            0,
+            0
+          ],
+          "us": 21.274665991465252
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "warps": 8,
+          "repeat": 1,
+          "cache": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "first_mismatches": [
+          0,
+          0,
+          0
+        ],
+        "us": 20.637333393096924
+      }
+    },
+    "down": {
+      "reference_us": 9.878666450579962,
+      "candidates": [
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 2,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 4,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 1,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 2,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": false
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        },
+        {
+          "config": {
+            "warps": 8,
+            "repeat": 4,
+            "cache": true
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "RuntimeError('Native projection CUDA error 1')"
+        }
+      ]
+    }
+  },
+  "qualification": "Incomplete trial: down launch rejected BF16 scales, then cleanup failed. Output/down weights used BF16 scale storage instead of selected FP32 storage; not a serving comparison. Corrected trial v2 uses matched scale formats."
+}

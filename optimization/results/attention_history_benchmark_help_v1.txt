@@ -1,0 +1,94 @@
+usage: benchmark_quantization.py [-h] --mode
+                                 {none,fp8_mlp,fp8_all,int8_all,int4_all,marlin4_all,marlin4g32_all,marlin8_all,int4dp4a_all,int4dp4ag32_all}
+                                 [--runs RUNS]
+                                 [--max-new-tokens MAX_NEW_TOKENS] [--tiled]
+                                 [--attention-backend {triton,flashinfer,flashinfer_tc}]
+                                 [--tag TAG]
+                                 [--attention-block ATTENTION_BLOCK]
+                                 [--attention-warps ATTENTION_WARPS]
+                                 [--fused-residual] [--fused-gateup]
+                                 [--fp8-prefill] [--calibration CALIBRATION]
+                                 [--calibrated-backend {marlin,dp4a}]
+                                 [--dp4a-reciprocal] [--fused-dp4a]
+                                 [--grouped-activation]
+                                 [--prefill-buckets PREFILL_BUCKETS [PREFILL_BUCKETS ...]]
+                                 [--dp4a-gateup] [--norm-layout-limit {0,8}]
+                                 [--packing-plan PACKING_PLAN]
+                                 [--g128-plan G128_PLAN]
+                                 [--g128-residual-calibration G128_RESIDUAL_CALIBRATION]
+                                 [--g128-residual-plan G128_RESIDUAL_PLAN]
+                                 [--decode-buckets] [--attention-quant]
+                                 [--native-attention] [--gateup-quant]
+                                 [--scaled-dp4a] [--norm-projection]
+                                 [--qkv-load-policy] [--compressed-scales]
+                                 [--short-scales] [--projection-pdl]
+                                 [--attention-pdl] [--codec-clock]
+                                 [--first-audio-graph] [--bulk-prefetch]
+                                 [--prefill-qkv] [--prefill-pointwise]
+                                 [--async-output] [--output-weight-prefetch]
+                                 [--qkv-cluster] [--down-tile8]
+                                 [--gateup-compiler] [--attention-history]
+
+options:
+  -h, --help            show this help message and exit
+  --mode {none,fp8_mlp,fp8_all,int8_all,int4_all,marlin4_all,marlin4g32_all,marlin8_all,int4dp4a_all,int4dp4ag32_all}
+  --runs RUNS
+  --max-new-tokens MAX_NEW_TOKENS
+  --tiled
+  --attention-backend {triton,flashinfer,flashinfer_tc}
+  --tag TAG             Suffix to retain results from different runtimes
+  --attention-block ATTENTION_BLOCK
+  --attention-warps ATTENTION_WARPS
+  --fused-residual
+  --fused-gateup
+  --fp8-prefill
+  --calibration CALIBRATION
+                        Explicit folder of calibrated INT4 projections
+  --calibrated-backend {marlin,dp4a}
+  --dp4a-reciprocal
+  --fused-dp4a
+  --grouped-activation
+  --prefill-buckets PREFILL_BUCKETS [PREFILL_BUCKETS ...]
+  --dp4a-gateup
+  --norm-layout-limit {0,8}
+  --packing-plan PACKING_PLAN
+  --g128-plan G128_PLAN
+  --g128-residual-calibration G128_RESIDUAL_CALIBRATION
+  --g128-residual-plan G128_RESIDUAL_PLAN
+  --decode-buckets
+  --attention-quant
+  --native-attention
+  --gateup-quant
+  --scaled-dp4a
+  --norm-projection
+  --qkv-load-policy
+  --compressed-scales   Lossless SM90 compression of selected FP32 scale
+                        allocations
+  --short-scales        Exact BF16 scale storage with explicit Gluon reduction
+                        layouts
+  --projection-pdl      SM90 projection dependency overlap with exact short
+                        scales
+  --attention-pdl       Extend SM90 dependency overlap through native
+                        attention and quantization
+  --codec-clock         Exact FP32 codec with shared stage counters and first-
+                        frame specialization
+  --first-audio-graph   Run the initial 32 audio steps in one CUDA graph
+  --bulk-prefetch       Prefix-only asynchronous bulk L2 hints for selected
+                        projections
+  --prefill-qkv         Fuse BF16 prefill Q/K normalization, rotary and KV
+                        writes
+  --prefill-pointwise   Fuse BF16 prefill activation/product and
+                        residual/normalization
+  --async-output        Stage exact G32 output weights with SM90 asynchronous
+                        copies
+  --output-weight-prefetch
+                        Preload exact G32 attention-output weights into
+                        registers before PDL wait
+  --qkv-cluster         Fuse G32 QKV/head preparation using SM90 clustered
+                        cubins
+  --down-tile8          Use eight-row/four-warp G32 down projections with
+                        clustered QKV
+  --gateup-compiler     Use exact one-CTA gate/up cubins from isolated Triton
+                        3.8
+  --attention-history   Preload historical KV entries before the attention
+                        dependency wait

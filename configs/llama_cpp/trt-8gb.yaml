@@ -1,0 +1,68 @@
+# MOSS-TTS-Delay — 8 GB GPU config (low-memory mode)
+#
+# Uses staged loading (low_memory: true) to load/unload components per stage.
+# Peak VRAM ≈ 5.6 GB (backbone stage), well within 8 GB.
+#
+# Run with:
+#   PYTHONPATH=. python -m moss_tts_delay.llama_cpp \
+#       --config configs/llama_cpp/trt-8gb.yaml --text "Hello!" --profile
+#
+#
+# Measured on H100 (transferable to any 8 GB+ GPU):
+#   Backbone (Q4_K_M, 36 layers, KV@4096, flash_attn) ≈ 5.6 GB
+#   TRT encoder alone                                  ≈ 5.3 GB
+#   TRT decoder alone                                  ≈ 5.3 GB
+#   Peak (staged)                                      ≈ 5.6 GB
+
+# ── Model paths ──────────────────────────────────────────────────────────────
+
+backbone_gguf: weights/MOSS-TTS-GGUF/MOSS_TTS_Q4_K_M.gguf
+embedding_dir: weights/MOSS-TTS-GGUF/embeddings
+lm_head_dir: weights/MOSS-TTS-GGUF/lm_heads
+tokenizer_dir: weights/MOSS-TTS-GGUF/tokenizer
+
+# ── Audio tokenizer ──────────────────────────────────────────────────────────
+# Switch to onnx + audio_encoder_onnx/audio_decoder_onnx if TRT not available.
+
+audio_backend: trt
+audio_encoder_trt: weights/MOSS-Audio-Tokenizer-TRT/encoder.engine
+audio_decoder_trt: weights/MOSS-Audio-Tokenizer-TRT/decoder.engine
+
+# ── LM heads backend ────────────────────────────────────────────────────────
+# numpy = 0 GPU, ~3 GB RAM.  Mandatory for 8 GB to keep backbone headroom.
+
+heads_backend: numpy
+
+# ── Runtime settings ─────────────────────────────────────────────────────────
+# n_ctx=4096 keeps KV cache at ~576 MB (fp16).  Enough for most single
+# utterances.  If you hit context-length errors, increase to 6144/8192
+# but check that backbone still fits (KV grows ~144 MB per 1024 tokens).
+
+n_ctx: 4096
+n_batch: 512
+n_threads: 4
+n_gpu_layers: -1
+max_new_tokens: 3072
+use_gpu_audio: true
+low_memory: true
+
+# ── KV cache / attention ────────────────────────────────────────────────────
+# Quantized KV cache saves ~0.45 GB (q8_0) or ~0.72 GB (q4_0) at n_ctx=4096.
+# Options: f32, f16, bf16, q8_0, q5_0, q4_0
+kv_cache_type_k: f16
+kv_cache_type_v: f16
+
+# Flash attention reduces peak VRAM during prefill (0.5–2 GB for long prompts).
+# Options: auto, enabled, disabled
+flash_attn: enabled
+
+# ── Sampling parameters ──────────────────────────────────────────────────────
+
+text_temperature: 1.5
+text_top_p: 1.0
+text_top_k: 50
+
+audio_temperature: 1.7
+audio_top_p: 0.8
+audio_top_k: 25
+audio_repetition_penalty: 1.0

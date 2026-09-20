@@ -1,0 +1,426 @@
+{
+  "codebooks": 32,
+  "tokens": 160,
+  "checks": [
+    {
+      "layer": 0,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 1,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 2,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 3,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 4,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 5,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 6,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 7,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 8,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 9,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 10,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 11,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 12,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 13,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 14,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 15,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 16,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 17,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 18,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 19,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 20,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 21,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 22,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 23,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 24,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 25,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 26,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 27,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 28,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 29,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 30,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 31,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 32,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 33,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 34,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    },
+    {
+      "layer": 35,
+      "mismatches_q_k_v": [
+        0,
+        0,
+        0
+      ],
+      "strides_exact": true
+    }
+  ],
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "candidate"
+      ],
+      "us": {
+        "control": 60.1979273336905,
+        "candidate": 7.238222493065728
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "candidate",
+        "control"
+      ],
+      "us": {
+        "candidate": 7.2657780514823065,
+        "control": 60.185481000829625
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "control",
+        "candidate"
+      ],
+      "us": {
+        "control": 60.2002982740049,
+        "candidate": 7.2426669023655075
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "candidate",
+        "control"
+      ],
+      "us": {
+        "candidate": 7.226074183428729,
+        "control": 60.1602969346223
+      }
+    },
+    {
+      "round": 4,
+      "order": [
+        "control",
+        "candidate"
+      ],
+      "us": {
+        "control": 60.22962817439326,
+        "candidate": 7.236147920290629
+      }
+    },
+    {
+      "round": 5,
+      "order": [
+        "candidate",
+        "control"
+      ],
+      "us": {
+        "candidate": 7.235555737106888,
+        "control": 60.160592750266744
+      }
+    },
+    {
+      "round": 6,
+      "order": [
+        "control",
+        "candidate"
+      ],
+      "us": {
+        "control": 60.2284449118155,
+        "candidate": 7.227555469230369
+      }
+    },
+    {
+      "round": 7,
+      "order": [
+        "candidate",
+        "control"
+      ],
+      "us": {
+        "candidate": 7.235852104646188,
+        "control": 60.16622207782887
+      }
+    }
+  ],
+  "method": "Real 160-token padded prefill states from all 36 layers. Original q/k norms, rotary and index_copy versus one fused Triton preparation kernel. Exact Q strides and bitwise full KV buffers including poisoned unused slots. Rotating all layers, timings are per-layer preparation only, not TTFA.",
+  "median_us": {
+    "control": 60.19170416726006,
+    "candidate": 7.236000012468409
+  },
+  "median_paired_gain_us": 52.945927061416484
+}

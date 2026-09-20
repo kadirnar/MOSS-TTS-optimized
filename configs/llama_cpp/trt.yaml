@@ -1,0 +1,54 @@
+# MOSS-TTS-Delay — llama.cpp Backend (TensorRT audio, maximum performance)
+#
+# ⚠️  TRT engines are NOT provided pre-built — you must build them yourself
+# from the ONNX models.  TRT engines are tied to your specific GPU architecture
+# and TensorRT version.
+#
+# Requirements:
+#   pip install -e ".[llama-cpp-trt,llama-cpp-torch]"
+#
+# Build engines:
+#   bash moss_audio_tokenizer/trt/build_engine.sh \
+#       weights/MOSS-Audio-Tokenizer-ONNX/encoder.onnx \
+#       weights/MOSS-Audio-Tokenizer-ONNX/decoder.onnx \
+#       weights/MOSS-Audio-Tokenizer-TRT
+#
+# ⚠️  IMPORTANT: maxShapes in build_engine.sh controls the maximum audio length
+# your engine can handle.  See the script's comments for details.
+
+# ── Model paths ──────────────────────────────────────────────────────────────
+
+backbone_gguf: weights/MOSS-TTS-GGUF/MOSS_TTS_Q4_K_M.gguf
+embedding_dir: weights/MOSS-TTS-GGUF/embeddings
+lm_head_dir: weights/MOSS-TTS-GGUF/lm_heads
+tokenizer_dir: weights/MOSS-TTS-GGUF/tokenizer
+
+# ── Audio tokenizer ──────────────────────────────────────────────────────────
+
+audio_backend: trt
+audio_encoder_trt: weights/MOSS-Audio-Tokenizer-TRT/encoder.engine
+audio_decoder_trt: weights/MOSS-Audio-Tokenizer-TRT/decoder.engine
+
+# ── LM heads backend ────────────────────────────────────────────────────────
+
+heads_backend: auto
+
+# ── Runtime settings ─────────────────────────────────────────────────────────
+
+n_ctx: 4096
+n_batch: 512
+n_threads: 32
+n_gpu_layers: -1
+max_new_tokens: 3072
+use_gpu_audio: true
+
+# ── Sampling parameters ──────────────────────────────────────────────────────
+
+text_temperature: 1.5
+text_top_p: 1.0
+text_top_k: 50
+
+audio_temperature: 1.7
+audio_top_p: 0.8
+audio_top_k: 25
+audio_repetition_penalty: 1.0

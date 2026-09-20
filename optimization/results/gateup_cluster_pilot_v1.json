@@ -1,0 +1,390 @@
+{
+  "codebooks": 32,
+  "layers": 1,
+  "configs": {
+    "control": null,
+    "c1": {
+      "ctas": 1,
+      "integer_groups": 2,
+      "integer_rows": 4,
+      "divisor": 16,
+      "trigger_mode": 1
+    },
+    "c2": {
+      "ctas": 2,
+      "integer_groups": 2,
+      "integer_rows": 4,
+      "divisor": 16,
+      "trigger_mode": 1
+    },
+    "c4": {
+      "ctas": 4,
+      "integer_groups": 2,
+      "integer_rows": 4,
+      "divisor": 16,
+      "trigger_mode": 1
+    },
+    "c8": {
+      "ctas": 8,
+      "integer_groups": 2,
+      "integer_rows": 4,
+      "divisor": 16,
+      "trigger_mode": 1
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c1",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c1",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c1",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c2",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c2",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c2",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c4",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c4",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c4",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c8",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c8",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    },
+    {
+      "config": "c8",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true,
+      "norm_debug_exact": true
+    }
+  ],
+  "resources": {
+    "control": {
+      "up": {
+        "registers": 162,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+      }
+    },
+    "c1": {
+      "up": {
+        "registers": 134,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "cubin_sha256": "1db967c60b438f9b81f4de109ec138160636112d28d2c5284a819ec58f42ce18"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+      }
+    },
+    "c2": {
+      "up": {
+        "registers": 80,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "cubin_sha256": "991eda444264ce8fa6995b0f1eda8d1c3e72a8d23f741a7bdf09dbce2bb8e4e1"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+      }
+    },
+    "c4": {
+      "up": {
+        "registers": 72,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "cubin_sha256": "7325db84a47770298e3f7aa8a51304cec9a9b75577749657caea9160fa763d0a"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+      }
+    },
+    "c8": {
+      "up": {
+        "registers": 72,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "cubin_sha256": "1f54adb278c8527a6df3d5b0f5cbb8cb3f26cdfca57eae9589f74264330b0b58"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba"
+      }
+    }
+  },
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c4": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c8": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "errors": {},
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "c1",
+        "c2",
+        "c4",
+        "c8"
+      ],
+      "us": {
+        "control": 38.79466652870178,
+        "c1": 38.39999934037527,
+        "c2": 40.1706670721372,
+        "c4": 44.341335693995156,
+        "c8": 52.31999854246775
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "c8",
+        "c4",
+        "c2",
+        "c1",
+        "control"
+      ],
+      "us": {
+        "c8": 52.383999029795326,
+        "c4": 44.362664222717285,
+        "c2": 39.90400085846583,
+        "c1": 38.39999934037527,
+        "control": 38.560000558694206
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "c1",
+        "c2",
+        "c4",
+        "c8",
+        "control"
+      ],
+      "us": {
+        "c1": 38.44266633192698,
+        "c2": 39.733332892258964,
+        "c4": 44.24533247947693,
+        "c8": 52.000001072883606,
+        "control": 38.53866706291834
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "control",
+        "c8",
+        "c4",
+        "c2",
+        "c1"
+      ],
+      "us": {
+        "control": 38.42133283615112,
+        "c8": 52.30933427810669,
+        "c4": 44.394666949907936,
+        "c2": 39.96799886226654,
+        "c1": 38.47466657559077
+      }
+    }
+  ],
+  "method": "Selected G32 norm/gate/up -> down -> following clustered QKV/head preparation. Selected eight-row down control versus clustered gate/up. Isolated Triton 3.8 binaries run in selected 3.7 host. Actual layer weights and three saved inputs, nearest frozen attention metadata; layer 35 wraps to layer 0 synthetically. Private-stream outputs and entire poisoned caches checked bytewise. Balanced rotated/reversed CUDA event rings; not TTFA.",
+  "summary": {
+    "control": {
+      "median_us": 38.549333810806274,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    },
+    "c1": {
+      "median_us": 38.42133283615112,
+      "median_paired_gain_us": 0.12800097465515137,
+      "faster_rounds": 3
+    },
+    "c2": {
+      "median_us": 39.93599986036618,
+      "median_paired_gain_us": -1.3600004216035195,
+      "faster_rounds": 0
+    },
+    "c4": {
+      "median_us": 44.35199995835622,
+      "median_paired_gain_us": -5.7546645402908325,
+      "faster_rounds": 0
+    },
+    "c8": {
+      "median_us": 52.31466641028722,
+      "median_paired_gain_us": -13.674665242433544,
+      "faster_rounds": 0
+    }
+  }
+}

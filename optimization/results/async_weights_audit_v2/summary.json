@@ -1,0 +1,324 @@
+{
+  "down_control": {
+    "registers": 128,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@p cp.async.bulk.prefetch.L2.global [%rd1],%r2;"
+    ],
+    "sass_copy_sync_lines": [
+      "/*04e0*/                   @!UP0 UBLKPF.L2 [UR4], UR8 ;                          /* 0x00000000040083bc */",
+      "/*04f0*/                   ACQBULK ;                                             /* 0x000000000000782e */"
+    ]
+  },
+  "down_copy_sw8": {
+    "registers": 122,
+    "spills": 0,
+    "shared_bytes": 32768,
+    "cubin_sha256": "e9ff3fef213f87f16b5211b114e55d5c7b309f1c0f2d5fc49ba80d333e8d7daf",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "cp.async.cg.shared.global [ %r1 + 0 ], [ %rd1 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r3 + 0 ], [ %rd2 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r4 + 0 ], [ %rd3 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r5 + 0 ], [ %rd4 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r6 + 0 ], [ %rd5 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r7 + 0 ], [ %rd6 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r8 + 0 ], [ %rd7 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r10 + 0 ], [ %rd8 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r11 + 0 ], [ %rd7 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r12 + 0 ], [ %rd8 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r13 + 0 ], [ %rd9 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r14 + 0 ], [ %rd10 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r15 + 0 ], [ %rd11 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r16 + 0 ], [ %rd12 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r17 + 0 ], [ %rd13 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r18 + 0 ], [ %rd14 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r19 + 0 ], [ %rd13 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r20 + 0 ], [ %rd14 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r21 + 0 ], [ %rd15 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r22 + 0 ], [ %rd16 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r23 + 0 ], [ %rd17 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r24 + 0 ], [ %rd18 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r25 + 0 ], [ %rd19 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r26 + 0 ], [ %rd20 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r27 + 0 ], [ %rd19 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r28 + 0 ], [ %rd20 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r29 + 0 ], [ %rd21 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r30 + 0 ], [ %rd22 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r31 + 0 ], [ %rd23 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r32 + 0 ], [ %rd24 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r33 + 0 ], [ %rd25 + 0 ], 0x10, %r9;",
+      "cp.async.cg.shared.global [ %r34 + 0 ], [ %rd26 + 0 ], 0x10, %r9;",
+      "cp.async.commit_group;",
+      "cp.async.wait_group \t0;"
+    ],
+    "sass_copy_sync_lines": [
+      "/*0220*/                   LDGSTS.E.BYPASS.128 [R116], desc[UR6][R2.64], !P0 ;                 /* 0x0000000002747fae */",
+      "/*0260*/                   LDGSTS.E.BYPASS.128 [R116+0x400], desc[UR6][R2.64+0x400], !P0 ;     /* 0x0040040002747fae */",
+      "/*02a0*/                   LDGSTS.E.BYPASS.128 [R116+0x800], desc[UR6][R4.64+-0x800], !P0 ;    /* 0x0080080004747fae */",
+      "/*02e0*/                   LDGSTS.E.BYPASS.128 [R116+0xc00], desc[UR6][R4.64+-0x400], !P0 ;    /* 0x00c00c0004747fae */",
+      "/*0310*/                   LDGSTS.E.BYPASS.128 [R116+0x1000], desc[UR6][R4.64], !P0 ;          /* 0x0100000004747fae */",
+      "/*0340*/                   LDGSTS.E.BYPASS.128 [R116+0x1400], desc[UR6][R4.64+0x400], !P0 ;    /* 0x0140040004747fae */",
+      "/*0360*/                   LDGSTS.E.BYPASS.128 [R116+0x1800], desc[UR6][R6.64+-0x800], !PT ;   /* 0x0180080006747fae */",
+      "/*0380*/                   LDGSTS.E.BYPASS.128 [R116+0x1c00], desc[UR6][R6.64+-0x400], !PT ;   /* 0x01c00c0006747fae */",
+      "/*0390*/                   LDGSTS.E.BYPASS.128 [R116+0x2000], desc[UR6][R6.64+-0x800], !P0 ;   /* 0x0200080006747fae */",
+      "/*03a0*/                   LDGSTS.E.BYPASS.128 [R116+0x2400], desc[UR6][R6.64+-0x400], !P0 ;   /* 0x02400c0006747fae */",
+      "/*03b0*/                   LDGSTS.E.BYPASS.128 [R116+0x2800], desc[UR6][R6.64], !P0 ;          /* 0x0280000006747fae */",
+      "/*03c0*/                   LDGSTS.E.BYPASS.128 [R116+0x2c00], desc[UR6][R6.64+0x400], !P0 ;    /* 0x02c0040006747fae */",
+      "/*03d0*/                   LDGSTS.E.BYPASS.128 [R116+0x3000], desc[UR6][R8.64+-0x800], !P0 ;   /* 0x0300080008747fae */",
+      "/*03e0*/                   LDGSTS.E.BYPASS.128 [R116+0x3400], desc[UR6][R8.64+-0x400], !P0 ;   /* 0x03400c0008747fae */",
+      "/*03f0*/                   LDGSTS.E.BYPASS.128 [R116+0x3800], desc[UR6][R8.64], !PT ;          /* 0x0380000008747fae */",
+      "/*0400*/                   LDGSTS.E.BYPASS.128 [R116+0x3c00], desc[UR6][R8.64+0x400], !PT ;    /* 0x03c0040008747fae */",
+      "/*0410*/                   LDGSTS.E.BYPASS.128 [R116+0x4000], desc[UR6][R8.64], !P0 ;          /* 0x0400000008747fae */",
+      "/*0420*/                   LDGSTS.E.BYPASS.128 [R116+0x4400], desc[UR6][R8.64+0x400], !P0 ;    /* 0x0440040008747fae */",
+      "/*0430*/                   LDGSTS.E.BYPASS.128 [R116+0x4800], desc[UR6][R10.64+-0x800], !P0 ;  /* 0x048008000a747fae */",
+      "/*0440*/                   LDGSTS.E.BYPASS.128 [R116+0x4c00], desc[UR6][R10.64+-0x400], !P0 ;  /* 0x04c00c000a747fae */",
+      "/*0450*/                   LDGSTS.E.BYPASS.128 [R116+0x5000], desc[UR6][R10.64], !P0 ;         /* 0x050000000a747fae */",
+      "/*0460*/                   LDGSTS.E.BYPASS.128 [R116+0x5400], desc[UR6][R10.64+0x400], !P0 ;   /* 0x054004000a747fae */",
+      "/*0470*/                   LDGSTS.E.BYPASS.128 [R116+0x5800], desc[UR6][R12.64+-0x800], !PT ;  /* 0x058008000c747fae */",
+      "/*0480*/                   LDGSTS.E.BYPASS.128 [R116+0x5c00], desc[UR6][R12.64+-0x400], !PT ;  /* 0x05c00c000c747fae */",
+      "/*0490*/                   LDGSTS.E.BYPASS.128 [R116+0x6000], desc[UR6][R12.64+-0x800], !P0 ;  /* 0x060008000c747fae */",
+      "/*04b0*/                   LDGSTS.E.BYPASS.128 [R116+0x6400], desc[UR6][R12.64+-0x400], !P0 ;  /* 0x06400c000c747fae */",
+      "/*04f0*/                   LDGSTS.E.BYPASS.128 [R116+0x6800], desc[UR6][R12.64], !P0 ;         /* 0x068000000c747fae */",
+      "/*0500*/                   LDGSTS.E.BYPASS.128 [R116+0x6c00], desc[UR6][R12.64+0x400], !P0 ;   /* 0x06c004000c747fae */",
+      "/*0510*/                   LDGSTS.E.BYPASS.128 [R116+0x7000], desc[UR6][R14.64+-0x800], !P0 ;  /* 0x070008000e747fae */",
+      "/*0520*/                   LDGSTS.E.BYPASS.128 [R116+0x7400], desc[UR6][R14.64+-0x400], !P0 ;  /* 0x07400c000e747fae */",
+      "/*0530*/                   LDGSTS.E.BYPASS.128 [R116+0x7800], desc[UR6][R14.64], !PT ;         /* 0x078000000e747fae */",
+      "/*0540*/                   LDGSTS.E.BYPASS.128 [R116+0x7c00], desc[UR6][R14.64+0x400], !PT ;   /* 0x07c004000e747fae */",
+      "/*0550*/                   LDGDEPBAR ;                                                         /* 0x00000000000079af */",
+      "/*05e0*/                   ACQBULK ;                                                           /* 0x000000000000782e */",
+      "/*05f0*/                   DEPBAR.LE SB0, 0x0 ;                                                /* 0x000080000000791a */"
+    ]
+  },
+  "down_tma": {
+    "registers": 117,
+    "spills": 0,
+    "shared_bytes": 32776,
+    "cubin_sha256": "0fcd6964ba7cf08359cb4d7b4c310131c3f3a4c638a6872540bb1d16f8f26870",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@%p1 mbarrier.init.shared::cta.b64 [%r1], 1;",
+      "@%p2 mbarrier.arrive.expect_tx.shared::cta.b64 _, [%r1], 32768;",
+      "@%p3 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r2], [%rd1, {%r3, %r3, %r4}], [%r1];",
+      "mbarrier.try_wait.parity.shared::cta.b64 complete, [%r1], %r3;",
+      "@%p6 mbarrier.inval.shared::cta.b64 [%r1];"
+    ],
+    "sass_copy_sync_lines": [
+      "/*02c0*/                   @UP1 SYNCS.EXCH.64 URZ, [UR8+0x8000], UR4 ;            /* 0x00800004083f15b2 */",
+      "/*0370*/              @!P2 SYNCS.ARRIVE.TRANS64 RZ, [UR8+0x8000], R2 ;            /* 0x00800002ffffa9a7 */",
+      "/*0460*/                   @UP1 UTMALDG.3D [UR8], [UR4] ;                         /* 0x00000008040015b4 */",
+      "/*0470*/                   ACQBULK ;                                              /* 0x000000000000782e */",
+      "/*0480*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x8000], RZ ;  /* 0x008000ffff0075a7 */",
+      "/*05c0*/               @P0 SYNCS.CCTL.IV [UR8+0x8000] ;                           /* 0x00800000ff0009b1 */",
+      "/*3b40*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x8000], RZ ;  /* 0x008000ffff0075a7 */"
+    ]
+  },
+  "down_tma_compact": {
+    "registers": 117,
+    "spills": 0,
+    "shared_bytes": 24584,
+    "cubin_sha256": "c55464b65fe77b8030f73d5a4807df474098903625aa1a9d70b87cdeb4fcac5f",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@%p1 mbarrier.init.shared::cta.b64 [%r1], 1;",
+      "@%p2 mbarrier.arrive.expect_tx.shared::cta.b64 _, [%r1], 24576;",
+      "@%p3 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r2], [%rd1, {%r3, %r3, %r4}], [%r1];",
+      "@%p4 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r5], [%rd1, {%r3, %r6, %r4}], [%r1];",
+      "@%p5 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r7], [%rd1, {%r3, %r8, %r4}], [%r1];",
+      "mbarrier.try_wait.parity.shared::cta.b64 complete, [%r1], %r3;",
+      "@%p8 mbarrier.inval.shared::cta.b64 [%r1];"
+    ],
+    "sass_copy_sync_lines": [
+      "/*04a0*/                   @UP0 SYNCS.EXCH.64 URZ, [UR24+0x6000], UR4 ;            /* 0x00600004183f05b2 */",
+      "/*0570*/              @!P4 SYNCS.ARRIVE.TRANS64 RZ, [UR24+0x6000], R2 ;            /* 0x00600002ffffc9a7 */",
+      "/*05c0*/                   @UP2 UTMALDG.3D [UR24], [UR6] ;                         /* 0x00000018060025b4 */",
+      "/*05f0*/                   @UP4 UTMALDG.3D [UR16], [UR14] ;                        /* 0x000000100e0045b4 */",
+      "/*0610*/                   @UP0 UTMALDG.3D [UR8], [UR22] ;                         /* 0x00000008160005b4 */",
+      "/*06c0*/                   ACQBULK ;                                               /* 0x000000000000782e */",
+      "/*06d0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR24+0x6000], RZ ;  /* 0x006000ffff0075a7 */",
+      "/*0850*/               @P0 SYNCS.CCTL.IV [UR24+0x6000] ;                           /* 0x00600000ff0009b1 */",
+      "/*3da0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR24+0x6000], RZ ;  /* 0x006000ffff0075a7 */"
+    ]
+  },
+  "down_tma_partial": {
+    "registers": 122,
+    "spills": 0,
+    "shared_bytes": 8200,
+    "cubin_sha256": "d71ec0a146416dfcc30602907c6489150c5a9619956806332491833fd9b5d4ff",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@%p1 mbarrier.init.shared::cta.b64 [%r1], 1;",
+      "@%p2 mbarrier.arrive.expect_tx.shared::cta.b64 _, [%r1], 8192;",
+      "@%p3 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r2], [%rd1, {%r3, %r3, %r4}], [%r1];",
+      "mbarrier.try_wait.parity.shared::cta.b64 complete, [%r1], %r3;",
+      "@%p6 mbarrier.inval.shared::cta.b64 [%r1];"
+    ],
+    "sass_copy_sync_lines": [
+      "/*02e0*/                   @UP1 SYNCS.EXCH.64 URZ, [UR8+0x2000], UR4 ;            /* 0x00200004083f15b2 */",
+      "/*0380*/              @!P2 SYNCS.ARRIVE.TRANS64 RZ, [UR8+0x2000], R2 ;            /* 0x00200002ffffa9a7 */",
+      "/*0480*/                   @UP1 UTMALDG.3D [UR8], [UR4] ;                         /* 0x00000008040015b4 */",
+      "/*0490*/                   ACQBULK ;                                              /* 0x000000000000782e */",
+      "/*04a0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x2000], RZ ;  /* 0x002000ffff0075a7 */",
+      "/*08b0*/               @P0 SYNCS.CCTL.IV [UR8+0x2000] ;                           /* 0x00200000ff0009b1 */",
+      "/*3dd0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x2000], RZ ;  /* 0x002000ffff0075a7 */"
+    ]
+  },
+  "down_tma_partial_r8w4": {
+    "registers": 124,
+    "spills": 0,
+    "shared_bytes": 16392,
+    "cubin_sha256": "a77f545beaa8d103da837faa6ca841caa82eeb687f193cc9c33306955a65281c",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@%p1 mbarrier.init.shared::cta.b64 [%r1], 1;",
+      "@%p2 mbarrier.arrive.expect_tx.shared::cta.b64 _, [%r1], 16384;",
+      "@%p3 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r2], [%rd1, {%r3, %r3, %r4}], [%r1];",
+      "mbarrier.try_wait.parity.shared::cta.b64 complete, [%r1], %r3;",
+      "@%p6 mbarrier.inval.shared::cta.b64 [%r1];"
+    ],
+    "sass_copy_sync_lines": [
+      "/*02c0*/                   @UP0 SYNCS.EXCH.64 URZ, [UR8+0x4000], UR4 ;            /* 0x00400004083f05b2 */",
+      "/*0380*/              @!P3 SYNCS.ARRIVE.TRANS64 RZ, [UR8+0x4000], R4 ;            /* 0x00400004ffffb9a7 */",
+      "/*05d0*/                   @UP1 UTMALDG.3D [UR8], [UR4] ;                         /* 0x00000008040015b4 */",
+      "/*05e0*/                   ACQBULK ;                                              /* 0x000000000000782e */",
+      "/*05f0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x4000], RZ ;  /* 0x004000ffff0075a7 */",
+      "/*0a90*/               @P0 SYNCS.CCTL.IV [UR8+0x4000] ;                           /* 0x00400000ff0009b1 */",
+      "/*4000*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x4000], RZ ;  /* 0x004000ffff0075a7 */"
+    ]
+  },
+  "out_control": {
+    "registers": 32,
+    "spills": 0,
+    "shared_bytes": 2048,
+    "cubin_sha256": "5d5fa319c0f83123c06b1d330a3b2b850a0054996927c841d9d14b6708de2072",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [],
+    "sass_copy_sync_lines": [
+      "/*01f0*/                   ACQBULK ;                                         /* 0x000000000000782e */"
+    ]
+  },
+  "out_copy_sw8_r8": {
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 16384,
+    "cubin_sha256": "9da8f574e5bc8941d3a0fcbb56ad9414438131c1a0b0e7bd099d80988a94334d",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "cp.async.cg.shared.global [ %r1 + 0 ], [ %rd1 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r3 + 0 ], [ %rd2 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r4 + 0 ], [ %rd3 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r5 + 0 ], [ %rd4 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r6 + 0 ], [ %rd5 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r7 + 0 ], [ %rd6 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r8 + 0 ], [ %rd7 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r9 + 0 ], [ %rd8 + 0 ], 0x10, %r2;",
+      "cp.async.commit_group;",
+      "cp.async.wait_group \t0;"
+    ],
+    "sass_copy_sync_lines": [
+      "/*01f0*/                   LDGSTS.E.BYPASS.128 [R34], desc[UR6][R2.64], !P0 ;                 /* 0x0000000002227fae */",
+      "/*0230*/                   LDGSTS.E.BYPASS.128 [R34+0x800], desc[UR6][R4.64+-0x800], !P0 ;    /* 0x0080080004227fae */",
+      "/*0240*/                   LDGSTS.E.BYPASS.128 [R34+0x1000], desc[UR6][R4.64], !P0 ;          /* 0x0100000004227fae */",
+      "/*0250*/                   LDGSTS.E.BYPASS.128 [R34+0x1800], desc[UR6][R6.64+-0x800], !P0 ;   /* 0x0180080006227fae */",
+      "/*0280*/                   LDGSTS.E.BYPASS.128 [R34+0x2000], desc[UR6][R6.64], !P0 ;          /* 0x0200000006227fae */",
+      "/*02a0*/                   LDGSTS.E.BYPASS.128 [R34+0x2800], desc[UR6][R10.64+-0x800], !P0 ;  /* 0x028008000a227fae */",
+      "/*02c0*/                   LDGSTS.E.BYPASS.128 [R34+0x3000], desc[UR6][R10.64], !P0 ;         /* 0x030000000a227fae */",
+      "/*02d0*/                   LDGSTS.E.BYPASS.128 [R34+0x3800], desc[UR6][R12.64+-0x800], !P0 ;  /* 0x038008000c227fae */",
+      "/*02f0*/                   LDGDEPBAR ;                                                        /* 0x00000000000079af */",
+      "/*03a0*/                   ACQBULK ;                                                          /* 0x000000000000782e */",
+      "/*03b0*/                   DEPBAR.LE SB0, 0x0 ;                                               /* 0x000080000000791a */"
+    ]
+  },
+  "out_tma_r8": {
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 16392,
+    "cubin_sha256": "49e34fe00bc884b83e27d35e0a099c6d698f6fea78d7d721cb35bfedc2dc4c55",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "@%p1 mbarrier.init.shared::cta.b64 [%r1], 1;",
+      "@%p2 mbarrier.arrive.expect_tx.shared::cta.b64 _, [%r1], 16384;",
+      "@%p3 cp.async.bulk.tensor.3d.shared::cta.global.mbarrier::complete_tx::bytes [%r2], [%rd1, {%r3, %r3, %r4}], [%r1];",
+      "mbarrier.try_wait.parity.shared::cta.b64 complete, [%r1], %r3;",
+      "@%p5 mbarrier.inval.shared::cta.b64 [%r1];"
+    ],
+    "sass_copy_sync_lines": [
+      "/*01f0*/                   @UP0 SYNCS.EXCH.64 URZ, [UR8+0x4000], UR4 ;            /* 0x00400004083f05b2 */",
+      "/*02f0*/              @!P2 SYNCS.ARRIVE.TRANS64 RZ, [UR8+0x4000], R6 ;            /* 0x00400006ffffa9a7 */",
+      "/*0380*/                   @UP1 UTMALDG.3D [UR8], [UR4] ;                         /* 0x00000008040015b4 */",
+      "/*0390*/                   ACQBULK ;                                              /* 0x000000000000782e */",
+      "/*03a0*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x4000], RZ ;  /* 0x004000ffff0075a7 */",
+      "/*0460*/               @P0 SYNCS.CCTL.IV [UR8+0x4000] ;                           /* 0x00400000ff0009b1 */",
+      "/*1680*/                   SYNCS.PHASECHK.TRANS64.TRYWAIT P0, [UR8+0x4000], RZ ;  /* 0x004000ffff0075a7 */"
+    ]
+  },
+  "out_copy_cg_r8": {
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 16384,
+    "cubin_sha256": "9da8f574e5bc8941d3a0fcbb56ad9414438131c1a0b0e7bd099d80988a94334d",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [
+      "cp.async.cg.shared.global [ %r1 + 0 ], [ %rd1 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r3 + 0 ], [ %rd2 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r4 + 0 ], [ %rd3 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r5 + 0 ], [ %rd4 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r6 + 0 ], [ %rd5 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r7 + 0 ], [ %rd6 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r8 + 0 ], [ %rd7 + 0 ], 0x10, %r2;",
+      "cp.async.cg.shared.global [ %r9 + 0 ], [ %rd8 + 0 ], 0x10, %r2;",
+      "cp.async.commit_group;",
+      "cp.async.wait_group \t0;"
+    ],
+    "sass_copy_sync_lines": [
+      "/*01f0*/                   LDGSTS.E.BYPASS.128 [R34], desc[UR6][R2.64], !P0 ;                 /* 0x0000000002227fae */",
+      "/*0230*/                   LDGSTS.E.BYPASS.128 [R34+0x800], desc[UR6][R4.64+-0x800], !P0 ;    /* 0x0080080004227fae */",
+      "/*0240*/                   LDGSTS.E.BYPASS.128 [R34+0x1000], desc[UR6][R4.64], !P0 ;          /* 0x0100000004227fae */",
+      "/*0250*/                   LDGSTS.E.BYPASS.128 [R34+0x1800], desc[UR6][R6.64+-0x800], !P0 ;   /* 0x0180080006227fae */",
+      "/*0280*/                   LDGSTS.E.BYPASS.128 [R34+0x2000], desc[UR6][R6.64], !P0 ;          /* 0x0200000006227fae */",
+      "/*02a0*/                   LDGSTS.E.BYPASS.128 [R34+0x2800], desc[UR6][R10.64+-0x800], !P0 ;  /* 0x028008000a227fae */",
+      "/*02c0*/                   LDGSTS.E.BYPASS.128 [R34+0x3000], desc[UR6][R10.64], !P0 ;         /* 0x030000000a227fae */",
+      "/*02d0*/                   LDGSTS.E.BYPASS.128 [R34+0x3800], desc[UR6][R12.64+-0x800], !P0 ;  /* 0x038008000c227fae */",
+      "/*02f0*/                   LDGDEPBAR ;                                                        /* 0x00000000000079af */",
+      "/*03a0*/                   ACQBULK ;                                                          /* 0x000000000000782e */",
+      "/*03b0*/                   DEPBAR.LE SB0, 0x0 ;                                               /* 0x000080000000791a */"
+    ]
+  },
+  "out_register_r8": {
+    "registers": 48,
+    "spills": 0,
+    "shared_bytes": 2048,
+    "cubin_sha256": "bce3c5b46dbf5233bb1b2d9438d88af4803155484b7aa1b8b1d15db6f3dc22e1",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [],
+    "sass_copy_sync_lines": [
+      "/*03a0*/                   ACQBULK ;                                       /* 0x000000000000782e */"
+    ]
+  },
+  "out_register_r16": {
+    "registers": 96,
+    "spills": 0,
+    "shared_bytes": 2048,
+    "cubin_sha256": "b02118f19c89221ea36c08401bd0c3dc83d8f4ffea93b57d9ef9cabbc84e80e0",
+    "pdl_waits_in_ptx": 1,
+    "pdl_triggers_in_ptx": 1,
+    "async_copy_lines": [],
+    "sass_copy_sync_lines": [
+      "/*0560*/                   ACQBULK ;                                             /* 0x000000000000782e */"
+    ]
+  }
+}

@@ -1,0 +1,75 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "moss-soundeffect-v2"
+version = "0.1.0"
+description = "MOSS-SoundEffect v2: text-to-audio diffusion pipeline (DiT + DAC VAE + Qwen3) packaged in the diffusers style."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "OpenMOSS Team" }]
+keywords = ["text-to-audio", "diffusion", "sound-effects", "audio-generation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Multimedia :: Sound/Audio",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+# Core inference + Gradio demo dependencies.
+dependencies = [
+    "numpy==1.26.4",
+    "einops==0.8.2",
+    "pillow==12.2.0",
+    "tqdm==4.67.3",
+    "safetensors==0.7.0",
+    "transformers==4.57.1",
+    "diffusers==0.37.1",
+    "ftfy==6.3.1",
+    "regex==2026.4.4",
+    "soundfile==0.13.1",
+    "imageio==2.37.3",
+    "typing-extensions>=4.10",
+    "descript-audiotools==0.7.2",
+    "gradio==6.11.0",
+]
+
+[project.optional-dependencies]
+# Fine-tuning: `pip install moss-soundeffect-v2[finetune]`
+finetune = [
+    "accelerate==1.13.0",
+    "peft==0.18.1",
+    "pandas==3.0.2",
+    "torchcodec==0.8.0",
+]
+# Pinned torch + CUDA 12.8 wheels. Install via the PyTorch index:
+#   pip install --extra-index-url https://download.pytorch.org/whl/cu128 \
+#       -e ".[torch-cu128,finetune]"
+torch-cu128 = [
+    "torch==2.9.0+cu128",
+    "torchaudio==2.9.0+cu128",
+    "torchvision==0.24.0+cu128",
+    "torchcodec==0.8.0",
+]
+
+[project.urls]
+Repository = "https://github.com/OpenMOSS/MOSS-TTS"
+
+[tool.setuptools]
+include-package-data = true
+package-dir = { "moss_soundeffect_v2" = "." }
+packages = [
+    "moss_soundeffect_v2",
+    "moss_soundeffect_v2.diffsynth",
+    "moss_soundeffect_v2.diffsynth.models",
+    "moss_soundeffect_v2.diffsynth.pipelines",
+    "moss_soundeffect_v2.diffsynth.prompters",
+    "moss_soundeffect_v2.diffsynth.schedulers",
+    "moss_soundeffect_v2.diffsynth.trainers",
+    "moss_soundeffect_v2.diffsynth.utils",
+]

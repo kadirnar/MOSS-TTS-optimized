@@ -1,0 +1,280 @@
+{
+  "torch": "2.13.0+cu130",
+  "reciprocal": true,
+  "grouped_activation": true,
+  "method": "Eight packed matrix rotation, dynamic activation quantization included. Synthetic signed INT4 weights; reference uses the same rounded INT8 activations and FP32 dequantized weights. Reciprocal variant uses an independent NumPy FP32 reference for scaling/rounding. Kernel correctness only, not a model quality test.",
+  "cases": [
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 22.346665461858112,
+          "relative_rms_vs_reference": 3.508101508487016e-05
+        },
+        {
+          "warps": 2,
+          "us": 24.310665826002758,
+          "relative_rms_vs_reference": 3.1858937290962785e-05
+        },
+        {
+          "warps": 4,
+          "us": 26.718666156133015,
+          "relative_rms_vs_reference": 3.1858937290962785e-05
+        },
+        {
+          "warps": 8,
+          "us": 35.7000008225441,
+          "relative_rms_vs_reference": 1.4247751096263528e-05
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 22.346665461858112,
+        "relative_rms_vs_reference": 3.508101508487016e-05
+      }
+    },
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 22.23333219687144,
+          "relative_rms_vs_reference": 7.243216259666951e-06
+        },
+        {
+          "warps": 2,
+          "us": 23.8359992702802,
+          "relative_rms_vs_reference": 7.31353611627128e-06
+        },
+        {
+          "warps": 4,
+          "us": 28.079998989899952,
+          "relative_rms_vs_reference": 7.298692707990995e-06
+        },
+        {
+          "warps": 8,
+          "us": 35.40933380524317,
+          "relative_rms_vs_reference": 7.242332230816828e-06
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 22.23333219687144,
+        "relative_rms_vs_reference": 7.243216259666951e-06
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 16.69066647688548,
+          "relative_rms_vs_reference": 0.00016958735068328679
+        },
+        {
+          "warps": 2,
+          "us": 14.570667097965876,
+          "relative_rms_vs_reference": 0.00016958735068328679
+        },
+        {
+          "warps": 4,
+          "us": 14.3306665122509,
+          "relative_rms_vs_reference": 0.00016958735068328679
+        },
+        {
+          "warps": 8,
+          "us": 17.869333426157635,
+          "relative_rms_vs_reference": 0.0001744336768751964
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 14.3306665122509,
+        "relative_rms_vs_reference": 0.00016958735068328679
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 16.622666269540787,
+          "relative_rms_vs_reference": 3.17099591029546e-07
+        },
+        {
+          "warps": 2,
+          "us": 14.936000108718872,
+          "relative_rms_vs_reference": 3.17099591029546e-07
+        },
+        {
+          "warps": 4,
+          "us": 14.107999702294668,
+          "relative_rms_vs_reference": 3.17099591029546e-07
+        },
+        {
+          "warps": 8,
+          "us": 17.489333947499592,
+          "relative_rms_vs_reference": 3.17099591029546e-07
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 14.107999702294668,
+        "relative_rms_vs_reference": 3.17099591029546e-07
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.578666960199675,
+          "relative_rms_vs_reference": 2.8529447249070472e-08
+        },
+        {
+          "warps": 2,
+          "us": 10.615999499956766,
+          "relative_rms_vs_reference": 2.8529447249070472e-08
+        },
+        {
+          "warps": 4,
+          "us": 9.65999998152256,
+          "relative_rms_vs_reference": 2.8529447249070472e-08
+        },
+        {
+          "warps": 8,
+          "us": 11.674666156371435,
+          "relative_rms_vs_reference": 2.8529447249070472e-08
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 9.578666960199675,
+        "relative_rms_vs_reference": 2.8529447249070472e-08
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.637333452701569,
+          "relative_rms_vs_reference": 3.5968017453313905e-09
+        },
+        {
+          "warps": 2,
+          "us": 9.594666461149851,
+          "relative_rms_vs_reference": 1.7984008726656953e-09
+        },
+        {
+          "warps": 4,
+          "us": 10.219999899466833,
+          "relative_rms_vs_reference": 3.5968017453313905e-09
+        },
+        {
+          "warps": 8,
+          "us": 11.577333013216654,
+          "relative_rms_vs_reference": 3.5968017453313905e-09
+        }
+      ],
+      "best": {
+        "warps": 2,
+        "us": 9.594666461149851,
+        "relative_rms_vs_reference": 1.7984008726656953e-09
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 7.845333466927211,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 2,
+          "us": 8.446666722496351,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 4,
+          "us": 7.7346668889125185,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 8,
+          "us": 9.008000294367472,
+          "relative_rms_vs_reference": 0.0
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 7.7346668889125185,
+        "relative_rms_vs_reference": 0.0
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 8.024000252286593,
+          "relative_rms_vs_reference": 4.462578544917051e-06
+        },
+        {
+          "warps": 2,
+          "us": 7.711999739209811,
+          "relative_rms_vs_reference": 4.462578544917051e-06
+        },
+        {
+          "warps": 4,
+          "us": 8.240000034372011,
+          "relative_rms_vs_reference": 4.462578544917051e-06
+        },
+        {
+          "warps": 8,
+          "us": 8.993333205580711,
+          "relative_rms_vs_reference": 0.0
+        }
+      ],
+      "best": {
+        "warps": 2,
+        "us": 7.711999739209811,
+        "relative_rms_vs_reference": 4.462578544917051e-06
+      }
+    }
+  ]
+}

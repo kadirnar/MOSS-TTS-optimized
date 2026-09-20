@@ -1,0 +1,18 @@
+{
+  "control": {
+    "ttfa_ms": 75.9511711075902,
+    "prefill_ms": 6.851053796708584,
+    "prepare_ms": 1.7100302502512932,
+    "first32_ms": 61.85804679989815,
+    "first_codec_ms": 4.5510344207286835,
+    "voice_registration_http_ms": 39.83404114842415
+  },
+  "register": {
+    "ttfa_ms": 75.19270200282335,
+    "prefill_ms": 6.8473219871521,
+    "prepare_ms": 1.619230955839157,
+    "first32_ms": 61.26052979379892,
+    "first_codec_ms": 4.544554278254509,
+    "voice_registration_http_ms": 37.62048855423927
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "v1": {
+    "control": {
+      "prefill_median_ms": 6.827014498412609,
+      "first32_median_ms": 61.763422563672066,
+      "first_codec_median_ms": 4.529071040451527
+    },
+    "copy_r8": {
+      "prefill_median_ms": 6.826948374509811,
+      "first32_median_ms": 61.461860314011574,
+      "first_codec_median_ms": 4.522418603301048
+    },
+    "copy_r16": {
+      "prefill_median_ms": 6.830478087067604,
+      "first32_median_ms": 61.56118120998144,
+      "first_codec_median_ms": 4.525590687990189
+    }
+  },
+  "v2": {
+    "control": {
+      "prefill_median_ms": 6.824567914009094,
+      "first32_median_ms": 61.73737999051809,
+      "first_codec_median_ms": 4.521950148046017
+    },
+    "copy_r8": {
+      "prefill_median_ms": 6.825577467679977,
+      "first32_median_ms": 61.45585607737303,
+      "first_codec_median_ms": 4.5202551409602165
+    }
+  }
+}

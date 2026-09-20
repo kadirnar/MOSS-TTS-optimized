@@ -1,0 +1,139 @@
+{
+  "cases": [
+    {
+      "projection": "qkv",
+      "n": 5,
+      "add": false,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "qkv",
+      "n": 5,
+      "add": true,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "qkv",
+      "n": 37,
+      "add": false,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "qkv",
+      "n": 37,
+      "add": true,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "qkv",
+      "n": 6144,
+      "add": false,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "qkv",
+      "n": 6144,
+      "add": true,
+      "mismatches": [
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 32,
+      "add": false,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 32,
+      "add": true,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 96,
+      "add": false,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 96,
+      "add": true,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 12288,
+      "add": false,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "projection": "up",
+      "n": 12288,
+      "add": true,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "all_exact": true,
+  "private_stream": true,
+  "cuda_graph": true,
+  "resources": {
+    "qkv": {
+      "registers": 56,
+      "spills": 0,
+      "shared_bytes": 2048
+    },
+    "up": {
+      "registers": 162,
+      "spills": 0,
+      "shared_bytes": 1024
+    }
+  }
+}

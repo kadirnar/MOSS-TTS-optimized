@@ -1,0 +1,73 @@
+{
+  "torch": "2.13.0+cu130",
+  "private_stream": true,
+  "graph_timing": true,
+  "cases": [
+    {
+      "kind": "norm",
+      "magnitude": 0.0,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "norm",
+      "magnitude": 0.01,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "norm",
+      "magnitude": 1.0,
+      "bf16_and_int8_and_scale": "exact",
+      "reference_us": 3.684000112116337,
+      "fused_us": 2.6039999599258103
+    },
+    {
+      "kind": "norm",
+      "magnitude": 10.0,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "residual_norm",
+      "magnitude": 0.0,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "residual_norm",
+      "magnitude": 0.01,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "residual_norm",
+      "magnitude": 1.0,
+      "bf16_and_int8_and_scale": "exact",
+      "reference_us": 3.7693334743380547,
+      "fused_us": 2.7840000887711844
+    },
+    {
+      "kind": "residual_norm",
+      "magnitude": 10.0,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "silu",
+      "magnitude": 0.0,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "silu",
+      "magnitude": 0.01,
+      "bf16_and_int8_and_scale": "exact"
+    },
+    {
+      "kind": "silu",
+      "magnitude": 1.0,
+      "bf16_and_int8_and_scale": "exact",
+      "reference_us": 4.049333433310191,
+      "fused_us": 4.6640001237392426
+    },
+    {
+      "kind": "silu",
+      "magnitude": 10.0,
+      "bf16_and_int8_and_scale": "exact"
+    }
+  ]
+}

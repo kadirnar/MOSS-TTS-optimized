@@ -1,0 +1,1078 @@
+{
+  "rows": [
+    {
+      "heads": 8,
+      "round": 0,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 20.66044509410858,
+        "vmm_plain": 20.623111062579685,
+        "compressed": 20.460445019933914
+      }
+    },
+    {
+      "heads": 8,
+      "round": 1,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 20.597333709398907,
+        "compressed": 20.49066623051961,
+        "vmm_plain": 20.643555455737644
+      }
+    },
+    {
+      "heads": 8,
+      "round": 2,
+      "order": [
+        "compressed",
+        "torch",
+        "vmm_plain"
+      ],
+      "us": {
+        "compressed": 20.534222324689228,
+        "torch": 20.6657780541314,
+        "vmm_plain": 20.68888809945848
+      }
+    },
+    {
+      "heads": 8,
+      "round": 3,
+      "order": [
+        "compressed",
+        "vmm_plain",
+        "torch"
+      ],
+      "us": {
+        "compressed": 20.52266730202569,
+        "vmm_plain": 20.631111330456203,
+        "torch": 20.667556259367203
+      }
+    },
+    {
+      "heads": 8,
+      "round": 4,
+      "order": [
+        "vmm_plain",
+        "compressed",
+        "torch"
+      ],
+      "us": {
+        "vmm_plain": 20.638222495714825,
+        "compressed": 20.485333270496792,
+        "torch": 20.641777250501846
+      }
+    },
+    {
+      "heads": 8,
+      "round": 5,
+      "order": [
+        "vmm_plain",
+        "torch",
+        "compressed"
+      ],
+      "us": {
+        "vmm_plain": 20.65066662099626,
+        "torch": 20.629333125220406,
+        "compressed": 20.52088909678989
+      }
+    },
+    {
+      "heads": 8,
+      "round": 6,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 20.662221643659805,
+        "vmm_plain": 20.642666353119743,
+        "compressed": 20.528000262048508
+      }
+    },
+    {
+      "heads": 8,
+      "round": 7,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 20.642666353119743,
+        "compressed": 20.519110891554092,
+        "vmm_plain": 20.71111069785224
+      }
+    },
+    {
+      "heads": 16,
+      "round": 0,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 36.719110276963974,
+        "vmm_plain": 36.56444284651015,
+        "compressed": 36.307556761635674
+      }
+    },
+    {
+      "heads": 16,
+      "round": 1,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 36.72000103526645,
+        "compressed": 36.325332191255356,
+        "vmm_plain": 36.54488921165466
+      }
+    },
+    {
+      "heads": 16,
+      "round": 2,
+      "order": [
+        "compressed",
+        "torch",
+        "vmm_plain"
+      ],
+      "us": {
+        "compressed": 36.31466627120972,
+        "torch": 36.728888750076294,
+        "vmm_plain": 36.50577863057455
+      }
+    },
+    {
+      "heads": 16,
+      "round": 3,
+      "order": [
+        "compressed",
+        "vmm_plain",
+        "torch"
+      ],
+      "us": {
+        "compressed": 36.29066546758016,
+        "vmm_plain": 36.539554595947266,
+        "torch": 36.741332875357735
+      }
+    },
+    {
+      "heads": 16,
+      "round": 4,
+      "order": [
+        "vmm_plain",
+        "compressed",
+        "torch"
+      ],
+      "us": {
+        "vmm_plain": 36.53600149684482,
+        "compressed": 36.28355595800612,
+        "torch": 36.71644462479485
+      }
+    },
+    {
+      "heads": 16,
+      "round": 5,
+      "order": [
+        "vmm_plain",
+        "torch",
+        "compressed"
+      ],
+      "us": {
+        "vmm_plain": 36.496887604395546,
+        "torch": 36.66755557060242,
+        "compressed": 36.271999279658
+      }
+    },
+    {
+      "heads": 16,
+      "round": 6,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 36.68089045418633,
+        "vmm_plain": 36.57422131962247,
+        "compressed": 36.3031095928616
+      }
+    },
+    {
+      "heads": 16,
+      "round": 7,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 36.685334311591255,
+        "compressed": 36.271999279658,
+        "vmm_plain": 36.54488921165466
+      }
+    },
+    {
+      "heads": 24,
+      "round": 0,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 56.87644746568468,
+        "vmm_plain": 57.56977531645033,
+        "compressed": 57.53688679801093
+      }
+    },
+    {
+      "heads": 24,
+      "round": 1,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 56.88533518049452,
+        "compressed": 57.575113243526886,
+        "vmm_plain": 57.56711297565036
+      }
+    },
+    {
+      "heads": 24,
+      "round": 2,
+      "order": [
+        "compressed",
+        "torch",
+        "vmm_plain"
+      ],
+      "us": {
+        "compressed": 57.57777558432685,
+        "torch": 56.89333544837104,
+        "vmm_plain": 57.55822526084052
+      }
+    },
+    {
+      "heads": 24,
+      "round": 3,
+      "order": [
+        "compressed",
+        "vmm_plain",
+        "torch"
+      ],
+      "us": {
+        "compressed": 57.535999351077606,
+        "vmm_plain": 57.53688679801093,
+        "torch": 56.937780645158554
+      }
+    },
+    {
+      "heads": 24,
+      "round": 4,
+      "order": [
+        "vmm_plain",
+        "compressed",
+        "torch"
+      ],
+      "us": {
+        "vmm_plain": 57.595557636684845,
+        "compressed": 57.50577979617648,
+        "torch": 56.85244666205512
+      }
+    },
+    {
+      "heads": 24,
+      "round": 5,
+      "order": [
+        "vmm_plain",
+        "torch",
+        "compressed"
+      ],
+      "us": {
+        "vmm_plain": 57.57244427998861,
+        "torch": 56.86844719780816,
+        "compressed": 57.54044320848253
+      }
+    },
+    {
+      "heads": 24,
+      "round": 6,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 56.89244137869941,
+        "vmm_plain": 57.5795571009318,
+        "compressed": 57.561775048573814
+      }
+    },
+    {
+      "heads": 24,
+      "round": 7,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 56.8808913230896,
+        "compressed": 57.55822526084052,
+        "vmm_plain": 57.530668046739365
+      }
+    },
+    {
+      "heads": 32,
+      "round": 0,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 69.07200151019626,
+        "vmm_plain": 69.51555278566148,
+        "compressed": 69.39199897978041
+      }
+    },
+    {
+      "heads": 32,
+      "round": 1,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 69.23555665545993,
+        "compressed": 69.40355565812852,
+        "vmm_plain": 69.51200299792819
+      }
+    },
+    {
+      "heads": 32,
+      "round": 2,
+      "order": [
+        "compressed",
+        "torch",
+        "vmm_plain"
+      ],
+      "us": {
+        "compressed": 69.39822435379028,
+        "torch": 69.24000051286485,
+        "vmm_plain": 69.54044765896268
+      }
+    },
+    {
+      "heads": 32,
+      "round": 3,
+      "order": [
+        "compressed",
+        "vmm_plain",
+        "torch"
+      ],
+      "us": {
+        "compressed": 69.4097810321384,
+        "vmm_plain": 69.52889098061456,
+        "torch": 69.22577487097846
+      }
+    },
+    {
+      "heads": 32,
+      "round": 4,
+      "order": [
+        "vmm_plain",
+        "compressed",
+        "torch"
+      ],
+      "us": {
+        "vmm_plain": 69.5271094640096,
+        "compressed": 69.41066847907172,
+        "torch": 69.23555665545993
+      }
+    },
+    {
+      "heads": 32,
+      "round": 5,
+      "order": [
+        "vmm_plain",
+        "torch",
+        "compressed"
+      ],
+      "us": {
+        "vmm_plain": 69.5271094640096,
+        "torch": 69.18488608466254,
+        "compressed": 69.37511099709405
+      }
+    },
+    {
+      "heads": 32,
+      "round": 6,
+      "order": [
+        "torch",
+        "vmm_plain",
+        "compressed"
+      ],
+      "us": {
+        "torch": 69.19733020994398,
+        "vmm_plain": 69.5271094640096,
+        "compressed": 69.34755378299289
+      }
+    },
+    {
+      "heads": 32,
+      "round": 7,
+      "order": [
+        "torch",
+        "compressed",
+        "vmm_plain"
+      ],
+      "us": {
+        "torch": 69.20355558395386,
+        "compressed": 69.36177942487929,
+        "vmm_plain": 69.47111421161227
+      }
+    }
+  ],
+  "checks": [
+    {
+      "heads": 8,
+      "input": 0,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 0,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 1,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 1,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 2,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 2,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 3,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 3,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 4,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 4,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 5,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 5,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 6,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 6,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 7,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 7,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 8,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 8,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 9,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 9,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 10,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 10,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 11,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 8,
+      "input": 11,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 0,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 0,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 1,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 1,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 2,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 2,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 3,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 3,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 4,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 4,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 5,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 5,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 6,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 6,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 7,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 7,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 8,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 8,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 9,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 9,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 10,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 10,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 11,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 16,
+      "input": 11,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 0,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 0,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 1,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 1,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 2,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 2,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 3,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 3,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 4,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 4,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 5,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 5,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 6,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 6,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 7,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 7,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 8,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 8,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 9,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 9,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 10,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 10,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 11,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 24,
+      "input": 11,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 0,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 0,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 1,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 1,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 2,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 2,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 3,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 3,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 4,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 4,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 5,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 5,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 6,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 6,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 7,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 7,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 8,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 8,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 9,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 9,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 10,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 10,
+      "variant": "compressed",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 11,
+      "variant": "vmm_plain",
+      "exact": true
+    },
+    {
+      "heads": 32,
+      "input": 11,
+      "variant": "compressed",
+      "exact": true
+    }
+  ],
+  "allocations": [
+    {
+      "variant": "vmm_plain",
+      "logical_bytes": 268435456,
+      "allocated_bytes": 268435456,
+      "granularity": 2097152,
+      "compression_type": 0,
+      "device": 0
+    },
+    {
+      "variant": "compressed",
+      "logical_bytes": 268435456,
+      "allocated_bytes": 268435456,
+      "granularity": 2097152,
+      "compression_type": 1,
+      "device": 0
+    }
+  ],
+  "median_us": {
+    "8": {
+      "torch": 20.651555723614162,
+      "vmm_plain": 20.643110904428696,
+      "compressed": 20.51999999417199
+    },
+    "16": {
+      "torch": 36.71777745087941,
+      "vmm_plain": 36.542221903800964,
+      "compressed": 36.296887530220886
+    },
+    "24": {
+      "torch": 56.88311325179206,
+      "vmm_plain": 57.568444146050346,
+      "compressed": 57.54933423466153
+    },
+    "32": {
+      "torch": 69.21466522746616,
+      "vmm_plain": 69.5271094640096,
+      "compressed": 69.39511166678534
+    }
+  },
+  "method": "Same actual checkpoint BF16 head matrix; twelve distinct synthetic hidden rows; existing exact head-prefix shapes. Identical cuBLAS operations, rotating/reversed order, private-stream checks. Stage screening only, excluding LLM traffic.",
+  "codebooks": 32,
+  "torch": "2.13.0+cu130",
+  "allocator_after": {
+    "live_bytes": 0,
+    "live_allocations": 0,
+    "cleanup_errors": 0
+  }
+}

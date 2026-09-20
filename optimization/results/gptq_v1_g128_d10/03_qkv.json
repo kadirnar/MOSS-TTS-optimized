@@ -1,0 +1,15 @@
+{
+  "name": "03_qkv",
+  "shape": [
+    6144,
+    4096
+  ],
+  "seconds": 0.07652048580348492,
+  "training_rows": 866,
+  "heldout_rows": 410,
+  "train_gptq_mse": 7.306649058591574e-05,
+  "train_rtn_mse": 0.002340687206014991,
+  "heldout_gptq_mse": 0.0005127746844664216,
+  "heldout_rtn_mse": 0.0023642240557819605,
+  "sha256": "5812bba74fb72939cedc4c0cb6515531f7cbae2eeb3a09fa468bf3b272645664"
+}

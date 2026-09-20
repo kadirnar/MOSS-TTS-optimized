@@ -1,0 +1,56 @@
+{
+  "created_utc": "2026-09-20T16:28:45.843246+00:00",
+  "copied_files_verified": 2611,
+  "python_AST_passed": 548,
+  "selected_bundles_verified": {
+    "qkv_cluster_bundle_v6": 4,
+    "qkv_cluster_bundle_history_v1": 4,
+    "gateup_exact_bundle_v1": 4
+  },
+  "high_confidence_credential_pattern_matches": 0,
+  "original_services": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32,
+      "weight_quantization": "none"
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32,
+      "weight_quantization": "fp8_all"
+    }
+  },
+  "server_help_passed": true,
+  "staged_files_before_final_check_update": 2614,
+  "largest_file_bytes": 15555461,
+  "english_cleanup": {
+    "verified_utc": "2026-09-20T16:40:06.361551+00:00",
+    "python_AST_passed": 548,
+    "python_comment_and_docstring_CJK_matches": 0,
+    "changed_python_AST_compared": [
+      "moss_tts_delay/processing_moss_tts.py",
+      "moss_tts_delay/tts_robust_normalizer_single_script.py",
+      "moss_tts_local/modeling_moss_tts.py",
+      "moss_tts_local/processing_moss_tts.py",
+      "moss_tts_local_v1.5/streaming.py",
+      "moss_tts_realtime/example_llm_stream_to_tts.py",
+      "moss_tts_realtime/example_multiturn_stream_to_tts.py"
+    ],
+    "executable_changes": [
+      "Streaming CLI default text and language changed to English.",
+      "Multiturn example output message translated to English."
+    ],
+    "other_executable_AST_unchanged": true,
+    "normalizer_cases_and_idempotence_passed": 38,
+    "streaming_CLI_defaults_and_language_override_passed": true,
+    "deleted_duplicate_READMEs": 7,
+    "remaining_links_to_deleted_READMEs": 0,
+    "source_provenance_files_verified": {
+      "unchanged": 2585,
+      "modified": 19,
+      "removed": 7
+    },
+    "recorded_results_unchanged": true,
+    "existing_tracked_files": 2607
+  }
+}

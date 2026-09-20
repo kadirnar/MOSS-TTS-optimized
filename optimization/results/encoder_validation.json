@@ -1,0 +1,34 @@
+{
+  "0.24": {
+    "frames": 3,
+    "code_agreement": 1.0
+  },
+  "0.64": {
+    "frames": 8,
+    "code_agreement": 1.0
+  },
+  "1.28": {
+    "frames": 16,
+    "code_agreement": 1.0
+  },
+  "2.56": {
+    "frames": 32,
+    "code_agreement": 1.0
+  },
+  "3.112": {
+    "frames": 38,
+    "code_agreement": 1.0
+  },
+  "4.8": {
+    "frames": 60,
+    "code_agreement": 1.0
+  },
+  "8.8": {
+    "frames": 110,
+    "code_agreement": 1.0
+  },
+  "14.5": {
+    "frames": 181,
+    "code_agreement": 1.0
+  }
+}

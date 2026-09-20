@@ -1,0 +1,1037 @@
+{
+  "method": "8 distinct weight/scale pairs, prequantized input, median nine graph timings; three layers x four recorded vectors plus zero/spike, private-stream comparison against selected scaled-integer Triton kernels.",
+  "cases": {
+    "qkv": {
+      "reference_us": 6.05999988814195,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3f3890>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3e98d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40e8d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40ca10>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3f2110>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0dd4a10>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf434ed0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3eb690>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40c910>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf42acd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf412e90>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf45f150>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf43d7d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0dd49d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf448450>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4044d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf406110>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40c610>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf43e450>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf434c90>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3e9bd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3ea050>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4110d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf42b890>, None)"
+        }
+      ],
+      "best_exact": null
+    },
+    "out": {
+      "reference_us": 5.123999901115894,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf436910>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf467ad0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4068d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0de0810>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf43c9d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf467690>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf421b10>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf472d10>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf487550>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf404690>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf449710>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf484210>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3f3d50>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf449b50>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4069d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3e9490>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf3f1bd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf472f50>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0dd5910>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4297d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf407b90>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf466150>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf471bd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4058d0>, None)"
+        }
+      ],
+      "best_exact": null
+    },
+    "up": {
+      "reference_us": 17.106667160987854,
+      "candidates": [
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf49c790>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b29d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b7150>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf49f590>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf47ccd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b78d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf410ed0>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf472ed0>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0dd5b90>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf472610>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf487b90>, None)"
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf406c50>, None)"
+        }
+      ],
+      "best_exact": null
+    },
+    "down": {
+      "reference_us": 10.057333235939344,
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf465f90>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b6f50>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0dd54d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf434cd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b6f50>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 4,
+            "integer_rows": 2
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4078d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf484890>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b0590>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40dd10>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf421450>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4361d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0da6650>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf406b90>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf495b10>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4cd6d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40c410>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0de3a50>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 4,
+            "integer_rows": 4
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf486790>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf40e6d0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 1,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4b3050>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72fec0da6c10>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 2,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4cecd0>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 1
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf4cf410>, None)"
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "integer_groups": 4,
+            "integer_rows": 8
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "CompilationError(\"def _kernel(Q,XS,W,S,Y,OQ,OS,N:gl.constexpr,K:gl.constexpr,BG:gl.constexpr,R:gl.constexpr,\\n            FUSED:gl.constexpr,WARPS:gl.constexpr,IG:gl.constexpr,IROWS:gl.constexpr):\\n    I:gl.constexpr=gl.BlockedLayout([1,IG,4],[1,32,1],[IROWS,WARPS//IROWS,1],[2,1,0])\\n    F:gl.constexpr=gl.BlockedLayout([1,4],[1,32],[WARPS if K==4096 else WARPS//2,1 if K==4096 else 2],[1,0])\\n    base=gl.program_id(0)*R\\n    value=_projection(Q,XS,W,S,base,N*2 if FUSED else N,K,BG,R,I,F).to(gl.bfloat16)\\n    if FUSED:\\n        up=_projection(Q,XS,W,S,base+N,N*2,K,BG,R,I,F).to(gl.bfloat16).to(gl.float32)\\n        gate=value.to(gl.float32)\\n        silu=(gate/(1+gl.exp(-gate))).to(gl.bfloat16).to(gl.float32)\\n        value=(silu*up).to(gl.bfloat16)\\n    V:gl.constexpr=gl.BlockedLayout([1],[32],[WARPS],[0])\\n    value=gl.convert_layout(value,V)\\n    rows=base+gl.arange(0,R,layout=V)\\n    gl.store(Y+rows,value,rows<N)\\n    if FUSED:\\n        grouped=gl.reshape(value.to(gl.float32),(R//32,32))\\n        scale=gl.maximum(gl.div_rn(gl.max(gl.abs(grouped),1),127.0),1e-8)\\n        inv=gl.div_rn(1.0,scale)\\n        product=grouped*inv[:,None]\\n        quant=gl.inline_asm_elementwise('cvt.rni.s32.f32 $0,$1;',constraints='=r,f',args=[product],dtype=gl.int32,is_pure=True,pack=1)\\n        gl.store(OQ+rows,gl.reshape(quant,(R,)).to(gl.int8),rows<N)\\n        groups=gl.program_id(0)*(R//32)+gl.arange(0,R//32,layout=scale.type.layout)\\n        gl.store(OS+groups,scale,groups<N//32)\\n\", <ast.Call object at 0x72febf45d550>, None)"
+        }
+      ],
+      "best_exact": null
+    }
+  }
+}

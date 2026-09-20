@@ -1,0 +1,33 @@
+{
+  "format": "group128_v1",
+  "codebooks": 32,
+  "activation_group": 32,
+  "source": "group128_kernels_v1.json",
+  "selection": "Fastest candidate within 0.001 relative RMS of original-layout reference, not necessarily bitwise exact. Calibrated G128 quality must be evaluated.",
+  "projections": {
+    "qkv": {
+      "rows": 4,
+      "warps": 4,
+      "mode": 2,
+      "fused": false
+    },
+    "out": {
+      "rows": 4,
+      "warps": 8,
+      "mode": 2,
+      "fused": false
+    },
+    "up": {
+      "rows": 4,
+      "warps": 2,
+      "mode": 2,
+      "fused": false
+    },
+    "down": {
+      "rows": 8,
+      "warps": 2,
+      "mode": 2,
+      "fused": false
+    }
+  }
+}

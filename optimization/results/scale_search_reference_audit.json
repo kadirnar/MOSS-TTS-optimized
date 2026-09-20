@@ -1,0 +1,17 @@
+{
+  "initial_check": "One of the first 136 G32 scales differed from an independent Torch implementation using Python-scalar /7; initial assertion stopped before a success result was written.",
+  "fixture": "scale_search_initial_disagreement.pt",
+  "coordinate": [
+    8,
+    5
+  ],
+  "clip_grid_index": 2,
+  "maximum_weight": 0.205078125,
+  "alpha": 0.96875,
+  "scalar_division_float32": 0.02838134951889515,
+  "tensor_division_float32": 0.02838134765625,
+  "float64_diagnostic": 0.02838134765625,
+  "triton_bf16_scale": 0.0283203125,
+  "initial_reference_bf16_scale": 0.0284423828125,
+  "resolution": "Tensor division matches the explicitly rounded Triton division and float64 diagnostic. The exact value lies on a BF16 tie; scalar-division reciprocal rounding moves the first reference above that tie. Search kernel unchanged; corrected independent reference passes 12 cases and two GPTQ feedback checks."
+}

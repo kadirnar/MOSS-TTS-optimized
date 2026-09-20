@@ -1,0 +1,971 @@
+{
+  "codebooks": 32,
+  "cases": 144,
+  "all_selected_control_bits_exact": true,
+  "checks": [
+    {
+      "layer": 0,
+      "config": "copy_sw8_hint",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "copy_sw8_hint",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "copy_sw8_hint",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_sw128",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_sw128",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_sw128",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_compact",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_compact",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_compact",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial_r8w4",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial_r8w4",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "tma_partial_r8w4",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_up_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_up_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_up_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_qkv_full",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_qkv_full",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_qkv_full",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_down_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_down_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "probe_down_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 0,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "copy_sw8_hint",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "copy_sw8_hint",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "copy_sw8_hint",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_sw128",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_sw128",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_sw128",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_compact",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_compact",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_compact",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial_r8w4",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial_r8w4",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "tma_partial_r8w4",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_up_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_up_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_up_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_qkv_full",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_qkv_full",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_qkv_full",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_down_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_down_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "probe_down_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 17,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "copy_sw8_hint",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "copy_sw8_hint",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "copy_sw8_hint",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_sw128",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_sw128",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_sw128",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_compact",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_compact",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_compact",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial_r8w4",
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial_r8w4",
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "tma_partial_r8w4",
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_up_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_up_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_up_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_qkv_full",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_qkv_full",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_qkv_full",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_down_wait",
+      "input": "real",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_down_wait",
+      "input": "zero",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "probe_down_wait",
+      "input": "spike",
+      "selected_control_bits_exact": true,
+      "sampled_timestamps_ordered": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4096,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_cg",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_copy_sw8",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "real",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "zero",
+      "selected_control_bits_exact": true
+    },
+    {
+      "layer": 35,
+      "config": "out_tma_sw128",
+      "rows": 4093,
+      "input": "spike",
+      "selected_control_bits_exact": true
+    }
+  ],
+  "scope": "Private CUDA stream, changing real/zero/spike inputs. Five async down chains, three compact diagnostic probe schedules, and four output-copy variants including odd output-row tails. Copies preserve selected G32 arithmetic. Projection/chain memory validation, not whole-model sanitizer coverage."
+}

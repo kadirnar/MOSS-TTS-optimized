@@ -1,0 +1,21 @@
+{
+  "non_default_cuda_stream": true,
+  "cuda_graph_replay": true,
+  "cases": [
+    {
+      "amplitude": 0.001,
+      "residual_bitwise_equal": true,
+      "norm_bitwise_equal": true
+    },
+    {
+      "amplitude": 1.0,
+      "residual_bitwise_equal": true,
+      "norm_bitwise_equal": true
+    },
+    {
+      "amplitude": 1000.0,
+      "residual_bitwise_equal": true,
+      "norm_bitwise_equal": true
+    }
+  ]
+}

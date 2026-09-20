@@ -1,0 +1,41 @@
+{
+  "codebooks": 32,
+  "torch": "2.13.0+cu130",
+  "triton": "3.7.1",
+  "kernels": {
+    "control": {
+      "registers": 128,
+      "spills": 0,
+      "shared_bytes": 1024,
+      "tile": {
+        "rows": 4,
+        "warps": 2,
+        "integer_groups": 1,
+        "integer_rows": 1,
+        "prefetch": 1
+      },
+      "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc",
+      "static_global_loads_before_wait": 8,
+      "static_global_loads_after_wait": 162,
+      "sass_wait_present": true,
+      "note": "Static load-instruction counts, not bytes transferred or achieved occupancy."
+    },
+    "down8": {
+      "registers": 128,
+      "spills": 0,
+      "shared_bytes": 2048,
+      "tile": {
+        "rows": 8,
+        "warps": 4,
+        "integer_groups": 1,
+        "integer_rows": 1,
+        "prefetch": 1
+      },
+      "cubin_sha256": "b458c4a76fd8401a1db78c6a217b9f766f840857e6bb3a6eccb49c758e50acba",
+      "static_global_loads_before_wait": 8,
+      "static_global_loads_after_wait": 162,
+      "sass_wait_present": true,
+      "note": "Static load-instruction counts, not bytes transferred or achieved occupancy."
+    }
+  }
+}

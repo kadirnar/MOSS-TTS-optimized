@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py", line 75, in main
+    poison(e);actual=candidate(e,index,True)
+                     ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py", line 31, in __call__
+    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py", line 105, in launch
+    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py", line 739, in run
+    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py", line 884, in _do_compile
+    kernel = self.compile(src, target=target, options=options.__dict__)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py", line 307, in compile
+    module = src.make_ir(target, options, codegen_fns, module_map, context)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/venv/moss-vllm/lib/python3.12/site-packages/triton/experimental/gluon/_runtime.py", line 40, in make_ir
+    module = ast_to_ttir(self.fn, self, context=context, options=options, codegen_fns=codegen_fns,
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+triton.compiler.errors.CompilationError: at 36:4:
+    words=gl.sum((q4&255)<<(c[None,:]*8),1)
+    a,b=gl.split(gl.reshape(words,(512,2)))
+    a=gl.convert_layout(gl.reshape(a,(128,4)),gl.SliceLayout(0,I))
+    b=gl.convert_layout(gl.reshape(b,(128,4)),gl.SliceLayout(0,I))
+    scale=gl.convert_layout(scale,gl.SliceLayout(0,F))
+    value=_projection(a,b,scale,W,S,h*128,6144,128,I,F).to(gl.bfloat16)
+    if DEBUG:
+        rows=gl.arange(0,128,layout=value.type.layout)
+        gl.store(Y+h*128+rows,value)
+    if TRIGGER==2:trigger()
+    p=gl.load(POS)
+    if h<40:
+    ^
+AssertionError('initial value for `value` is of type bf16[constexpr[128]], but the then block redefines it as fp32[constexpr[128]]')

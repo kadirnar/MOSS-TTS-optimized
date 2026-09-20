@@ -1,0 +1,7785 @@
+{
+  "cases": [
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 0,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 1,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 2,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 3,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 4,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 5,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 6,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 7,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 8,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 9,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 10,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 11,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 12,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 13,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 14,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 15,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 16,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 17,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 18,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 19,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 20,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 21,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 22,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 23,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 24,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 25,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 26,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 27,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 28,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 29,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 30,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 31,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 32,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 33,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 34,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "out",
+      "layer_or_rows": 35,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 0,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 1,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 2,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 3,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 4,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 5,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 6,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 7,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 8,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 9,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 10,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 11,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 12,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 13,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 14,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 15,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 16,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 17,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 18,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 19,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 20,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 21,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 22,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 23,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 24,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 25,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 26,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 27,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 28,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 29,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 30,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 31,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 32,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 33,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 34,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "77",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "155",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "310",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "399",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "650",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "760",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "865",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "1012",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "random_0.001",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "random_0.1",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "random_10",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "random_1000",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "projection": "down",
+      "layer_or_rows": 35,
+      "input": "spike",
+      "mismatches": 0
+    }
+  ],
+  "all_exact": true,
+  "mode": "all",
+  "private_stream": true,
+  "cuda_graph": false,
+  "codebooks": 32
+}

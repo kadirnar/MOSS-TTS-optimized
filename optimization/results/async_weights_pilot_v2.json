@@ -1,0 +1,483 @@
+{
+  "codebooks": 32,
+  "configs": {
+    "control": null,
+    "m1_s1_d0": {
+      "mode": 1,
+      "swizzle": 1,
+      "divisor": 0
+    },
+    "m2_s0_d0": {
+      "mode": 2,
+      "swizzle": 0,
+      "divisor": 0
+    },
+    "m3_s0_d0": {
+      "mode": 3,
+      "swizzle": 0,
+      "divisor": 0
+    },
+    "m3_s128_d0": {
+      "mode": 3,
+      "swizzle": 128,
+      "divisor": 0
+    },
+    "m4_s0_d0": {
+      "mode": 4,
+      "swizzle": 0,
+      "divisor": 0
+    },
+    "m4_s128_d0": {
+      "mode": 4,
+      "swizzle": 128,
+      "divisor": 0
+    },
+    "m3_s0_r2w2": {
+      "mode": 3,
+      "swizzle": 0,
+      "tile": {
+        "rows": 2,
+        "warps": 2
+      }
+    },
+    "m3_s0_r4w4": {
+      "mode": 3,
+      "swizzle": 0,
+      "tile": {
+        "rows": 4,
+        "warps": 4
+      }
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s1_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s1_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s1_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m2_s0_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m2_s0_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m2_s0_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s128_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s128_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s128_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s0_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s0_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s0_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s128_d0",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s128_d0",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m4_s128_d0",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r2w2",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r2w2",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r2w2",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r4w4",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r4w4",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m3_s0_r4w4",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    }
+  ],
+  "resources": {
+    "control": {
+      "registers": 128,
+      "spills": 0,
+      "shared_bytes": 1024,
+      "cp_async_instructions": 1,
+      "tma_instructions": 0
+    },
+    "m1_s1_d0": {
+      "registers": 122,
+      "spills": 0,
+      "shared_bytes": 32768,
+      "cp_async_instructions": 34,
+      "tma_instructions": 0
+    },
+    "m2_s0_d0": {
+      "registers": 117,
+      "spills": 0,
+      "shared_bytes": 32776,
+      "cp_async_instructions": 1,
+      "tma_instructions": 1
+    },
+    "m3_s0_d0": {
+      "registers": 117,
+      "spills": 0,
+      "shared_bytes": 24584,
+      "cp_async_instructions": 3,
+      "tma_instructions": 3
+    },
+    "m3_s128_d0": {
+      "registers": 116,
+      "spills": 0,
+      "shared_bytes": 24584,
+      "cp_async_instructions": 6,
+      "tma_instructions": 6
+    },
+    "m4_s0_d0": {
+      "registers": 122,
+      "spills": 0,
+      "shared_bytes": 8200,
+      "cp_async_instructions": 1,
+      "tma_instructions": 1
+    },
+    "m4_s128_d0": {
+      "registers": 119,
+      "spills": 0,
+      "shared_bytes": 8200,
+      "cp_async_instructions": 2,
+      "tma_instructions": 2
+    },
+    "m3_s0_r2w2": {
+      "registers": 64,
+      "spills": 0,
+      "shared_bytes": 12296,
+      "cp_async_instructions": 3,
+      "tma_instructions": 3
+    },
+    "m3_s0_r4w4": {
+      "registers": 62,
+      "spills": 0,
+      "shared_bytes": 24584,
+      "cp_async_instructions": 3,
+      "tma_instructions": 3
+    }
+  },
+  "errors": {},
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m1_s1_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m2_s0_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m3_s0_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m3_s128_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m4_s0_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m4_s128_d0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m3_s0_r2w2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m3_s0_r4w4": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "m1_s1_d0",
+        "m2_s0_d0",
+        "m3_s0_d0",
+        "m3_s128_d0",
+        "m4_s0_d0",
+        "m4_s128_d0",
+        "m3_s0_r2w2",
+        "m3_s0_r4w4"
+      ],
+      "us": {
+        "control": 37.30133424202601,
+        "m1_s1_d0": 41.09866668780645,
+        "m2_s0_d0": 40.864000717798866,
+        "m3_s0_d0": 39.05066599448522,
+        "m3_s128_d0": 38.975998759269714,
+        "m4_s0_d0": 38.11199963092804,
+        "m4_s128_d0": 38.592000802357994,
+        "m3_s0_r2w2": 41.14133367935816,
+        "m3_s0_r4w4": 39.02933249870936
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "m3_s0_r4w4",
+        "m3_s0_r2w2",
+        "m4_s128_d0",
+        "m4_s0_d0",
+        "m3_s128_d0",
+        "m3_s0_d0",
+        "m2_s0_d0",
+        "m1_s1_d0"
+      ],
+      "us": {
+        "control": 37.19466676314672,
+        "m3_s0_r4w4": 39.08266623814901,
+        "m3_s0_r2w2": 41.14133367935816,
+        "m4_s128_d0": 38.52800031503042,
+        "m4_s0_d0": 38.293334345022835,
+        "m3_s128_d0": 39.0079990029335,
+        "m3_s0_d0": 38.90133400758108,
+        "m2_s0_d0": 40.45866678158442,
+        "m1_s1_d0": 40.789333482583366
+      }
+    }
+  ],
+  "method": "Original G32 weights and exact DP4A arithmetic. Down projection stages immutable packed weights using cp.async or Hopper TMA before PDL wait, then awaits copy completion before use. Actual 36-layer weight ring, numerical/private-stream graph checks and rotating/reversing measurement order. Not TTFA.",
+  "summary": {
+    "control": {
+      "median_us": 37.248000502586365,
+      "median_paired_gain_us": 0.0
+    },
+    "m1_s1_d0": {
+      "median_us": 40.94400008519491,
+      "median_paired_gain_us": -3.695999582608543
+    },
+    "m2_s0_d0": {
+      "median_us": 40.66133374969164,
+      "median_paired_gain_us": -3.413333247105278
+    },
+    "m3_s0_d0": {
+      "median_us": 38.97600000103315,
+      "median_paired_gain_us": -1.7279994984467848
+    },
+    "m3_s128_d0": {
+      "median_us": 38.99199888110161,
+      "median_paired_gain_us": -1.7439983785152435
+    },
+    "m4_s0_d0": {
+      "median_us": 38.202666987975434,
+      "median_paired_gain_us": -0.9546664853890725
+    },
+    "m4_s128_d0": {
+      "median_us": 38.560000558694206,
+      "median_paired_gain_us": -1.3120000561078413
+    },
+    "m3_s0_r2w2": {
+      "median_us": 41.14133367935816,
+      "median_paired_gain_us": -3.8933331767717974
+    },
+    "m3_s0_r4w4": {
+      "median_us": 39.055999368429184,
+      "median_paired_gain_us": -1.8079988658428192
+    }
+  }
+}

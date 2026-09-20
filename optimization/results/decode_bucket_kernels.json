@@ -1,0 +1,150 @@
+{
+  "torch": "2.13.0+cu130",
+  "private_stream": true,
+  "cases": [
+    {
+      "position": 0,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 13.055999763309956,
+      "bucket_us": 12.223999947309494
+    },
+    {
+      "position": 1,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 13.952000066637993,
+      "bucket_us": 12.97600008547306
+    },
+    {
+      "position": 31,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.184000134468079,
+      "bucket_us": 14.175999909639359
+    },
+    {
+      "position": 32,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 14.800000004470348,
+      "bucket_us": 13.712000101804733
+    },
+    {
+      "position": 126,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.135999768972397,
+      "bucket_us": 14.015999622642994
+    },
+    {
+      "position": 127,
+      "capacity": 128,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.552000142633915,
+      "bucket_us": 14.271999709308147
+    },
+    {
+      "position": 128,
+      "capacity": 256,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.584000386297703,
+      "bucket_us": 14.495999552309513
+    },
+    {
+      "position": 144,
+      "capacity": 256,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.359999611973763,
+      "bucket_us": 14.144000131636858
+    },
+    {
+      "position": 176,
+      "capacity": 256,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.839999541640282,
+      "bucket_us": 14.928000047802925
+    },
+    {
+      "position": 254,
+      "capacity": 256,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 16.07999950647354,
+      "bucket_us": 14.688000082969666
+    },
+    {
+      "position": 255,
+      "capacity": 256,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 15.904000028967857,
+      "bucket_us": 14.928000047802925
+    },
+    {
+      "position": 256,
+      "capacity": 512,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 16.303999349474907,
+      "bucket_us": 15.936000272631645
+    },
+    {
+      "position": 510,
+      "capacity": 512,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 18.880000337958336,
+      "bucket_us": 17.08799973130226
+    },
+    {
+      "position": 511,
+      "capacity": 512,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 18.400000408291817,
+      "bucket_us": 16.863999888300896
+    },
+    {
+      "position": 512,
+      "capacity": 1024,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 18.52799952030182,
+      "bucket_us": 18.48000008612871
+    },
+    {
+      "position": 1023,
+      "capacity": 1024,
+      "relative_rms": 0.0,
+      "exact": true,
+      "kv_exact": true,
+      "baseline_us": 20.99199965596199,
+      "bucket_us": 20.99199965596199
+    }
+  ]
+}

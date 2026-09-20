@@ -1,0 +1,37 @@
+{
+  "group": 128,
+  "damping": 0.1,
+  "actorder": true,
+  "static_bf16_scales": true,
+  "code_range": [
+    -7,
+    7
+  ],
+  "tts_revision": "cdd3b911b1585e3f2dbc7775ef10f9926f58850a",
+  "calibration_sha256": "62d1b1389d27e9f8c1bcda0341c5d4453be8015a84fe0025172f53b1125cc35b",
+  "training_rows": 866,
+  "heldout_rows": 410,
+  "torch": "2.13.0+cu130",
+  "training_ids": [
+    "zh0_0",
+    "zh0_1",
+    "zh1_0",
+    "zh1_1",
+    "en0_0",
+    "en0_1",
+    "en1_0",
+    "en1_1"
+  ],
+  "heldout_ids": [
+    "zh0_2",
+    "zh1_2",
+    "en0_2",
+    "en1_2"
+  ],
+  "scale_search": {
+    "mode": "mse",
+    "steps": 33,
+    "minimum_clip_fraction": 0.5,
+    "loss": "BF16-rounded static reconstruction squared error, optionally weighted by training activation energy"
+  }
+}

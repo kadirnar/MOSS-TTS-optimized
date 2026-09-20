@@ -1,0 +1,15 @@
+{
+  "name": "30_out",
+  "shape": [
+    4096,
+    4096
+  ],
+  "seconds": 0.07780250534415245,
+  "training_rows": 866,
+  "heldout_rows": 410,
+  "train_gptq_mse": 0.0004137502983212471,
+  "train_rtn_mse": 0.010413749143481255,
+  "heldout_gptq_mse": 0.007826192304491997,
+  "heldout_rtn_mse": 0.010408113710582256,
+  "sha256": "7348064237952df46c3cbce401ba01d4a2a53fc57787de0de76a980ceb4a4a5f"
+}

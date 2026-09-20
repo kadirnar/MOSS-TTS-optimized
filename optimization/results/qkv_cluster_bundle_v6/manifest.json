@@ -1,0 +1,350 @@
+{
+  "format": "qkv_cluster_cubin_v1",
+  "complete": true,
+  "torch": "2.13.0+cu130",
+  "triton": "3.8.0",
+  "configs": {
+    "c8_t2_exact": {
+      "ctas": 8,
+      "divisor": 16,
+      "trigger_mode": 2,
+      "legacy_projection": true,
+      "legacy_norm": true
+    }
+  },
+  "binaries": {
+    "c8_t2_exact_add0_debug0": {
+      "prefix": "c8_t2_exact_add0_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "c1ab645aa96853318c48f171f768152815bb942dcb6638065e7b7acd578b74e6"
+    },
+    "c8_t2_exact_add0_debug1": {
+      "prefix": "c8_t2_exact_add0_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "863f39c3e91990edb30791981068a6a63fffda6449848583a511fb68af6e2a50"
+    },
+    "c8_t2_exact_add1_debug0": {
+      "prefix": "c8_t2_exact_add1_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "9bcae17d1d58b5ab2edbb6418c05f9458cc140116c200283ae68b7366361f717"
+    },
+    "c8_t2_exact_add1_debug1": {
+      "prefix": "c8_t2_exact_add1_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "5168980a787520146e821c926b4ed796f96209eb5876d8bb764f1c3b8b6f037b"
+    }
+  },
+  "kernel_source_sha256": "5b4d681bde66fd6b688323e566ee3004c28bf4dc9f38d7c95ab9f16edc295bff"
+}
