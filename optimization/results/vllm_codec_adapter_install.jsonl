@@ -1,2 +1,0 @@
-{"path": "/venv/moss-vllm-omni/lib/python3.12/site-packages/vllm_omni/model_executor/models/moss_tts/modeling_moss_tts_codec.py", "sha256": "481367fc05ae4d22c383b71849a9c672f8aef5486ccfd8bda42e83e5aaddeb74", "enabled_only_with": "MOSS_V1_OPTIMIZED_CODEC=1"}
-{"path": "/venv/moss-vllm-omni/lib/python3.12/site-packages/vllm_omni/model_executor/stage_input_processors/moss_tts.py", "sha256": "ff43666859a8b75b2abbfdc42564658803cf7b9661e278a6817711afecf1ab9b", "enabled_only_with": "MOSS_V1_OPTIMIZED_CODEC=1"}

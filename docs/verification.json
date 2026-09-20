@@ -1,0 +1,104 @@
+{
+  "created_utc": "2026-09-20T17:20:36.814689+00:00",
+  "complete": true,
+  "scope": "Migration to an installable 8B-only library; functional verification, not a new TTFA benchmark.",
+  "previous_commit": "34878cf60a8839ea7018ae4520dafcdc85baa392",
+  "model": "OpenMOSS-Team/MOSS-TTS-v1.5 (8B Delay)",
+  "codebooks": 32,
+  "hardware": "NVIDIA H200 NVL",
+  "qualified_runtime": {
+    "python": "3.12",
+    "torch": "2.13.0+cu130",
+    "torchaudio": "2.11.0",
+    "triton": "3.7.1",
+    "transformers": "5.14.1"
+  },
+  "cleanup": {
+    "previous_files": 2607,
+    "previous_bytes": 116771240,
+    "current_files": 102,
+    "main_directories": [
+      "src",
+      "docs",
+      "examples",
+      "tests"
+    ],
+    "original_runtime_checkout_modified": false
+  },
+  "packaging": {
+    "wheel_built": true,
+    "sdist_built": true,
+    "installed_wheel_imported_outside_checkout": true,
+    "all_six_cubin_hashes_verified": true,
+    "native_sources_in_wheel": true,
+    "license_notices_in_wheel": true,
+    "public_import_loads_torch": false
+  },
+  "cpu_tests": {
+    "passed": 60,
+    "gpu_test_deselected": 1,
+    "ran_against_installed_wheel": true
+  },
+  "gpu_bf16": {
+    "preset": "bf16",
+    "frames": 70,
+    "pcm_sha256": "cdc891962cbb41000706f60ccaf66e8ffa3df3579d56c2d8d5720aa84c6176a0",
+    "codebooks": 32,
+    "cancellation_recovered": true,
+    "concurrent_request_rejected": true,
+    "non_default_cuda_stream": true,
+    "chunk_ownership": true,
+    "unconditioned_stream": true,
+    "first_request_engine_ms": 192.73758493363857,
+    "scope": "Single first request after graph warmup; no performance claim."
+  },
+  "gpu_gptq": {
+    "preset": "gptq",
+    "frames": 76,
+    "pcm_sha256": "1bdcc08f930584fddf43ed85446f50ba1cfb9070b578fa431abd8735f793220f",
+    "codebooks": 32,
+    "prior_calibrated_pcm_exact": true,
+    "cancellation_recovered": true,
+    "concurrent_request_rejected": true,
+    "non_default_cuda_stream": true,
+    "chunk_ownership": true,
+    "unconditioned_stream": true,
+    "first_request_engine_ms": 94.09970603883266,
+    "scope": "Single first request after graph warmup; no performance claim."
+  },
+  "http_installed_wheel": {
+    "complete": true,
+    "installed_wheel": true,
+    "source_checkout_on_pythonpath": false,
+    "codebooks": 32,
+    "frames": 76,
+    "pcm_sha256": "1bdcc08f930584fddf43ed85446f50ba1cfb9070b578fa431abd8735f793220f",
+    "prior_calibrated_pcm_exact": true,
+    "cancellation_recovery_statuses": [
+      429,
+      200
+    ],
+    "voice_registration_and_deletion": true,
+    "temporary_server_stopped": true
+  },
+  "calibration": {
+    "exported_projections": 144,
+    "all_projection_hashes_verified": true,
+    "train_examples": 1,
+    "validation_examples": 1,
+    "installed_wheel_reload_and_gpu_stream_test_passed": true,
+    "quality_qualification": false,
+    "scope": "Minimal functional export/load round trip; not a speech-quality evaluation."
+  },
+  "checks": {
+    "ruff": true,
+    "undefined_python_names": 0,
+    "python_syntax": true
+  },
+  "limits": [
+    "50 ms has not been reached.",
+    "Historical measurements are retained separately in benchmark.json.",
+    "Single-request functional smoke timings are not new qualified latency measurements.",
+    "G32 still requires explicit calibrated weights and an SM90 GPU."
+  ]
+}

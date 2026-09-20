@@ -1,5 +1,0 @@
-Traceback (most recent call last):
-  File "/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py", line 95, in main
-    result['checks'].append(check);save();assert not any(mismatches) and caches_exact,check
-                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: {'config': 'c8_t2', 'layer': 2, 'input': 0, 'byte_mismatches': [0, 1, 0, 0, 0, 0, 0, 0, 0], 'full_poisoned_caches_exact': True}

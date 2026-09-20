@@ -1,9 +1,0 @@
-{
-  "codebooks": 32,
-  "complete": false,
-  "cached_rows": [],
-  "fresh_rows": [],
-  "method": "Single temporary loopback process, one shared model and FP32 codec, two separately captured graph sets. Selected clustered G32 control versus qualified eight-row down tile. Balanced AB/BA complete requests with identical text/reference/seed. Cached TTFA includes HTTP through first full 3840-byte PCM chunk. Fresh TTFA starts before reference-registration HTTP and includes following synthesis; WAV/base64 prepared beforehand. Fresh references are re-encoded, generated audio is never cached. One excluded warmup pair per workload.",
-  "server_stopped": true,
-  "server_exit": 3
-}

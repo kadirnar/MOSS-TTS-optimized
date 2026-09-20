@@ -1,9 +1,0 @@
-{
-  "groups": 200704,
-  "dots": 401408,
-  "exact": true,
-  "packing_roundtrip_exact": true,
-  "private_stream": true,
-  "cuda_graph": true,
-  "method": "All 16 signed INT4 weights x 256 signed INT8 activations in each of 32 positions, then all positions together; 65536 random groups; a second reversed weight row shares activations. Independent Torch INT32 product/sum reference."
-}

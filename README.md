@@ -1,48 +1,94 @@
 # MOSS-TTS Optimized
 
-Streaming optimization of **MOSS-TTS-v1.5 8B Delay** with voice cloning and **all 32 acoustic codebooks**, including the first playable audio chunk.
+A Python library for **MOSS-TTS v1.5 8B** with voice cloning, streaming audio,
+and Triton/CUDA acceleration. Every audio frame retains **all 32 codebooks**.
 
-This is prepared as an independent repository for `kadirnar/moss-tts-optimized`, with a fresh Git history. It derives from OpenMOSS source; attribution and Apache-2.0 licenses are retained.
+```python
+from contextlib import closing
+from moss_tts import MossTTS
 
-Repository documentation, comments, and interface messages use English. Multilingual synthesis examples, audio-aligned reference transcripts, normalization rules, and recorded benchmark data retain their original language so they remain valid and reproducible.
-
-| Latest qualified measurement | Median |
-|---|---:|
-| Warm engine TTFA, registered cloned voice | **71.86 ms** |
-| Loopback HTTP TTFA, registered cloned voice | **75.02 ms** |
-| Fresh voice registration plus synthesis to first PCM | **110.67 ms** |
-
-Measured on one H200 NVL, batch one. First PCM is a complete 80-ms chunk at 24 kHz. **The 50-ms target has not been reached.** The latest path uses calibrated INT4/G32 decode, BF16 prefill and an FP32 codec; it is not numerically equivalent to upstream BF16. Options default off, and published benchmark results do not imply that the original running services were upgraded.
-
-- [Complete improvement table](optimization/IMPROVEMENTS.md)
-- [Installation, benchmark commands and streaming API](optimization/README.md)
-- [Latest selected optimization and qualification](optimization/REPORT_ATTENTION_HISTORY.md)
-- [Latest rejected cooperative CUDA experiment](optimization/REPORT_COOPERATIVE_MLP.md)
-- [Adapted upstream documentation](UPSTREAM_README.md)
-
-## Implementation
-
-The optimization package contains Triton/Gluon kernels, native CUDA/PTX implementations, calibrated DP4A projections, static KV caches, CUDA graph scheduling, prefill fusions, dependency overlap and streaming codec state. It includes the benchmarking and validation sources for SGLang, vLLM, TileLang, CuTe DSL and other investigated backends, with measured results and rejected trials distinguished from selected improvements.
-
-The server provides voice registration and incremental PCM synthesis, input validation, single-request GPU admission, cancellation and recovery. See the optimization README for request formats and the exact optional presets.
-
-## Runtime and generated artifacts
-
-Use the environment specified by the individual report. The baseline BF16 requirements are in `optimization/requirements-runtime.txt`. The latest qualified preset uses Python 3.12, Torch 2.13.0+cu130, Triton 3.7.1, Transformers 5.14.1 and an H200/SM90 GPU. Isolated Triton 3.8 cubins are supplied for the selected QKV and gate/up kernels; this is not an instruction to upgrade the complete runtime to Triton 3.8.
-
-Original model weights, calibration tensors, generated audio and GPU traces are external generated artifacts, excluded from Git. Download the fixed model revisions in `optimization/common.py`. For the calibrated preset, collect calibration inputs with `optimization.collect_calibration`, then export the selected weights with:
-
-```bash
-python -m optimization.calibrate_gptq --tag gptq_v1_g32_d10 --group 32 --damping 0.1
+with MossTTS.from_pretrained() as tts:
+    voice = tts.clone_voice("reference.wav")
+    with closing(tts.stream("Hello, this is my voice.", voice=voice)) as chunks:
+        for chunk in chunks:
+            pcm = chunk.pcm16()  # 80 ms of 24 kHz mono PCM, ready for your audio sink
 ```
 
-Read the report and calibration scripts before running GPU benchmarks; run GPU jobs sequentially. The raw JSON measurements and profile summaries included here document prior runs. Some evidence checkers require the original generated artifacts in addition to this source checkout. Rejected quantization checkpoint files were removed locally; their configurations, measurements and regeneration commands remain in `optimization/results/cleanup_20260920.json`.
+## Install
 
-## Provenance
+Requires Linux, Python 3.12+, and an NVIDIA GPU with sufficient memory for the
+8B model, codec and CUDA graphs. Install a PyTorch/torchaudio CUDA stack suitable
+for your GPU first, then install this checkout:
 
-- [OpenMOSS/MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS), source commit `934d6826b084c46a0d033402174d5f8ac4ed2519`.
-- [OpenMOSS/MOSS-Audio-Tokenizer](https://github.com/OpenMOSS/MOSS-Audio-Tokenizer), source commit `56776e867cb38446fa4bc00d0aceccab5001b008`, vendored as ordinary source files under `moss_audio_tokenizer/`.
-- TTS checkpoint revision: `cdd3b911b1585e3f2dbc7775ef10f9926f58850a`.
-- Codec checkpoint revision: `3cd226ba2947efa357ef453bcad111b6eafba782`.
+```bash
+pip install -e .
+```
 
-`SOURCE_PROVENANCE.json` records the original copied file hashes, packaging scope, and subsequent English-language edits and removals under `local_changes`. Upstream authorship and licenses remain applicable; see [LICENSE](LICENSE) and [tokenizer license](moss_audio_tokenizer/LICENSE).
+Optional extras:
+
+```bash
+pip install -e '.[server]'         # HTTP streaming
+pip install -e '.[hopper,server]'  # Qualified G32 host versions and HTTP
+pip install -e '.[dev,server]'     # Packaging and CPU tests
+```
+
+The first load downloads pinned model and codec snapshots to the Hugging Face
+cache, then warms the kernels and captures graphs. Pass `local_files_only=True`
+after downloading for offline startup. Weights and reference recordings are not
+bundled in the repository. Importing `moss_tts` does not load Torch or initialize CUDA.
+
+## Choose a preset
+
+| Preset | Weights / runtime | Intended use |
+|---|---|---|
+| `bf16` (default) | BF16 LLM, FP32 codec, Triton and CUDA graphs | Original weight precision |
+| `gptq` | Calibrated INT4/G32 decode, BF16 prefill, FP32 codec | Selected Hopper optimization |
+
+```python
+tts = MossTTS.from_pretrained(
+    preset="gptq",
+    calibration_path="checkpoints/gptq-g32",
+)
+```
+
+G32 requires an explicit calibrated export, Hopper SM90, Triton 3.7.1 and `nvcc`.
+The package includes the selected SM90 cubins and native CUDA sources. Compiled
+libraries are cached outside the installed package. See [usage](docs/usage.md)
+for calibration, device selection, concurrency, and cache configuration.
+
+The historical selected path measured **71.86 ms engine TTFA**, **75.02 ms
+loopback HTTP TTFA**, and **110.67 ms including fresh voice registration** on an
+H200 NVL. **The 50 ms target remains unmet.** These are prior qualified results;
+latency depends on the workload and environment. See the
+[complete improvement table and evidence](docs/performance.md).
+
+## Command line
+
+```bash
+moss-tts synthesize --text "Hello world." --reference reference.wav --output speech.wav
+moss-tts serve --host 127.0.0.1 --port 8000
+```
+
+The optional HTTP server supports voice registration and incremental raw PCM:
+`POST /v1/voices`, `DELETE /v1/voices/{voice_id}`, `POST /v1/audio/speech`, and
+`GET /health`. It owns one GPU worker and returns HTTP 429 for overlapping work.
+The API accepts complete text; audio output is streamed as it is generated.
+
+## Repository
+
+```text
+src/moss_tts/  Public API, CLI, HTTP transport, 8B model, codec and private kernels
+examples/     Minimal library usage
+tests/       API, packaging, HTTP, text normalization and opt-in GPU checks
+docs/        Usage, improvement table and compact validation evidence
+```
+
+Run `pytest -m 'not gpu'` for CPU checks. The optional GPU test is described in
+[usage](docs/usage.md). Build a wheel and source distribution with `python -m build`.
+
+Maintained by **kadirnar** as an independent repository. Based on
+[OpenMOSS/MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS) and
+[OpenMOSS/MOSS-Audio-Tokenizer](https://github.com/OpenMOSS/MOSS-Audio-Tokenizer).
+See [NOTICE](NOTICE) and [LICENSE](LICENSE) for source attribution and licensing.
+Documentation, comments and interfaces use English; multilingual test inputs
+remain in their original language.

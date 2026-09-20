@@ -1,0 +1,29 @@
+MOSS-TTS Optimized
+Maintained by kadirnar <kadir.nar@hotmail.com>.
+
+This independent distribution includes modified Apache-2.0 source from:
+
+OpenMOSS/MOSS-TTS
+Copyright 2026 OpenMOSS and the HuggingFace Inc. team.
+Source revision: 934d6826b084c46a0d033402174d5f8ac4ed2519
+https://github.com/OpenMOSS/MOSS-TTS
+The Delay model and processor are retained under moss_tts._model.
+Other model families, training tools, demos, and historical experiment files
+are excluded. Comments were translated and imports/package paths adapted.
+
+OpenMOSS/MOSS-Audio-Tokenizer
+Source revision: 56776e867cb38446fa4bc00d0aceccab5001b008
+https://github.com/OpenMOSS/MOSS-Audio-Tokenizer
+The configuration and implementation are vendored under moss_tts._codec.
+Its license is included in moss_tts/_licenses/MOSS-Audio-Tokenizer-LICENSE.
+
+IST-DASLab/gptq
+Source revision: 2d65066eeb06a5c9ff5184d8cebdf33662c67faf
+https://github.com/IST-DASLab/gptq
+The calibration implementation adapts the GPTQ algorithm with static BF16
+scales, symmetric signed nibbles and fused Triton error updates. Its license
+is included in moss_tts/_licenses/GPTQ-LICENSE.
+
+The optimization kernels, streaming API and package integration build on
+these sources. Original file-level copyright notices remain applicable.
+Model checkpoint licenses are distributed by their respective repositories.

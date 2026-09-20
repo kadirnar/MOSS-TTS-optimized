@@ -1,6 +1,0 @@
-{
-  "status": "aborted_before_measurement",
-  "reason": "Paired process was launched before racecheck had exited. Terminated immediately on detecting overlap; no paired timing or audio result produced. Retry must wait for sanitizer exit.",
-  "timestamp_utc": "2026-09-20T08:13:52.824429+00:00",
-  "log": "attention_pdl_paired_v1.log"
-}

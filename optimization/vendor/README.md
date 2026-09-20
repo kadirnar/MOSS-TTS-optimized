@@ -1,3 +1,0 @@
-sglang_decode_attention.py: Apache-2.0, from the installed SGLang 0.5.7 wheel. The attention algorithm is unchanged. Only is_hip is implemented locally to isolate kernel tests from the serving dependency stack. These experiments do not benchmark the SGLang server.
-
-GPTQ_LICENSE: Apache-2.0 license for the GPTQ algorithm source used as the reference for `calibrated_quant.py`. Upstream: https://github.com/IST-DASLab/gptq, commit `2d65066eeb06a5c9ff5184d8cebdf33662c67faf`. The local implementation changes static scale representation, rounding and export, and fuses column quantization/error updates in Triton. Original upstream code is retained in `/workspace/gptq` for inspection; it is not an inference dependency.

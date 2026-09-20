@@ -1,5 +1,0 @@
-==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
-==PROF== Connected to process 62709 (/venv/main/bin/python3.12)
-==ERROR== ERR_NVGPUCTRPERM - The user does not have permission to access NVIDIA GPU Performance Counters on the target device 0. For instructions on enabling permissions and to get more information see https://developer.nvidia.com/ERR_NVGPUCTRPERM
-{'torch': '2.13.0+cu130', 'triton': '3.7.1', 'registers_per_thread': 38, 'spills': 0, 'shared_bytes': 16, 'weight_bytes': 100663296, 'grid_ctas': 12288, 'warps_per_cta': 4}
-==PROF== Disconnected from process 62709

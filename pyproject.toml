@@ -1,89 +1,63 @@
 [build-system]
-requires = ["setuptools>=68", "wheel"]
+requires = ["setuptools>=77", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "moss-tts"
-version = "0.1.0"
-description = "MOSS-TTS dependencies and utilities"
+name = "moss-tts-optimized"
+version = "0.2.0"
+description = "MOSS-TTS v1.5 8B streaming inference with voice cloning and Triton/CUDA kernels"
 readme = "README.md"
-requires-python = ">=3.10"
-license = { file = "LICENSE" }
-authors = [{ name = "OpenMOSS Team" }]
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE", "src/moss_tts/_licenses/*"]
+authors = [{name = "kadirnar", email = "kadir.nar@hotmail.com"}]
+keywords = ["tts", "voice-cloning", "streaming", "triton", "cuda"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: POSIX :: Linux",
+  "Programming Language :: Python :: 3",
+  "Topic :: Multimedia :: Sound/Audio :: Speech",
+]
 dependencies = [
-  "safetensors==0.6.2",
-  "numpy==2.1.0",
-  "orjson==3.11.4",
-  "tqdm==4.67.1",
-  "PyYAML==6.0.3",
-  "einops==0.8.1",
-  "scipy==1.16.2",
-  "librosa==0.11.0",
-  "tiktoken==0.12.0",
-  "psutil",
-  "packaging",
-  "ninja",
-  "setuptools",
-  "wheel",
-  "gradio"
+  "torch>=2.9,<2.14",
+  "torchaudio>=2.9,<2.14",
+  "triton>=3.5,<3.9",
+  "transformers==5.14.1",
+  "accelerate>=1.12,<2",
+  "huggingface-hub>=1.5,<2",
+  "numpy>=2,<3",
+  "soundfile>=0.13,<1",
+  "safetensors>=0.6,<1",
+  "tqdm>=4.67,<5",
 ]
 
 [project.optional-dependencies]
-flash-attn = ["flash-attn"]
-finetune = [
-    "accelerate>=1.10.1",
-    "wandb>=0.16.0",
-]
-finetune-deepspeed = [
-    "accelerate>=1.10.1",
-    "deepspeed>=0.16.0",
-    "wandb>=0.16.0",
-]
-
-# Default PyTorch runtime stack for the original pipeline.
-torch-runtime = [
-    "torch==2.9.1+cu128",
-    "torchaudio==2.9.1+cu128",
-    "torchcodec==0.8.1",
-    "transformers==5.0.0",
-    "accelerate>=1.10.1",
-]
-
-# llama.cpp backend — torch-free core
-llama-cpp = [
-    "numpy>=2.0",
-    "pyyaml>=6.0",
-    "tokenizers>=0.20",
-    "soundfile>=0.12",
-]
-# llama.cpp + ONNX Runtime audio tokenizer
-llama-cpp-onnx = [
-    "numpy>=2.0",
-    "pyyaml>=6.0",
-    "tokenizers>=0.20",
-    "soundfile>=0.12",
-    "onnxruntime-gpu>=1.19",
-]
-# llama.cpp + TensorRT audio tokenizer
-llama-cpp-trt = [
-    "numpy>=2.0",
-    "pyyaml>=6.0",
-    "tokenizers>=0.20",
-    "soundfile>=0.12",
-    "tensorrt>=10.0",
-    "cuda-python>=12.0",
-]
-# torch-accelerated LM heads (optional, auto-detected)
-llama-cpp-torch = [
-    "torch>=2.4",
-]
+hopper = ["torch==2.13.0", "triton==3.7.1"]
+server = ["fastapi>=0.136,<1", "uvicorn>=0.53,<1"]
+dev = ["build>=1.2", "pytest>=8", "httpx>=0.28", "ruff>=0.11"]
 
 [project.scripts]
-moss-tts-llama-cpp = "moss_tts_delay.llama_cpp.pipeline:main"
+moss-tts = "moss_tts.cli:main"
 
 [project.urls]
-Homepage = "https://github.com/OpenMOSS-Team/MOSS-TTS"
-Repository = "https://github.com/OpenMOSS-Team/MOSS-TTS"
+Repository = "https://github.com/kadirnar/moss-tts-optimized"
+"Original model" = "https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5"
 
-[tool.setuptools]
-py-modules = []
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["moss_tts*"]
+
+[tool.setuptools.package-data]
+moss_tts = ["py.typed", "_runtime/*.cu", "_assets/*.json", "_assets/*/*.json", "_assets/*/*.cubin", "_licenses/*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["gpu: requires the full 8B checkpoint and an NVIDIA GPU"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["src/moss_tts/_runtime", "src/moss_tts/_model", "src/moss_tts/_codec"]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
