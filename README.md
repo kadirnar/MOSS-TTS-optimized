@@ -1,94 +1,122 @@
 # MOSS-TTS Optimized
 
-A Python library for **MOSS-TTS v1.5 8B** with voice cloning, streaming audio,
-and Triton/CUDA acceleration. Every audio frame retains **all 32 codebooks**.
+Fast inference library for [MOSS-TTS v1.5 8B](https://huggingface.co/OpenMOSS-Team/MOSS-TTS-v1.5),
+a text-to-speech model with voice cloning and streaming audio. Custom Triton/CUDA
+kernels and CUDA graphs accelerate both the LLM and audio codec while retaining
+**all 32 codebooks** in every output frame.
+
+## Benchmark
+
+NVIDIA H200 NVL | MOSS-TTS v1.5 8B | Batch size 1 | 24 kHz mono | 32 codebooks
+
+### Streaming Voice Cloning
+
+Historical measurements of the selected **GPTQ INT4/G32 decoder**, with BF16
+prefill and an FP32 codec. Time to first audio (TTFA) ends at the first complete
+PCM chunk: **1,920 samples / 80 ms of audio**.
+
+| Workload | Median TTFA | P95 TTFA |
+|---|---:|---:|
+| Warm engine, previously encoded voice | **71.86 ms** | 73.06 ms |
+| Warm loopback HTTP, previously encoded voice | **75.02 ms** | 76.55 ms |
+| Fresh voice registration + HTTP synthesis | **110.67 ms** | 113.46 ms |
+
+Warm measurements include text preparation, LLM generation and codec decoding;
+fresh-voice measurements also include reference registration and encoding, with
+the WAV/base64 payload prepared beforehand. Model loading, graph warmup and
+external network transit are excluded.
+
+**The 50 ms target has not been reached.** These results predate the library
+wrapper; its migration was checked for correctness, not rebenchmarked. G32
+changes weight precision and does not imply equivalence to upstream BF16.
+See the [improvement table](docs/performance.md), [timing samples](docs/benchmark.json)
+and [library validation](docs/verification.json).
+
+## Quick Start
+
+Install a CUDA-enabled PyTorch/torchaudio stack suitable for your GPU, then:
+
+```bash
+pip install git+https://github.com/kadirnar/MOSS-TTS-optimized.git
+```
+
+### Streaming with Voice Cloning
+
+The default `bf16` preset keeps the original weight precision. Provide a
+0.2–15 second reference recording and stream the generated audio to a WAV file:
 
 ```python
+import wave
 from contextlib import closing
+
 from moss_tts import MossTTS
 
 with MossTTS.from_pretrained() as tts:
     voice = tts.clone_voice("reference.wav")
-    with closing(tts.stream("Hello, this is my voice.", voice=voice)) as chunks:
-        for chunk in chunks:
-            pcm = chunk.pcm16()  # 80 ms of 24 kHz mono PCM, ready for your audio sink
+
+    with wave.open("speech.wav", "wb") as output:
+        output.setnchannels(1)
+        output.setsampwidth(2)
+        output.setframerate(24000)
+
+        with closing(tts.stream("Hello, this is my voice.", voice=voice)) as chunks:
+            for chunk in chunks:
+                output.writeframes(chunk.pcm16())
 ```
 
-## Install
+Each chunk contains 80 ms of audio. Send `chunk.pcm16()` to your audio sink for
+playback as chunks arrive. The first load downloads pinned model/codec weights
+and warms the runtime; keep the model loaded for subsequent requests.
 
-Requires Linux, Python 3.12+, and an NVIDIA GPU with sufficient memory for the
-8B model, codec and CUDA graphs. Install a PyTorch/torchaudio CUDA stack suitable
-for your GPU first, then install this checkout:
+### Calibrated G32 Inference
 
-```bash
-pip install -e .
-```
-
-Optional extras:
-
-```bash
-pip install -e '.[server]'         # HTTP streaming
-pip install -e '.[hopper,server]'  # Qualified G32 host versions and HTTP
-pip install -e '.[dev,server]'     # Packaging and CPU tests
-```
-
-The first load downloads pinned model and codec snapshots to the Hugging Face
-cache, then warms the kernels and captures graphs. Pass `local_files_only=True`
-after downloading for offline startup. Weights and reference recordings are not
-bundled in the repository. Importing `moss_tts` does not load Torch or initialize CUDA.
-
-## Choose a preset
-
-| Preset | Weights / runtime | Intended use |
-|---|---|---|
-| `bf16` (default) | BF16 LLM, FP32 codec, Triton and CUDA graphs | Original weight precision |
-| `gptq` | Calibrated INT4/G32 decode, BF16 prefill, FP32 codec | Selected Hopper optimization |
+Select the optimized Hopper path with an existing calibrated export:
 
 ```python
-tts = MossTTS.from_pretrained(
+from contextlib import closing
+
+from moss_tts import MossTTS
+
+with MossTTS.from_pretrained(
     preset="gptq",
     calibration_path="checkpoints/gptq-g32",
-)
+) as tts:
+    voice = tts.clone_voice("reference.wav")
+    with closing(tts.stream("Hello, this is my voice.", voice=voice)) as chunks:
+        for chunk in chunks:
+            pcm = chunk.pcm16()  # Send to your audio sink.
 ```
 
-G32 requires an explicit calibrated export, Hopper SM90, Triton 3.7.1 and `nvcc`.
-The package includes the selected SM90 cubins and native CUDA sources. Compiled
-libraries are cached outside the installed package. See [usage](docs/usage.md)
-for calibration, device selection, concurrency, and cache configuration.
+Weights and reference recordings are not bundled. See [calibration and usage](docs/usage.md)
+to create an export, configure caches or run offline. G32 retains BF16 weights
+for prefill; it does not have a standalone 4-bit model's memory footprint.
 
-The historical selected path measured **71.86 ms engine TTFA**, **75.02 ms
-loopback HTTP TTFA**, and **110.67 ms including fresh voice registration** on an
-H200 NVL. **The 50 ms target remains unmet.** These are prior qualified results;
-latency depends on the workload and environment. See the
-[complete improvement table and evidence](docs/performance.md).
-
-## Command line
+### Command Line and HTTP
 
 ```bash
 moss-tts synthesize --text "Hello world." --reference reference.wav --output speech.wav
+
+pip install "moss-tts-optimized[server] @ git+https://github.com/kadirnar/MOSS-TTS-optimized.git"
 moss-tts serve --host 127.0.0.1 --port 8000
 ```
 
-The optional HTTP server supports voice registration and incremental raw PCM:
-`POST /v1/voices`, `DELETE /v1/voices/{voice_id}`, `POST /v1/audio/speech`, and
-`GET /health`. It owns one GPU worker and returns HTTP 429 for overlapping work.
-The API accepts complete text; audio output is streamed as it is generated.
+The HTTP server supports voice registration and streaming raw PCM. See the
+[HTTP example](docs/usage.md#http-streaming). Both APIs accept complete text and
+stream audio output; each model handles one active request at a time.
 
-## Repository
+## Requirements
 
-```text
-src/moss_tts/  Public API, CLI, HTTP transport, 8B model, codec and private kernels
-examples/     Minimal library usage
-tests/       API, packaging, HTTP, text normalization and opt-in GPU checks
-docs/        Usage, improvement table and compact validation evidence
-```
+- Linux and Python 3.12+.
+- PyTorch 2.9+ with a compatible CUDA-enabled torchaudio installation.
+- An NVIDIA GPU with enough memory for the 8B model, codec and CUDA graphs.
+- G32: Hopper SM90, PyTorch 2.13.0, Triton 3.7.1, and a compatible CUDA toolkit with `nvcc`.
 
-Run `pytest -m 'not gpu'` for CPU checks. The optional GPU test is described in
-[usage](docs/usage.md). Build a wheel and source distribution with `python -m build`.
+Other dependencies and supported version ranges are declared in [pyproject.toml](pyproject.toml).
+See [development and tests](docs/usage.md#tests-and-distribution) for local installation.
 
-Maintained by **kadirnar** as an independent repository. Based on
+## License
+
+[Apache 2.0](LICENSE). Maintained by **kadirnar**, based on
 [OpenMOSS/MOSS-TTS](https://github.com/OpenMOSS/MOSS-TTS) and
-[OpenMOSS/MOSS-Audio-Tokenizer](https://github.com/OpenMOSS/MOSS-Audio-Tokenizer).
-See [NOTICE](NOTICE) and [LICENSE](LICENSE) for source attribution and licensing.
-Documentation, comments and interfaces use English; multilingual test inputs
-remain in their original language.
+[MOSS-Audio-Tokenizer](https://github.com/OpenMOSS/MOSS-Audio-Tokenizer).
+See [NOTICE](NOTICE) for third-party attribution.
