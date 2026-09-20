@@ -1,0 +1,28 @@
+{
+  "definition": "Completed 145-token requests; first fresh and warmup excluded, 20 measured streams per sequential server. Initial decode mean covers steps 1:33; step zero sampling is separate.",
+  "codebooks": 32,
+  "variants": {
+    "control": {
+      "engine_ttfa_ms": 81.05351030826569,
+      "prepare_ms": 1.5094578266143799,
+      "prefill_ms": 9.230406023561954,
+      "mean_initial_32_decode_ms": 2.023353474214673,
+      "initial_sampling_ms": 0.6683869287371635,
+      "first_codec_ms": 4.773790016770363,
+      "seed_ms": 0.3067934885621071,
+      "registration_http_ms": 36.635568365454674,
+      "fresh_single_ms": 124.01042878627777
+    },
+    "clock": {
+      "engine_ttfa_ms": 79.34944052249193,
+      "prepare_ms": 1.0497216135263443,
+      "prefill_ms": 9.21643152832985,
+      "mean_initial_32_decode_ms": 1.9988864369224757,
+      "initial_sampling_ms": 0.47076307237148285,
+      "first_codec_ms": 4.511323757469654,
+      "seed_ms": 0.22019725292921066,
+      "registration_http_ms": 35.5963259935379,
+      "fresh_single_ms": 122.29320220649242
+    }
+  }
+}

@@ -1,0 +1,41 @@
+usage: server.py [-h] [--port PORT] [--attention-block {32,128}]
+                 [--fused-residual] [--fused-gateup]
+                 [--weight-quantization {none,fp8_all}]
+                 [--calibration CALIBRATION] [--packing-plan PACKING_PLAN]
+                 [--decode-buckets] [--metrics-file METRICS_FILE]
+                 [--attention-quant] [--native-attention] [--gateup-quant]
+                 [--scaled-dp4a] [--norm-projection] [--audio-head-buckets]
+                 [--cuda-only-seed]
+
+options:
+  -h, --help            show this help message and exit
+  --port PORT
+  --attention-block {32,128}
+  --fused-residual
+  --fused-gateup
+  --weight-quantization {none,fp8_all}
+                        FP8 is experimental; all 32 codebooks and FP32 codec
+                        are retained
+  --calibration CALIBRATION
+                        Experimental complete GPTQ export: grouped DP4A,
+                        audited normalization layout, fused gate/up, 160-token
+                        prefill bucket
+  --packing-plan PACKING_PLAN
+                        Optional validated INT4 packing plan for a calibrated
+                        export
+  --decode-buckets      Capture position-bounded decode attention graphs
+  --metrics-file METRICS_FILE
+                        Optional local JSONL stage timing diagnostics;
+                        excludes text/audio/voice IDs
+  --attention-quant     Fuse G32 activation quantization into attention
+                        reduction
+  --native-attention    Use SM90 native B32/W4 attention with fixed arithmetic
+                        order
+  --gateup-quant        Fuse grouped activation quantization into gate/up/SiLU
+  --scaled-dp4a         Use exact scaled-integer INT4 unpacking
+  --norm-projection     Fuse residual normalization and quantization into QKV
+                        and gate/up projections
+  --audio-head-buckets  Skip only currently masked future audio heads; retain
+                        all 32 codebooks per frame
+  --cuda-only-seed      Seed only the current CUDA device used by the
+                        inference worker

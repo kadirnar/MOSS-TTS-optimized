@@ -1,0 +1,69 @@
+{
+  "method": "8 distinct weights/scales, input prequantized, median of nine graphs; selected scaled-integer kernel is the reference. Three layers times four recorded vectors plus zero/spike.",
+  "candidates": [
+    {
+      "config": {
+        "rows": 32,
+        "warps": 2
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 44.99333103497823
+    },
+    {
+      "config": {
+        "rows": 32,
+        "warps": 4
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 17.581333716710407
+    },
+    {
+      "config": {
+        "rows": 32,
+        "warps": 8
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 21.594665944576263
+    },
+    {
+      "config": {
+        "rows": 64,
+        "warps": 2
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 503.8133462270101
+    },
+    {
+      "config": {
+        "rows": 64,
+        "warps": 4
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 314.01065985361737
+    },
+    {
+      "config": {
+        "rows": 64,
+        "warps": 8
+      },
+      "mismatches": 0,
+      "exact_checks": 18,
+      "us": 21.724000573158264
+    }
+  ],
+  "reference_us": 17.06000044941902,
+  "best_exact": {
+    "config": {
+      "rows": 32,
+      "warps": 4
+    },
+    "mismatches": 0,
+    "exact_checks": 18,
+    "us": 17.581333716710407
+  }
+}

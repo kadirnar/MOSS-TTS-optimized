@@ -1,0 +1,158 @@
+{
+  "codebooks": 32,
+  "configs": {
+    "control": null,
+    "c2_ir1_d0": {
+      "ctas": 2,
+      "integer_rows": 1,
+      "divisor": 0
+    },
+    "c2_ir1_d16": {
+      "ctas": 2,
+      "integer_rows": 1,
+      "divisor": 16
+    },
+    "c4_ir1_d0": {
+      "ctas": 4,
+      "integer_rows": 1,
+      "divisor": 0
+    },
+    "c4_ir1_d16": {
+      "ctas": 4,
+      "integer_rows": 1,
+      "divisor": 16
+    },
+    "c8_ir1_d0": {
+      "ctas": 8,
+      "integer_rows": 1,
+      "divisor": 0
+    },
+    "c8_ir1_d16": {
+      "ctas": 8,
+      "integer_rows": 1,
+      "divisor": 16
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    }
+  ],
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "errors": {
+    "c2_ir1_d0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n",
+    "c2_ir1_d16": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n",
+    "c4_ir1_d0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n",
+    "c4_ir1_d16": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n",
+    "c8_ir1_d0": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n",
+    "c8_ir1_d16": "Traceback (most recent call last):\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 75, in main\n    poison(e);actual=candidate(e,index,True)\n                     ^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/benchmark_qkv_cluster.py\", line 31, in __call__\n    result,k=launch(raw['x'][index:index+1],raw['residual'][index:index+1] if raw['has_residual'] else None,\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/MOSS-TTS/optimization/qkv_cluster_prepare.py\", line 105, in launch\n    kernel=_kernel[(48,)](x,residual,norm_weight,w,s,summed,projected,q_weight,k_weight,cos,sin,q,kc,vc,position,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 370, in <lambda>\n    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)\n                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 739, in run\n    kernel = self._do_compile(key, signature, device, constexprs, options, attrs, warmup)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/runtime/jit.py\", line 884, in _do_compile\n    kernel = self.compile(src, target=target, options=options.__dict__)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/compiler/compiler.py\", line 327, in compile\n    next_module = compile_ir(module, metadata)\n                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 552, in <lambda>\n    stages[\"llir\"] = lambda src, metadata: self.make_llir(src, metadata, options, capability)\n                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/compiler.py\", line 383, in make_llir\n    pm.run(mod, 'make_llir')\nRuntimeError: PassManager::run failed\n"
+  },
+  "resources": {},
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 15.295999745527903
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 15.306666493415833
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "control"
+      ],
+      "us": {
+        "control": 15.626666446526846
+      }
+    }
+  ],
+  "method": "One cluster per 128-channel Q/K/V head: exact G32 norm/projection followed by per-head norm/RoPE/cache writes, then selected native attention/reduction and register-preload output. Four vs five kernels. Actual layer weights/normalization inputs, nearest 0/17/35 frozen attention fixtures; not a full trajectory or TTFA. Changed cache positions poisoned before checks.",
+  "summary": {
+    "control": {
+      "median_us": 15.306666493415833,
+      "median_paired_gain_us": 0.0
+    }
+  }
+}

@@ -1,0 +1,1192 @@
+{
+  "codebooks": 32,
+  "configs": {
+    "control": null,
+    "p0_cNone": {
+      "policy": 0,
+      "carveout": null
+    },
+    "p0_c0": {
+      "policy": 0,
+      "carveout": 0
+    },
+    "p0_c25": {
+      "policy": 0,
+      "carveout": 25
+    },
+    "p0_c50": {
+      "policy": 0,
+      "carveout": 50
+    },
+    "p0_c100": {
+      "policy": 0,
+      "carveout": 100
+    },
+    "p1_cNone": {
+      "policy": 1,
+      "carveout": null
+    },
+    "p1_c0": {
+      "policy": 1,
+      "carveout": 0
+    },
+    "p1_c25": {
+      "policy": 1,
+      "carveout": 25
+    },
+    "p1_c50": {
+      "policy": 1,
+      "carveout": 50
+    },
+    "p1_c100": {
+      "policy": 1,
+      "carveout": 100
+    },
+    "p2_cNone": {
+      "policy": 2,
+      "carveout": null
+    },
+    "p2_c0": {
+      "policy": 2,
+      "carveout": 0
+    },
+    "p2_c25": {
+      "policy": 2,
+      "carveout": 25
+    },
+    "p2_c50": {
+      "policy": 2,
+      "carveout": 50
+    },
+    "p2_c100": {
+      "policy": 2,
+      "carveout": 100
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_cNone",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_cNone",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_cNone",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c25",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c25",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c25",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c50",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c50",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c50",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c100",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c100",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p0_c100",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_cNone",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_cNone",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_cNone",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c25",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c25",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c25",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c50",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c50",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c50",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c100",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c100",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p1_c100",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_cNone",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_cNone",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_cNone",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c0",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c0",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c0",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c25",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c25",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c25",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c50",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c50",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c50",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c100",
+      "layer": 17,
+      "input": 0,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c100",
+      "layer": 17,
+      "input": 10,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    },
+    {
+      "config": "p2_c100",
+      "layer": 17,
+      "input": 31,
+      "outputs_exact": true,
+      "poisoned_cache_exact": true
+    }
+  ],
+  "graphs": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p0_cNone": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p0_c0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p0_c25": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p0_c50": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p0_c100": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p1_cNone": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p1_c0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p1_c25": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p1_c50": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p1_c100": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p2_cNone": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p2_c0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p2_c25": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p2_c50": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "p2_c100": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "occupancy": {
+    "p0_cNone": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": null,
+        "module_handle": 108399775479552,
+        "function_handle": 108399775486448
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": null,
+        "module_handle": 108399474315056,
+        "function_handle": 108399776554560
+      }
+    },
+    "p0_c0": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 0,
+        "module_handle": 108399776023984,
+        "function_handle": 108399774788544
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 0,
+        "module_handle": 108399774791504,
+        "function_handle": 108399775998976
+      }
+    },
+    "p0_c25": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 25,
+        "module_handle": 108399779577776,
+        "function_handle": 108399778606944
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 25,
+        "module_handle": 108399779033696,
+        "function_handle": 108399778613696
+      }
+    },
+    "p0_c50": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 50,
+        "module_handle": 108399779559520,
+        "function_handle": 108399779566416
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 50,
+        "module_handle": 108399779572624,
+        "function_handle": 108399779010800
+      }
+    },
+    "p0_c100": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 100,
+        "module_handle": 108399783390048,
+        "function_handle": 108399781472752
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 0,
+        "carveout_percent": 100,
+        "module_handle": 108399781478960,
+        "function_handle": 108399783366368
+      }
+    },
+    "p1_cNone": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": null,
+        "module_handle": 108399785295968,
+        "function_handle": 108399781872752
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": null,
+        "module_handle": 108399783793296,
+        "function_handle": 108399781879504
+      }
+    },
+    "p1_c0": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 0,
+        "module_handle": 108399787199824,
+        "function_handle": 108399783775856
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 0,
+        "module_handle": 108399785697120,
+        "function_handle": 108399783780592
+      }
+    },
+    "p1_c25": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 25,
+        "module_handle": 108399789105888,
+        "function_handle": 108399785672704
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 25,
+        "module_handle": 108399787603184,
+        "function_handle": 108399785677440
+      }
+    },
+    "p1_c50": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 50,
+        "module_handle": 108399787578768,
+        "function_handle": 108399787585888
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 50,
+        "module_handle": 108399787592208,
+        "function_handle": 108399787599328
+      }
+    },
+    "p1_c100": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 100,
+        "module_handle": 108399792920224,
+        "function_handle": 108399791000512
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 124,
+        "policy": 1,
+        "carveout_percent": 100,
+        "module_handle": 108399791417664,
+        "function_handle": 108399791007216
+      }
+    },
+    "p2_cNone": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": null,
+        "module_handle": 108399792910912,
+        "function_handle": 108399791390960
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": null,
+        "module_handle": 108399791397168,
+        "function_handle": 108399791404128
+      }
+    },
+    "p2_c0": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 0,
+        "module_handle": 108399794804368,
+        "function_handle": 108399794810000
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 0,
+        "module_handle": 108399796730656,
+        "function_handle": 108399794814736
+      }
+    },
+    "p2_c25": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 25,
+        "module_handle": 108399796718064,
+        "function_handle": 108399796725136
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 25,
+        "module_handle": 108399796729104,
+        "function_handle": 108399795208272
+      }
+    },
+    "p2_c50": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 50,
+        "module_handle": 108399800542384,
+        "function_handle": 108399798627792
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 50,
+        "module_handle": 108399798631760,
+        "function_handle": 108399800521056
+      }
+    },
+    "p2_c100": {
+      "c8_t2_exact_add0_debug0": null,
+      "c8_t2_exact_add0_debug1": null,
+      "c8_t2_exact_add1_debug0": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 100,
+        "module_handle": 108399783377088,
+        "function_handle": 108399802429744
+      },
+      "c8_t2_exact_add1_debug1": {
+        "max_active_clusters": 132,
+        "policy": 2,
+        "carveout_percent": 100,
+        "module_handle": 108399800947536,
+        "function_handle": 108399802436496
+      }
+    }
+  },
+  "errors": {},
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "p0_cNone",
+        "p0_c0",
+        "p0_c25",
+        "p0_c50",
+        "p0_c100",
+        "p1_cNone",
+        "p1_c0",
+        "p1_c25",
+        "p1_c50",
+        "p1_c100",
+        "p2_cNone",
+        "p2_c0",
+        "p2_c25",
+        "p2_c50",
+        "p2_c100"
+      ],
+      "us": {
+        "control": 15.295999745527903,
+        "p0_cNone": 15.200000256299973,
+        "p0_c0": 18.709332992633183,
+        "p0_c25": 15.33866673707962,
+        "p0_c50": 15.274666249752045,
+        "p0_c100": 15.509333461523056,
+        "p1_cNone": 15.306666493415833,
+        "p1_c0": 18.933333456516266,
+        "p1_c25": 15.541333705186844,
+        "p1_c50": 15.295999745527903,
+        "p1_c100": 15.573333948850632,
+        "p2_cNone": 15.061333775520325,
+        "p2_c0": 18.837332725524902,
+        "p2_c25": 15.103999525308609,
+        "p2_c50": 15.072000523408255,
+        "p2_c100": 15.210667004187902
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "p2_c100",
+        "p2_c50",
+        "p2_c25",
+        "p2_c0",
+        "p2_cNone",
+        "p1_c100",
+        "p1_c50",
+        "p1_c25",
+        "p1_c0",
+        "p1_cNone",
+        "p0_c100",
+        "p0_c50",
+        "p0_c25",
+        "p0_c0",
+        "p0_cNone",
+        "control"
+      ],
+      "us": {
+        "p2_c100": 15.178666760524115,
+        "p2_c50": 15.018666783968607,
+        "p2_c25": 15.168000012636185,
+        "p2_c0": 18.944000204404194,
+        "p2_cNone": 15.114666273196539,
+        "p1_c100": 15.594666202863058,
+        "p1_c50": 15.402667224407196,
+        "p1_c25": 15.392000476519266,
+        "p1_c0": 18.944000204404194,
+        "p1_cNone": 15.34933348496755,
+        "p0_c100": 15.509333461523056,
+        "p0_c50": 15.44533297419548,
+        "p0_c25": 15.44533297419548,
+        "p0_c0": 19.093333433071773,
+        "p0_cNone": 15.33866673707962,
+        "control": 15.306666493415833
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "p0_cNone",
+        "p0_c0",
+        "p0_c25",
+        "p0_c50",
+        "p0_c100",
+        "p1_cNone",
+        "p1_c0",
+        "p1_c25",
+        "p1_c50",
+        "p1_c100",
+        "p2_cNone",
+        "p2_c0",
+        "p2_c25",
+        "p2_c50",
+        "p2_c100",
+        "control"
+      ],
+      "us": {
+        "p0_cNone": 15.33866673707962,
+        "p0_c0": 19.082666685183842,
+        "p0_c25": 15.44533297419548,
+        "p0_c50": 15.34933348496755,
+        "p0_c100": 15.370666980743408,
+        "p1_cNone": 15.295999745527903,
+        "p1_c0": 19.082666685183842,
+        "p1_c25": 15.392000476519266,
+        "p1_c50": 15.263999501864115,
+        "p1_c100": 15.24266724785169,
+        "p2_cNone": 15.125333021084467,
+        "p2_c0": 18.976000448067982,
+        "p2_c25": 15.018666783968607,
+        "p2_c50": 15.008000036080679,
+        "p2_c100": 15.210667004187902,
+        "control": 15.263999501864115
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "control",
+        "p2_c100",
+        "p2_c50",
+        "p2_c25",
+        "p2_c0",
+        "p2_cNone",
+        "p1_c100",
+        "p1_c50",
+        "p1_c25",
+        "p1_c0",
+        "p1_cNone",
+        "p0_c100",
+        "p0_c50",
+        "p0_c25",
+        "p0_c0",
+        "p0_cNone"
+      ],
+      "us": {
+        "control": 15.317333241303762,
+        "p2_c100": 15.040000279744467,
+        "p2_c50": 15.061333775520325,
+        "p2_c25": 15.114666273196539,
+        "p2_c0": 19.018666197856266,
+        "p2_cNone": 15.040000279744467,
+        "p1_c100": 15.477333217859268,
+        "p1_c50": 15.317333241303762,
+        "p1_c25": 15.360000232855478,
+        "p1_c0": 19.018666197856266,
+        "p1_cNone": 15.274666249752045,
+        "p0_c100": 15.520000209410986,
+        "p0_c50": 15.146666516860327,
+        "p0_c25": 15.413332730531693,
+        "p0_c0": 18.54933301607768,
+        "p0_cNone": 15.22133375207583
+      }
+    }
+  ],
+  "method": "Same selected eight-CTA cubins and native attention/output chain. CUDA launch policy DEFAULT/SPREAD/LOAD_BALANCING and per-launch shared-memory carveout preference only. Fresh modules per variant, fixed arithmetic. Actual 36-layer weights with nearest frozen attention fixtures; not TTFA. Balanced rotated/reversed timing.",
+  "summary": {
+    "control": {
+      "median_us": 15.301333119471867,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    },
+    "p0_cNone": {
+      "median_us": 15.280000244577725,
+      "median_paired_gain_us": 0.031999622782071135,
+      "faster_rounds": 2
+    },
+    "p0_c0": {
+      "median_us": 18.895999838908512,
+      "median_paired_gain_us": -3.6000000933806104,
+      "faster_rounds": 0
+    },
+    "p0_c25": {
+      "median_us": 15.429332852363586,
+      "median_paired_gain_us": -0.11733298500378897,
+      "faster_rounds": 0
+    },
+    "p0_c50": {
+      "median_us": 15.311999867359798,
+      "median_paired_gain_us": -0.03200024366378873,
+      "faster_rounds": 2
+    },
+    "p0_c100": {
+      "median_us": 15.509333461523056,
+      "median_paired_gain_us": -0.2026669681072235,
+      "faster_rounds": 0
+    },
+    "p1_cNone": {
+      "median_us": 15.301333119471867,
+      "median_paired_gain_us": -0.021333495775858857,
+      "faster_rounds": 1
+    },
+    "p1_c0": {
+      "median_us": 18.98133320113023,
+      "median_paired_gain_us": -3.6693333337704335,
+      "faster_rounds": 0
+    },
+    "p1_c25": {
+      "median_us": 15.392000476519266,
+      "median_paired_gain_us": -0.10666747887929251,
+      "faster_rounds": 0
+    },
+    "p1_c50": {
+      "median_us": 15.306666493415833,
+      "median_paired_gain_us": 0.0,
+      "faster_rounds": 0
+    },
+    "p1_c100": {
+      "median_us": 15.52533358335495,
+      "median_paired_gain_us": -0.21866708993911743,
+      "faster_rounds": 1
+    },
+    "p2_cNone": {
+      "median_us": 15.088000024358433,
+      "median_paired_gain_us": 0.2133330951134358,
+      "faster_rounds": 4
+    },
+    "p2_c0": {
+      "median_us": 18.960000326236088,
+      "median_paired_gain_us": -3.6693333337704326,
+      "faster_rounds": 0
+    },
+    "p2_c25": {
+      "median_us": 15.109332899252575,
+      "median_paired_gain_us": 0.19733359416325857,
+      "faster_rounds": 4
+    },
+    "p2_c50": {
+      "median_us": 15.040000279744465,
+      "median_paired_gain_us": 0.2559994657834368,
+      "faster_rounds": 4
+    },
+    "p2_c100": {
+      "median_us": 15.194666882356008,
+      "median_paired_gain_us": 0.1066662371158591,
+      "faster_rounds": 4
+    }
+  }
+}

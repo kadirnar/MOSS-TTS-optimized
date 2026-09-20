@@ -1,0 +1,4933 @@
+{
+  "codebooks": 32,
+  "torch": "2.13.0+cu130",
+  "families": {
+    "out": {
+      "rows": [
+        {
+          "round": 0,
+          "order": [
+            "fp32",
+            "compressed_fp32",
+            "triton_s0",
+            "triton_s1",
+            "triton_s2",
+            "triton_s4",
+            "triton_s8",
+            "triton_s16",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig2ir4"
+          ],
+          "us": {
+            "fp32": 4.958222309748332,
+            "compressed_fp32": 4.930963118871053,
+            "triton_s0": 4.912296379054034,
+            "triton_s1": 5.001481484483789,
+            "triton_s2": 5.056296233777647,
+            "triton_s4": 4.909333255555895,
+            "triton_s8": 4.906666499597055,
+            "triton_s16": 4.907259234675655,
+            "gluon_r4w4ig1ir1": 4.8586665480225175,
+            "gluon_r4w4ig1ir4": 5.877925841896622,
+            "gluon_r4w4ig2ir1": 6.7718520208641335,
+            "gluon_r4w4ig2ir4": 7.897481322288513,
+            "gluon_r8w4ig1ir1": 5.399999795136629,
+            "gluon_r8w4ig1ir4": 5.407407327934548,
+            "gluon_r8w4ig2ir1": 6.434074154606572,
+            "gluon_r8w4ig2ir4": 5.8456295066409645
+          }
+        },
+        {
+          "round": 1,
+          "order": [
+            "fp32",
+            "gluon_r8w4ig2ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig1ir1",
+            "triton_s16",
+            "triton_s8",
+            "triton_s4",
+            "triton_s2",
+            "triton_s1",
+            "triton_s0",
+            "compressed_fp32"
+          ],
+          "us": {
+            "fp32": 4.952592430291353,
+            "gluon_r8w4ig2ir4": 5.810074232242726,
+            "gluon_r8w4ig2ir1": 6.425481703546312,
+            "gluon_r8w4ig1ir4": 5.391110976537068,
+            "gluon_r8w4ig1ir1": 5.395555385836849,
+            "gluon_r4w4ig2ir4": 7.880000052628694,
+            "gluon_r4w4ig2ir1": 6.760592813845034,
+            "gluon_r4w4ig1ir4": 5.9063705029311,
+            "gluon_r4w4ig1ir1": 4.842666564164339,
+            "triton_s16": 4.898666783615395,
+            "triton_s8": 4.9028148253758745,
+            "triton_s4": 4.905185213795415,
+            "triton_s2": 5.073185320253725,
+            "triton_s1": 5.000296566221449,
+            "triton_s0": 4.924740504335474,
+            "compressed_fp32": 4.934222058013633
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "triton_s0",
+            "triton_s1",
+            "triton_s2",
+            "triton_s4",
+            "triton_s8",
+            "triton_s16",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig2ir4",
+            "fp32",
+            "compressed_fp32"
+          ],
+          "us": {
+            "triton_s0": 4.900444436956335,
+            "triton_s1": 5.013037059042189,
+            "triton_s2": 5.064592317298606,
+            "triton_s4": 4.906370132057755,
+            "triton_s8": 4.910814541357535,
+            "triton_s16": 4.897777680997495,
+            "gluon_r4w4ig1ir1": 4.871407592738116,
+            "gluon_r4w4ig1ir4": 5.894222193294102,
+            "gluon_r4w4ig2ir1": 6.780444471924393,
+            "gluon_r4w4ig2ir4": 7.867259007913095,
+            "gluon_r8w4ig1ir1": 5.412148104773627,
+            "gluon_r8w4ig1ir4": 5.405036939515008,
+            "gluon_r8w4ig2ir1": 6.405925861111394,
+            "gluon_r8w4ig2ir4": 5.852147936820984,
+            "fp32": 4.953777900448552,
+            "compressed_fp32": 4.929777648713854
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "triton_s0",
+            "compressed_fp32",
+            "fp32",
+            "gluon_r8w4ig2ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig1ir1",
+            "triton_s16",
+            "triton_s8",
+            "triton_s4",
+            "triton_s2",
+            "triton_s1"
+          ],
+          "us": {
+            "triton_s0": 4.912000011514734,
+            "compressed_fp32": 4.927999995372914,
+            "fp32": 4.955259186250192,
+            "gluon_r8w4ig2ir4": 5.840296546618144,
+            "gluon_r8w4ig2ir1": 6.401777819350913,
+            "gluon_r8w4ig1ir4": 5.3928886298780085,
+            "gluon_r8w4ig1ir1": 5.3958517533761485,
+            "gluon_r4w4ig2ir4": 7.877926031748454,
+            "gluon_r4w4ig2ir1": 6.777184980886954,
+            "gluon_r4w4ig1ir4": 5.880888965394762,
+            "gluon_r4w4ig1ir1": 4.855703976419237,
+            "triton_s16": 4.911703643975435,
+            "triton_s8": 4.901333539574234,
+            "triton_s4": 4.909333255555895,
+            "triton_s2": 5.078222464632105,
+            "triton_s1": 5.014518344843829
+          }
+        }
+      ],
+      "checks": [
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 2
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        }
+      ],
+      "summary": {
+        "fp32": {
+          "config": {
+            "backend": "reference"
+          },
+          "median_us": 4.954518543349372,
+          "mismatches": 0,
+          "checks": 0
+        },
+        "compressed_fp32": {
+          "config": {
+            "backend": "compressed"
+          },
+          "median_us": 4.930370383792454,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s0": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 0
+          },
+          "median_us": 4.912148195284384,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s1": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 1
+          },
+          "median_us": 5.0072592717629885,
+          "mismatches": 5,
+          "checks": 18
+        },
+        "triton_s2": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 2
+          },
+          "median_us": 5.068888818776166,
+          "mismatches": 5,
+          "checks": 18
+        },
+        "triton_s4": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 4
+          },
+          "median_us": 4.907851693806824,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s8": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 8
+          },
+          "median_us": 4.904740662486464,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s16": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 16
+          },
+          "median_us": 4.902963009145525,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 4.857185262220877,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig1ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "median_us": 5.887555579344432,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 6.774518500875544,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig2ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "median_us": 7.878963042188574,
+          "mismatches": 3,
+          "checks": 18
+        },
+        "gluon_r8w4ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 5.397925774256389,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig1ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "median_us": 5.398962784696508,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 6.415703782328853,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig2ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "median_us": 5.842963026629555,
+          "mismatches": 0,
+          "checks": 18
+        }
+      },
+      "all_scale_values_exact": true
+    },
+    "down": {
+      "rows": [
+        {
+          "round": 0,
+          "order": [
+            "fp32",
+            "compressed_fp32",
+            "triton_s0",
+            "triton_s1",
+            "triton_s2",
+            "triton_s4",
+            "triton_s8",
+            "triton_s16",
+            "gluon_r4w2ig1ir1",
+            "gluon_r4w2ig1ir2",
+            "gluon_r4w2ig2ir1",
+            "gluon_r4w2ig2ir2",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r8w2ig1ir1",
+            "gluon_r8w2ig1ir2",
+            "gluon_r8w2ig2ir1",
+            "gluon_r8w2ig2ir2",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig2ir4"
+          ],
+          "us": {
+            "fp32": 10.028443954609058,
+            "compressed_fp32": 9.834667046864828,
+            "triton_s0": 9.726814649723194,
+            "triton_s1": 9.521481063630846,
+            "triton_s2": 9.669926431443956,
+            "triton_s4": 9.816889409665707,
+            "triton_s8": 9.725333363921553,
+            "triton_s16": 9.762962659200033,
+            "gluon_r4w2ig1ir1": 9.769481641274911,
+            "gluon_r4w2ig1ir2": 9.845037151266027,
+            "gluon_r4w2ig2ir1": 10.36503690260428,
+            "gluon_r4w2ig2ir2": 12.354073701081452,
+            "gluon_r4w4ig1ir1": 11.28651808809351,
+            "gluon_r4w4ig1ir4": 15.054815345340305,
+            "gluon_r4w4ig2ir1": 17.116740897849755,
+            "gluon_r4w4ig2ir4": 19.813332292768692,
+            "gluon_r8w2ig1ir1": 10.126814798072532,
+            "gluon_r8w2ig1ir2": 10.238518317540487,
+            "gluon_r8w2ig2ir1": 10.486518895184552,
+            "gluon_r8w2ig2ir2": 10.585481369936907,
+            "gluon_r8w4ig1ir1": 10.331555649086281,
+            "gluon_r8w4ig1ir4": 12.542518200697723,
+            "gluon_r8w4ig2ir1": 16.754962779857493,
+            "gluon_r8w4ig2ir4": 12.551111203652841
+          }
+        },
+        {
+          "round": 1,
+          "order": [
+            "fp32",
+            "gluon_r8w4ig2ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w2ig2ir2",
+            "gluon_r8w2ig2ir1",
+            "gluon_r8w2ig1ir2",
+            "gluon_r8w2ig1ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w2ig2ir2",
+            "gluon_r4w2ig2ir1",
+            "gluon_r4w2ig1ir2",
+            "gluon_r4w2ig1ir1",
+            "triton_s16",
+            "triton_s8",
+            "triton_s4",
+            "triton_s2",
+            "triton_s1",
+            "triton_s0",
+            "compressed_fp32"
+          ],
+          "us": {
+            "fp32": 10.006222460005018,
+            "gluon_r8w4ig2ir4": 12.459852077342846,
+            "gluon_r8w4ig2ir1": 16.695407805619418,
+            "gluon_r8w4ig1ir4": 12.467555425785205,
+            "gluon_r8w4ig1ir1": 10.31496348204436,
+            "gluon_r8w2ig2ir2": 10.580740593097827,
+            "gluon_r8w2ig2ir1": 10.458370049794516,
+            "gluon_r8w2ig1ir2": 10.269332815099645,
+            "gluon_r8w2ig1ir1": 10.102518178798535,
+            "gluon_r4w4ig2ir4": 19.861333900027805,
+            "gluon_r4w4ig2ir1": 17.112000121010674,
+            "gluon_r4w4ig1ir4": 15.059555018389666,
+            "gluon_r4w4ig1ir1": 11.27437088224623,
+            "gluon_r4w2ig2ir2": 12.357925927197492,
+            "gluon_r4w2ig2ir1": 10.36651818840592,
+            "gluon_r4w2ig1ir2": 9.81274026411551,
+            "gluon_r4w2ig1ir1": 9.762074108476993,
+            "triton_s16": 9.741332795884874,
+            "triton_s8": 9.754963495113232,
+            "triton_s4": 9.843851681108829,
+            "triton_s2": 9.676148494084677,
+            "triton_s1": 9.533333557623404,
+            "triton_s0": 9.744592286922314,
+            "compressed_fp32": 9.863110604109588
+          }
+        },
+        {
+          "round": 2,
+          "order": [
+            "triton_s0",
+            "triton_s1",
+            "triton_s2",
+            "triton_s4",
+            "triton_s8",
+            "triton_s16",
+            "gluon_r4w2ig1ir1",
+            "gluon_r4w2ig1ir2",
+            "gluon_r4w2ig2ir1",
+            "gluon_r4w2ig2ir2",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r8w2ig1ir1",
+            "gluon_r8w2ig1ir2",
+            "gluon_r8w2ig2ir1",
+            "gluon_r8w2ig2ir2",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig2ir4",
+            "fp32",
+            "compressed_fp32"
+          ],
+          "us": {
+            "triton_s0": 9.738667143715752,
+            "triton_s1": 9.506074366746125,
+            "triton_s2": 9.662518898646036,
+            "triton_s4": 9.827852249145508,
+            "triton_s8": 9.741629715319034,
+            "triton_s16": 9.739258775004634,
+            "gluon_r4w2ig1ir1": 9.754370760034632,
+            "gluon_r4w2ig1ir2": 9.826962594632748,
+            "gluon_r4w2ig2ir1": 10.391407542758518,
+            "gluon_r4w2ig2ir2": 12.37748176963241,
+            "gluon_r4w4ig1ir1": 11.308444870842827,
+            "gluon_r4w4ig1ir4": 15.117037075537223,
+            "gluon_r4w4ig2ir1": 17.080295968938756,
+            "gluon_r4w4ig2ir4": 19.823407685315168,
+            "gluon_r8w2ig1ir1": 10.147555006874931,
+            "gluon_r8w2ig1ir2": 10.252740648057726,
+            "gluon_r8w2ig2ir1": 10.456000213269833,
+            "gluon_r8w2ig2ir2": 10.578370756573147,
+            "gluon_r8w4ig1ir1": 10.320888625250923,
+            "gluon_r8w4ig1ir4": 12.482073571946886,
+            "gluon_r8w4ig2ir1": 16.786370012495254,
+            "gluon_r8w4ig2ir4": 12.505777456142285,
+            "fp32": 10.036148406841138,
+            "compressed_fp32": 9.858962562349108
+          }
+        },
+        {
+          "round": 3,
+          "order": [
+            "triton_s0",
+            "compressed_fp32",
+            "fp32",
+            "gluon_r8w4ig2ir4",
+            "gluon_r8w4ig2ir1",
+            "gluon_r8w4ig1ir4",
+            "gluon_r8w4ig1ir1",
+            "gluon_r8w2ig2ir2",
+            "gluon_r8w2ig2ir1",
+            "gluon_r8w2ig1ir2",
+            "gluon_r8w2ig1ir1",
+            "gluon_r4w4ig2ir4",
+            "gluon_r4w4ig2ir1",
+            "gluon_r4w4ig1ir4",
+            "gluon_r4w4ig1ir1",
+            "gluon_r4w2ig2ir2",
+            "gluon_r4w2ig2ir1",
+            "gluon_r4w2ig1ir2",
+            "gluon_r4w2ig1ir1",
+            "triton_s16",
+            "triton_s8",
+            "triton_s4",
+            "triton_s2",
+            "triton_s1"
+          ],
+          "us": {
+            "triton_s0": 9.735407652678314,
+            "compressed_fp32": 9.847406987790707,
+            "fp32": 10.033481650882297,
+            "gluon_r8w4ig2ir4": 12.480296470500805,
+            "gluon_r8w4ig2ir1": 16.716740749500417,
+            "gluon_r8w4ig1ir4": 12.505777456142285,
+            "gluon_r8w4ig1ir1": 10.333629669966522,
+            "gluon_r8w2ig2ir2": 10.588443941540188,
+            "gluon_r8w2ig2ir1": 10.474370585547554,
+            "gluon_r8w2ig1ir2": 10.271703755414045,
+            "gluon_r8w2ig1ir1": 10.135703616672092,
+            "gluon_r4w4ig2ir4": 19.83348087028221,
+            "gluon_r4w4ig2ir1": 17.141629148412633,
+            "gluon_r4w4ig1ir4": 15.090370619738543,
+            "gluon_r4w4ig1ir1": 11.28918484405235,
+            "gluon_r4w2ig2ir2": 12.352889334713971,
+            "gluon_r4w2ig2ir1": 10.3602961257652,
+            "gluon_r4w2ig1ir2": 9.826666778988308,
+            "gluon_r4w2ig1ir1": 9.758518801795113,
+            "triton_s16": 9.728000119880393,
+            "triton_s8": 9.746370492158112,
+            "triton_s4": 9.840592190071389,
+            "triton_s2": 9.682666372369837,
+            "triton_s1": 9.527704230061284
+          }
+        }
+      ],
+      "checks": [
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 0,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 2
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 2
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 1
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 1
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 17,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "0",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "231",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "528",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "1186",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "zero",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "compressed_fp32",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s0",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s8",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "triton_s16",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r4w4ig2ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w2ig1ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w2ig2ir2",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig1ir4",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir1",
+          "mismatches": 0
+        },
+        {
+          "layer": 35,
+          "input": "spike",
+          "variant": "gluon_r8w4ig2ir4",
+          "mismatches": 0
+        }
+      ],
+      "summary": {
+        "fp32": {
+          "config": {
+            "backend": "reference"
+          },
+          "median_us": 10.030962802745677,
+          "mismatches": 0,
+          "checks": 0
+        },
+        "compressed_fp32": {
+          "config": {
+            "backend": "compressed"
+          },
+          "median_us": 9.853184775069908,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s0": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 0
+          },
+          "median_us": 9.737037398197032,
+          "mismatches": 1,
+          "checks": 18
+        },
+        "triton_s1": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 1
+          },
+          "median_us": 9.524592646846065,
+          "mismatches": 4,
+          "checks": 18
+        },
+        "triton_s2": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 2
+          },
+          "median_us": 9.673037462764317,
+          "mismatches": 3,
+          "checks": 18
+        },
+        "triton_s4": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 4
+          },
+          "median_us": 9.83422221960845,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "triton_s8": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 8
+          },
+          "median_us": 9.744000103738573,
+          "mismatches": 1,
+          "checks": 18
+        },
+        "triton_s16": {
+          "config": {
+            "backend": "triton",
+            "scale_mode": 16
+          },
+          "median_us": 9.740295785444754,
+          "mismatches": 1,
+          "checks": 18
+        },
+        "gluon_r4w2ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 9.760296455136054,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w2ig1ir2": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 2
+          },
+          "median_us": 9.826814686810529,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w2ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 10.3657775455051,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w2ig2ir2": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 2
+          },
+          "median_us": 12.355999814139473,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 11.28785146607293,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig1ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "median_us": 15.074962819064105,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 17.114370509430216,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r4w4ig2ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 4,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "median_us": 19.82844427779869,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w2ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 10.131259207372313,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w2ig1ir2": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 2,
+            "integer_groups": 1,
+            "integer_rows": 2
+          },
+          "median_us": 10.261036731578685,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w2ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 10.466370317671036,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w2ig2ir2": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 2,
+            "integer_groups": 2,
+            "integer_rows": 2
+          },
+          "median_us": 10.583110981517368,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig1ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "median_us": 10.326222137168603,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig1ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "median_us": 12.493925514044586,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig2ir1": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "median_us": 16.735851764678955,
+          "mismatches": 0,
+          "checks": 18
+        },
+        "gluon_r8w4ig2ir4": {
+          "config": {
+            "backend": "gluon",
+            "rows": 8,
+            "warps": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "median_us": 12.493036963321545,
+          "mismatches": 0,
+          "checks": 18
+        }
+      },
+      "all_scale_values_exact": true
+    }
+  },
+  "method": "36 distinct actual weight/scale/input layers; current selected FP32 scaled-DP4A reference, lossless compressed FP32 control, BF16 scale storage with Triton contiguity hints or explicit Gluon layouts. Three layers x four real vectors plus zero/spike, private-stream exactness checks. Rotating/reversed timing order; all scale values unchanged."
+}

@@ -1,0 +1,184 @@
+{
+  "codebooks": 32,
+  "all_exact": true,
+  "cases": [
+    {
+      "language": "Chinese",
+      "budget": 33,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 1,
+        "truncated": true,
+        "prompt_tokens": 145,
+        "steps": 33,
+        "pcm_sha256": "23dc2a1984cecd54d30e6fde67dde2679075e28a5184acde618c3fca445ef1f7"
+      }
+    },
+    {
+      "language": "Chinese",
+      "budget": 34,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 2,
+        "truncated": true,
+        "prompt_tokens": 145,
+        "steps": 34,
+        "pcm_sha256": "05e363cd6fa13355bb6918f963ff71d65269c6b05ad92742bf1a306216f5a090"
+      }
+    },
+    {
+      "language": "Chinese",
+      "budget": 40,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 8,
+        "truncated": true,
+        "prompt_tokens": 145,
+        "steps": 40,
+        "pcm_sha256": "02053aea5fb4075bf84999be4cc20cb92d00e96938381730e0b68ce4706a8d5d"
+      }
+    },
+    {
+      "language": "Chinese",
+      "budget": 400,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 58,
+        "truncated": false,
+        "prompt_tokens": 145,
+        "steps": 91,
+        "pcm_sha256": "c1a967b54b79382183d36b771536a17658c8c1a026635e7317d208e00e0d9c06"
+      }
+    },
+    {
+      "language": "English",
+      "budget": 33,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 1,
+        "truncated": true,
+        "prompt_tokens": 141,
+        "steps": 33,
+        "pcm_sha256": "82c302026bb7cbc52574f297a6f76e38817d4cfc1e4be4a52e2879b746bdaf87"
+      }
+    },
+    {
+      "language": "English",
+      "budget": 34,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 2,
+        "truncated": true,
+        "prompt_tokens": 141,
+        "steps": 34,
+        "pcm_sha256": "0783bff34a6e9d4c8681f71f14692254345a762602bb8667d15eebeb17af9fff"
+      }
+    },
+    {
+      "language": "English",
+      "budget": 40,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 8,
+        "truncated": true,
+        "prompt_tokens": 141,
+        "steps": 40,
+        "pcm_sha256": "6aeda8a245546ebf4ce247103a52146acb56d4643395ce03453c68822b277fc3"
+      }
+    },
+    {
+      "language": "English",
+      "budget": 400,
+      "exact": true,
+      "rng_exact": true,
+      "record": {
+        "frames": 50,
+        "truncated": false,
+        "prompt_tokens": 141,
+        "steps": 83,
+        "pcm_sha256": "3f66776e4e8cb36c3fa1c70991fa72020d46582d5c38348700ad535c3ea1a150"
+      }
+    }
+  ],
+  "cancellation": [
+    {
+      "mode": "control",
+      "invalid_budgets_rejected": [
+        32,
+        1024
+      ],
+      "busy_guard_preserves_owner": true,
+      "close_releases_owner": true,
+      "recovery_first_pcm_exact": true,
+      "prior_pcm_storage_stable": true,
+      "recovery_complete": true
+    },
+    {
+      "mode": "graph",
+      "invalid_budgets_rejected": [
+        32,
+        1024
+      ],
+      "busy_guard_preserves_owner": true,
+      "close_releases_owner": true,
+      "recovery_first_pcm_exact": true,
+      "prior_pcm_storage_stable": true,
+      "recovery_complete": true
+    }
+  ],
+  "archive_sha256": "6e58ef8131b62aa09966c796d0acadc6e7d46ebc7b2977af0d3f8538d8460abc",
+  "configuration": {
+    "codebooks": 32,
+    "steps": 32,
+    "graphs": [
+      {
+        "capacity": 128,
+        "steps": 32,
+        "codebooks": 32,
+        "head_prefixes": true,
+        "save_logits": false,
+        "capture_seconds": 0.8243160974234343,
+        "additional_live_bytes": 33555456,
+        "additional_reserved_bytes": 35651584
+      },
+      {
+        "capacity": 256,
+        "steps": 32,
+        "codebooks": 32,
+        "head_prefixes": true,
+        "save_logits": false,
+        "capture_seconds": 0.7574765346944332,
+        "additional_live_bytes": 33555456,
+        "additional_reserved_bytes": 35651584
+      },
+      {
+        "capacity": 512,
+        "steps": 32,
+        "codebooks": 32,
+        "head_prefixes": true,
+        "save_logits": false,
+        "capture_seconds": 0.7661554999649525,
+        "additional_live_bytes": 33555456,
+        "additional_reserved_bytes": 35651584
+      },
+      {
+        "capacity": 1024,
+        "steps": 32,
+        "codebooks": 32,
+        "head_prefixes": true,
+        "save_logits": false,
+        "capture_seconds": 0.7766068875789642,
+        "additional_live_bytes": 33555456,
+        "additional_reserved_bytes": 35651584
+      }
+    ]
+  },
+  "scope": "Archived pre-change stream loop versus current disabled/enabled graph on one selected engine. Two languages use the same cached reference; this is control-flow coverage, not an additional voice-quality suite. All budgets compare complete PCM, frame count, truncation, prompt/step counts and final RNG state."
+}

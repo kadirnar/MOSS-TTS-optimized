@@ -1,0 +1,18 @@
+{
+  "control": {
+    "measured_requests": 20,
+    "engine_median_ms": 78.03476508706808,
+    "prefill_median_ms": 9.238124825060368,
+    "first_32_median_ms": 61.81543506681919,
+    "first_codec_median_ms": 4.538136534392834,
+    "seed_median_ms": 0.31934771686792374
+  },
+  "prefill": {
+    "measured_requests": 20,
+    "engine_median_ms": 75.49343537539244,
+    "prefill_median_ms": 7.405316457152367,
+    "first_32_median_ms": 61.80818751454353,
+    "first_codec_median_ms": 4.523738287389278,
+    "seed_median_ms": 0.24413131177425385
+  }
+}

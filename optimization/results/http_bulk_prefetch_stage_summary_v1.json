@@ -1,0 +1,27 @@
+{
+  "control": {
+    "measured_requests": 20,
+    "engine_ttfa_ms": 77.83438824117184,
+    "prepare_ms": 1.0801386088132858,
+    "prefill_ms": 9.222764521837234,
+    "initial_audio_32_ms": 62.397550791502,
+    "first_codec_ms": 4.523538053035736,
+    "seed_ms": 0.23083854466676712,
+    "voice_registration_ms": 35.8404703438282,
+    "fresh_reference_to_pcm_single_ms": 121.90781906247139,
+    "validation_errors_checked": true
+  },
+  "bulk": {
+    "measured_requests": 20,
+    "engine_ttfa_ms": 77.27308757603168,
+    "prepare_ms": 1.0640528053045273,
+    "prefill_ms": 9.216144680976868,
+    "initial_audio_32_ms": 61.89269665628672,
+    "first_codec_ms": 4.523636773228645,
+    "seed_ms": 0.2255067229270935,
+    "voice_registration_ms": 33.642640337347984,
+    "fresh_reference_to_pcm_single_ms": 118.37957240641117,
+    "validation_errors_checked": true
+  },
+  "method": "Twenty complete measured requests, excluding fresh-reference request and warmup. Separate processes can vary; use paired in-process evidence for isolated gain."
+}

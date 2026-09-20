@@ -1,0 +1,94 @@
+{
+  "bundle": "optimization/results/qkv_cluster_bundle_v6",
+  "manifest_sha256": "547de5056ee521d3456bc91f50cfcedf623f480e8155673459e42762794a284d",
+  "cuda_attribute_abi_bytes": 72,
+  "cuda_launch_config_abi_bytes": 56,
+  "kernels": [
+    {
+      "name": "c8_t2_exact_add0_debug0",
+      "registers_per_thread": 64,
+      "spills": 0,
+      "shared_bytes_per_cta": 2048,
+      "ctas_per_cluster": 8,
+      "cluster_dims": [
+        8,
+        1,
+        1
+      ],
+      "cubin_sha256": "c1ab645aa96853318c48f171f768152815bb942dcb6638065e7b7acd578b74e6",
+      "cluster_arrive_instructions": 2,
+      "cluster_wait_instructions": 2,
+      "cluster_load_instructions": 1,
+      "bulk_prefetch_instructions": 1,
+      "wait_instruction": true,
+      "dependent_launch_instruction": true,
+      "explicit_subtract_instructions": 1
+    },
+    {
+      "name": "c8_t2_exact_add0_debug1",
+      "registers_per_thread": 64,
+      "spills": 0,
+      "shared_bytes_per_cta": 2048,
+      "ctas_per_cluster": 8,
+      "cluster_dims": [
+        8,
+        1,
+        1
+      ],
+      "cubin_sha256": "863f39c3e91990edb30791981068a6a63fffda6449848583a511fb68af6e2a50",
+      "cluster_arrive_instructions": 2,
+      "cluster_wait_instructions": 2,
+      "cluster_load_instructions": 1,
+      "bulk_prefetch_instructions": 1,
+      "wait_instruction": true,
+      "dependent_launch_instruction": true,
+      "explicit_subtract_instructions": 1
+    },
+    {
+      "name": "c8_t2_exact_add1_debug0",
+      "registers_per_thread": 64,
+      "spills": 0,
+      "shared_bytes_per_cta": 2048,
+      "ctas_per_cluster": 8,
+      "cluster_dims": [
+        8,
+        1,
+        1
+      ],
+      "cubin_sha256": "9bcae17d1d58b5ab2edbb6418c05f9458cc140116c200283ae68b7366361f717",
+      "cluster_arrive_instructions": 2,
+      "cluster_wait_instructions": 2,
+      "cluster_load_instructions": 1,
+      "bulk_prefetch_instructions": 1,
+      "wait_instruction": true,
+      "dependent_launch_instruction": true,
+      "explicit_subtract_instructions": 1
+    },
+    {
+      "name": "c8_t2_exact_add1_debug1",
+      "registers_per_thread": 64,
+      "spills": 0,
+      "shared_bytes_per_cta": 2048,
+      "ctas_per_cluster": 8,
+      "cluster_dims": [
+        8,
+        1,
+        1
+      ],
+      "cubin_sha256": "5168980a787520146e821c926b4ed796f96209eb5876d8bb764f1c3b8b6f037b",
+      "cluster_arrive_instructions": 2,
+      "cluster_wait_instructions": 2,
+      "cluster_load_instructions": 1,
+      "bulk_prefetch_instructions": 1,
+      "wait_instruction": true,
+      "dependent_launch_instruction": true,
+      "explicit_subtract_instructions": 1
+    }
+  ],
+  "python_files_parsed": 273,
+  "cli_help_passes": [
+    "server",
+    "quality_generate",
+    "benchmark_quantization"
+  ]
+}

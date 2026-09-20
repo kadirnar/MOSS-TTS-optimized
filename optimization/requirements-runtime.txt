@@ -1,0 +1,20 @@
+# Install torch/torchaudio from https://download.pytorch.org/whl/cu128 first.
+torch==2.9.1+cu128
+torchaudio==2.9.1+cu128
+triton==3.5.1
+transformers==5.0.0
+accelerate==1.15.0
+einops==0.8.1
+numpy==2.5.3
+scipy==1.18.1
+soundfile==0.14.0
+librosa==0.11.0
+safetensors==0.8.0
+fastapi==0.141.1
+uvicorn==0.53.0
+# Optional benchmark dependencies are intentionally separate: sglang 0.5.7,
+# sgl-kernel 0.3.20, vllm 0.12.0 (CUDA operators only), tilelang 0.1.14,
+# nvidia-cutlass-dsl 4.7.1, faster-whisper 1.2.1,
+# flashinfer-python / flashinfer-cubin 0.5.3. Their complete serving stacks
+# require different Transformers/PyTorch versions; do not resolve them into
+# this runtime as mandatory dependencies.

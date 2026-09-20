@@ -1,0 +1,276 @@
+{
+  "codebooks": 32,
+  "all_wavs_metadata_exact": true,
+  "generated_wavs": 48,
+  "groups": [
+    {
+      "control": "output_preload_v1",
+      "candidate": "qkv_cluster_v2",
+      "utterances": 16,
+      "references": [
+        "zh0_reference.wav",
+        "zh1_reference.wav",
+        "en0_reference.wav",
+        "en1_reference.wav"
+      ],
+      "checks": [
+        {
+          "file": "zh0_0.wav",
+          "wav_sha256": "4ce0d755952d68cbc647bf5ac0d4ab127709089b12ba9f9c9f4d5c2aa8625bda",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_1.wav",
+          "wav_sha256": "d829653b8e91f147f514e19bc7c9636fdda6c9fb4834f8281fd8c4280f7529bb",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_2.wav",
+          "wav_sha256": "093f7170b1fc10a5d872eda3ee15b7fcf1ea3b6809cae8df632e9bcfacb29811",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_3.wav",
+          "wav_sha256": "d854c4132a80925eec8fe247c9517b01b4a3ec598e1b5351e2ac872d95aba083",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_0.wav",
+          "wav_sha256": "08653e94d4f9dc0bf15584e1de723274b3e17d3c277b2a44910825b770f5dc3c",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_1.wav",
+          "wav_sha256": "3f1dd9ebdf4d1839c472f90f4b7d461a90cad71c712d802c829ded5f9327d115",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_2.wav",
+          "wav_sha256": "1f178ecc1bf73195671e7eb433742f6582ead8e35ae313561f2030d0a258e8cc",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_3.wav",
+          "wav_sha256": "4565dd8b4f6db4052eec73e6eac82acf077a25d3b38bd268da82f4298bc4b090",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_0.wav",
+          "wav_sha256": "7cb6a5d3357be29b76ebe4ee19f7440aa9ad713ad5187bc786a4d145ad9b3628",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_1.wav",
+          "wav_sha256": "70caa5cf753c971a1a852e693fbdc6741cddd9871dbf604b5bbc0fc65e7e3e47",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_2.wav",
+          "wav_sha256": "2ec1b0df5cfa1afcd1e8b5fd5ad10abf48c3db0f1a9e2f03d7a0afee8c02289d",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_3.wav",
+          "wav_sha256": "966b5c9cccc53b011589cfea72ce65db94d6c28707346fd773670e1d5acdbfac",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_0.wav",
+          "wav_sha256": "b08fa4a1c782d1babe3e2f321ab82124c621bf841e4396ccf8c787f40e6f26b3",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_1.wav",
+          "wav_sha256": "538838c936fc28d07fb50c48e1ee0a92c037afefa2e6c5168106b29b7b78fb09",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_2.wav",
+          "wav_sha256": "2c8094ba01762adae47f0ec115527de859dc0a08b1f8e79fd8d7bd9ab5d74b78",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_3.wav",
+          "wav_sha256": "37782c812e8c2de79cf53a411a3c99910bdf78a4bc153d401507981323f49c19",
+          "generation_metadata_exact": true
+        }
+      ],
+      "bundle_manifest_sha256": "547de5056ee521d3456bc91f50cfcedf623f480e8155673459e42762794a284d"
+    },
+    {
+      "control": "expanded_output_preload_v1",
+      "candidate": "expanded_qkv_cluster_v2",
+      "utterances": 32,
+      "references": [
+        "zh0_reference.wav",
+        "zh1_reference.wav",
+        "en0_reference.wav",
+        "en1_reference.wav"
+      ],
+      "checks": [
+        {
+          "file": "zh0_0.wav",
+          "wav_sha256": "67a4e74e5eb44d30bab1e354ca35f19d87a215df176895947fc77327b6e469ae",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_1.wav",
+          "wav_sha256": "d0d9849e404a773308ce0a8474721611ff83ca2596c2b80cc6dec16c92d9e41c",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_2.wav",
+          "wav_sha256": "9e7aaa1d7c4db469ddc9dfaef060ea2c0dfc2cfd7fce8b4ba12bdf1c938bfacd",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_3.wav",
+          "wav_sha256": "77e6283ab33b189bfc84665aa9c3747b938ddf32663701749e287c6ea1f746a4",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_4.wav",
+          "wav_sha256": "815327f13f9592429009082af8437801036a2f2d2cfff14dc83e9aa75c20492f",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_5.wav",
+          "wav_sha256": "7e24cad627eb530c2de34897bc376092456ed8c33db7d28faf19b20fe5fdac94",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_6.wav",
+          "wav_sha256": "a34928e69cd24a497ea16af3f4a95607c3553eb7aa215d0ee75eec4819b888a8",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh0_7.wav",
+          "wav_sha256": "b313611b1f7de4130ece4ed0f2bbb31ffbb52947c5d99222d8bd682a519e1c73",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_0.wav",
+          "wav_sha256": "810682316c40cc010d4641e11596e5097a578412cd888afb4001581b1ba326bc",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_1.wav",
+          "wav_sha256": "cf9b674d0dd2afd49649bc67d247a02ab23fb971a7b5f8653667b99815181465",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_2.wav",
+          "wav_sha256": "6bda3c8d7a4cbf3fb907d262c51b4c40bc6db85c763d4eaadc46516ebff9ad67",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_3.wav",
+          "wav_sha256": "6bc95cb5916d9b3a4927081dc7a7c50520bed4830c9ae11641f9373603ebed92",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_4.wav",
+          "wav_sha256": "904861faa88e445114ddb492438f953cddc8d1c8047143c4eeb694f73d7042a3",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_5.wav",
+          "wav_sha256": "bc4c81379d138ccdbfbab883ca641fc78cf9faaae44969e702dfc8d5fad33edd",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_6.wav",
+          "wav_sha256": "0d5455a83ce034d0b7c2e0d1593a032b8fadb1b73ccc72afdaee229ee1e35284",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "zh1_7.wav",
+          "wav_sha256": "0292bd8ce010fb4d34e1c47bf3615c6c5fc5f2f99fa089abc27000be11d5d2a8",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_0.wav",
+          "wav_sha256": "bc8372e87add5c8e5b363d1190e38d002fe48dfa6b9fa3e96d1d554d2172e8a0",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_1.wav",
+          "wav_sha256": "c45fffdd92ef92689113176072234c7872744b4cbc893df9d29c57b191ceba6c",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_2.wav",
+          "wav_sha256": "54d5afb775427beb5cc556ecbfb6241760810d6444ed23a4b378c78dbf751bc8",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_3.wav",
+          "wav_sha256": "405f541c331d64da81106de3e53e6450f2aeffced310f353fc871a6300d551da",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_4.wav",
+          "wav_sha256": "ddc1b79b1fc458a9a5c85bd8eb291fd93eef9bd647d3f9af9d825debd9b7194c",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_5.wav",
+          "wav_sha256": "58883c0702d0740eece7b4ab6cc4edd119e5e9aec57b81af8dcb4455c21b695c",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_6.wav",
+          "wav_sha256": "f1d275786425c800c50513fdc3b244badde024bc1fb6fdcd701acb600e0904e5",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en0_7.wav",
+          "wav_sha256": "154f5f937f36ca7e5203132ee645dbb87ca42a3bcf3cba9c1f4acb204fead999",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_0.wav",
+          "wav_sha256": "08a44af1c033a03f289360ebdf27545768b65f688b5abd87ddc60d6e3ed00882",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_1.wav",
+          "wav_sha256": "3bdea7db1676a8306787d4e6edb2d289a09b48f1cc1acb957e767c660412ea11",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_2.wav",
+          "wav_sha256": "7e9b3fe90bdc985aac86e45c92b0f2e2f092bcce41710e840bbe0c0e872ceb91",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_3.wav",
+          "wav_sha256": "906f72d6b69a49f5e43624ccc9db0434d0e91bce5a4d554b808cf70ed45a559a",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_4.wav",
+          "wav_sha256": "cbd77ff408c7deed9caa95c6ba05462e1bee65359a4ec2b211b56409a9ec864f",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_5.wav",
+          "wav_sha256": "cc6fbd9f55bc913abc089bbffc5b1445dbc4ece672a1e796b01ad69d60e8f791",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_6.wav",
+          "wav_sha256": "1fb574946e4112c87782f3b2d2f99afefc4ad9a5581002ec3b3db04bc8dbc568",
+          "generation_metadata_exact": true
+        },
+        {
+          "file": "en1_7.wav",
+          "wav_sha256": "6bf170551bb17dd279559ab586900ec536c0d67ee4ca37c11cf231fb7a860c71",
+          "generation_metadata_exact": true
+        }
+      ],
+      "bundle_manifest_sha256": "547de5056ee521d3456bc91f50cfcedf623f480e8155673459e42762794a284d"
+    }
+  ],
+  "scope": "Byte-identical WAVs inherit preceding diagnostic ASR/speaker scores; no new scoring or human listening. Four reference assets, original and expanded Chinese/English prompts."
+}

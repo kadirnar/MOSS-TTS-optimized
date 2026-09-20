@@ -1,0 +1,19 @@
+{
+  "configuration_measurements": 448,
+  "operator_checks": 8064,
+  "exact_operator_checks": 8054,
+  "configurations_with_18_exact_checks": 444,
+  "benchmarks": [
+    "optimization/results/dp4a_native_kernels_v2.json",
+    "optimization/results/dp4a_native_kernels_independent_v3.json",
+    "optimization/results/dp4a_staged_kernels_v1.json",
+    "optimization/results/dp4a_staged_kernels_independent_v2.json",
+    "optimization/results/dp4a_staged_kernels_integer_only_v3.json",
+    "optimization/results/dp4a_mma_kernels_v1.json",
+    "optimization/results/dp4a_mma_kernels_packed_v2.json",
+    "optimization/results/dp4a_mma_kernels_looped_v3.json",
+    "optimization/results/dp4a_layout_kernels_v2.json"
+  ],
+  "all_codebooks": 32,
+  "integrated": false
+}

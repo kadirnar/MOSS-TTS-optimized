@@ -1,0 +1,51 @@
+{
+  "trace": "/workspace/MOSS-TTS/optimization/results/qkv_cluster_profile_v4_trace.json",
+  "kernel_events": 12101,
+  "groups": {
+    "other": {
+      "calls": 4973,
+      "sum_us": 21953.273,
+      "median_us": 1.696
+    },
+    "fused_qkv_preparation": {
+      "calls": 1188,
+      "sum_us": 11455.803,
+      "median_us": 9.568
+    },
+    "attention": {
+      "calls": 2376,
+      "sum_us": 9614.116,
+      "median_us": 4.128
+    },
+    "attention_output": {
+      "calls": 1188,
+      "sum_us": 6097.49,
+      "median_us": 5.088
+    },
+    "mlp_gate_up": {
+      "calls": 1188,
+      "sum_us": 22849.825,
+      "median_us": 19.008
+    },
+    "mlp_down": {
+      "calls": 1188,
+      "sum_us": 30616.707,
+      "median_us": 25.504
+    }
+  },
+  "intervals_us": {
+    "no_kernel": 21973.5654296875,
+    "other": 21953.201171875,
+    "fused_qkv_preparation": 10479.6513671875,
+    "attention+fused_qkv_preparation": 943.9296875,
+    "attention": 4968.0009765625,
+    "attention+attention_output": 2656.1240234375,
+    "attention_output": 3419.96484375,
+    "attention_output+mlp_gate_up": 21.4228515625,
+    "mlp_gate_up": 2231.0166015625,
+    "mlp_down+mlp_gate_up": 20597.3798828125,
+    "mlp_down": 9987.1318359375,
+    "fused_qkv_preparation+mlp_down": 32.197265625
+  },
+  "scope": "Post-timing 34-step request. Kernel resident intervals include dependency waits and overlap; not utilization or an arithmetic lower bound. Fusion changes which stage contains head normalization/RoPE/cache writes."
+}

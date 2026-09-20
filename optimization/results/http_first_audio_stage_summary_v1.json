@@ -1,0 +1,29 @@
+{
+  "control": {
+    "measured_requests": 20,
+    "engine_ttfa_ms": 79.45016585290432,
+    "prepare_ms": 1.0583093389868736,
+    "prefill_ms": 9.220235049724579,
+    "initial_sampling_ms": 0.4735887050628662,
+    "initial_audio_32_ms": 64.04049787670374,
+    "first_codec_ms": 4.514295607805252,
+    "seed_ms": 0.2224734053015709,
+    "voice_registration_ms": 35.33831425011158,
+    "fresh_reference_to_pcm_single_ms": 122.01999127864838,
+    "validation_errors_checked": true
+  },
+  "graph": {
+    "measured_requests": 20,
+    "engine_ttfa_ms": 77.74866558611393,
+    "prepare_ms": 1.0563461109995842,
+    "prefill_ms": 9.217724204063416,
+    "initial_sampling_ms": 0.4784911870956421,
+    "initial_audio_32_ms": 62.36616615206003,
+    "first_codec_ms": 4.5201126486063,
+    "seed_ms": 0.22740662097930908,
+    "voice_registration_ms": 35.472553223371506,
+    "fresh_reference_to_pcm_single_ms": 120.40835432708263,
+    "validation_errors_checked": true
+  },
+  "method": "Twenty measured complete HTTP requests, excluding initial fresh-reference request and warmup. Sequential separate processes, so unchanged stages can vary; paired in-process evidence isolates the gain more reliably. Graph interval has null per-step entries and is measured as an aggregate."
+}

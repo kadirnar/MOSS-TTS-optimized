@@ -1,0 +1,46 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                  _gemv         0.00%       0.000us         0.00%       0.000us       0.000us     120.478ms        68.23%     120.478ms      25.353us          4752  
+                                           _decode_attn         0.00%       0.000us         0.00%       0.000us       0.000us      13.942ms         7.90%      13.942ms      11.736us          1188  
+                                               _rmsnorm         0.00%       0.000us         0.00%       0.000us       0.000us       5.343ms         3.03%       5.343ms       2.092us          2554  
+void at::native::vectorized_elementwise_kernel<8, at...         0.00%       0.000us         0.00%       0.000us       0.000us       3.620ms         2.05%       3.620ms       1.479us          2448  
+              nvjet_tst_192x128_64x5_1x2_h_bz_coopB_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       2.909ms         1.65%       2.909ms      80.794us            36  
+                      nvjet_tst_256x8_64x6_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       2.675ms         1.52%       2.675ms      76.436us            35  
+                     nvjet_tst_128x64_64x8_1x2_h_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       2.597ms         1.47%       2.597ms      36.067us            72  
+                                         _qk_rope_cache         0.00%       0.000us         0.00%       0.000us       0.000us       2.203ms         1.25%       2.203ms       1.854us          1188  
+                                    _decode_attn_reduce         0.00%       0.000us         0.00%       0.000us       0.000us       1.979ms         1.12%       1.979ms       1.665us          1188  
+                                              _silu_mul         0.00%       0.000us         0.00%       0.000us       0.000us       1.787ms         1.01%       1.787ms       1.504us          1188  
+void gemv2T_kernel_val<int, int, float, float, float...         0.00%       0.000us         0.00%       0.000us       0.000us       1.241ms         0.70%       1.241ms       9.693us           128  
+void at::native::(anonymous namespace)::vectorized_l...         0.00%       0.000us         0.00%       0.000us       0.000us       1.189ms         0.67%       1.189ms       4.370us           272  
+std::enable_if<!(false), void>::type internal::gemvx...         0.00%       0.000us         0.00%       0.000us       0.000us     995.911us         0.56%     995.911us       7.545us           132  
+                     nvjet_tst_96x128_64x7_2x1_v_bz_TNN         0.00%       0.000us         0.00%       0.000us       0.000us     948.681us         0.54%     948.681us      26.352us            36  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     932.745us         0.53%     932.745us       5.182us           180  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 4, 4, tr...         0.00%       0.000us         0.00%       0.000us       0.000us     849.164us         0.48%     849.164us       8.845us            96  
+                                       _codec_attention         0.00%       0.000us         0.00%       0.000us       0.000us     769.801us         0.44%     769.801us       5.660us           136  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 2, 2, tr...         0.00%       0.000us         0.00%       0.000us       0.000us     671.844us         0.38%     671.844us       9.331us            72  
+void at::native::sbtopk::gatherTopK<float, unsigned ...         0.00%       0.000us         0.00%       0.000us       0.000us     616.677us         0.35%     616.677us      18.687us            33  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 8, 9, fa...         0.00%       0.000us         0.00%       0.000us       0.000us     512.584us         0.29%     512.584us      10.679us            48  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     448.643us         0.25%     448.643us      12.462us            36  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     430.175us         0.24%     430.175us       1.262us           341  
+void at::native::(anonymous namespace)::CatArrayBatc...         0.00%       0.000us         0.00%       0.000us       0.000us     419.810us         0.24%     419.810us       5.831us            72  
+sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize32x32x...         0.00%       0.000us         0.00%       0.000us       0.000us     377.764us         0.21%     377.764us       7.870us            48  
+sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize32x32x...         0.00%       0.000us         0.00%       0.000us       0.000us     377.125us         0.21%     377.125us       7.857us            48  
+void pytorch_flash::flash_fwd_splitkv_combine_kernel...         0.00%       0.000us         0.00%       0.000us       0.000us     348.420us         0.20%     348.420us       9.678us            36  
+void cutlass::Kernel2<cutlass_80_simt_sgemm_128x32_8...         0.00%       0.000us         0.00%       0.000us       0.000us     331.717us         0.19%     331.717us       5.820us            57  
+void pytorch_flash::flash_fwd_splitkv_kernel<Flash_f...         0.00%       0.000us         0.00%       0.000us       0.000us     327.686us         0.19%     327.686us       9.102us            36  
+void at::native::_assert_async_cuda_kernel<bool>(boo...         0.00%       0.000us         0.00%       0.000us       0.000us     313.185us         0.18%     313.185us       2.337us           134  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     279.876us         0.16%     279.876us       1.944us           144  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     274.435us         0.16%     274.435us       3.812us            72  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     264.615us         0.15%     264.615us       1.316us           201  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     240.066us         0.14%     240.066us       3.334us            72  
+void at::native::index_elementwise_kernel<128, 4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     236.641us         0.13%     236.641us       3.287us            72  
+void at::native::vectorized_elementwise_kernel<2, at...         0.00%       0.000us         0.00%       0.000us       0.000us     233.930us         0.13%     233.930us       0.876us           267  
+void at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us     230.468us         0.13%     230.468us       2.282us           101  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     215.627us         0.12%     215.627us       2.156us           100  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     210.053us         0.12%     210.053us       3.135us            67  
+                                      _codec_rope_cache         0.00%       0.000us         0.00%       0.000us       0.000us     208.026us         0.12%     208.026us       1.530us           136  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     199.172us         0.11%     199.172us       2.766us            72  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 219.087ms
+Self CUDA time total: 176.571ms

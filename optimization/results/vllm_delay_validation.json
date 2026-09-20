@@ -1,0 +1,114 @@
+{
+  "codebooks": 32,
+  "cases": [
+    {
+      "frames": 1,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 1,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 1,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    },
+    {
+      "frames": 2,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 2,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 2,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    },
+    {
+      "frames": 31,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 31,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 31,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    },
+    {
+      "frames": 32,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 32,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 32,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    },
+    {
+      "frames": 73,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 73,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 73,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    },
+    {
+      "frames": 170,
+      "leading_padding": 0,
+      "exact": true,
+      "first_available_step": 32
+    },
+    {
+      "frames": 170,
+      "leading_padding": 1,
+      "exact": true,
+      "first_available_step": 33
+    },
+    {
+      "frames": 170,
+      "leading_padding": 5,
+      "exact": true,
+      "first_available_step": 37
+    }
+  ],
+  "exact_all_cases": true
+}

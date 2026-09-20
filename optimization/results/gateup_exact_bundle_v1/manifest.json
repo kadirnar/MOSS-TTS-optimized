@@ -1,0 +1,294 @@
+{
+  "format": "gateup_cluster_cubin_v1",
+  "complete": true,
+  "torch": "2.13.0+cu130",
+  "triton": "3.8.0",
+  "configs": {
+    "c1_ig1ir2": {
+      "ctas": 1,
+      "integer_groups": 1,
+      "integer_rows": 2,
+      "divisor": 16,
+      "trigger_mode": 1
+    }
+  },
+  "binaries": {
+    "c1_ig1ir2_add0_debug0": {
+      "prefix": "c1_ig1ir2_add0_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 1,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          1,
+          1,
+          1
+        ]
+      },
+      "registers": 148,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "OQ",
+          "*i8"
+        ],
+        [
+          "OS",
+          "*fp32"
+        ],
+        [
+          "NY",
+          "*bf16"
+        ],
+        [
+          "NQ",
+          "*i8"
+        ],
+        [
+          "NS",
+          "*fp32"
+        ]
+      ],
+      "eps": 1e-06,
+      "cubin_sha256": "5322cf1eb881c6cdfffe2ca9725cef7393643915e4b497199ca0997c9491b068"
+    },
+    "c1_ig1ir2_add0_debug1": {
+      "prefix": "c1_ig1ir2_add0_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 1,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          1,
+          1,
+          1
+        ]
+      },
+      "registers": 148,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "OQ",
+          "*i8"
+        ],
+        [
+          "OS",
+          "*fp32"
+        ],
+        [
+          "NY",
+          "*bf16"
+        ],
+        [
+          "NQ",
+          "*i8"
+        ],
+        [
+          "NS",
+          "*fp32"
+        ]
+      ],
+      "eps": 1e-06,
+      "cubin_sha256": "15322caf8a221c5139970369d7d7eb742aac2d8ae2aec7d38baabfc476a646a3"
+    },
+    "c1_ig1ir2_add1_debug0": {
+      "prefix": "c1_ig1ir2_add1_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 1,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          1,
+          1,
+          1
+        ]
+      },
+      "registers": 148,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "OQ",
+          "*i8"
+        ],
+        [
+          "OS",
+          "*fp32"
+        ],
+        [
+          "NY",
+          "*bf16"
+        ],
+        [
+          "NQ",
+          "*i8"
+        ],
+        [
+          "NS",
+          "*fp32"
+        ]
+      ],
+      "eps": 1e-06,
+      "cubin_sha256": "1d108a9b31f6288edb002412c239c3aff802b25f7f1827cdc3b353319652716e"
+    },
+    "c1_ig1ir2_add1_debug1": {
+      "prefix": "c1_ig1ir2_add1_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 1,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          1,
+          1,
+          1
+        ]
+      },
+      "registers": 148,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "OQ",
+          "*i8"
+        ],
+        [
+          "OS",
+          "*fp32"
+        ],
+        [
+          "NY",
+          "*bf16"
+        ],
+        [
+          "NQ",
+          "*i8"
+        ],
+        [
+          "NS",
+          "*fp32"
+        ]
+      ],
+      "eps": 1e-06,
+      "cubin_sha256": "f553e44d652e6b9b0a0450004b7b2bb360fbdaaba777d23c5f67faec8c478c5f"
+    }
+  },
+  "source_bundle": "optimization/results/gateup_cluster_bundle_screen_v1"
+}

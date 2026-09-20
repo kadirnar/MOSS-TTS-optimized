@@ -1,0 +1,30 @@
+{
+  "ttfa": {
+    "control": {
+      "median_ms": 79.80319578200579,
+      "p95_ms": 80.25556728243828,
+      "min_ms": 79.59113828837872
+    },
+    "candidate": {
+      "median_ms": 79.53471131622791,
+      "p95_ms": 79.94756130501628,
+      "min_ms": 79.31832782924175
+    }
+  },
+  "median_paired_gain_ms": 0.3013201057910919,
+  "faster_pairs": 17,
+  "stages": {
+    "control": {
+      "prepare_ms": 1.1994512751698494,
+      "prefill_ms": 9.208322502672672,
+      "mean_initial_32_decode_ms": 1.9995055918116122,
+      "first_codec_ms": 4.768769256770611
+    },
+    "candidate": {
+      "prepare_ms": 1.2006089091300964,
+      "prefill_ms": 9.210167452692986,
+      "mean_initial_32_decode_ms": 1.9995025068055838,
+      "first_codec_ms": 4.517499357461929
+    }
+  }
+}

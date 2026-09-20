@@ -1,0 +1,353 @@
+{
+  "codebooks": 32,
+  "checks": [
+    {
+      "mode": "c8_t2_legacy",
+      "position": 0,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 0,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 0,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 31,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 31,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 31,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 32,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 32,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 32,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 126,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 126,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 126,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 128,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 128,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 128,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 254,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 254,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 254,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 255,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 255,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 255,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 256,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 256,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 256,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 510,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 510,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 510,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 511,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 511,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 511,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 512,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 512,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 512,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1023,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1023,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 1023,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 144,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 144,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 144,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 1,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 9,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    },
+    {
+      "mode": "c8_t2_legacy",
+      "position": 127,
+      "length": 32,
+      "selected_eager_candidate_graph_bits_exact": true,
+      "all_72_poisoned_caches_rng_exact": true
+    }
+  ],
+  "rows": [],
+  "complete": false,
+  "method": "Selected G32/FP32-codec model including register-preload output weights versus QKV projection/head normalization/RoPE/cache fusion using isolated SM90 cubins. Independent context/head/first-audio graph sets; eager dispatch restored with each set. Rotating/reversing cached-voice complete requests, one excluded warmup. Full PCM and final RNG compared; timing excludes network.",
+  "binary_bundle": "optimization/results/qkv_cluster_bundle_v3",
+  "configs": {
+    "c8_t2_legacy": {
+      "ctas": 8,
+      "divisor": 16,
+      "trigger_mode": 2,
+      "legacy_projection": true
+    }
+  }
+}

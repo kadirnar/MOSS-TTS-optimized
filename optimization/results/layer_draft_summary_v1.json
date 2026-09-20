@@ -1,0 +1,76 @@
+{
+  "target_decode_ms": 2.1302134704589846,
+  "rows": [
+    {
+      "name": "full_control",
+      "retained_layers": 36,
+      "draft_ms": 2.1302134704589846,
+      "mean_joint_acceptance_mc": 1.0,
+      "mean_support_upper_bound": 0.9999998330604285,
+      "optimistic_one_proposal_speed_ratio": 0.9999999165302141,
+      "contexts_with_upper_bound_below_cost_ratio": 191,
+      "contexts": 256
+    },
+    {
+      "name": "uniform_34",
+      "retained_layers": 34,
+      "draft_ms": 2.0246768188476563,
+      "mean_joint_acceptance_mc": 0.0845643496471471,
+      "mean_support_upper_bound": 0.09887007870372339,
+      "optimistic_one_proposal_speed_ratio": 0.5633910117827993,
+      "contexts_with_upper_bound_below_cost_ratio": 255,
+      "contexts": 256
+    },
+    {
+      "name": "uniform_30",
+      "retained_layers": 30,
+      "draft_ms": 1.8161509704589844,
+      "mean_joint_acceptance_mc": 0.04304707098866345,
+      "mean_support_upper_bound": 0.0518149328068262,
+      "optimistic_one_proposal_speed_ratio": 0.5677606241996814,
+      "contexts_with_upper_bound_below_cost_ratio": 256,
+      "contexts": 256
+    },
+    {
+      "name": "uniform_24",
+      "retained_layers": 24,
+      "draft_ms": 1.5077203369140626,
+      "mean_joint_acceptance_mc": 0.0020728376111947,
+      "mean_support_upper_bound": 0.0024140993191394955,
+      "optimistic_one_proposal_speed_ratio": 0.5869694531054656,
+      "contexts_with_upper_bound_below_cost_ratio": 256,
+      "contexts": 256
+    },
+    {
+      "name": "uniform_18",
+      "retained_layers": 18,
+      "draft_ms": 1.1942960357666015,
+      "mean_joint_acceptance_mc": 0.0007621818549523596,
+      "mean_support_upper_bound": 0.0007418905188387726,
+      "optimistic_one_proposal_speed_ratio": 0.6412356023178016,
+      "contexts_with_upper_bound_below_cost_ratio": 256,
+      "contexts": 256
+    },
+    {
+      "name": "uniform_12",
+      "retained_layers": 12,
+      "draft_ms": 0.8826112365722656,
+      "mean_joint_acceptance_mc": 0.001382171642035246,
+      "mean_support_upper_bound": 0.0016857067384989932,
+      "optimistic_one_proposal_speed_ratio": 0.7082404697096258,
+      "contexts_with_upper_bound_below_cost_ratio": 256,
+      "contexts": 256
+    },
+    {
+      "name": "middle_gap_24",
+      "retained_layers": 24,
+      "draft_ms": 1.5054115295410155,
+      "mean_joint_acceptance_mc": 0.004731900727108496,
+      "mean_support_upper_bound": 0.005392003961882441,
+      "optimistic_one_proposal_speed_ratio": 0.5890870455372473,
+      "contexts_with_upper_bound_below_cost_ratio": 256,
+      "contexts": 256
+    }
+  ],
+  "limitation": "A one-proposal cost proxy assumes verification costs only one ordinary target decode and gives one bonus token. It excludes draft prefill and bookkeeping. Acceptance is measured on target histories, not free-running proposal blocks; this is not an implemented speedup or universal bound."
+}

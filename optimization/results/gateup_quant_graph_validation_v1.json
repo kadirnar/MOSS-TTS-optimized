@@ -1,0 +1,108 @@
+{
+  "private_stream": true,
+  "cases": [
+    {
+      "position": 0,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 1,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 31,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 32,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 126,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 127,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 128,
+      "capacity": 256,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 254,
+      "capacity": 256,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 255,
+      "capacity": 256,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 256,
+      "capacity": 512,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 510,
+      "capacity": 512,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 511,
+      "capacity": 512,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 512,
+      "capacity": 1024,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 1023,
+      "capacity": 1024,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 144,
+      "capacity": 256,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    },
+    {
+      "position": 127,
+      "capacity": 128,
+      "audio_logits_exact": true,
+      "text_logits_exact": true
+    }
+  ],
+  "codebooks": 32,
+  "scope": "All text and audio logits with separate baseline/fused graphs; initialized 1023-token causal prefix, capacity boundaries, full fallback and return to earlier positions.",
+  "native_attention": false,
+  "gateup_quant": true,
+  "tested_change": "gateup_quant",
+  "baseline_native_attention": true,
+  "candidate_native_attention": true
+}

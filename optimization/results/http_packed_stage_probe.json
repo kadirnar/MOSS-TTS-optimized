@@ -1,0 +1,145 @@
+{
+  "ttfa": {
+    "median_ms": 100.24933610111475,
+    "p95_ms": 101.16720087826252,
+    "min_ms": 99.87176395952702,
+    "samples_ms": [
+      102.54145413637161,
+      100.42341239750385,
+      100.6004624068737,
+      100.28763487935066,
+      100.14189966022968,
+      100.46897642314434,
+      100.86461342871189,
+      100.21103732287884,
+      101.00202821195126,
+      99.87417794764042,
+      100.21080262959003,
+      99.99099746346474,
+      100.01863166689873,
+      100.12968443334103,
+      101.09487175941467,
+      100.34302063286304,
+      100.41895508766174,
+      100.11684149503708,
+      99.87176395952702,
+      100.14161467552185
+    ]
+  },
+  "runs": [
+    {
+      "ttfa_ms": 102.54145413637161,
+      "total_ms": 675.1964651048183,
+      "frames": 76
+    },
+    {
+      "ttfa_ms": 100.42341239750385,
+      "total_ms": 571.816761046648,
+      "frames": 63
+    },
+    {
+      "ttfa_ms": 100.6004624068737,
+      "total_ms": 678.0691836029291,
+      "frames": 77
+    },
+    {
+      "ttfa_ms": 100.28763487935066,
+      "total_ms": 632.457111030817,
+      "frames": 71
+    },
+    {
+      "ttfa_ms": 100.14189966022968,
+      "total_ms": 625.6170477718115,
+      "frames": 70
+    },
+    {
+      "ttfa_ms": 100.46897642314434,
+      "total_ms": 588.0702678114176,
+      "frames": 65
+    },
+    {
+      "ttfa_ms": 100.86461342871189,
+      "total_ms": 655.8975335210562,
+      "frames": 74
+    },
+    {
+      "ttfa_ms": 100.21103732287884,
+      "total_ms": 640.6400501728058,
+      "frames": 72
+    },
+    {
+      "ttfa_ms": 101.00202821195126,
+      "total_ms": 503.72388772666454,
+      "frames": 54
+    },
+    {
+      "ttfa_ms": 99.87417794764042,
+      "total_ms": 593.9629189670086,
+      "frames": 66
+    },
+    {
+      "ttfa_ms": 100.21080262959003,
+      "total_ms": 662.3802240937948,
+      "frames": 75
+    },
+    {
+      "ttfa_ms": 99.99099746346474,
+      "total_ms": 586.0787332057953,
+      "frames": 65
+    },
+    {
+      "ttfa_ms": 100.01863166689873,
+      "total_ms": 639.6512351930141,
+      "frames": 72
+    },
+    {
+      "ttfa_ms": 100.12968443334103,
+      "total_ms": 672.8613115847111,
+      "frames": 76
+    },
+    {
+      "ttfa_ms": 101.09487175941467,
+      "total_ms": 633.6121279746294,
+      "frames": 71
+    },
+    {
+      "ttfa_ms": 100.34302063286304,
+      "total_ms": 633.3030723035336,
+      "frames": 71
+    },
+    {
+      "ttfa_ms": 100.41895508766174,
+      "total_ms": 571.9303023070097,
+      "frames": 63
+    },
+    {
+      "ttfa_ms": 100.11684149503708,
+      "total_ms": 571.6486778110266,
+      "frames": 63
+    },
+    {
+      "ttfa_ms": 99.87176395952702,
+      "total_ms": 654.8903025686741,
+      "frames": 74
+    },
+    {
+      "ttfa_ms": 100.14161467552185,
+      "total_ms": 588.0007557570934,
+      "frames": 65
+    }
+  ],
+  "voice_registration": {
+    "voice": "d3d48be06cdd4939b6789402f9254008",
+    "reference_encode_ms": 24.189559742808342
+  },
+  "cancellation_recovery_statuses": [
+    429,
+    200
+  ],
+  "max_new_tokens": 400,
+  "voice_registration_http_ms": 39.18440826237202,
+  "fresh_reference_to_pcm_ms": 145.34489624202251,
+  "fresh_reference_definition": "One continuous loopback HTTP voice registration plus following synthesis through first 3840-byte PCM chunk; WAV/base64 prepared before timing. Includes server waveform parsing, reference encoding, two HTTP requests and generation.",
+  "validation_errors_checked": true,
+  "definition": "Warm loopback HTTP request to first complete 3840-byte s16le PCM chunk, cached voice; 20 measured complete requests, one warmup. Includes HTTP overhead."
+}

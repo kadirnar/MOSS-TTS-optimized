@@ -1,0 +1,25 @@
+{
+  "source": "attention_pdl_profile_v4_trace.json",
+  "variant": "selected late attention PDL",
+  "kernel_events": 14250,
+  "kernel_counts": {
+    "other": 5934,
+    "projection": 4752,
+    "attention": 3564
+  },
+  "summed_kernel_duration_us": {
+    "other": 24693.921999999868,
+    "projection": 71767.01799999939,
+    "attention": 19650.87000000005
+  },
+  "interval_classes_us": {
+    "no_kernel": 20795.4189453125,
+    "other": 24678.5546875,
+    "other+projection": 5.1474609375,
+    "projection": 39165.451171875,
+    "attention+projection": 10677.103515625,
+    "attention": 6180.2041015625
+  },
+  "kernel_interval_union_us": 80706.4609375,
+  "scope": "One profiled 34-step request (33 decode steps and two codec chunks). Sweep of kernel resident intervals, including waits. Projection means four Gluon DP4A kernels per layer. Attention means the three LLM attention kernels. Other includes prefill, codec, heads, sampling and bookkeeping. Exclusive intervals are not hardware utilization or pure arithmetic time. Gaps are not assigned to a bottleneck. Profiling excluded from latency measurements."
+}

@@ -1,0 +1,17 @@
+{
+  "static_shared_bytes": 9216,
+  "local_bytes_per_thread": 48,
+  "registers": 112,
+  "dynamic_shared_bytes": 0,
+  "max_active_blocks_per_sm": 4,
+  "threads": 128,
+  "build": "b6f7c0087d68ca372839efad",
+  "register_cap": 112,
+  "shared_spilling": true,
+  "static_shared": true,
+  "compiler": "/workspace/cuda-13.0-ptxas/ptxas",
+  "compiler_sha256": "daba837a68265cae38c832d13399b61dab811891de9b8914defddef143b849f2",
+  "original_ptx_sha256": "d23d08b47902539e8f4bdff8b1a4a9f7a57c5d8d1c8774d3564edd07979a85a7",
+  "ptx_sha256": "43958ae88e841f012aed2c67d701d49085032b74e877ebf4818d141798038dad",
+  "cubin_sha256": "40a5d4c801e77c6c748df7b43d79be5dd90618d2ae40a839b88f9d9b52e14ab1"
+}

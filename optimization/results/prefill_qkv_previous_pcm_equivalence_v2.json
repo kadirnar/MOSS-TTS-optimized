@@ -1,0 +1,17 @@
+[
+  {
+    "before": "bulk_prefetch_paired_v1",
+    "after": "bulk_address_paired_v1",
+    "matching_full_pcm_streams": 20
+  },
+  {
+    "before": "bulk_address_paired_v1",
+    "after": "prefill_qkv_paired_v1",
+    "matching_full_pcm_streams": 20
+  },
+  {
+    "before": "prefill_qkv_paired_v1",
+    "after": "prefill_qkv_paired_v2",
+    "matching_full_pcm_streams": 20
+  }
+]

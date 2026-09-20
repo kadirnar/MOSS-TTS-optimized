@@ -1,0 +1,10 @@
+{
+  "expected_text": "你好，这是一段用于测试流式语音合成速度的句子。",
+  "scope": "Single Chinese utterance ASR smoke test; not a corpus WER or speaker-similarity evaluation.",
+  "streaming_optimized": {
+    "transcript": "你好,这是一段用于测试流逝语音合成速度的句子"
+  },
+  "streaming_fp8_experimental": {
+    "transcript": "你好,这是一段用于测试流逝语音合成速度的句子。"
+  }
+}

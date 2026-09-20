@@ -1,0 +1,32 @@
+{
+  "python_ast_files": 203,
+  "cli_help_modules": [
+    "benchmark_codec_clock",
+    "validate_codec_clock",
+    "benchmark_codec_clock_paired",
+    "benchmark_codec_clock_http",
+    "benchmark_split_projection_pdl",
+    "benchmark_quantization",
+    "quality_generate",
+    "server"
+  ],
+  "services": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32
+    }
+  },
+  "supervisor_status": [
+    "moss_tts_optimized               RUNNING   pid 54030, uptime 9:29:35",
+    "moss_tts_fp8_experimental        RUNNING   pid 56179, uptime 9:24:53"
+  ],
+  "gpu_processes": [
+    "3311027, 34258 MiB",
+    "3335774, 41184 MiB"
+  ],
+  "temporary_port_18084_free": true
+}

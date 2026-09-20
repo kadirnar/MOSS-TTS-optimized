@@ -1,0 +1,587 @@
+{
+  "codebooks": 32,
+  "cases": [
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "pdl",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 0,
+      "config": "prefetch",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "pdl",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "config": "prefetch",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "pdl",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "10",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "31",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "zero",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "spike",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 35,
+      "config": "prefetch",
+      "input": "random",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "all_exact": true,
+  "graph_edges": {
+    "0/pdl": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "0/prefetch": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/pdl": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/prefetch": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/pdl": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/prefetch": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "private_stream": true,
+  "changed_inputs_between_replays": true,
+  "scope": "36 actual-shape dependent-chain cases; selected PDL and scale-preload candidates, layers 0/17/35, three real vectors plus zero/spike/random. Complete-model and other-layer checks are separate."
+}

@@ -1,0 +1,7 @@
+{
+  "baseline": "optimization/results/all32_gptq_dp4a_gateup_quant_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_pb128_160_256_512.json",
+  "candidate": "optimization/results/all32_gptq_dp4a_scaled_dp4a_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_pb128_160_256_512.json",
+  "diagnostics_exact": true,
+  "wav_exact": true,
+  "wave_sha256": "b2ba92da2b6dfd4fc71a144fe384f4a294cd3fc7f729b99e727abbef26510ec7"
+}

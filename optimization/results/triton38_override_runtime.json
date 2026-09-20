@@ -1,0 +1,7 @@
+{
+  "torch": "2.13.0+cu130",
+  "triton": "3.8.0",
+  "transformers": "5.14.1",
+  "cudnn": 92000,
+  "note": "Isolated compiler-only experiment. Overrides Torch 2.13 declared Triton 3.7.1 pin; no full vLLM or Inductor compatibility claim."
+}

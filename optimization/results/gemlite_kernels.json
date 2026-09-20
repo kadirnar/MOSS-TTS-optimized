@@ -1,0 +1,127 @@
+{
+  "gemlite": "0.6.0.post1",
+  "torch": "2.13.0+cu130",
+  "method": "Eight distinct packed matrices rotated in a CUDA graph; FP32 accumulation; symmetric RTN weights",
+  "cases": [
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 39.42666699488958,
+      "relative_rms_vs_dequantized_bf16": 0.00016383893671445549
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 22.518667081991833,
+      "relative_rms_vs_dequantized_bf16": 5.7871246099239215e-05
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 14.147999385992685,
+      "relative_rms_vs_dequantized_bf16": 0.00022196269128471613
+    },
+    {
+      "bits": 4,
+      "group": 128,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 11.458666374286016,
+      "relative_rms_vs_dequantized_bf16": 9.203312600902791e-08
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 39.05466695626577,
+      "relative_rms_vs_dequantized_bf16": 0.0001099136788980104
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 22.389332453409832,
+      "relative_rms_vs_dequantized_bf16": 0.00011238201841479167
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 13.913333415985107,
+      "relative_rms_vs_dequantized_bf16": 6.596388175239554e-06
+    },
+    {
+      "bits": 4,
+      "group": 32,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 10.826667149861654,
+      "relative_rms_vs_dequantized_bf16": 4.8814999900059775e-05
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        24576,
+        4096
+      ],
+      "us": 63.084001342455544,
+      "relative_rms_vs_dequantized_bf16": 0.00012882068403996527
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        4096,
+        12288
+      ],
+      "us": 34.47866688172022,
+      "relative_rms_vs_dequantized_bf16": 5.5948748922673985e-05
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        6144,
+        4096
+      ],
+      "us": 21.01333439350128,
+      "relative_rms_vs_dequantized_bf16": 0.00019563768000807613
+    },
+    {
+      "bits": 8,
+      "group": 128,
+      "shape": [
+        4096,
+        4096
+      ],
+      "us": 13.543999443451563,
+      "relative_rms_vs_dequantized_bf16": 0.0002191004023188725
+    }
+  ]
+}

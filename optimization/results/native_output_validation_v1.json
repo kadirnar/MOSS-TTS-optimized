@@ -1,0 +1,2562 @@
+{
+  "checks": 504,
+  "records": [
+    {
+      "layer": 0,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 0,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 1,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 2,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 3,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 4,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 5,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 6,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 7,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 8,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 9,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 10,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 11,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 12,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 13,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 14,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 15,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 16,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 17,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 18,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 19,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 20,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 21,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 22,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 23,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 24,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 25,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 26,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 27,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 28,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 29,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 30,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 31,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 32,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 33,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 34,
+      "input": "spike",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "0",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "37",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "116",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "231",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "352",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "463",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "528",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "671",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "829",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "1007",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "1186",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "1275",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "zero",
+      "mismatches": 0
+    },
+    {
+      "layer": 35,
+      "input": "spike",
+      "mismatches": 0
+    }
+  ],
+  "graphs": [
+    {
+      "n": 1,
+      "mismatches": 0
+    },
+    {
+      "n": 3,
+      "mismatches": 0
+    },
+    {
+      "n": 4,
+      "mismatches": 0
+    },
+    {
+      "n": 5,
+      "mismatches": 0
+    },
+    {
+      "n": 37,
+      "mismatches": 0
+    },
+    {
+      "n": 4095,
+      "mismatches": 0
+    },
+    {
+      "n": 4096,
+      "mismatches": 0
+    },
+    {
+      "n": 4097,
+      "mismatches": 0
+    }
+  ],
+  "all_exact": true,
+  "private_stream": true,
+  "memory_only": false
+}

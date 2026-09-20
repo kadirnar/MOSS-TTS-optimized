@@ -1,0 +1,46 @@
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                   Name    Self CPU %      Self CPU   CPU total %     CPU total  CPU time avg     Self CUDA   Self CUDA %    CUDA total  CUDA time avg    # of Calls  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+                                                _kernel         0.00%       0.000us         0.00%       0.000us       0.000us      40.199ms        39.41%      40.199ms      11.279us          3564  
+                                               _project         0.00%       0.000us         0.00%       0.000us       0.000us      30.118ms        29.53%      30.118ms      25.352us          1188  
+void attention_ordered_pdl<true, 2>(__nv_bfloat16 co...         0.00%       0.000us         0.00%       0.000us       0.000us       5.060ms         4.96%       5.060ms       4.259us          1188  
+                                          _reduce_quant         0.00%       0.000us         0.00%       0.000us       0.000us       4.560ms         4.47%       4.560ms       3.838us          1188  
+         nvjet_sm90_tst_192x160_64x4_2x1_v_bz_coopB_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       2.208ms         2.16%       2.208ms      61.333us            36  
+         nvjet_sm90_tst_128x80_64x8_1x2_h_bz_splitK_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       1.263ms         1.24%       1.263ms      35.086us            36  
+void gemv2T_kernel_val<int, int, float, float, float...         0.00%       0.000us         0.00%       0.000us       0.000us       1.241ms         1.22%       1.241ms       9.698us           128  
+void at::native::(anonymous namespace)::vectorized_l...         0.00%       0.000us         0.00%       0.000us       0.000us       1.185ms         1.16%       1.185ms       4.357us           272  
+                 nvjet_sm90_tst_256x8_64x6_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us       1.020ms         1.00%       1.020ms      92.760us            11  
+std::enable_if<!(false), void>::type internal::gemvx...         0.00%       0.000us         0.00%       0.000us       0.000us     985.645us         0.97%     985.645us       7.467us           132  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 4, 4, tr...         0.00%       0.000us         0.00%       0.000us       0.000us     840.617us         0.82%     840.617us       8.756us            96  
+                nvjet_sm90_tst_64x96_64x10_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     800.967us         0.79%     800.967us      22.249us            36  
+                nvjet_sm90_tst_128x80_64x8_4x2_h_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     778.533us         0.76%     778.533us      21.626us            36  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 2, 2, tr...         0.00%       0.000us         0.00%       0.000us       0.000us     671.144us         0.66%     671.144us       9.321us            72  
+                                       _codec_attention         0.00%       0.000us         0.00%       0.000us       0.000us     662.601us         0.65%     662.601us       6.371us           104  
+void at::native::sbtopk::gatherTopK<float, unsigned ...         0.00%       0.000us         0.00%       0.000us       0.000us     632.452us         0.62%     632.452us      19.165us            33  
+void gemmSN_TN_kernel<float, 128, 16, 2, 4, 8, 9, fa...         0.00%       0.000us         0.00%       0.000us       0.000us     511.398us         0.50%     511.398us      10.654us            48  
+                 nvjet_sm90_tst_256x8_64x6_4x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     456.709us         0.45%     456.709us      57.089us             8  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     423.308us         0.42%     423.308us       1.241us           341  
+sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize32x32x...         0.00%       0.000us         0.00%       0.000us       0.000us     379.592us         0.37%     379.592us       7.908us            48  
+sm80_xmma_gemm_f32f32_f32f32_f32_tn_n_tilesize32x32x...         0.00%       0.000us         0.00%       0.000us       0.000us     371.912us         0.36%     371.912us       7.748us            48  
+cudnn_generated_fort_native_sdpa_sm90_flash_fprop_wg...         0.00%       0.000us         0.00%       0.000us       0.000us     319.078us         0.31%     319.078us       8.863us            36  
+void at::native::_assert_async_cuda_kernel<bool>(boo...         0.00%       0.000us         0.00%       0.000us       0.000us     311.448us         0.31%     311.448us       2.324us           134  
+                nvjet_sm90_tst_128x8_64x12_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     293.411us         0.29%     293.411us      36.676us             8  
+                                           _add_rmsnorm         0.00%       0.000us         0.00%       0.000us       0.000us     286.531us         0.28%     286.531us       2.729us           105  
+void at::native::elementwise_kernel<128, 2, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     283.751us         0.28%     283.751us       1.970us           144  
+void at::native::vectorized_elementwise_kernel<8, at...         0.00%       0.000us         0.00%       0.000us       0.000us     257.256us         0.25%     257.256us       1.280us           201  
+                                           _prefill_qkv         0.00%       0.000us         0.00%       0.000us       0.000us     238.661us         0.23%     238.661us       6.629us            36  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     230.821us         0.23%     230.821us       3.445us            67  
+void at::native::unrolled_elementwise_kernel<at::nat...         0.00%       0.000us         0.00%       0.000us       0.000us     226.688us         0.22%     226.688us       2.244us           101  
+void cutlass::Kernel2<cutlass_80_simt_sgemm_128x32_8...         0.00%       0.000us         0.00%       0.000us       0.000us     211.392us         0.21%     211.392us       8.808us            24  
+void at::native::elementwise_kernel<128, 4, at::nati...         0.00%       0.000us         0.00%       0.000us       0.000us     200.413us         0.20%     200.413us       2.004us           100  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     199.649us         0.20%     199.649us       1.468us           136  
+void at::native::vectorized_elementwise_kernel<4, at...         0.00%       0.000us         0.00%       0.000us       0.000us     185.830us         0.18%     185.830us       1.452us           128  
+                                         _embedding_sum         0.00%       0.000us         0.00%       0.000us       0.000us     178.210us         0.17%     178.210us       5.241us            34  
+void cublasLt::splitKreduce_kernel<32, 16, int, floa...         0.00%       0.000us         0.00%       0.000us       0.000us     176.961us         0.17%     176.961us       4.916us            36  
+void at::native::sbtopk::gatherTopK<float, unsigned ...         0.00%       0.000us         0.00%       0.000us       0.000us     173.731us         0.17%     173.731us       5.265us            33  
+void at::native::reduce_kernel<512, 1, at::native::R...         0.00%       0.000us         0.00%       0.000us       0.000us     171.644us         0.17%     171.644us       2.562us            67  
+void at::native::bitonicSortKVInPlace<2, -1, 16, 16,...         0.00%       0.000us         0.00%       0.000us       0.000us     167.491us         0.16%     167.491us       5.075us            33  
+                 nvjet_sm90_tst_64x8_64x16_2x1_v_bz_TNT         0.00%       0.000us         0.00%       0.000us       0.000us     164.738us         0.16%     164.738us      20.592us             8  
+-------------------------------------------------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  ------------  
+Self CPU time total: 94.756ms
+Self CUDA time total: 101.994ms

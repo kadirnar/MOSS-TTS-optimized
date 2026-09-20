@@ -1,0 +1,34 @@
+{
+  "python_ast_files": 209,
+  "cli_help_modules": [
+    "prepare_ptxas",
+    "benchmark_ptx_resources",
+    "benchmark_gateup_warp_specialized",
+    "validate_projection_resources"
+  ],
+  "previous_snapshot_files_checked": 257,
+  "previous_snapshot_modified_files": [
+    "optimization/GOAL_REVIEW.md",
+    "optimization/README.md"
+  ],
+  "selected_runtime_sources_unchanged": true,
+  "services": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32
+    }
+  },
+  "supervisor_status": [
+    "moss_tts_optimized               RUNNING   pid 54030, uptime 9:53:02",
+    "moss_tts_fp8_experimental        RUNNING   pid 56179, uptime 9:48:20"
+  ],
+  "gpu_processes": [
+    "3311027, 34258 MiB",
+    "3335774, 41184 MiB"
+  ],
+  "temporary_port_18084_free": true
+}

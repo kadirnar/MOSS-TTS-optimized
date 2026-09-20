@@ -1,0 +1,2465 @@
+{
+  "method": "Eight distinct packed weight/scale pairs, complete residual/norm/quant plus projection vs fused producer-consumer. Nine real frozen inputs from layers 0/17/35 and steps 0/10/31 for each projection family; private-stream output and intermediate comparisons. Debug stores excluded from timing.",
+  "cases": {
+    "qkv": {
+      "reference_us": 8.657333130637804,
+      "input_labels": [
+        "step0_norm0",
+        "step0_norm34",
+        "step0_norm70",
+        "step10_norm0",
+        "step10_norm34",
+        "step10_norm70",
+        "step31_norm0",
+        "step31_norm34",
+        "step31_norm70"
+      ],
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 9.436000138521194
+        },
+        {
+          "config": {
+            "rows": 4,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 10.480000327030817
+        },
+        {
+          "config": {
+            "rows": 4,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 10.376000156005224
+        },
+        {
+          "config": {
+            "rows": 4,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 9.52933356165886
+        },
+        {
+          "config": {
+            "rows": 8,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.21333316465219
+        },
+        {
+          "config": {
+            "rows": 8,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.940000087022781
+        },
+        {
+          "config": {
+            "rows": 8,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.877333253622055
+        },
+        {
+          "config": {
+            "rows": 8,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.262666563193003
+        },
+        {
+          "config": {
+            "rows": 16,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.57466645538807
+        },
+        {
+          "config": {
+            "rows": 16,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 9.009333327412605
+        },
+        {
+          "config": {
+            "rows": 16,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.879999940594038
+        },
+        {
+          "config": {
+            "rows": 16,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm0",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm34",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm70",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 8.28133337199688
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 8,
+          "integer_groups": 1,
+          "integer_rows": 1
+        },
+        "checks": 9,
+        "exact_checks": 9,
+        "mismatches": 0,
+        "records": [
+          {
+            "input": "step0_norm0",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step0_norm34",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step0_norm70",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm0",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm34",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm70",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm0",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm34",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm70",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "us": 8.21333316465219
+      }
+    },
+    "up": {
+      "reference_us": 20.660000542799633,
+      "input_labels": [
+        "step0_norm1",
+        "step0_norm35",
+        "step0_norm71",
+        "step10_norm1",
+        "step10_norm35",
+        "step10_norm71",
+        "step31_norm1",
+        "step31_norm35",
+        "step31_norm71"
+      ],
+      "candidates": [
+        {
+          "config": {
+            "rows": 32,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 24.58266665538152
+        },
+        {
+          "config": {
+            "rows": 32,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 24.317334095637005
+        },
+        {
+          "config": {
+            "rows": 32,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 37.66666601101557
+        },
+        {
+          "config": {
+            "rows": 32,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 19.638666262229282
+        },
+        {
+          "config": {
+            "rows": 64,
+            "integer_groups": 1,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 26.846667130788166
+        },
+        {
+          "config": {
+            "rows": 64,
+            "integer_groups": 1,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 28.443999588489532
+        },
+        {
+          "config": {
+            "rows": 64,
+            "integer_groups": 2,
+            "integer_rows": 1
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 61.08800073464712
+        },
+        {
+          "config": {
+            "rows": 64,
+            "integer_groups": 2,
+            "integer_rows": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "records": [
+            {
+              "input": "step0_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step0_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step10_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm1",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm35",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "input": "step31_norm71",
+              "mismatches": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ]
+            }
+          ],
+          "us": 27.450665831565857
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 32,
+          "integer_groups": 2,
+          "integer_rows": 4
+        },
+        "checks": 9,
+        "exact_checks": 9,
+        "mismatches": 0,
+        "records": [
+          {
+            "input": "step0_norm1",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step0_norm35",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step0_norm71",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm1",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm35",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step10_norm71",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm1",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm35",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "input": "step31_norm71",
+            "mismatches": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "us": 19.638666262229282
+      }
+    }
+  }
+}

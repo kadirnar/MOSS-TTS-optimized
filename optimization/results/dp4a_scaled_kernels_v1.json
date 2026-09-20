@@ -1,0 +1,751 @@
+{
+  "method": "8 distinct weights/scales, median of 9 graph timings, prequantized input; 3 layers x 4 captured inputs plus zero/spike exact checks on private streams. Reference is current selected path including fused gate/up quantization.",
+  "cases": {
+    "up": {
+      "reference_us": 17.86266639828682,
+      "candidates": [
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 16.760000338157017
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 16.72666644056638
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 19.999999552965164
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 19.21200007200241
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 31.44533435503642
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 31.963999072710674
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 24.177332719167072
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 23.85866641998291
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 32,
+          "warps": 4,
+          "mode": 2
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "us": 16.72666644056638
+      }
+    },
+    "qkv": {
+      "reference_us": 6.394666930039723,
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.823999807238579
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.82800014813741
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 3,
+          "us": 7.233333463470141
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 3,
+          "us": 7.213333621621132
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 6,
+          "us": 8.444000035524368
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 6,
+          "us": 8.485333373149237
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 6.741333131988843
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 6.929333632191022
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.1373331894477205
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.066666916012764
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 3,
+          "us": 7.2013332198063535
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 3,
+          "us": 7.161333536108335
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 7.1693335970242815
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 7.017333060503006
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 6.638666614890099
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "mismatches": 2,
+          "us": 7.272000114123027
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.101333225766818
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.102666879693667
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 4,
+          "mode": 2
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "us": 6.066666916012764
+      }
+    },
+    "out": {
+      "reference_us": 5.40533351401488,
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.232000102599462
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.25333359837532
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 5.378666644295056
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 5.365333209435145
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 6.169333433111508
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 6.117333347598712
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.350666741530101
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.314666777849197
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 4.746666798988978
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 4.7599999234080315
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 5.395999799172084
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "mismatches": 5,
+          "us": 5.429333075881004
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.637333417932193
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.6413331379493075
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.118666380643845
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 6.084000070889791
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.110666776696841
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 5.152000114321709
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 4,
+          "mode": 1
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "us": 4.746666798988978
+      }
+    },
+    "down": {
+      "reference_us": 10.198666403690973,
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 12.278666098912558
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 11.961333453655243
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 11.009333034356436
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 10.967999696731567
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 11.600000162919363
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 11.63999984661738
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 9.772000213464102
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 10.115999728441238
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 12.002666791280111
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 11.900000274181366
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 12.366666148106257
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 12.298667182525
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 10.775999476512274
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "mismatches": 0,
+          "us": 10.55466632048289
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 10.649333397547403
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 10.904000451167425
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 1
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 13.796000430981318
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "mismatches": 3,
+          "us": 13.697333633899689
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "rows": 4,
+          "warps": 2,
+          "mode": 1
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "mismatches": 0,
+        "us": 9.772000213464102
+      }
+    }
+  }
+}

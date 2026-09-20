@@ -1,0 +1,1340 @@
+{
+  "method": "G128 GPTQ weights, eight-weight ring, median nine CUDA graph timings. Three layers x four real inputs plus zero/spike. Up includes following activation quantization for every candidate. Arithmetic reference is independent original-layout DP4A with repeated weight scales for G32 activations.",
+  "cases": {
+    "qkv_a128": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 5,
+          "us": 6.7026664813359575
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 4.897183885077538e-07,
+          "mismatches": 2,
+          "us": 5.999999741713206
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "max_relative_rms": 0.0,
+          "mismatches": 0,
+          "us": 8.197333042820295
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 6,
+          "us": 6.384000182151794
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 5,
+          "us": 6.035999705394109
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 4.897183885077538e-07,
+          "mismatches": 2,
+          "us": 6.2066664298375445
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 5,
+          "us": 6.4399999876817065
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 13,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 6,
+          "us": 6.937333072225253
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 0.0003345654986333102,
+          "mismatches": 5,
+          "us": 6.374666467308998
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 2,
+          "warps": 4,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 16,
+        "max_relative_rms": 4.897183885077538e-07,
+        "mismatches": 2,
+        "us": 5.999999741713206
+      },
+      "best_exact": {
+        "config": {
+          "rows": 2,
+          "warps": 8,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "max_relative_rms": 0.0,
+        "mismatches": 0,
+        "us": 8.197333042820295
+      }
+    },
+    "out_a128": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 1.2750042799325456e-07,
+          "mismatches": 3,
+          "us": 5.098666685322921
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 4.137645337465301e-09,
+          "mismatches": 1,
+          "us": 4.559999952713649
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "max_relative_rms": 0.0,
+          "mismatches": 0,
+          "us": 6.014666830499967
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 4.137645337465301e-09,
+          "mismatches": 3,
+          "us": 5.269333099325498
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 1.2750042799325456e-07,
+          "mismatches": 3,
+          "us": 5.112000120182832
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 4.137645337465301e-09,
+          "mismatches": 1,
+          "us": 4.721333272755146
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 4.137645337465301e-09,
+          "mismatches": 3,
+          "us": 5.506666377186775
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 4.137645337465301e-09,
+          "mismatches": 3,
+          "us": 6.174666807055473
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 1.2750042799325456e-07,
+          "mismatches": 3,
+          "us": 5.266666412353516
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 2,
+          "warps": 4,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 17,
+        "max_relative_rms": 4.137645337465301e-09,
+        "mismatches": 1,
+        "us": 4.559999952713649
+      },
+      "best_exact": {
+        "config": {
+          "rows": 2,
+          "warps": 8,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "max_relative_rms": 0.0,
+        "mismatches": 0,
+        "us": 6.014666830499967
+      }
+    },
+    "up_a128": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 8.460125172859989e-06,
+          "mismatches": 27,
+          "us": 18.218666315078735
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 8.476373295707162e-06,
+          "mismatches": 25,
+          "us": 17.909333109855652
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 10,
+          "max_relative_rms": 1.6534284441149794e-05,
+          "mismatches": 18,
+          "us": 20.188000053167343
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964240911765955e-05,
+          "mismatches": 24,
+          "us": 19.05866712331772
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 8.460125172859989e-06,
+          "mismatches": 27,
+          "us": 18.160000443458557
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 8.476373295707162e-06,
+          "mismatches": 25,
+          "us": 19.082666685183842
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 18.181333939234417
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964240911765955e-05,
+          "mismatches": 24,
+          "us": 19.04800037542979
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 8.460125172859989e-06,
+          "mismatches": 27,
+          "us": 18.673333028952282
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 22.110665837923687
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 19.16266605257988
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964240911765955e-05,
+          "mismatches": 24,
+          "us": 18.621332943439484
+        },
+        {
+          "config": {
+            "rows": 128,
+            "warps": 4,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 55.35466472307841
+        },
+        {
+          "config": {
+            "rows": 128,
+            "warps": 8,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 25.418666501839954
+        },
+        {
+          "config": {
+            "rows": 128,
+            "warps": 16,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 8,
+          "max_relative_rms": 1.1964058103330899e-05,
+          "mismatches": 24,
+          "us": 22.089332342147827
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 4,
+          "warps": 4,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 8,
+        "max_relative_rms": 8.476373295707162e-06,
+        "mismatches": 25,
+        "us": 17.909333109855652
+      },
+      "best_exact": null
+    },
+    "down_a128": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 1,
+          "us": 11.589333415031433
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 3.10390504409952e-08,
+          "mismatches": 2,
+          "us": 11.303999771674475
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "max_relative_rms": 0.0,
+          "mismatches": 0,
+          "us": 11.433333158493042
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 3,
+          "us": 9.712000067035357
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 1,
+          "us": 9.783999994397163
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 3.10390504409952e-08,
+          "mismatches": 2,
+          "us": 11.623999724785486
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 3,
+          "us": 9.805333490173021
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 3,
+          "us": 9.730666875839233
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 3.950911923311651e-05,
+          "mismatches": 1,
+          "us": 12.77599980433782
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 4,
+          "warps": 2,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 16,
+        "max_relative_rms": 3.950911923311651e-05,
+        "mismatches": 3,
+        "us": 9.712000067035357
+      },
+      "best_exact": {
+        "config": {
+          "rows": 2,
+          "warps": 8,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "max_relative_rms": 0.0,
+        "mismatches": 0,
+        "us": 11.433333158493042
+      }
+    },
+    "qkv_a32": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 1.1413072570576333e-05,
+          "mismatches": 1,
+          "us": 6.778666749596596
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 8.00963988467629e-08,
+          "mismatches": 1,
+          "us": 6.117333347598712
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "max_relative_rms": 0.0,
+          "mismatches": 0,
+          "us": 8.209333444635073
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 1.1413072570576333e-05,
+          "mismatches": 1,
+          "us": 6.254666795333226
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 8.00963988467629e-08,
+          "mismatches": 1,
+          "us": 6.250666454434395
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 8.00963988467629e-08,
+          "mismatches": 1,
+          "us": 6.178666527072589
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 1.1413072570576333e-05,
+          "mismatches": 1,
+          "us": 6.338666503628095
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 8.00963988467629e-08,
+          "mismatches": 1,
+          "us": 6.7079998552799225
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 17,
+          "max_relative_rms": 8.00963988467629e-08,
+          "mismatches": 1,
+          "us": 6.6439999888340635
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 2,
+          "warps": 4,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 17,
+        "max_relative_rms": 8.00963988467629e-08,
+        "mismatches": 1,
+        "us": 6.117333347598712
+      },
+      "best_exact": {
+        "config": {
+          "rows": 2,
+          "warps": 8,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "max_relative_rms": 0.0,
+        "mismatches": 0,
+        "us": 8.209333444635073
+      }
+    },
+    "out_a32": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 4,
+          "us": 5.079999876519044
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 2,
+          "us": 4.572000044087569
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 18,
+          "max_relative_rms": 0.0,
+          "mismatches": 0,
+          "us": 5.974666525920232
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 4,
+          "us": 5.113333463668823
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 2,
+          "us": 4.8893333102266
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 2,
+          "us": 4.671999874214332
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 14,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 4,
+          "us": 5.3413330266873045
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 2,
+          "us": 5.3013333429892855
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 5.318720468494575e-07,
+          "mismatches": 2,
+          "us": 5.225333074728648
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 2,
+          "warps": 4,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 16,
+        "max_relative_rms": 5.318720468494575e-07,
+        "mismatches": 2,
+        "us": 4.572000044087569
+      },
+      "best_exact": {
+        "config": {
+          "rows": 2,
+          "warps": 8,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 18,
+        "max_relative_rms": 0.0,
+        "mismatches": 0,
+        "us": 5.974666525920232
+      }
+    },
+    "up_a32": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 3.117116284556687e-05,
+          "mismatches": 35,
+          "us": 18.162666509548824
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 18.83200059334437
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 20.56533346573512
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 3.117116284556687e-05,
+          "mismatches": 35,
+          "us": 18.881333371003468
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 20.224000016848247
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 19.757332901159923
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 3.117116284556687e-05,
+          "mismatches": 35,
+          "us": 19.453333069880802
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 22.13866760333379
+        },
+        {
+          "config": {
+            "rows": 16,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 20.723999788363773
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 3.117116284556687e-05,
+          "mismatches": 35,
+          "us": 27.81066546837489
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 22.48000105222066
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 22.318666179974873
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 4,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 20.940000812212627
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 8,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 21.076001226902008
+        },
+        {
+          "config": {
+            "rows": 32,
+            "warps": 16,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 20.350666095813114
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 4,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 34.67866778373718
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 8,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 28.410665690898895
+        },
+        {
+          "config": {
+            "rows": 64,
+            "warps": 16,
+            "mode": 2,
+            "fused": true
+          },
+          "checks": 18,
+          "exact_checks": 7,
+          "max_relative_rms": 9.472264537180308e-06,
+          "mismatches": 24,
+          "us": 26.849334438641865
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 4,
+          "warps": 2,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 7,
+        "max_relative_rms": 3.117116284556687e-05,
+        "mismatches": 35,
+        "us": 18.162666509548824
+      },
+      "best_exact": null
+    },
+    "down_a32": {
+      "candidates": [
+        {
+          "config": {
+            "rows": 2,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 6.490472603815078e-10,
+          "mismatches": 2,
+          "us": 10.784000158309937
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 9.439259684995704e-08,
+          "mismatches": 4,
+          "us": 10.405333091815313
+        },
+        {
+          "config": {
+            "rows": 2,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 2.577588702479261e-06,
+          "mismatches": 4,
+          "us": 11.334666361411413
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 6.490472603815078e-10,
+          "mismatches": 2,
+          "us": 9.178666397929192
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 9.439259684995704e-08,
+          "mismatches": 4,
+          "us": 10.796000560124716
+        },
+        {
+          "config": {
+            "rows": 4,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 2.577588702479261e-06,
+          "mismatches": 4,
+          "us": 11.695999652147293
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 2,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 16,
+          "max_relative_rms": 6.490472603815078e-10,
+          "mismatches": 2,
+          "us": 9.607999896009764
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 4,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 9.439259684995704e-08,
+          "mismatches": 4,
+          "us": 9.481333196163177
+        },
+        {
+          "config": {
+            "rows": 8,
+            "warps": 8,
+            "mode": 2,
+            "fused": false
+          },
+          "checks": 18,
+          "exact_checks": 15,
+          "max_relative_rms": 2.577588702479261e-06,
+          "mismatches": 4,
+          "us": 13.414666056632996
+        }
+      ],
+      "best": {
+        "config": {
+          "rows": 4,
+          "warps": 2,
+          "mode": 2,
+          "fused": false
+        },
+        "checks": 18,
+        "exact_checks": 16,
+        "max_relative_rms": 6.490472603815078e-10,
+        "mismatches": 2,
+        "us": 9.178666397929192
+      },
+      "best_exact": null
+    }
+  }
+}

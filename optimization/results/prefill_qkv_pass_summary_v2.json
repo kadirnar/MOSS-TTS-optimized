@@ -1,0 +1,142 @@
+{
+  "classification": "progress",
+  "goal_status": "active",
+  "target_ms": 50,
+  "target_achieved": false,
+  "codebooks": 32,
+  "voice_cloning": true,
+  "streaming": true,
+  "selected_changes": [
+    "QKV-only zero-lookahead bulk-prefetch address specialization, integrated into the optional bulk-prefetch preset.",
+    "Optional corrected BF16 prefill Q/K normalization, rotary and KV-write Triton fusion."
+  ],
+  "address_comparison": {
+    "ttfa": {
+      "control": {
+        "median_ms": 77.18052342534065,
+        "p95_ms": 78.3553327433765,
+        "min_ms": 77.123012393713
+      },
+      "candidate": {
+        "median_ms": 77.02759653329849,
+        "p95_ms": 77.581955678761,
+        "min_ms": 76.90687663853168
+      }
+    },
+    "median_paired_gain_ms": 0.1881783828139305,
+    "faster_pairs": 18
+  },
+  "corrected_prefill_comparison": {
+    "ttfa": {
+      "control": {
+        "median_ms": 77.08530686795712,
+        "p95_ms": 78.43651799485087,
+        "min_ms": 76.9813247025013
+      },
+      "candidate": {
+        "median_ms": 75.3045603632927,
+        "p95_ms": 76.77496606484056,
+        "min_ms": 75.17793960869312
+      }
+    },
+    "median_paired_gain_ms": 1.7872583121061325,
+    "faster_pairs": 20,
+    "stages": {
+      "control": {
+        "prepare_ms": 1.0639354586601257,
+        "prefill_ms": 9.217360988259315,
+        "first_32_ms": 61.69778201729059,
+        "first_codec_ms": 4.521392285823822
+      },
+      "candidate": {
+        "prepare_ms": 1.087038777768612,
+        "prefill_ms": 7.402668707072735,
+        "first_32_ms": 61.699473299086094,
+        "first_codec_ms": 4.5259445905685425
+      }
+    }
+  },
+  "http_ttfa": {
+    "control": {
+      "median_ms": 81.72482065856457,
+      "p95_ms": 83.49019326269627,
+      "min_ms": 80.41419275105
+    },
+    "prefill": {
+      "median_ms": 79.06638737767935,
+      "p95_ms": 80.3895816206932,
+      "min_ms": 78.00961472094059
+    }
+  },
+  "fresh_reference_to_pcm_single_ms": {
+    "control": 119.87232230603695,
+    "prefill": 123.57396259903908
+  },
+  "correctness": {
+    "address_screen_configurations": 16,
+    "address_chain_checks": 1744,
+    "corrected_all_layer_qkv_checks": 36,
+    "complete_prefill_lengths": 16,
+    "all_72_kv_buffers_per_length_exact": true,
+    "corrected_prefill_paired_full_streams": 40,
+    "address_paired_full_streams": 40,
+    "all_paired_pcm_rng_exact": true,
+    "address_sanitizer_cases_each": 66,
+    "prefill_sanitizer_cases_each": 90,
+    "memcheck_errors": 0,
+    "racecheck_hazards": 0,
+    "cloning_wavs_exact": 48,
+    "reference_wavs_exact": 8,
+    "http_full_stream_pairs_exact": 20,
+    "independent_cli_diagnostics_and_wav_exact": true
+  },
+  "retained_failure": "Initial v1 prefill fusion changed negative zero in the synthetic zero probe. Memcheck reported no invalid access, but numerical assertion failed. Corrected with sign-bit unary negation; repeated timing, all-layer, full-prefill, both sanitizers, quality, HTTP and CLI qualification use v2.",
+  "limits": [
+    "50 ms remains unmet; first 32 audio steps still take about 61.7 ms.",
+    "Identical tested output to selected calibrated G32 path, not original BF16 equivalence.",
+    "Four reused voice assets and machine-scored suites are not broad human acceptance.",
+    "Fresh-reference single observation is slower; no fresh-reference speedup established.",
+    "The 2.66 ms sequential HTTP median difference includes host/runtime variation; corrected paired gain is 1.79 ms.",
+    "Sanitizers cover changed operator graphs, not the full service.",
+    "Resident intervals include dependency waits and are not utilization percentages."
+  ],
+  "next_evidence_driven_action": "Initial decode projections remain largest. Test exact prefill SiLU/multiply and residual/normalization fusion (visible remaining pointwise launches), alongside further projection scheduling with rotating actual-layer chains and paired complete streams. Keep all 32 codebooks.",
+  "original_services_unchanged": true,
+  "temporary_servers_stopped": true,
+  "source_archive": {
+    "archive": "optimization/results/prefill_qkv_sources.tar.gz",
+    "archive_sha256": "f622880250861c6873a21f923015f4ec25cdfbd00b00452a89f0ba64b3840338",
+    "archive_bytes": 418215,
+    "file_count": 290,
+    "python_file_count": 232,
+    "all_archive_files_roundtrip_verified": true
+  },
+  "evidence": [
+    "bulk_address_ring_v1.json",
+    "bulk_address_paired_v1.json",
+    "bulk_address_validation_memcheck_v1.json",
+    "bulk_address_validation_memcheck_v1.log",
+    "bulk_address_validation_racecheck_v1.json",
+    "bulk_address_validation_racecheck_v1.log",
+    "prefill_qkv_v1.json",
+    "prefill_qkv_v2.json",
+    "prefill_qkv_paired_v1.json",
+    "prefill_qkv_paired_v2.json",
+    "prefill_qkv_timing_summary_v2.json",
+    "prefill_qkv_previous_pcm_equivalence_v2.json",
+    "prefill_qkv_validation_memcheck_v1.log",
+    "prefill_qkv_validation_memcheck_v2.json",
+    "prefill_qkv_validation_memcheck_v2.log",
+    "prefill_qkv_validation_racecheck_v2.json",
+    "prefill_qkv_validation_racecheck_v2.log",
+    "quality_suite/prefill_qkv_audio_equivalence_v2.json",
+    "http_prefill_qkv_comparison_v2.json",
+    "http_prefill_qkv_stage_summary_v2.json",
+    "prefill_qkv_regression_summary_v2.json",
+    "prefill_qkv_audit_v2/summary.json",
+    "prefill_qkv_profile_summary_v2.json",
+    "prefill_qkv_static_checks_v2.json",
+    "prefill_qkv_source_hashes.json"
+  ],
+  "report": "optimization/REPORT_PREFILL_QKV.md"
+}

@@ -1,0 +1,688 @@
+{
+  "format": "qkv_cluster_cubin_v1",
+  "complete": true,
+  "torch": "2.13.0+cu130",
+  "triton": "3.8.0",
+  "configs": {
+    "c8_t2_exact": {
+      "ctas": 8,
+      "divisor": 16,
+      "trigger_mode": 2,
+      "legacy_projection": true,
+      "legacy_norm": true
+    },
+    "c8_exact": {
+      "ctas": 8,
+      "divisor": 16,
+      "legacy_projection": true,
+      "legacy_norm": true
+    }
+  },
+  "binaries": {
+    "c8_t2_exact_add0_debug0": {
+      "prefix": "c8_t2_exact_add0_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "5cce51d4245c138ae47c822c3857ac703e6cf2cab3c0f173ece440628a8fbb11"
+    },
+    "c8_t2_exact_add0_debug1": {
+      "prefix": "c8_t2_exact_add0_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "bf47a8cb647cc2e5dc198b09e0a3ae7553a07e2dc60e82da02a99e3d57e16e40"
+    },
+    "c8_t2_exact_add1_debug0": {
+      "prefix": "c8_t2_exact_add1_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "ee5ad7ad4f5dd3b60a83d5cc11ff2443245969cd9674e9611caeabf84fb592dc"
+    },
+    "c8_t2_exact_add1_debug1": {
+      "prefix": "c8_t2_exact_add1_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "bc25334c6d2fb50f262b0192bda0852fe6b78aafb8a69485a944236943f2fb27"
+    },
+    "c8_exact_add0_debug0": {
+      "prefix": "c8_exact_add0_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 72,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "d76d46a6ea10d5e789f64f7768306fa9bee1ee1f0e51ce5bb8957c6af4c7e914"
+    },
+    "c8_exact_add0_debug1": {
+      "prefix": "c8_exact_add0_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "dc19b2e164caf76b929e9e3cd77a1ba6de56686c753cddccad51caee1b0288c9"
+    },
+    "c8_exact_add1_debug0": {
+      "prefix": "c8_exact_add1_debug0",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 72,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "d758d387fb4d655ef5893940466de02d3f6571082b9bb7a9f77c2333a71e29b4"
+    },
+    "c8_exact_add1_debug1": {
+      "prefix": "c8_exact_add1_debug1",
+      "metadata": {
+        "name": "_kernel",
+        "shared": 2048,
+        "num_warps": 4,
+        "num_ctas": 8,
+        "launch_pdl": true,
+        "global_scratch_size": 0,
+        "profile_scratch_size": 0,
+        "cluster_dims": [
+          8,
+          1,
+          1
+        ]
+      },
+      "registers": 64,
+      "spills": 0,
+      "pointer_signature": [
+        [
+          "X",
+          "*bf16"
+        ],
+        [
+          "RES",
+          "*bf16"
+        ],
+        [
+          "NW",
+          "*bf16"
+        ],
+        [
+          "W",
+          "*u8"
+        ],
+        [
+          "S",
+          "*bf16"
+        ],
+        [
+          "SUM",
+          "*bf16"
+        ],
+        [
+          "Y",
+          "*bf16"
+        ],
+        [
+          "QW",
+          "*bf16"
+        ],
+        [
+          "KW",
+          "*bf16"
+        ],
+        [
+          "COS",
+          "*bf16"
+        ],
+        [
+          "SIN",
+          "*bf16"
+        ],
+        [
+          "Q",
+          "*bf16"
+        ],
+        [
+          "KC",
+          "*bf16"
+        ],
+        [
+          "VC",
+          "*bf16"
+        ],
+        [
+          "POS",
+          "*i64"
+        ]
+      ],
+      "eps": 1e-06,
+      "head_eps": 1e-06,
+      "length": 1024,
+      "cubin_sha256": "b80d4d598796371b0f311a9535e956a999fe9ca6da82e45ec8d99cd6ae63ef8d"
+    }
+  },
+  "kernel_source_sha256": "d4c0dc6d7d3eaaa7be133c45c153dadaeb7eb7a0497ede3a374bfa5d58ab1a6c"
+}

@@ -1,0 +1,141 @@
+{
+  "classification": "progress",
+  "goal_status": "active",
+  "target_ms": 50,
+  "target_achieved": false,
+  "codebooks": 32,
+  "streaming": true,
+  "voice_cloning": true,
+  "selected_change": "Optional SM90 asynchronous bulk L2 hint of first 1/16 CTA weight span in QKV/gate-up/down before unchanged dependency waits. No arithmetic, precision, sampling or codebook change.",
+  "paired_runs": {
+    "v1": {
+      "ttfa": {
+        "control": {
+          "median_ms": 77.65779551118612,
+          "p95_ms": 77.90355533361435,
+          "min_ms": 77.56751216948032
+        },
+        "candidate": {
+          "median_ms": 77.25699711591005,
+          "p95_ms": 77.73392042145133,
+          "min_ms": 77.09600776433945
+        }
+      },
+      "median_paired_gain_ms": 0.44558290392160416,
+      "faster_pairs": 18,
+      "stages": {
+        "control": {
+          "prepare_ms": 1.0390803217887878,
+          "prefill_ms": 9.213030338287354,
+          "first_32_ms": 62.31879722326994,
+          "first_codec_ms": 4.5140571892261505
+        },
+        "candidate": {
+          "prepare_ms": 1.0373694822192192,
+          "prefill_ms": 9.21380054205656,
+          "first_32_ms": 61.8656137958169,
+          "first_codec_ms": 4.520898684859276
+        }
+      }
+    },
+    "v2": {
+      "ttfa": {
+        "control": {
+          "median_ms": 77.77493167668581,
+          "p95_ms": 78.76844499260187,
+          "min_ms": 77.56496407091618
+        },
+        "candidate": {
+          "median_ms": 77.27379817515612,
+          "p95_ms": 78.01324902102351,
+          "min_ms": 77.18252763152122
+        }
+      },
+      "median_paired_gain_ms": 0.48291683197021484,
+      "faster_pairs": 19,
+      "stages": {
+        "control": {
+          "prepare_ms": 1.0543754324316978,
+          "prefill_ms": 9.215092286467552,
+          "first_32_ms": 62.38393858075142,
+          "first_codec_ms": 4.523954354226589
+        },
+        "candidate": {
+          "prepare_ms": 1.0644765570759773,
+          "prefill_ms": 9.215530008077621,
+          "first_32_ms": 61.87514774501324,
+          "first_codec_ms": 4.519522190093994
+        }
+      }
+    }
+  },
+  "http_ttfa": {
+    "control": {
+      "median_ms": 81.54204953461885,
+      "p95_ms": 82.7781449072063,
+      "min_ms": 80.96535317599773
+    },
+    "bulk": {
+      "median_ms": 80.43525647372007,
+      "p95_ms": 81.3142566010356,
+      "min_ms": 79.76152747869492
+    }
+  },
+  "fresh_reference_to_pcm_single_ms": 118.37957240641117,
+  "correctness": {
+    "screen_configurations": 53,
+    "all_exact_chain_comparisons": 5777,
+    "full_paired_pcm_streams": 80,
+    "all_final_rng_exact": true,
+    "previous_pass_control_streams_exact": 40,
+    "full_graph_context_head_checks": 96,
+    "private_graph_memory_cases_per_sanitizer": 66,
+    "memcheck_errors": 0,
+    "racecheck_hazards": 0,
+    "cloning_wavs_exact": 48,
+    "reference_wavs_exact": 8,
+    "http_full_stream_pairs_exact": 20,
+    "independent_cli_diagnostics_and_wav_exact": true
+  },
+  "limits": [
+    "50 ms remains unmet, with about 61.87 ms in the initial audio LLM interval.",
+    "Identical outputs to selected calibrated G32 path, not original BF16 equivalence.",
+    "Four reused voices and machine-scored prompts do not establish broad human quality acceptance.",
+    "Fresh reference result is one observation, not a latency distribution.",
+    "The full HTTP difference includes host variation; paired gain is approximately 0.45-0.48 ms.",
+    "Sanitizers cover changed projection workloads, not the whole service.",
+    "Profile resident intervals include dependency waits and are not utilization percentages."
+  ],
+  "next_evidence_driven_action": "Remove generic runtime modulo from zero-lookahead bulk hints in a separately validated/timed candidate; compiled rem.u32 currently lowers to reciprocal/integer correction instructions. Also retain BF16 prefill as a measured 9.22-ms optimization target.",
+  "original_services_unchanged": true,
+  "temporary_servers_stopped": true,
+  "source_archive": {
+    "archive": "optimization/results/bulk_prefetch_sources.tar.gz",
+    "archive_sha256": "e6ae495ea97ba312b6e7de74aefe0364ca3f218c500f67d06cd6f013d0173fe7",
+    "archive_bytes": 405134,
+    "file_count": 278,
+    "python_file_count": 221,
+    "all_archive_files_roundtrip_verified": true
+  },
+  "evidence": [
+    "bulk_prefetch_ring_v1.json",
+    "bulk_prefetch_pilot_v1.json",
+    "bulk_prefetch_paired_v1.json",
+    "bulk_prefetch_paired_v2.json",
+    "bulk_prefetch_timing_summary_v1.json",
+    "bulk_prefetch_previous_pcm_equivalence_v1.json",
+    "bulk_prefetch_validation_memcheck_v1.json",
+    "bulk_prefetch_validation_memcheck_v1.log",
+    "bulk_prefetch_validation_racecheck_v1.json",
+    "bulk_prefetch_validation_racecheck_v1.log",
+    "quality_suite/bulk_prefetch_audio_equivalence.json",
+    "http_bulk_prefetch_comparison_v1.json",
+    "http_bulk_prefetch_stage_summary_v1.json",
+    "bulk_prefetch_regression_summary_v1.json",
+    "bulk_prefetch_audit_v1/summary.json",
+    "bulk_prefetch_profile_summary_v1.json",
+    "bulk_prefetch_static_checks_v1.json",
+    "bulk_prefetch_source_hashes.json"
+  ],
+  "report": "optimization/REPORT_BULK_PREFETCH.md"
+}

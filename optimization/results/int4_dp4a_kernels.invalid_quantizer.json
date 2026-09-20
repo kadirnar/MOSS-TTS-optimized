@@ -1,0 +1,244 @@
+{
+  "torch": "2.13.0+cu130",
+  "method": "Eight packed matrix rotation, dynamic activation quantization included. Synthetic signed INT4 weights; reference uses the same rounded INT8 activations and FP32 dequantized weights. Kernel correctness only, not a model quality test.",
+  "cases": [
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 22.92266736427943,
+          "relative_rms_vs_reference": 5.69992589589674e-05
+        },
+        {
+          "warps": 2,
+          "us": 24.39866711695989,
+          "relative_rms_vs_reference": 5.7442750403424725e-05
+        },
+        {
+          "warps": 4,
+          "us": 27.19866732756297,
+          "relative_rms_vs_reference": 5.78828330617398e-05
+        },
+        {
+          "warps": 8,
+          "us": 36.546667416890465,
+          "relative_rms_vs_reference": 5.699925168300979e-05
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 22.92266736427943,
+        "relative_rms_vs_reference": 5.69992589589674e-05
+      }
+    },
+    {
+      "shape": [
+        24576,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 22.53466596206029,
+          "relative_rms_vs_reference": 2.8972084692213684e-05
+        },
+        {
+          "warps": 2,
+          "us": 24.02666707833608,
+          "relative_rms_vs_reference": 2.8972084692213684e-05
+        },
+        {
+          "warps": 4,
+          "us": 27.30400115251541,
+          "relative_rms_vs_reference": 1.4486126929114107e-05
+        },
+        {
+          "warps": 8,
+          "us": 36.37200097242991,
+          "relative_rms_vs_reference": 3.239176294300705e-05
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 22.53466596206029,
+        "relative_rms_vs_reference": 2.8972084692213684e-05
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 17.46933286388715,
+          "relative_rms_vs_reference": 2.0566389139275998e-05
+        },
+        {
+          "warps": 2,
+          "us": 15.419999758402506,
+          "relative_rms_vs_reference": 2.0566378225339577e-05
+        },
+        {
+          "warps": 4,
+          "us": 15.43466622630755,
+          "relative_rms_vs_reference": 2.0566381863318384e-05
+        },
+        {
+          "warps": 8,
+          "us": 18.650667121013004,
+          "relative_rms_vs_reference": 2.0566378225339577e-05
+        }
+      ],
+      "best": {
+        "warps": 2,
+        "us": 15.419999758402506,
+        "relative_rms_vs_reference": 2.0566378225339577e-05
+      }
+    },
+    {
+      "shape": [
+        4096,
+        12288
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 17.524000257253647,
+          "relative_rms_vs_reference": 6.19460205353306e-10
+        },
+        {
+          "warps": 2,
+          "us": 15.71999986966451,
+          "relative_rms_vs_reference": 1.3163529155590936e-09
+        },
+        {
+          "warps": 4,
+          "us": 15.43466622630755,
+          "relative_rms_vs_reference": 3.09730102676653e-10
+        },
+        {
+          "warps": 8,
+          "us": 18.42133328318596,
+          "relative_rms_vs_reference": 1.3937854204115752e-09
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 15.43466622630755,
+        "relative_rms_vs_reference": 3.09730102676653e-10
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.780000274380049,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        },
+        {
+          "warps": 2,
+          "us": 10.838666309913,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        },
+        {
+          "warps": 4,
+          "us": 9.803999836246172,
+          "relative_rms_vs_reference": 1.8264322534378152e-06
+        },
+        {
+          "warps": 8,
+          "us": 11.956000079711279,
+          "relative_rms_vs_reference": 7.5305733844288625e-06
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 9.780000274380049,
+        "relative_rms_vs_reference": 7.5305733844288625e-06
+      }
+    },
+    {
+      "shape": [
+        6144,
+        4096
+      ],
+      "group": 128,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 9.720000127951304,
+          "relative_rms_vs_reference": 0.0
+        },
+        {
+          "warps": 2,
+          "us": 9.917333101232847,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        },
+        {
+          "warps": 4,
+          "us": 9.84666682779789,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        },
+        {
+          "warps": 8,
+          "us": 12.12933287024498,
+          "relative_rms_vs_reference": 3.5965326272702214e-09
+        }
+      ],
+      "best": {
+        "warps": 1,
+        "us": 9.720000127951304,
+        "relative_rms_vs_reference": 0.0
+      }
+    },
+    {
+      "shape": [
+        4096,
+        4096
+      ],
+      "group": 32,
+      "trials": [
+        {
+          "warps": 1,
+          "us": 8.135999863346418,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 2,
+          "us": 8.63333356877168,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 4,
+          "us": 7.937333236138026,
+          "relative_rms_vs_reference": 3.6597237340174615e-05
+        },
+        {
+          "warps": 8,
+          "us": 9.323999906579653,
+          "relative_rms_vs_reference": 3.652596569736488e-05
+        }
+      ],
+      "best": {
+        "warps": 4,
+        "us": 7.937333236138026,
+        "relative_rms_vs_reference": 3.6597237340174615e-05
+      }
+    }
+  ]
+}

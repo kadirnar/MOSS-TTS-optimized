@@ -1,0 +1,32 @@
+[
+  {
+    "warps": 1,
+    "registers": 80,
+    "spills": 0,
+    "shared": 128
+  },
+  {
+    "warps": 2,
+    "registers": 32,
+    "spills": 0,
+    "shared": 8
+  },
+  {
+    "warps": 4,
+    "registers": 32,
+    "spills": 0,
+    "shared": 16
+  },
+  {
+    "warps": 8,
+    "registers": 31,
+    "spills": 0,
+    "shared": 32
+  },
+  {
+    "warps": 16,
+    "registers": 23,
+    "spills": 0,
+    "shared": 64
+  }
+]

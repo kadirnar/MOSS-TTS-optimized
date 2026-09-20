@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-20T15:21:33.561233+00:00",
+  "root_python_files_parsed": 300,
+  "cli_help_exit_codes": {
+    "gateup_resources": 0,
+    "benchmark_gateup_resources": 0,
+    "benchmark_gateup_resources_paired": 0,
+    "validate_gateup_resources": 0
+  },
+  "unchanged_services": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32
+    }
+  },
+  "temporary_port_18084_free": true,
+  "gpu": "NVIDIA H200 NVL, 0 %, 75459 MiB, 1785 MHz"
+}

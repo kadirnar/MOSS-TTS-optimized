@@ -1,0 +1,165 @@
+{
+  "ttfa": {
+    "median_ms": 87.35308330506086,
+    "p95_ms": 88.10319695621729,
+    "min_ms": 86.08490973711014,
+    "samples_ms": [
+      86.46280132234097,
+      86.29906363785267,
+      89.02258984744549,
+      88.05480785667896,
+      87.62654475867748,
+      87.27176673710346,
+      87.43439987301826,
+      87.8341868519783,
+      86.93796582520008,
+      87.51625940203667,
+      87.05760166049004,
+      87.76217885315418,
+      87.60472945868969,
+      87.83039636909962,
+      87.17211335897446,
+      87.67535723745823,
+      86.73899620771408,
+      86.40198409557343,
+      86.19946800172329,
+      86.08490973711014
+    ]
+  },
+  "runs": [
+    {
+      "ttfa_ms": 86.46280132234097,
+      "total_ms": 631.0848239809275,
+      "frames": 76,
+      "pcm_sha256": "1bdcc08f930584fddf43ed85446f50ba1cfb9070b578fa431abd8735f793220f"
+    },
+    {
+      "ttfa_ms": 86.29906363785267,
+      "total_ms": 535.8184576034546,
+      "frames": 63,
+      "pcm_sha256": "67160ff01892ef89ff0ce4515ff00b0c2fc2a0d3b7f726c3ddcf8040d4047946"
+    },
+    {
+      "ttfa_ms": 89.02258984744549,
+      "total_ms": 641.1737017333508,
+      "frames": 77,
+      "pcm_sha256": "cea2836d2cc958704ea278ece51a4de75e3099fdab58b519496292d0759aa917"
+    },
+    {
+      "ttfa_ms": 88.05480785667896,
+      "total_ms": 594.7178434580564,
+      "frames": 71,
+      "pcm_sha256": "6ef291358e1c9c00cd55b8f2a7da0a849cf9d94d5a5122773f33a3f311a9e964"
+    },
+    {
+      "ttfa_ms": 87.62654475867748,
+      "total_ms": 587.5785630196333,
+      "frames": 70,
+      "pcm_sha256": "318775d473ba712493cd4622513233011e4d23e6b9ad87bee90ddcf5d4edb7ed"
+    },
+    {
+      "ttfa_ms": 87.27176673710346,
+      "total_ms": 550.5858678370714,
+      "frames": 65,
+      "pcm_sha256": "e371b155d1996d3a667de5ba92aefc501500d6cc9a8575611fb0934342ee9f81"
+    },
+    {
+      "ttfa_ms": 87.43439987301826,
+      "total_ms": 615.4385209083557,
+      "frames": 74,
+      "pcm_sha256": "11d03d9dce24b27a1ec630b1a803937248becb12b6b571e71cb864d18b5b62ae"
+    },
+    {
+      "ttfa_ms": 87.8341868519783,
+      "total_ms": 600.7213015109301,
+      "frames": 72,
+      "pcm_sha256": "ea0d1cffbc00ffcf97d8f49a94cc13f75a14071e1bf6da23932f9e9fdf22a49d"
+    },
+    {
+      "ttfa_ms": 86.93796582520008,
+      "total_ms": 469.788521528244,
+      "frames": 54,
+      "pcm_sha256": "49104b7e15b7ad8438b57073a3472878ca9c972d0e869fd94ad7d0aa5b6eccda"
+    },
+    {
+      "ttfa_ms": 87.51625940203667,
+      "total_ms": 557.3344323784113,
+      "frames": 66,
+      "pcm_sha256": "511649b74a665593f3bb8603825036071f5e872e67139903a79dc07b4da4843f"
+    },
+    {
+      "ttfa_ms": 87.05760166049004,
+      "total_ms": 622.6675398647785,
+      "frames": 75,
+      "pcm_sha256": "4d8b3657fa88be304dca158e16d3f6852cb2079a7e8dab593970d7a85d9788c7"
+    },
+    {
+      "ttfa_ms": 87.76217885315418,
+      "total_ms": 550.4107996821404,
+      "frames": 65,
+      "pcm_sha256": "dda8fd33a0b7846b7bdd93e291c5590f0e93f10385190b2b1b33a82f2c5c80d6"
+    },
+    {
+      "ttfa_ms": 87.60472945868969,
+      "total_ms": 602.3910325020552,
+      "frames": 72,
+      "pcm_sha256": "b45487f006d4337f94b6844b50130d53aec89267b1ed35c8ca9e1d0549e8e981"
+    },
+    {
+      "ttfa_ms": 87.83039636909962,
+      "total_ms": 630.4872557520866,
+      "frames": 76,
+      "pcm_sha256": "08307cd3241116b1c998e193b247ad9644c7571bf9cd867369790d3b114c4bf9"
+    },
+    {
+      "ttfa_ms": 87.17211335897446,
+      "total_ms": 593.5389902442694,
+      "frames": 71,
+      "pcm_sha256": "fdd278dc195328618e17d76c32e36093064defc20ce60af76a44c7e6654cdea8"
+    },
+    {
+      "ttfa_ms": 87.67535723745823,
+      "total_ms": 596.8984439969063,
+      "frames": 71,
+      "pcm_sha256": "e515c01c4a91eca74de548d0264934ee34eef9723b7f4896c0de266f5eb0bb08"
+    },
+    {
+      "ttfa_ms": 86.73899620771408,
+      "total_ms": 535.756541416049,
+      "frames": 63,
+      "pcm_sha256": "3e53f818af7c9f1986530f593f72249d6376246aec9614a447a0f39b12784624"
+    },
+    {
+      "ttfa_ms": 86.40198409557343,
+      "total_ms": 535.579776391387,
+      "frames": 63,
+      "pcm_sha256": "a1cc8dac1e41846177b9d176021d2f4591ee3ebaf7beb55ebf207d275943f150"
+    },
+    {
+      "ttfa_ms": 86.19946800172329,
+      "total_ms": 615.5129559338093,
+      "frames": 74,
+      "pcm_sha256": "f1a7244a8290adc6760acad981c6e9f40c468f1774f3c028f66d123af11f963a"
+    },
+    {
+      "ttfa_ms": 86.08490973711014,
+      "total_ms": 549.8927403241396,
+      "frames": 65,
+      "pcm_sha256": "079f13c109dfb85f5b30c651f4d73c122d56ac9ae77bbdaa702398d090eaa00a"
+    }
+  ],
+  "voice_registration": {
+    "voice": "b54b4c159dc5473596a626115096273d",
+    "reference_encode_ms": 23.225901648402214
+  },
+  "cancellation_recovery_statuses": [
+    429,
+    200
+  ],
+  "max_new_tokens": 400,
+  "voice_registration_http_ms": 34.120818600058556,
+  "fresh_reference_to_pcm_ms": 125.27810782194138,
+  "fresh_reference_definition": "One continuous loopback HTTP voice registration plus following synthesis through first 3840-byte PCM chunk; WAV/base64 prepared before timing. Includes server waveform parsing, reference encoding, two HTTP requests and generation.",
+  "validation_errors_checked": true,
+  "definition": "Warm loopback HTTP request to first complete 3840-byte s16le PCM chunk, cached voice; 20 measured complete requests, one warmup. Includes HTTP overhead."
+}

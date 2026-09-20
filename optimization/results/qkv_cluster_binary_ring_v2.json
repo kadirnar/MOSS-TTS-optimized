@@ -1,0 +1,5700 @@
+{
+  "codebooks": 32,
+  "torch": "2.13.0+cu130",
+  "triton": "3.7.1",
+  "binary_bundle": "optimization/results/qkv_cluster_bundle_v3",
+  "configs": {
+    "control": null,
+    "c8_t2_legacy": {
+      "ctas": 8,
+      "divisor": 16,
+      "trigger_mode": 2,
+      "legacy_projection": true
+    },
+    "c8_legacy": {
+      "ctas": 8,
+      "divisor": 16,
+      "legacy_projection": true
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 0,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 0,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 0,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 1,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 1,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 1,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 2,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 2,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 2,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 3,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 3,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 3,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 4,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 4,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 4,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 5,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 5,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 5,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 6,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 6,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 6,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 7,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 7,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 7,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 8,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 8,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 8,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 9,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 9,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 9,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 10,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 10,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 10,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 11,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 11,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 11,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 12,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 12,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 12,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 13,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 13,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 13,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 14,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 14,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 14,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 15,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 15,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 15,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 16,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 16,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 16,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 17,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 17,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 17,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 18,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 18,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 18,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 19,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 19,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 19,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 20,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 20,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 20,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 21,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 21,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 21,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 22,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 22,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 22,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 23,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 23,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 23,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 24,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 24,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 24,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 25,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 25,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 25,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 26,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 26,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 26,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 27,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 27,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 27,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 28,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 28,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 28,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 29,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 29,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 29,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 30,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 30,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 30,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 31,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 31,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 31,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 32,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 32,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 32,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 33,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 33,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 33,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 34,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 34,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 34,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 35,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 35,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_t2_legacy",
+      "layer": 35,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 0,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 0,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 0,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 1,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 1,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 1,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 2,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 2,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 2,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 3,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 3,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 3,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 4,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 4,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 4,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 5,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 5,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 5,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 6,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 6,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 6,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 7,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 7,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 7,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 8,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 8,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 8,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 9,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 9,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 9,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 10,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 10,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 10,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 11,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 11,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 11,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 12,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 12,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 12,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 13,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 13,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 13,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 14,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 14,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 14,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 15,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 15,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 15,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 16,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 16,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 16,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 17,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 17,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 17,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 18,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 18,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 18,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 19,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 19,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 19,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 20,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 20,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 20,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 21,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 21,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 21,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 22,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 22,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 22,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 23,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 23,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 23,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 24,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 24,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 24,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 25,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 25,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 25,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 26,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 26,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 26,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 27,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 27,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 27,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 28,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 28,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 28,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 29,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 29,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 29,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 30,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 30,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 30,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 31,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 31,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 31,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 32,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 32,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 32,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 33,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 33,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 33,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 34,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 34,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 34,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 35,
+      "input": 0,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 35,
+      "input": 10,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    },
+    {
+      "config": "c8_legacy",
+      "layer": 35,
+      "input": 31,
+      "byte_mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "full_poisoned_caches_exact": true
+    }
+  ],
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c8_t2_legacy": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "c8_legacy": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "errors": {},
+  "resources": {
+    "c8_t2_legacy": {
+      "registers": 64,
+      "spills": 0,
+      "shared_bytes": 2048,
+      "ctas": 8,
+      "cubin_sha256": "5ff5918821f7bf2d917f0a32403f3db7db8dc3eed886dc467f74b5df245b7ad4"
+    },
+    "c8_legacy": {
+      "registers": 72,
+      "spills": 0,
+      "shared_bytes": 2048,
+      "ctas": 8,
+      "cubin_sha256": "742079d9321282174ec4e48fcaeef59d2c43073d9d4f27832fe34daa30a3ba24"
+    }
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "c8_t2_legacy",
+        "c8_legacy"
+      ],
+      "us": {
+        "control": 18.34370361434089,
+        "c8_t2_legacy": 18.204148168917055,
+        "c8_legacy": 18.202962698759855
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "c8_legacy",
+        "c8_t2_legacy"
+      ],
+      "us": {
+        "control": 18.358518679936726,
+        "c8_legacy": 18.866667041072137,
+        "c8_t2_legacy": 18.75585096853751
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "c8_legacy",
+        "control",
+        "c8_t2_legacy"
+      ],
+      "us": {
+        "c8_legacy": 18.87111089847706,
+        "control": 19.10548077689277,
+        "c8_t2_legacy": 18.745186152281583
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "c8_legacy",
+        "c8_t2_legacy",
+        "control"
+      ],
+      "us": {
+        "c8_legacy": 18.87644441039474,
+        "c8_t2_legacy": 18.773926628960503,
+        "control": 19.08651766953645
+      }
+    },
+    {
+      "round": 4,
+      "order": [
+        "c8_t2_legacy",
+        "c8_legacy",
+        "control"
+      ],
+      "us": {
+        "c8_t2_legacy": 18.732739819420708,
+        "c8_legacy": 18.893630416304976,
+        "control": 19.103112044157804
+      }
+    },
+    {
+      "round": 5,
+      "order": [
+        "c8_t2_legacy",
+        "control",
+        "c8_legacy"
+      ],
+      "us": {
+        "c8_t2_legacy": 18.769184748331707,
+        "control": 19.095111776281286,
+        "c8_legacy": 18.87881535070914
+      }
+    }
+  ],
+  "method": "One cluster per 128-channel Q/K/V head: exact G32 norm/projection followed by per-head norm/RoPE/cache writes, then selected native attention/reduction and register-preload output. Four vs five kernels. Actual layer weights/normalization inputs, nearest 0/17/35 frozen attention fixtures; not a full trajectory or TTFA. Changed cache positions poisoned before checks.",
+  "summary": {
+    "control": {
+      "median_us": 19.090814722908867,
+      "median_paired_gain_us": 0.0
+    },
+    "c8_t2_legacy": {
+      "median_us": 18.750518560409546,
+      "median_paired_gain_us": 0.31925903426276214
+    },
+    "c8_legacy": {
+      "median_us": 18.873777654435898,
+      "median_paired_gain_us": 0.20977744349726812
+    }
+  }
+}

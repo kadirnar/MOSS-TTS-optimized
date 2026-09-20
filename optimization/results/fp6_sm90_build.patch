@@ -1,0 +1,13 @@
+diff --git a/setup.py b/setup.py
+index e9e8d58..bfcb6cc 100644
+--- a/setup.py
++++ b/setup.py
+@@ -13,7 +13,7 @@ extra_compile_args = {
+         "-std=c++17",
+         "-maxrregcount=255",
+         "--ptxas-options=-v,-warn-lmem-usage,--warn-on-spills",
+-        "-gencode=arch=compute_80,code=sm_80"
++        "-gencode=arch=compute_90,code=sm_90"
+     ],
+ }
+ 

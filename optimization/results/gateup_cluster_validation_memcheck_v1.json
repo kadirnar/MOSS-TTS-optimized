@@ -1,0 +1,2321 @@
+{
+  "codebooks": 32,
+  "complete": true,
+  "bundle": "gateup_cluster_bundle_screen_v1",
+  "configs": [
+    "c1",
+    "c1_ig1ir2",
+    "c2",
+    "c2_dist"
+  ],
+  "checks": [
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 0,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 0,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 17,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 17,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c1_ig1ir2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": false,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": false,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "up",
+      "layer": 35,
+      "config": "c2_dist",
+      "add": true,
+      "debug": true,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 0,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 127,
+      "input": "spike",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "real",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "zero",
+      "exact": true
+    },
+    {
+      "scope": "chain",
+      "layer": 35,
+      "config": "c2_dist",
+      "position": 1023,
+      "input": "spike",
+      "exact": true
+    }
+  ],
+  "edges": {
+    "0/c1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "0/c1_ig1ir2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "0/c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "0/c2_dist": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/c1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/c1_ig1ir2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "17/c2_dist": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/c1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/c1_ig1ir2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/c2": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "35/c2_dist": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "scope": "Private graphs, three real layers, changed real/zero/spike input and residual. Standalone gate/up add/no-add and production/debug cubins; dependency chain with selected down and clustered QKV, poisoned entire-cache comparison. Operator coverage, not whole-service sanitization.",
+  "cases": 252
+}

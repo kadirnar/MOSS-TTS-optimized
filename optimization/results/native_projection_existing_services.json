@@ -1,0 +1,34 @@
+{
+  "18080": {
+    "ready": true,
+    "model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+    "sample_rate": 24000,
+    "channels": 1,
+    "pcm_format": "signed 16-bit little endian",
+    "codebooks": 32,
+    "concurrency": 1,
+    "cached_voices": 2,
+    "llm_dtype": "bfloat16",
+    "codec_dtype": "float32",
+    "weight_quantization": "none",
+    "attention_block": 128,
+    "fused_residual": true,
+    "fused_gateup": true
+  },
+  "18083": {
+    "ready": true,
+    "model": "OpenMOSS-Team/MOSS-TTS-v1.5",
+    "sample_rate": 24000,
+    "channels": 1,
+    "pcm_format": "signed 16-bit little endian",
+    "codebooks": 32,
+    "concurrency": 1,
+    "cached_voices": 2,
+    "llm_dtype": "bfloat16",
+    "codec_dtype": "float32",
+    "weight_quantization": "fp8_all",
+    "attention_block": 32,
+    "fused_residual": true,
+    "fused_gateup": true
+  }
+}

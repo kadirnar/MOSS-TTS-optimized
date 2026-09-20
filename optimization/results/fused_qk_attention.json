@@ -1,0 +1,168 @@
+{
+  "torch": "2.13.0+cu130",
+  "method": "Non-default stream output/KV comparison; median of 20 graph replays with an untimed 256 MiB L2 flush. Synthetic QKV and past cache.",
+  "cases": [
+    {
+      "block": 32,
+      "position": 0,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 13.088000006973743,
+      "fused_us": 12.223999947309494
+    },
+    {
+      "block": 32,
+      "position": 1,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 13.824000023305416,
+      "fused_us": 13.21600005030632
+    },
+    {
+      "block": 32,
+      "position": 31,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 14.992000069469213,
+      "fused_us": 14.752000104635954
+    },
+    {
+      "block": 32,
+      "position": 32,
+      "relative_rms": 3.9220796566041827e-07,
+      "bitwise_equal": false,
+      "cache_exact": true,
+      "baseline_us": 14.944000169634819,
+      "fused_us": 14.944000169634819
+    },
+    {
+      "block": 32,
+      "position": 127,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 15.184000134468079,
+      "fused_us": 15.168000012636185
+    },
+    {
+      "block": 32,
+      "position": 144,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 15.15199989080429,
+      "fused_us": 15.200000256299973
+    },
+    {
+      "block": 32,
+      "position": 255,
+      "relative_rms": 5.747428417635092e-07,
+      "bitwise_equal": false,
+      "cache_exact": true,
+      "baseline_us": 15.839999541640282,
+      "fused_us": 16.127999871969223
+    },
+    {
+      "block": 32,
+      "position": 511,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 18.672000616788864,
+      "fused_us": 18.6399994418025
+    },
+    {
+      "block": 32,
+      "position": 1023,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 20.99199965596199,
+      "fused_us": 20.608000457286835
+    },
+    {
+      "block": 128,
+      "position": 0,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 13.344000093638897,
+      "fused_us": 13.98400031030178
+    },
+    {
+      "block": 128,
+      "position": 1,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 13.663999736309052,
+      "fused_us": 14.543999917805195
+    },
+    {
+      "block": 128,
+      "position": 31,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 14.73599998280406,
+      "fused_us": 16.1920003592968
+    },
+    {
+      "block": 128,
+      "position": 32,
+      "relative_rms": 3.9220796566041827e-07,
+      "bitwise_equal": false,
+      "cache_exact": true,
+      "baseline_us": 14.415999874472618,
+      "fused_us": 16.16000011563301
+    },
+    {
+      "block": 128,
+      "position": 127,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 17.184000462293625,
+      "fused_us": 21.344000473618507
+    },
+    {
+      "block": 128,
+      "position": 144,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 17.376000061631203,
+      "fused_us": 21.584000438451767
+    },
+    {
+      "block": 128,
+      "position": 255,
+      "relative_rms": 1.4480390575499769e-07,
+      "bitwise_equal": false,
+      "cache_exact": true,
+      "baseline_us": 17.823999747633934,
+      "fused_us": 21.824000403285027
+    },
+    {
+      "block": 128,
+      "position": 511,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 18.063999712467194,
+      "fused_us": 21.935999393463135
+    },
+    {
+      "block": 128,
+      "position": 1023,
+      "relative_rms": 0.0,
+      "bitwise_equal": true,
+      "cache_exact": true,
+      "baseline_us": 19.120000302791595,
+      "fused_us": 22.752000018954277
+    }
+  ]
+}

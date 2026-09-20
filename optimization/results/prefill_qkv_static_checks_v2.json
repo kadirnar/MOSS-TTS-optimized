@@ -1,0 +1,27 @@
+{
+  "all_python_ast_passed": true,
+  "optimization_python_files": 232,
+  "changed_previous_archive_files": [
+    "optimization/GOAL_REVIEW.md",
+    "optimization/README.md",
+    "optimization/benchmark_first_audio_graph.py",
+    "optimization/benchmark_quantization.py",
+    "optimization/bulk_prefetch.py",
+    "optimization/llm.py",
+    "optimization/quality_generate.py",
+    "optimization/server.py"
+  ],
+  "tracked_source_diff_empty": true,
+  "original_commit": "934d6826b084c46a0d033402174d5f8ac4ed2519",
+  "original_service_health": {
+    "18080": {
+      "ready": true,
+      "codebooks": 32
+    },
+    "18083": {
+      "ready": true,
+      "codebooks": 32
+    }
+  },
+  "temporary_18084_free": true
+}

@@ -1,0 +1,4907 @@
+{
+  "codebooks": 32,
+  "configs": {
+    "control": null,
+    "m1_s8_r8w4": {
+      "mode": 1,
+      "swizzle": 8,
+      "tile": {
+        "rows": 8,
+        "warps": 4
+      }
+    },
+    "m1_s8_r16w4": {
+      "mode": 1,
+      "swizzle": 8,
+      "tile": {
+        "rows": 16,
+        "warps": 4
+      }
+    },
+    "plain_r8w4_pre1": {
+      "mode": 0,
+      "tile": {
+        "rows": 8,
+        "warps": 4,
+        "prefetch": 1
+      }
+    },
+    "plain_r8w4_pre3": {
+      "mode": 0,
+      "tile": {
+        "rows": 8,
+        "warps": 4,
+        "prefetch": 3
+      }
+    },
+    "plain_r16w4_pre1": {
+      "mode": 0,
+      "tile": {
+        "rows": 16,
+        "warps": 4,
+        "prefetch": 1
+      }
+    },
+    "plain_r16w4_pre3": {
+      "mode": 0,
+      "tile": {
+        "rows": 16,
+        "warps": 4,
+        "prefetch": 3
+      }
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "control",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r8w4",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "m1_s8_r16w4",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre1",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r8w4_pre3",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre1",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 0,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 0,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 0,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 1,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 1,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 1,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 2,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 2,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 2,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 3,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 3,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 3,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 4,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 4,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 4,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 5,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 5,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 5,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 6,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 6,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 6,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 7,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 7,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 7,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 8,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 8,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 8,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 9,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 9,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 9,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 10,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 10,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 10,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 11,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 11,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 11,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 12,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 12,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 12,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 13,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 13,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 13,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 14,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 14,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 14,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 15,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 15,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 15,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 16,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 16,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 16,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 17,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 17,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 17,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 18,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 18,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 18,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 19,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 19,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 19,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 20,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 20,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 20,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 21,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 21,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 21,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 22,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 22,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 22,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 23,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 23,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 23,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 24,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 24,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 24,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 25,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 25,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 25,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 26,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 26,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 26,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 27,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 27,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 27,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 28,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 28,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 28,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 29,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 29,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 29,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 30,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 30,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 30,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 31,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 31,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 31,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 32,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 32,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 32,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 33,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 33,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 33,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 34,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 34,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 34,
+      "input": 31,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 35,
+      "input": 0,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 35,
+      "input": 10,
+      "all_bits_exact": true
+    },
+    {
+      "config": "plain_r16w4_pre3",
+      "layer": 35,
+      "input": 31,
+      "all_bits_exact": true
+    }
+  ],
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m1_s8_r8w4": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "m1_s8_r16w4": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "plain_r8w4_pre1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "plain_r8w4_pre3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "plain_r16w4_pre1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "plain_r16w4_pre3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "m1_s8_r8w4",
+        "m1_s8_r16w4",
+        "plain_r8w4_pre1",
+        "plain_r8w4_pre3",
+        "plain_r16w4_pre1",
+        "plain_r16w4_pre3"
+      ],
+      "us": {
+        "control": 19.121481312645805,
+        "m1_s8_r8w4": 18.617186281416153,
+        "m1_s8_r16w4": 18.634665895391393,
+        "plain_r8w4_pre1": 19.787556595272488,
+        "plain_r8w4_pre3": 19.059556501883048,
+        "plain_r16w4_pre1": 20.083555468806512,
+        "plain_r16w4_pre3": 19.01748224540993
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "plain_r16w4_pre3",
+        "plain_r16w4_pre1",
+        "plain_r8w4_pre3",
+        "plain_r8w4_pre1",
+        "m1_s8_r16w4",
+        "m1_s8_r8w4"
+      ],
+      "us": {
+        "control": 19.506962211043746,
+        "plain_r16w4_pre3": 18.995258543226456,
+        "plain_r16w4_pre1": 20.067259117409034,
+        "plain_r8w4_pre3": 19.02636996021977,
+        "plain_r8w4_pre1": 20.07763032559995,
+        "m1_s8_r16w4": 19.293332541430438,
+        "m1_s8_r8w4": 19.17688934891312
+      }
+    },
+    {
+      "round": 2,
+      "order": [
+        "m1_s8_r16w4",
+        "plain_r8w4_pre1",
+        "plain_r8w4_pre3",
+        "plain_r16w4_pre1",
+        "plain_r16w4_pre3",
+        "control",
+        "m1_s8_r8w4"
+      ],
+      "us": {
+        "m1_s8_r16w4": 19.29481382723208,
+        "plain_r8w4_pre1": 20.091259921038592,
+        "plain_r8w4_pre3": 19.02636996021977,
+        "plain_r16w4_pre1": 20.064296545805753,
+        "plain_r16w4_pre3": 18.989925031308776,
+        "control": 19.476148817274307,
+        "m1_s8_r8w4": 19.163851384763365
+      }
+    },
+    {
+      "round": 3,
+      "order": [
+        "m1_s8_r16w4",
+        "m1_s8_r8w4",
+        "control",
+        "plain_r16w4_pre3",
+        "plain_r16w4_pre1",
+        "plain_r8w4_pre3",
+        "plain_r8w4_pre1"
+      ],
+      "us": {
+        "m1_s8_r16w4": 19.291259624339915,
+        "m1_s8_r8w4": 19.191406391285085,
+        "control": 19.493926454473424,
+        "plain_r16w4_pre3": 18.99822332240917,
+        "plain_r16w4_pre1": 20.068148771921795,
+        "plain_r8w4_pre3": 19.00948197753341,
+        "plain_r8w4_pre1": 20.082665814293755
+      }
+    },
+    {
+      "round": 4,
+      "order": [
+        "plain_r8w4_pre3",
+        "plain_r16w4_pre1",
+        "plain_r16w4_pre3",
+        "control",
+        "m1_s8_r8w4",
+        "m1_s8_r16w4",
+        "plain_r8w4_pre1"
+      ],
+      "us": {
+        "plain_r8w4_pre3": 19.047110169022172,
+        "plain_r16w4_pre1": 20.07881579575715,
+        "plain_r16w4_pre3": 18.30696286978545,
+        "control": 19.152888545283563,
+        "m1_s8_r8w4": 18.600591906794794,
+        "m1_s8_r16w4": 18.634370079746954,
+        "plain_r8w4_pre1": 19.832593423348886
+      }
+    },
+    {
+      "round": 5,
+      "order": [
+        "plain_r8w4_pre3",
+        "plain_r8w4_pre1",
+        "m1_s8_r16w4",
+        "m1_s8_r8w4",
+        "control",
+        "plain_r16w4_pre3",
+        "plain_r16w4_pre1"
+      ],
+      "us": {
+        "plain_r8w4_pre3": 18.394073954334967,
+        "plain_r8w4_pre1": 19.782814714643692,
+        "m1_s8_r16w4": 19.310222731696236,
+        "m1_s8_r8w4": 19.20385272414596,
+        "control": 19.486222002241348,
+        "plain_r16w4_pre3": 18.98933340001989,
+        "plain_r16w4_pre1": 20.070221689012314
+      }
+    }
+  ],
+  "method": "Selected QKV bulk hint and QK/attention/reduction PDL schedules with async output weights. Actual 36-layer weights/norm inputs and nearest frozen attention fixtures (0/17/35), capacity256; isolated five-kernel chains, not a full trajectory or TTFA. Rotating/reversing six-round actual-weight ring.",
+  "summary": {
+    "control": {
+      "median_us": 19.481185409757828,
+      "median_paired_gain_us": 0.0
+    },
+    "m1_s8_r8w4": {
+      "median_us": 19.17037036683824,
+      "median_paired_gain_us": 0.32118514732078296
+    },
+    "m1_s8_r16w4": {
+      "median_us": 19.292296082885176,
+      "median_paired_gain_us": 0.20814824987340863
+    },
+    "plain_r8w4_pre1": {
+      "median_us": 19.95511187447442,
+      "median_paired_gain_us": -0.6019252317923076
+    },
+    "plain_r8w4_pre3": {
+      "median_us": 19.02636996021977,
+      "median_paired_gain_us": 0.4651855539392553
+    },
+    "plain_r16w4_pre1": {
+      "median_us": 20.069185230467056,
+      "median_paired_gain_us": -0.5860737076512059
+    },
+    "plain_r16w4_pre3": {
+      "median_us": 18.992591787267614,
+      "median_paired_gain_us": 0.49629586714285523
+    }
+  }
+}

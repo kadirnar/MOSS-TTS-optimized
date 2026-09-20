@@ -1,0 +1,42 @@
+{
+  "graph": {
+    "kernel_events": 13937,
+    "counts": {
+      "other": 5621,
+      "projection": 4752,
+      "llm_attention": 3564
+    },
+    "interval_classes_us": {
+      "no_kernel": 25429.546875,
+      "other": 24166.9873046875,
+      "projection": 39821.7265625,
+      "llm_attention+projection": 9519.0234375,
+      "llm_attention": 6728.8505859375
+    },
+    "runtime_graph_launch_calls": 5,
+    "runtime_copy_calls": {
+      "cudaMemcpyAsync": 27
+    },
+    "scope": "34-step truncated profiling request, 33 LLM decode steps and two codec chunks. Resident intervals include dependency waits; not utilization or pure arithmetic time. Separate process traces; timings are not a paired TTFA comparison."
+  },
+  "control": {
+    "kernel_events": 14060,
+    "counts": {
+      "other": 5744,
+      "projection": 4752,
+      "llm_attention": 3564
+    },
+    "interval_classes_us": {
+      "no_kernel": 23722.1728515625,
+      "other": 24336.517578125,
+      "projection": 39880.990234375,
+      "llm_attention+projection": 9515.7705078125,
+      "llm_attention": 6759.8525390625
+    },
+    "scope": "34-step truncated profiling request, 33 LLM decode steps and two codec chunks. Resident intervals include dependency waits; not utilization or pure arithmetic time.",
+    "runtime_graph_launch_calls": 36,
+    "runtime_copy_calls": {
+      "cudaMemcpyAsync": 151
+    }
+  }
+}

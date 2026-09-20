@@ -1,0 +1,277 @@
+{
+  "codebooks": 32,
+  "status": "Progress; optional exact scale storage qualifies. Goal active and 50 ms unmet. INT4-PTX candidate rejected.",
+  "selected_preset": "Calibrated G32, BF16 prefill, FP32 codec, scaled DP4A, norm-projection, head/context buckets, optional short BF16 scales.",
+  "storage_bytes_before": 301989888,
+  "storage_bytes_after": 150994944,
+  "operator_cases": 1296,
+  "operator_all_exact": true,
+  "private_graph_checks": 192,
+  "measured_complete_float32_streams": 90,
+  "all_paired_pcm_exact": true,
+  "quality_generated_wavs_exact": 48,
+  "quality_reference_wavs_exact": 8,
+  "asr_rerun": false,
+  "paired_runs": {
+    "v1": {
+      "ttfa": {
+        "torch": {
+          "median_ms": 84.78028513491154,
+          "p95_ms": 85.4881240054965
+        },
+        "short": {
+          "median_ms": 84.19167622923851,
+          "p95_ms": 84.70409028232098
+        },
+        "compressed": {
+          "median_ms": 84.54833552241325,
+          "p95_ms": 84.68358814716339
+        }
+      },
+      "median_paired_gain_ms": {
+        "short": 0.5243159830570221,
+        "compressed": 0.2319496124982834
+      },
+      "short_vs_compressed_median_paired_gain_ms": 0.3216005861759186,
+      "faster_rounds": {
+        "short": 15,
+        "compressed": 14
+      },
+      "graph_median_ms": {
+        "torch": 2.1239794921875,
+        "short": 2.11423583984375,
+        "compressed": 2.121710739135742
+      },
+      "graph_short_gain_ms": 0.009159851074218572,
+      "phase_medians_ms": {
+        "torch": {
+          "prepare": 1.2597870081663132,
+          "prefill": 9.215554222464561,
+          "initial_decode": 2.158581279218197,
+          "first_codec": 4.772476851940155
+        },
+        "short": {
+          "prepare": 1.194596290588379,
+          "prefill": 9.207142516970634,
+          "initial_decode": 2.1411851048469543,
+          "first_codec": 4.76892851293087
+        },
+        "compressed": {
+          "prepare": 1.1607296764850616,
+          "prefill": 9.209677577018738,
+          "initial_decode": 2.1500401198863983,
+          "first_codec": 4.768103361129761
+        }
+      }
+    },
+    "v2": {
+      "ttfa": {
+        "torch": {
+          "median_ms": 84.5919419080019,
+          "p95_ms": 84.8030911758542
+        },
+        "short": {
+          "median_ms": 84.12717282772064,
+          "p95_ms": 84.66375134885311
+        },
+        "compressed": {
+          "median_ms": 84.40144546329975,
+          "p95_ms": 84.60243679583073
+        }
+      },
+      "median_paired_gain_ms": {
+        "short": 0.4405621439218521,
+        "compressed": 0.24801678955554962
+      },
+      "short_vs_compressed_median_paired_gain_ms": 0.20058266818523407,
+      "faster_rounds": {
+        "short": 14,
+        "compressed": 14
+      },
+      "graph_median_ms": {
+        "torch": 2.1238600158691407,
+        "short": 2.1144522857666015,
+        "compressed": 2.122039031982422
+      },
+      "graph_short_gain_ms": 0.009292526245117338,
+      "phase_medians_ms": {
+        "torch": {
+          "prepare": 1.1172890663146973,
+          "prefill": 9.206769987940788,
+          "initial_decode": 2.1571386605501175,
+          "first_codec": 4.764840006828308
+        },
+        "short": {
+          "prepare": 1.11331045627594,
+          "prefill": 9.209444746375084,
+          "initial_decode": 2.140662632882595,
+          "first_codec": 4.76350262761116
+        },
+        "compressed": {
+          "prepare": 1.0903961956501007,
+          "prefill": 9.210679680109024,
+          "initial_decode": 2.148488536477089,
+          "first_codec": 4.7660451382398605
+        }
+      }
+    }
+  },
+  "http": {
+    "method": "Sequential temporary servers, compressed-FP32 control then BF16 short scales; identical text/reference/seeds 501-520, all 32 codebooks. No concurrent GPU test.",
+    "all_20_full_pcm_streams_exact": true,
+    "control_ttfa": {
+      "median_ms": 88.64310290664434,
+      "p95_ms": 91.3578288629651,
+      "min_ms": 87.49139495193958,
+      "samples_ms": [
+        92.07019582390785,
+        90.76598659157753,
+        91.32033586502075,
+        90.46771749854088,
+        89.79641273617744,
+        90.1455208659172,
+        89.97186832129955,
+        88.29421550035477,
+        88.84463645517826,
+        88.01903575658798,
+        88.25819939374924,
+        88.7850895524025,
+        88.68188969790936,
+        88.01739849150181,
+        88.60431611537933,
+        88.45183253288269,
+        87.49139495193958,
+        87.94506080448627,
+        88.2057473063469,
+        87.95631863176823
+      ]
+    },
+    "short_ttfa": {
+      "median_ms": 87.98823598772287,
+      "p95_ms": 88.22490954771638,
+      "min_ms": 87.36269921064377,
+      "samples_ms": [
+        87.98632211983204,
+        87.99014985561371,
+        87.36269921064377,
+        88.13720755279064,
+        88.22012692689896,
+        88.31577934324741,
+        88.14721181988716,
+        88.00569362938404,
+        87.93580532073975,
+        88.07007595896721,
+        88.15823681652546,
+        87.85105869174004,
+        87.94449083507061,
+        87.39025704562664,
+        87.87096478044987,
+        87.99132704734802,
+        87.77570351958275,
+        87.56338991224766,
+        88.1628766655922,
+        87.50712126493454
+      ]
+    },
+    "control_fresh_single_ms": 130.77115267515182,
+    "short_fresh_single_ms": 129.13088873028755,
+    "control_cancellation_statuses": [
+      429,
+      200
+    ],
+    "short_cancellation_statuses": [
+      429,
+      200
+    ],
+    "temporary_servers_stopped": true
+  },
+  "http_phases_file": "http_short_scales_stage_summary_v1.json",
+  "regression": {
+    "candidate": "optimization/results/all32_gptq_dp4a_short_scales_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pb128_160_256_512.json",
+    "control": "optimization/results/all32_gptq_dp4a_norm_projection_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_pb128_160_256_512.json",
+    "all_36_step_diagnostics_exact": true,
+    "saved_wav_byte_exact": true,
+    "wav_sha256": "b2ba92da2b6dfd4fc71a144fe384f4a294cd3fc7f729b99e727abbef26510ec7",
+    "ttfa": {
+      "median_ms": 85.28147637844086,
+      "p95_ms": 88.46893087029457,
+      "min_ms": 84.86565575003624,
+      "samples_ms": [
+        85.28147637844086,
+        85.00239253044128,
+        84.86565575003624,
+        89.07405659556389,
+        86.0484279692173
+      ]
+    },
+    "decode": {
+      "median_ms": 2.1487800404429436,
+      "p95_ms": 2.152487635612488,
+      "min_ms": 2.1435655653476715,
+      "samples_ms": [
+        2.1512452512979507,
+        2.154611051082611,
+        2.145906910300255,
+        2.1505746990442276,
+        2.1486859768629074,
+        2.1488741040229797,
+        2.14972160756588,
+        2.1479949355125427,
+        2.152375876903534,
+        2.1446701139211655,
+        2.1506790071725845,
+        2.147434279322624,
+        2.147529274225235,
+        2.145109698176384,
+        2.14940682053566,
+        2.1435655653476715,
+        2.1485667675733566,
+        2.1485593169927597,
+        2.1491236984729767,
+        2.1493714302778244
+      ]
+    },
+    "short_scales": {
+      "plan": {
+        "out": {
+          "rows": 4,
+          "warps": 4,
+          "integer_groups": 1,
+          "integer_rows": 1
+        },
+        "down": {
+          "rows": 4,
+          "warps": 2,
+          "integer_groups": 1,
+          "integer_rows": 1
+        }
+      },
+      "buffers": 72,
+      "scale_bytes": 150994944,
+      "all_values_exact": true
+    },
+    "scope": "Separate five-request benchmark without head-prefix graphs; CLI/regression qualification, not a paired kernel-gain estimate."
+  },
+  "codegen_file": "short_scales_codegen_v1/summary.json",
+  "profile_projection_gpu_percent": 59.25,
+  "mma4": {
+    "integer_dots": 4816896,
+    "integer_all_exact": true,
+    "operator_cases": 6912,
+    "result": "Rejected; slower SM90 INT8 IMMA lowering of INT4 PTX. No full-model result."
+  },
+  "reports": [
+    "optimization/REPORT_SHORT_SCALES.md",
+    "optimization/REPORT_INT4_PTX.md"
+  ],
+  "source_archive": "short_scales_sources.tar.gz",
+  "source_hashes": "short_scales_source_hashes.json",
+  "limitations": [
+    "Warm cached-reference tests exclude registration.",
+    "Fresh-reference observations are singles, not a distribution.",
+    "Exactness is relative to calibrated G32, not original BF16.",
+    "Four reused voices and two small diagnostic suites do not establish broad human quality acceptance.",
+    "Sequential HTTP includes scheduling variation; paired same-process evidence is stronger for attribution.",
+    "Existing supervisor services not replaced."
+  ]
+}

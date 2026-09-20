@@ -1,0 +1,725 @@
+{
+  "codebooks": 32,
+  "all_exact": true,
+  "checks": [
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 1,
+        "scales": true,
+        "policy": 1
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 16
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 16
+      },
+      "input": 31,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 10,
+      "exact": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "config": {
+        "divisor": 1,
+        "ahead": 64
+      },
+      "input": 31,
+      "exact": true
+    }
+  ],
+  "guards": [
+    {
+      "stage": "qkv",
+      "rows": 1,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 7,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 9,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "qkv",
+      "rows": 6144,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "up",
+      "rows": 32,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "up",
+      "rows": 64,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "up",
+      "rows": 12288,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "down",
+      "rows": 1,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "down",
+      "rows": 3,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "down",
+      "rows": 5,
+      "misaligned_weight_rejected": true
+    },
+    {
+      "stage": "down",
+      "rows": 4096,
+      "misaligned_weight_rejected": true
+    }
+  ],
+  "cases": 66,
+  "scope": "Changed-input private CUDA graphs, actual/odd rows for all three projection stages, full/prefix prefetch, cache policy and wrapped lookahead. Output and every returned intermediate compare exactly with original PDL bodies; misaligned contiguous weight buffers reject before launch."
+}

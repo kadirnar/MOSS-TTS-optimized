@@ -1,0 +1,128 @@
+{
+  "trace": "optimization/results/async_output_profile_v2_trace.json",
+  "kernel_events": 13289,
+  "counts": {
+    "other": 4973,
+    "projection": 4752,
+    "llm_attention": 3564
+  },
+  "interval_classes_us": {
+    "no_kernel": 21635.7626953125,
+    "other": 22020.443359375,
+    "projection": 39042.7041015625,
+    "llm_attention+projection": 10237.6103515625,
+    "llm_attention": 6753.2734375
+  },
+  "prefill": {
+    "kernel_events": 375,
+    "span_us": 6954.5244140625,
+    "kernels": [
+      {
+        "name": "nvjet_sm90_tst_192x160_64x4_2x1_v_bz_coopB_TNT",
+        "calls": 36,
+        "sum_us": 2208.658
+      },
+      {
+        "name": "nvjet_sm90_tst_128x80_64x8_1x2_h_bz_splitK_TNT",
+        "calls": 36,
+        "sum_us": 1261.831
+      },
+      {
+        "name": "nvjet_sm90_tst_64x96_64x10_2x1_v_bz_TNT",
+        "calls": 36,
+        "sum_us": 795.206
+      },
+      {
+        "name": "nvjet_sm90_tst_128x80_64x8_4x2_h_bz_TNT",
+        "calls": 36,
+        "sum_us": 779.558
+      },
+      {
+        "name": "nvjet_sm90_tst_256x8_64x6_2x1_v_bz_TNT",
+        "calls": 2,
+        "sum_us": 393.05999999999995
+      },
+      {
+        "name": "cudnn_generated_fort_native_sdpa_sm90_flash_fprop_wgmma_f16_knob_7_64x128x128_4x1x1_cga1x1x1_kernel0_0",
+        "calls": 36,
+        "sum_us": 319.488
+      },
+      {
+        "name": "_prefill_qkv",
+        "calls": 36,
+        "sum_us": 238.244
+      },
+      {
+        "name": "_add_rmsnorm",
+        "calls": 72,
+        "sum_us": 205.94899999999998
+      },
+      {
+        "name": "void cublasLt::splitKreduce_kernel<32, 16, int, float, __nv_bfloat16, float, __nv_bfloat16, false, float, __nv_bfloat16, __nv_bfloat16, true, false, false, false>(cublasLt::cublasSplitKParams<float>, float const*, __nv_bfloat16 const*, float*, __nv_bfloat16*, float const*, float const*, __nv_bfloat16 const*, float const*, __nv_bfloat16*, void*, long, float*, int*, float*, float*, float const*, float const*, float const*, float const*, float const*)",
+        "calls": 36,
+        "sum_us": 179.171
+      },
+      {
+        "name": "_silu",
+        "calls": 36,
+        "sum_us": 141.99099999999999
+      },
+      {
+        "name": "_embedding_sum",
+        "calls": 1,
+        "sum_us": 9.665
+      },
+      {
+        "name": "void at::native::elementwise_kernel<128, 4, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::CompareFunctor<long> >(at::TensorIteratorBase&, at::native::(anonymous namespace)::CompareFunctor<long> const&)::{lambda(int)#1}>(int, at::native::gpu_kernel_impl_nocast<at::native::(anonymous namespace)::CompareFunctor<long> >(at::TensorIteratorBase&, at::native::(anonymous namespace)::CompareFunctor<long> const&)::{lambda(int)#1})",
+        "calls": 1,
+        "sum_us": 4.161
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::CatArrayBatchedCopy<at::native::(anonymous namespace)::OpaqueType<4u>, unsigned int, 3, 64, 64>(at::native::(anonymous namespace)::OpaqueType<4u>*, at::native::(anonymous namespace)::CatArrInputTensorMetadata<at::native::(anonymous namespace)::OpaqueType<4u>, unsigned int, 64, 64>, at::native::(anonymous namespace)::TensorSizeStride<unsigned int, 4u>, int, unsigned int)",
+        "calls": 1,
+        "sum_us": 2.72
+      },
+      {
+        "name": "_rmsnorm",
+        "calls": 1,
+        "sum_us": 2.464
+      },
+      {
+        "name": "void at::native::(anonymous namespace)::indexSelectSmallIndex<c10::BFloat16, long, unsigned int, 2, 2, -2>(at::cuda::detail::TensorInfo<c10::BFloat16, unsigned int>, at::cuda::detail::TensorInfo<c10::BFloat16 const, unsigned int>, at::cuda::detail::TensorInfo<long const, unsigned int>, int, int, unsigned int, long)",
+        "calls": 1,
+        "sum_us": 2.432
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<8, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::bfloat16_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "calls": 2,
+        "sum_us": 2.335
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::AUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul> >(int, at::native::AUnaryFunctor<float, float, float, at::native::binary_internal::MulFunctor<float> >, std::array<char*, 2ul>)",
+        "calls": 2,
+        "sum_us": 2.334
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::cos_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::cos_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "calls": 1,
+        "sum_us": 1.889
+      },
+      {
+        "name": "void at::native::vectorized_elementwise_kernel<4, at::native::sin_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul> >(int, at::native::sin_kernel_cuda(at::TensorIteratorBase&)::{lambda()#2}::operator()() const::{lambda()#2}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>)",
+        "calls": 1,
+        "sum_us": 1.791
+      },
+      {
+        "name": "void at::native::unrolled_elementwise_kernel<at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, 4, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1> >(int, at::native::direct_copy_kernel_cuda(at::TensorIteratorBase&)::{lambda()#3}::operator()() const::{lambda()#7}::operator()() const::{lambda(float)#1}, std::array<char*, 2ul>, TrivialOffsetCalculator<1, unsigned int>, TrivialOffsetCalculator<1, unsigned int>, at::native::memory::LoadWithCast<1>, at::native::memory::StoreWithCast<1>)",
+        "calls": 1,
+        "sum_us": 1.729
+      },
+      {
+        "name": "_bmm_outer_product_kernel",
+        "calls": 1,
+        "sum_us": 1.569
+      }
+    ]
+  },
+  "scope": "Post-timing 34-step request, 33 LLM steps and two codec chunks. Resident intervals include PDL waits, not utilization or pure arithmetic. Separate traces are not paired speedup evidence."
+}

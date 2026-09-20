@@ -1,0 +1,33 @@
+{
+  "format": "dp4a_packing_v1",
+  "group": 32,
+  "codebooks": 32,
+  "tuning_sha256": "b656847af008b26e27d52c87e511db287d38750fd88b408e81e7f5b7dbf32a24",
+  "selection": "Fastest measured configuration passing all 18 exact real/edge comparisons per projection. Full-model equivalence still requires verification.",
+  "projections": {
+    "qkv": {
+      "scheme": "interleaved",
+      "scale_dtype": "bfloat16",
+      "rows": 4,
+      "warps": 4
+    },
+    "out": {
+      "scheme": "interleaved",
+      "scale_dtype": "float32",
+      "rows": 2,
+      "warps": 2
+    },
+    "up": {
+      "scheme": "interleaved",
+      "scale_dtype": "bfloat16",
+      "rows": 4,
+      "warps": 4
+    },
+    "down": {
+      "scheme": "interleaved",
+      "scale_dtype": "float32",
+      "rows": 2,
+      "warps": 2
+    }
+  }
+}

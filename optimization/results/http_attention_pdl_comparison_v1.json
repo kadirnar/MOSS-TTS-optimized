@@ -1,0 +1,70 @@
+{
+  "method": "Sequential temporary servers, qualified projection PDL control then selected attention PDL (QK trigger 1, attention trigger 2, reduction trigger 1; no Q/K norm preload). Existing output/down scale preloads retained. Identical text/reference/seeds 501-520, all 32 codebooks. No concurrent GPU latency test.",
+  "all_20_full_pcm_streams_exact": true,
+  "control_ttfa": {
+    "median_ms": 87.35308330506086,
+    "p95_ms": 88.10319695621729,
+    "min_ms": 86.08490973711014,
+    "samples_ms": [
+      86.46280132234097,
+      86.29906363785267,
+      89.02258984744549,
+      88.05480785667896,
+      87.62654475867748,
+      87.27176673710346,
+      87.43439987301826,
+      87.8341868519783,
+      86.93796582520008,
+      87.51625940203667,
+      87.05760166049004,
+      87.76217885315418,
+      87.60472945868969,
+      87.83039636909962,
+      87.17211335897446,
+      87.67535723745823,
+      86.73899620771408,
+      86.40198409557343,
+      86.19946800172329,
+      86.08490973711014
+    ]
+  },
+  "pdl_ttfa": {
+    "median_ms": 83.61292630434036,
+    "p95_ms": 83.98107886314392,
+    "min_ms": 83.24076421558857,
+    "samples_ms": [
+      84.07965488731861,
+      83.36126245558262,
+      83.97589065134525,
+      83.68314802646637,
+      83.54312740266323,
+      83.7158914655447,
+      83.8022269308567,
+      83.63570272922516,
+      83.41738767921925,
+      83.28974060714245,
+      83.75992067158222,
+      83.83631706237793,
+      83.59014987945557,
+      83.32716673612595,
+      83.56054872274399,
+      83.24076421558857,
+      83.4841076284647,
+      83.74135009944439,
+      83.57181213796139,
+      83.6508721113205
+    ]
+  },
+  "control_fresh_single_ms": 125.27810782194138,
+  "pdl_fresh_single_ms": 124.76382777094841,
+  "control_cancellation_statuses": [
+    429,
+    200
+  ],
+  "pdl_cancellation_statuses": [
+    429,
+    200
+  ],
+  "temporary_servers_stopped": true,
+  "metadata_correction": "Initial method label incorrectly described the unselected Q/K preload candidate. The executed server used attention_pdl.enable defaults q1/a2/r1/preload=False. Timing and audio data unchanged; original label preserved."
+}

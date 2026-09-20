@@ -1,0 +1,1185 @@
+{
+  "method": "Eight distinct packed weight/scale pairs; median nine CUDA graph timings, 24 calls per replay. Nine real frozen layer/step inputs per projection, private-stream comparisons of all producer and consumer outputs against selected G32 norm fusion. Fixed four-warps and arithmetic layouts.",
+  "cases": {
+    "qkv": {
+      "reference_us": 8.204000070691109,
+      "base_config": {
+        "rows": 8,
+        "integer_groups": 1,
+        "integer_rows": 1
+      },
+      "candidates": [
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.170666793982187,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.14933329820633,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.194666976730028,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.177333200971285,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.220000192523003,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.15866639216741,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_first",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 7.52800020078818,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_first",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 7.3853333791097,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_last",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.15866639216741,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_last",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.14933329820633,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "evict_first",
+            "scale_cache": ""
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmpnzmyhdcd.ptx, line 943; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 954; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 965; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 976; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 987; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 998; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 1009; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpnzmyhdcd.ptx, line 1020; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmpnzmyhdcd.ptx -o /tmp/tmpnzmyhdcd.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "evict_first",
+            "scale_cache": ".cg"
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmpevr3uhe3.ptx, line 943; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 954; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 965; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 976; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 987; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 998; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 1009; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmpevr3uhe3.ptx, line 1020; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmpevr3uhe3.ptx -o /tmp/tmpevr3uhe3.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "evict_last",
+            "scale_cache": ""
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmp47fwafsv.ptx, line 943; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 954; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 965; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 976; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 987; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 998; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 1009; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmp47fwafsv.ptx, line 1020; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmp47fwafsv.ptx -o /tmp/tmp47fwafsv.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "evict_last",
+            "scale_cache": ".cg"
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmpb27gweq1.ptx, line 943; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 954; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 965; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 976; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 987; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 998; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 1009; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpb27gweq1.ptx, line 1020; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmpb27gweq1.ptx -o /tmp/tmpb27gweq1.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.746666833758354,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.669333532452583,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 256
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.284000058968862,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 256
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.318666368722916,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 512
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.553333580493927,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 512
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.55466661353906,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 2
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.163999766111374,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 2
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.170666793982187,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.169333140055338,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 4
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.176000167926153,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 8
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.196000009775162,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 8
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.189333602786064,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 16
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.222666879494986,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 16
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.241333067417145,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 32
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.254666502277056,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 32
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.274666965007782,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 56
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.133333176374435,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 56
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.113333334525427,
+          "resources": {
+            "registers": 56,
+            "spills": 0,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 48
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.5333331177632,
+          "resources": {
+            "registers": 48,
+            "spills": 6,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 48
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 8.497333154082298,
+          "resources": {
+            "registers": 48,
+            "spills": 6,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 40
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 10.178666561841965,
+          "resources": {
+            "registers": 40,
+            "spills": 22,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 40
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 10.194666683673859,
+          "resources": {
+            "registers": 40,
+            "spills": 22,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 32
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 16.941333810488384,
+          "resources": {
+            "registers": 32,
+            "spills": 40,
+            "shared_bytes": 2048
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 32
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 16.891999791065853,
+          "resources": {
+            "registers": 32,
+            "spills": 40,
+            "shared_bytes": 2048
+          }
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "weight_cache": "",
+          "eviction": "evict_first",
+          "scale_cache": ".cg"
+        },
+        "checks": 9,
+        "exact_checks": 9,
+        "mismatches": 0,
+        "us": 7.3853333791097,
+        "resources": {
+          "registers": 56,
+          "spills": 0,
+          "shared_bytes": 2048
+        }
+      }
+    },
+    "up": {
+      "reference_us": 19.639999916156132,
+      "base_config": {
+        "rows": 32,
+        "integer_groups": 2,
+        "integer_rows": 4
+      },
+      "candidates": [
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.708000123500824,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.685332973798115,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 21.110666294892628,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 21.07333391904831,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.717333217461903,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.67066650589307,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_first",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.96399958928426,
+          "resources": {
+            "registers": 167,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_first",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.731999685366947,
+          "resources": {
+            "registers": 167,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_last",
+            "scale_cache": ""
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.597332924604416,
+          "resources": {
+            "registers": 167,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "eviction": "evict_last",
+            "scale_cache": ".cg"
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 19.542666773001354,
+          "resources": {
+            "registers": 167,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "evict_first",
+            "scale_cache": ""
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmp9akahyq3.ptx, line 1103; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1114; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1125; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1136; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1147; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1158; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1169; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1180; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1191; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1202; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1213; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1224; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1235; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1246; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1257; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1268; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1279; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1290; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1301; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1312; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1323; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1334; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1345; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1356; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1367; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1378; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1389; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1400; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1411; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1422; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1433; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 1444; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3508; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3519; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3530; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3541; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3552; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3563; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3574; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3585; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3596; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3607; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3618; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3629; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3640; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3651; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3662; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3673; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3684; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3695; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3706; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3717; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3728; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3739; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3750; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3761; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3772; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3783; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3794; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3805; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3816; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3827; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3838; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp9akahyq3.ptx, line 3849; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmp9akahyq3.ptx -o /tmp/tmp9akahyq3.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "eviction": "evict_first",
+            "scale_cache": ".cg"
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmp6ig4ctob.ptx, line 1103; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1114; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1125; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1136; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1147; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1158; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1169; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1180; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1191; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1202; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1213; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1224; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1235; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1246; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1257; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1268; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1279; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1290; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1301; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1312; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1323; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1334; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1345; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1356; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1367; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1378; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1389; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1400; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1411; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1422; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1433; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 1444; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3508; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3519; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3530; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3541; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3552; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3563; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3574; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3585; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3596; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3607; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3618; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3629; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3640; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3651; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3662; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3673; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3684; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3695; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3706; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3717; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3728; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3739; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3750; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3761; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3772; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3783; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3794; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3805; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3816; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3827; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3838; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas /tmp/tmp6ig4ctob.ptx, line 3849; error   : Modifier '.evict_first' cannot be combined with modifier '.cg'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmp6ig4ctob.ptx -o /tmp/tmp6ig4ctob.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "evict_last",
+            "scale_cache": ""
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmppteecruw.ptx, line 1103; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1114; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1125; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1136; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1147; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1158; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1169; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1180; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1191; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1202; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1213; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1224; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1235; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1246; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1257; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1268; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1279; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1290; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1301; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1312; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1323; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1334; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1345; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1356; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1367; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1378; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1389; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1400; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1411; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1422; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1433; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 1444; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3508; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3519; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3530; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3541; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3552; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3563; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3574; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3585; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3596; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3607; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3618; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3629; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3640; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3651; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3662; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3673; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3684; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3695; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3706; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3717; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3728; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3739; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3750; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3761; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3772; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3783; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3794; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3805; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3816; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3827; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3838; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmppteecruw.ptx, line 3849; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmppteecruw.ptx -o /tmp/tmppteecruw.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": ".ca",
+            "eviction": "evict_last",
+            "scale_cache": ".cg"
+          },
+          "checks": 0,
+          "exact_checks": 0,
+          "mismatches": 0,
+          "error": "PTXASError(\"Internal Triton PTX codegen error\\n`ptxas` stderr:\\nptxas /tmp/tmpy5nldk08.ptx, line 1103; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1114; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1125; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1136; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1147; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1158; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1169; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1180; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1191; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1202; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1213; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1224; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1235; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1246; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1257; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1268; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1279; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1290; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1301; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1312; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1323; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1334; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1345; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1356; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1367; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1378; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1389; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1400; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1411; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1422; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1433; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 1444; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3508; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3519; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3530; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3541; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3552; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3563; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3574; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3585; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3596; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3607; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3618; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3629; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3640; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3651; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3662; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3673; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3684; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3695; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3706; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3717; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3728; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3739; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3750; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3761; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3772; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3783; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3794; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3805; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3816; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3827; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3838; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas /tmp/tmpy5nldk08.ptx, line 3849; error   : Modifier '.evict_last' cannot be combined with modifier '.ca'\\nptxas fatal   : Ptx assembly aborted due to errors\\n\\nRepro command: /venv/moss-vllm/lib/python3.12/site-packages/triton/backends/nvidia/bin/ptxas -lineinfo -v --regAllocOptLevel=2 --gpu-name=sm_90a /tmp/tmpy5nldk08.ptx -o /tmp/tmpy5nldk08.ptx.o\\n\")"
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 23.85066697994868,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 25.3973330060641,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 256
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 21.47466689348221,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 256
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 23.10666690270106,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "prefetch": 512
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 20.371999591588974,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "prefetch": 512
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 22.123999893665314,
+          "resources": {
+            "registers": 162,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 2
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3430,
+          "us": 19.881332914034527,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 2
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3430,
+          "us": 21.555999914805096,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 4
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3431,
+          "us": 19.873333474000294,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 4
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3431,
+          "us": 21.406665444374084,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 8
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3426,
+          "us": 19.846666604280472,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 8
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3426,
+          "us": 21.2813342610995,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 16
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3425,
+          "us": 19.861333072185516,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 16
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3425,
+          "us": 21.26000076532364,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "swizzle": 32
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3429,
+          "us": 19.890667249759037,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "swizzle": 32
+          },
+          "checks": 9,
+          "exact_checks": 0,
+          "mismatches": 3429,
+          "us": 21.397332350413006,
+          "resources": {
+            "registers": 153,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 160
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 20.19199977318446,
+          "resources": {
+            "registers": 160,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 160
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 21.28000060717265,
+          "resources": {
+            "registers": 160,
+            "spills": 0,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 25.586667160193127,
+          "resources": {
+            "registers": 128,
+            "spills": 76,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 128
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 25.982665518919628,
+          "resources": {
+            "registers": 128,
+            "spills": 76,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 96
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 41.42000029484431,
+          "resources": {
+            "registers": 96,
+            "spills": 216,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 96
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 39.68533376852671,
+          "resources": {
+            "registers": 96,
+            "spills": 216,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": "",
+            "max_registers": 64
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 66.93199773629506,
+          "resources": {
+            "registers": 64,
+            "spills": 372,
+            "shared_bytes": 1024
+          }
+        },
+        {
+          "config": {
+            "weight_cache": ".cg",
+            "max_registers": 64
+          },
+          "checks": 9,
+          "exact_checks": 9,
+          "mismatches": 0,
+          "us": 63.6053333679835,
+          "resources": {
+            "registers": 64,
+            "spills": 372,
+            "shared_bytes": 1024
+          }
+        }
+      ],
+      "best_exact": {
+        "config": {
+          "weight_cache": "",
+          "eviction": "evict_last",
+          "scale_cache": ".cg"
+        },
+        "checks": 9,
+        "exact_checks": 9,
+        "mismatches": 0,
+        "us": 19.542666773001354,
+        "resources": {
+          "registers": 167,
+          "spills": 0,
+          "shared_bytes": 1024
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+{
+  "source_result": "group64_scale_validation_v1.json",
+  "note": "The initial_reference_correction field was inherited from the earlier G128 validator. It describes that historical reference-rounding investigation, not a failed G64 check. All six G64 scale cases and both G64 GPTQ checks passed as recorded; original result is preserved."
+}

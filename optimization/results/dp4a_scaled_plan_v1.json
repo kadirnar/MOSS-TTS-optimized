@@ -1,0 +1,29 @@
+{
+  "format": "dp4a_scaled_v1",
+  "codebooks": 32,
+  "group": 32,
+  "projections": {
+    "up": {
+      "rows": 32,
+      "warps": 4,
+      "mode": 2
+    },
+    "qkv": {
+      "rows": 4,
+      "warps": 4,
+      "mode": 2
+    },
+    "out": {
+      "rows": 4,
+      "warps": 4,
+      "mode": 1
+    },
+    "down": {
+      "rows": 4,
+      "warps": 2,
+      "mode": 1
+    }
+  },
+  "validation_sha256": "3396a6b04b212146e16bd4c3b5f3bf35bd397bb96c37dd9f89ae11585f48850d",
+  "selection": "All operators exact on 2016 real/edge checks. Full-model validation still required."
+}

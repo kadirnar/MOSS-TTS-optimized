@@ -1,0 +1,1156 @@
+{
+  "codebooks": 32,
+  "torch": "2.13.0+cu130",
+  "configs": {
+    "control": null,
+    "clone_no_pdl": {
+      "pdl": false,
+      "norm_trigger": 0,
+      "projection_trigger": 0
+    },
+    "pdl_n0_p0": {
+      "pdl": true,
+      "norm_trigger": 0,
+      "projection_trigger": 0
+    },
+    "pdl_n0_p1": {
+      "pdl": true,
+      "norm_trigger": 0,
+      "projection_trigger": 1
+    },
+    "pdl_n0_p3": {
+      "pdl": true,
+      "norm_trigger": 0,
+      "projection_trigger": 3
+    },
+    "pdl_n1_p0": {
+      "pdl": true,
+      "norm_trigger": 1,
+      "projection_trigger": 0
+    },
+    "pdl_n1_p1": {
+      "pdl": true,
+      "norm_trigger": 1,
+      "projection_trigger": 1
+    },
+    "pdl_n1_p3": {
+      "pdl": true,
+      "norm_trigger": 1,
+      "projection_trigger": 3
+    },
+    "pdl_n2_p0": {
+      "pdl": true,
+      "norm_trigger": 2,
+      "projection_trigger": 0
+    },
+    "pdl_n2_p1": {
+      "pdl": true,
+      "norm_trigger": 2,
+      "projection_trigger": 1
+    },
+    "pdl_n2_p3": {
+      "pdl": true,
+      "norm_trigger": 2,
+      "projection_trigger": 3
+    },
+    "pdl_n3_p0": {
+      "pdl": true,
+      "norm_trigger": 3,
+      "projection_trigger": 0
+    },
+    "pdl_n3_p1": {
+      "pdl": true,
+      "norm_trigger": 3,
+      "projection_trigger": 1
+    },
+    "pdl_n3_p3": {
+      "pdl": true,
+      "norm_trigger": 3,
+      "projection_trigger": 3
+    }
+  },
+  "checks": [
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "clone_no_pdl",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n0_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n0_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n0_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n1_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n1_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n1_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n2_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n2_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n2_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n3_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n3_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 0,
+      "config": "pdl_n3_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "clone_no_pdl",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n0_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n0_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n0_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n1_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n1_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n1_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n2_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n2_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n2_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n3_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n3_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 10,
+      "config": "pdl_n3_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "clone_no_pdl",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n0_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n0_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n0_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n1_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n1_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n1_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n2_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n2_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n2_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n3_p0",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n3_p1",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "layer": 17,
+      "input": 31,
+      "config": "pdl_n3_p3",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0
+      },
+      {
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0
+      }
+    ],
+    "clone_no_pdl": [
+      {
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0
+      },
+      {
+        "from_port": 0,
+        "to_port": 0,
+        "type": 0
+      }
+    ],
+    "pdl_n0_p0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n0_p1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n0_p3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n1_p0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n1_p1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n1_p3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n2_p0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n2_p1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n2_p3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n3_p0": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n3_p1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "pdl_n3_p3": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "clone_no_pdl",
+        "pdl_n0_p0",
+        "pdl_n0_p1",
+        "pdl_n0_p3",
+        "pdl_n1_p0",
+        "pdl_n1_p1",
+        "pdl_n1_p3",
+        "pdl_n2_p0",
+        "pdl_n2_p1",
+        "pdl_n2_p3",
+        "pdl_n3_p0",
+        "pdl_n3_p1",
+        "pdl_n3_p3"
+      ],
+      "us": {
+        "control": 40.20266731580099,
+        "clone_no_pdl": 40.181333820025124,
+        "pdl_n0_p0": 39.477333426475525,
+        "pdl_n0_p1": 38.86933376391729,
+        "pdl_n0_p3": 38.81600002447764,
+        "pdl_n1_p0": 38.378665844599404,
+        "pdl_n1_p1": 38.47466657559077,
+        "pdl_n1_p3": 38.11199963092804,
+        "pdl_n2_p0": 42.76266694068909,
+        "pdl_n2_p1": 42.86933441956838,
+        "pdl_n2_p3": 43.103997906049095,
+        "pdl_n3_p0": 38.560000558694206,
+        "pdl_n3_p1": 38.26133410135905,
+        "pdl_n3_p3": 38.15466662247976
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "pdl_n3_p3",
+        "pdl_n3_p1",
+        "pdl_n3_p0",
+        "pdl_n2_p3",
+        "pdl_n2_p1",
+        "pdl_n2_p0",
+        "pdl_n1_p3",
+        "pdl_n1_p1",
+        "pdl_n1_p0",
+        "pdl_n0_p3",
+        "pdl_n0_p1",
+        "pdl_n0_p0",
+        "clone_no_pdl"
+      ],
+      "us": {
+        "control": 40.20266731580099,
+        "pdl_n3_p3": 38.176000118255615,
+        "pdl_n3_p1": 38.57066730658213,
+        "pdl_n3_p0": 38.19733361403147,
+        "pdl_n2_p3": 42.60266820589701,
+        "pdl_n2_p1": 43.16799839337667,
+        "pdl_n2_p0": 42.709335684776306,
+        "pdl_n1_p3": 38.22933385769526,
+        "pdl_n1_p1": 38.45333307981491,
+        "pdl_n1_p0": 38.36799909671148,
+        "pdl_n0_p3": 38.90133400758108,
+        "pdl_n0_p1": 38.90133400758108,
+        "pdl_n0_p0": 39.02933249870936,
+        "clone_no_pdl": 39.92533435424169
+      }
+    }
+  ],
+  "layers": 1,
+  "method": "Actual norm/up -> down -> next-layer norm/QKV dependency chains. All buffers rotate with layer. Private-stream eager and captured graph checks; graph edge data inspected through CUDA Driver API. Trigger points: zero implicit, one start after wait, two after normalization, three before output store. Standalone stage-chain timings, not TTFA.",
+  "summary": {
+    "control": {
+      "median_us": 40.20266731580099,
+      "mismatches": 0
+    },
+    "clone_no_pdl": {
+      "median_us": 40.05333408713341,
+      "mismatches": 0
+    },
+    "pdl_n0_p0": {
+      "median_us": 39.25333296259244,
+      "mismatches": 0
+    },
+    "pdl_n0_p1": {
+      "median_us": 38.88533388574918,
+      "mismatches": 0
+    },
+    "pdl_n0_p3": {
+      "median_us": 38.85866701602936,
+      "mismatches": 0
+    },
+    "pdl_n1_p0": {
+      "median_us": 38.37333247065544,
+      "mismatches": 0
+    },
+    "pdl_n1_p1": {
+      "median_us": 38.463999827702835,
+      "mismatches": 0
+    },
+    "pdl_n1_p3": {
+      "median_us": 38.170666744311646,
+      "mismatches": 0
+    },
+    "pdl_n2_p0": {
+      "median_us": 42.7360013127327,
+      "mismatches": 0
+    },
+    "pdl_n2_p1": {
+      "median_us": 43.018666406472526,
+      "mismatches": 0
+    },
+    "pdl_n2_p3": {
+      "median_us": 42.85333305597305,
+      "mismatches": 0
+    },
+    "pdl_n3_p0": {
+      "median_us": 38.37866708636284,
+      "mismatches": 0
+    },
+    "pdl_n3_p1": {
+      "median_us": 38.41600070397059,
+      "mismatches": 0
+    },
+    "pdl_n3_p3": {
+      "median_us": 38.16533337036769,
+      "mismatches": 0
+    }
+  }
+}

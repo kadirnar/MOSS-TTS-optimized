@@ -1,0 +1,10 @@
+{
+  "torch": "2.13.0+cu130",
+  "triton": "3.7.1",
+  "registers_per_thread": 38,
+  "spills": 0,
+  "shared_bytes": 16,
+  "weight_bytes": 100663296,
+  "grid_ctas": 12288,
+  "warps_per_cta": 4
+}

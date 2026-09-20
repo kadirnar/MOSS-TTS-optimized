@@ -1,0 +1,66 @@
+{
+  "candidate": "optimization/results/all32_gptq_dp4a_short_scales_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pb128_160_256_512.json",
+  "control": "optimization/results/all32_gptq_dp4a_norm_projection_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_pb128_160_256_512.json",
+  "all_36_step_diagnostics_exact": true,
+  "saved_wav_byte_exact": true,
+  "wav_sha256": "b2ba92da2b6dfd4fc71a144fe384f4a294cd3fc7f729b99e727abbef26510ec7",
+  "ttfa": {
+    "median_ms": 85.28147637844086,
+    "p95_ms": 88.46893087029457,
+    "min_ms": 84.86565575003624,
+    "samples_ms": [
+      85.28147637844086,
+      85.00239253044128,
+      84.86565575003624,
+      89.07405659556389,
+      86.0484279692173
+    ]
+  },
+  "decode": {
+    "median_ms": 2.1487800404429436,
+    "p95_ms": 2.152487635612488,
+    "min_ms": 2.1435655653476715,
+    "samples_ms": [
+      2.1512452512979507,
+      2.154611051082611,
+      2.145906910300255,
+      2.1505746990442276,
+      2.1486859768629074,
+      2.1488741040229797,
+      2.14972160756588,
+      2.1479949355125427,
+      2.152375876903534,
+      2.1446701139211655,
+      2.1506790071725845,
+      2.147434279322624,
+      2.147529274225235,
+      2.145109698176384,
+      2.14940682053566,
+      2.1435655653476715,
+      2.1485667675733566,
+      2.1485593169927597,
+      2.1491236984729767,
+      2.1493714302778244
+    ]
+  },
+  "short_scales": {
+    "plan": {
+      "out": {
+        "rows": 4,
+        "warps": 4,
+        "integer_groups": 1,
+        "integer_rows": 1
+      },
+      "down": {
+        "rows": 4,
+        "warps": 2,
+        "integer_groups": 1,
+        "integer_rows": 1
+      }
+    },
+    "buffers": 72,
+    "scale_bytes": 150994944,
+    "all_values_exact": true
+  },
+  "scope": "Separate five-request benchmark without head-prefix graphs; CLI/regression qualification, not a paired kernel-gain estimate."
+}

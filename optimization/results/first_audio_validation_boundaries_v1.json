@@ -1,0 +1,548 @@
+{
+  "codebooks": 32,
+  "complete": true,
+  "all_exact": true,
+  "checks": [
+    {
+      "position": 0,
+      "capacity": 128,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 0,
+      "capacity": 128,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 1,
+      "capacity": 128,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 1,
+      "capacity": 128,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 95,
+      "capacity": 128,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 95,
+      "capacity": 128,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 96,
+      "capacity": 128,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 96,
+      "capacity": 128,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 97,
+      "capacity": 256,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 97,
+      "capacity": 256,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 127,
+      "capacity": 256,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 127,
+      "capacity": 256,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 128,
+      "capacity": 256,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 128,
+      "capacity": 256,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 223,
+      "capacity": 256,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 223,
+      "capacity": 256,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 224,
+      "capacity": 256,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 224,
+      "capacity": 256,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 225,
+      "capacity": 512,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 225,
+      "capacity": 512,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 255,
+      "capacity": 512,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 255,
+      "capacity": 512,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 256,
+      "capacity": 512,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 256,
+      "capacity": 512,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 479,
+      "capacity": 512,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 479,
+      "capacity": 512,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 480,
+      "capacity": 512,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 480,
+      "capacity": 512,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 481,
+      "capacity": 1024,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 481,
+      "capacity": 1024,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 511,
+      "capacity": 1024,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 511,
+      "capacity": 1024,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 512,
+      "capacity": 1024,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 512,
+      "capacity": 1024,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 991,
+      "capacity": 1024,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 991,
+      "capacity": 1024,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 992,
+      "capacity": 1024,
+      "initial_delay": -1,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    },
+    {
+      "position": 992,
+      "capacity": 1024,
+      "initial_delay": 0,
+      "mismatches": {
+        "ids": 0,
+        "text_logits": 0,
+        "audio_logits": 0
+      },
+      "all_72_kv_buffers_exact": true,
+      "status_exact": true,
+      "rng_exact": true,
+      "exact": true
+    }
+  ],
+  "intervals": 38,
+  "decode_steps_per_path": 1216,
+  "guarded_capacities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "scope": "Private-stream full-model intervals, original per-step context/head graph dispatch versus one initial graph. Every text/audio logit and sampled ID, final RNG/status and all 72 entire KV buffers compared bitwise, including poisoned future slots. Immediate-delay and ordinary fresh-audio cases. Short sanitizer mode covers only position 145; separate full run covers all capacity boundaries and final valid position."
+}

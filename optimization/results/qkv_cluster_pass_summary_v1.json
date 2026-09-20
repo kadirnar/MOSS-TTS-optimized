@@ -1,0 +1,166 @@
+{
+  "created_utc": "2026-09-20T13:36:06.353283+00:00",
+  "goal_met": false,
+  "codebooks": 32,
+  "streaming_voice_cloning": true,
+  "selected_flag": "--qkv-cluster",
+  "selected_bundle": "qkv_cluster_bundle_v6",
+  "paired_ttfa": {
+    "control": {
+      "median_ms": 74.22711420804262,
+      "p95_ms": 74.85010987147689,
+      "min_ms": 74.0505363792181,
+      "samples_ms": [
+        74.42634180188179,
+        74.47414472699165,
+        74.42248426377773,
+        74.33562725782394,
+        74.17762465775013,
+        74.29995015263557,
+        74.16711188852787,
+        74.31934960186481,
+        74.15389269590378,
+        74.17410053312778,
+        74.0505363792181,
+        74.20959509909153,
+        74.82495903968811,
+        74.37887415289879,
+        75.32797567546368,
+        74.21510107815266,
+        74.18189197778702,
+        74.19558241963387,
+        74.14211146533489,
+        74.23912733793259
+      ]
+    },
+    "c8_t2_exact": {
+      "median_ms": 74.14448540657759,
+      "p95_ms": 74.71875678747892,
+      "min_ms": 73.94223101437092,
+      "samples_ms": [
+        74.25214163959026,
+        74.12580959498882,
+        74.32186603546143,
+        74.15283098816872,
+        74.21383634209633,
+        74.23994690179825,
+        74.06314462423325,
+        74.12842474877834,
+        74.57028888165951,
+        74.01871122419834,
+        73.94223101437092,
+        74.70233179628849,
+        74.3171889334917,
+        74.36437346041203,
+        74.13613982498646,
+        75.03083162009716,
+        74.08917136490345,
+        74.03981871902943,
+        74.07986000180244,
+        73.98025318980217
+      ]
+    }
+  },
+  "median_paired_gain_ms": {
+    "c8_t2_exact": 0.10613631457090378
+  },
+  "faster_pairs": {
+    "c8_t2_exact": 16
+  },
+  "final_complete_graph_checks": 48,
+  "all_final_pcm_rng_exact": true,
+  "final_control_prior_pcm_hashes_exact": 20,
+  "successful_three_run_measured_streams": 124,
+  "quality_wavs_exact": 48,
+  "sanitizer_cases_each": 72,
+  "sanitizers": [
+    "memcheck",
+    "racecheck",
+    "synccheck"
+  ],
+  "http": {
+    "method": "Sequential temporary servers, selected register-preload output control then clustered QKV/head preparation; identical text/reference/seeds 501-520, all 32 codebooks. No concurrent GPU test.",
+    "all_20_full_pcm_streams_exact": true,
+    "control_ttfa": {
+      "median_ms": 77.81638391315937,
+      "p95_ms": 78.14062833786011,
+      "min_ms": 77.18786410987377,
+      "samples_ms": [
+        78.08286882936954,
+        78.28269898891449,
+        77.9724270105362,
+        78.00547778606415,
+        78.01945134997368,
+        78.03341746330261,
+        77.43805646896362,
+        77.59133353829384,
+        77.80347764492035,
+        77.7334813028574,
+        77.75200344622135,
+        77.18786410987377,
+        78.13315093517303,
+        77.59473472833633,
+        77.6305478066206,
+        77.92032696306705,
+        77.82929018139839,
+        77.34855264425278,
+        77.84820161759853,
+        77.46648043394089
+      ]
+    },
+    "candidate_ttfa": {
+      "median_ms": 77.71593704819679,
+      "p95_ms": 78.60036790370941,
+      "min_ms": 76.35991461575031,
+      "samples_ms": [
+        79.23417910933495,
+        78.5670094192028,
+        77.82253995537758,
+        77.5026511400938,
+        77.49473117291927,
+        76.36317797005177,
+        76.35991461575031,
+        76.40981674194336,
+        76.38884149491787,
+        76.41210779547691,
+        78.44367623329163,
+        78.10457609593868,
+        78.27474921941757,
+        77.85454392433167,
+        77.72229425609112,
+        77.9170524328947,
+        77.6447020471096,
+        77.53326371312141,
+        77.70957984030247,
+        77.80206948518753
+      ]
+    },
+    "control_fresh_single_ms": 116.81083962321281,
+    "candidate_fresh_single_ms": 112.96961084008217,
+    "control_cancellation_statuses": [
+      429,
+      200
+    ],
+    "candidate_cancellation_statuses": [
+      429,
+      200
+    ],
+    "temporary_servers_stopped": true
+  },
+  "profile_summary": "qkv_cluster_profile_summary_v4.json",
+  "source_manifest": "optimization/results/qkv_cluster_source_hashes.json",
+  "archive_sha256": "f2d30418a33bf25a62ea661f51b5757caa731798a9602ddc6122c6eee1db9ef3",
+  "report": "optimization/REPORT_QKV_CLUSTER.md",
+  "original_supervisor_services_unchanged": true,
+  "next_hardware_targets": [
+    "Cluster scheduling/resource placement",
+    "Gate/up and down projection chain"
+  ],
+  "qualification_limits": [
+    "Small measured TTFA gain",
+    "HTTP p95 slightly regresses",
+    "Fresh-reference result is a single observation with registration variation",
+    "Source fixture tests alone missed compiler differences; final full trajectories and changed-input tests pass",
+    "Quality identity is to selected calibrated G32 path, not original BF16"
+  ]
+}

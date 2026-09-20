@@ -1,0 +1,37 @@
+{
+  "format": "dp4a_packing_v1",
+  "group": 32,
+  "codebooks": 32,
+  "tuning_sha256": "b656847af008b26e27d52c87e511db287d38750fd88b408e81e7f5b7dbf32a24",
+  "selection": "Experimental QKV R8/W8 after 504 exact checks; full-model selection recorded separately.",
+  "projections": {
+    "qkv": {
+      "scheme": "interleaved",
+      "scale_dtype": "bfloat16",
+      "rows": 8,
+      "warps": 8,
+      "activation_load": "direct"
+    },
+    "out": {
+      "scheme": "interleaved",
+      "scale_dtype": "float32",
+      "rows": 2,
+      "warps": 2
+    },
+    "up": {
+      "scheme": "interleaved",
+      "scale_dtype": "bfloat16",
+      "rows": 4,
+      "warps": 4
+    },
+    "down": {
+      "scheme": "interleaved",
+      "scale_dtype": "float32",
+      "rows": 4,
+      "warps": 2,
+      "activation_load": "direct"
+    }
+  },
+  "direct_tuning_sha256": "1f8f43961be166262a3b9b0c7296ae2cb52d549cb5a44465d7d9dc265bfc4c47",
+  "wide_qkv_validation_sha256": "187548b99216e9be5766549b5350e14a67ecb4d784b614130c3501605fc5943b"
+}

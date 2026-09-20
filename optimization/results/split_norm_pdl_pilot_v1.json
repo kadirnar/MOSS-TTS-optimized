@@ -1,0 +1,279 @@
+{
+  "codebooks": 32,
+  "layers": 1,
+  "configs": {
+    "control": {},
+    "both_t1": {
+      "qkv": {
+        "norm_trigger": 1
+      },
+      "up": {
+        "norm_trigger": 1
+      }
+    }
+  },
+  "checks": [
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "control",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "both_t1",
+      "layer": 17,
+      "input": 0,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "both_t1",
+      "layer": 17,
+      "input": 10,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "both_t1",
+      "layer": 17,
+      "input": 31,
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "config": "both_t1",
+      "layer": 17,
+      "input": "graph",
+      "mismatches": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "resources": {
+    "control": {
+      "up": {
+        "registers": 162,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "bulk_prefetch_ptx_instructions": 2,
+        "runtime_modulo_in_ptx": true,
+        "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "bulk_prefetch_ptx_instructions": 1,
+        "runtime_modulo_in_ptx": true,
+        "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+      },
+      "qkv": {
+        "registers": 56,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "bulk_prefetch_ptx_instructions": 1,
+        "runtime_modulo_in_ptx": false,
+        "cubin_sha256": "790cb8ca5b3e716a57e86a1908f0bdbb8948945e2ca463992fc66a9f1a5c1e54"
+      }
+    },
+    "both_t1": {
+      "up": {
+        "registers": 192,
+        "spills": 0,
+        "shared_bytes": 64,
+        "bulk_prefetch_ptx_instructions": 2,
+        "runtime_modulo_in_ptx": true,
+        "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9"
+      },
+      "down": {
+        "registers": 128,
+        "spills": 0,
+        "shared_bytes": 1024,
+        "bulk_prefetch_ptx_instructions": 1,
+        "runtime_modulo_in_ptx": true,
+        "cubin_sha256": "ea4f6bc2ad83b9f1a9650995a3faf835448ef373b417514e18f54d0919d7e4dc"
+      },
+      "qkv": {
+        "registers": 34,
+        "spills": 0,
+        "shared_bytes": 2048,
+        "bulk_prefetch_ptx_instructions": 1,
+        "runtime_modulo_in_ptx": false,
+        "cubin_sha256": "465fac2e2cc0313a27b5dc4cedd122054a1c4e882a640665400c074f87c60e60"
+      },
+      "qkv_normalizer": {
+        "registers": 56,
+        "spills": 0,
+        "shared_bytes": 16,
+        "bulk_prefetch_ptx_instructions": 0,
+        "runtime_modulo_in_ptx": false,
+        "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+      },
+      "up_normalizer": {
+        "registers": 56,
+        "spills": 0,
+        "shared_bytes": 16,
+        "bulk_prefetch_ptx_instructions": 0,
+        "runtime_modulo_in_ptx": false,
+        "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7"
+      }
+    }
+  },
+  "errors": {},
+  "graph_edges": {
+    "control": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ],
+    "both_t1": [
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      },
+      {
+        "from_port": 1,
+        "to_port": 0,
+        "type": 1
+      }
+    ]
+  },
+  "rows": [
+    {
+      "round": 0,
+      "order": [
+        "control",
+        "both_t1"
+      ],
+      "us": {
+        "control": 37.834666669368744,
+        "both_t1": 43.66933306058248
+      }
+    },
+    {
+      "round": 1,
+      "order": [
+        "control",
+        "both_t1"
+      ],
+      "us": {
+        "control": 37.69599894682566,
+        "both_t1": 43.70133578777313
+      }
+    }
+  ],
+  "method": "Rotating actual 36-layer MLP/down/following-QKV chain, three saved inputs per layer. Selected bulk-prefetch/QKV-address control versus one norm-quant producer per stage and overlapping projection consumers. Same original arithmetic, explicit programmatic waits. No serving or TTFA claim. All timing before any profiler.",
+  "summary": {
+    "control": {
+      "median_us": 37.7653328080972,
+      "mismatches": 0,
+      "paired_gain_us": [
+        0.0,
+        0.0
+      ]
+    },
+    "both_t1": {
+      "median_us": 43.68533442417781,
+      "mismatches": 0,
+      "paired_gain_us": [
+        -5.834666391213737,
+        -6.005336840947471
+      ]
+    }
+  }
+}

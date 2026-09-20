@@ -1,0 +1,275 @@
+{
+  "codebooks": 32,
+  "status": "Progress: qualified optional PDL plus scale preload. Goal active; 50 ms unmet.",
+  "preset": "G32 calibrated weights, BF16 prefill, FP32 codec, exact short scales, norm/projection and context/head buckets, projection PDL.",
+  "chain_sweeps": [
+    {
+      "file": "projection_pdl_layer_ring_v1.json",
+      "configurations": 14,
+      "cases": 1404,
+      "all_exact": true
+    },
+    {
+      "file": "projection_pdl_prefetch_ring_v1.json",
+      "configurations": 19,
+      "cases": 1944,
+      "all_exact": true
+    }
+  ],
+  "private_full_graph_cases": 192,
+  "measured_complete_float32_streams": 90,
+  "all_paired_pcm_exact": true,
+  "quality_generated_wavs_exact": 48,
+  "quality_reference_wavs_exact": 8,
+  "asr_rerun": false,
+  "timing": {
+    "v1": {
+      "ttfa": {
+        "control": {
+          "median_ms": 84.19738337397575,
+          "p95_ms": 85.40293201804161
+        },
+        "pdl": {
+          "median_ms": 83.87161418795586,
+          "p95_ms": 84.78339929133654
+        },
+        "prefetch": {
+          "median_ms": 83.46126601099968,
+          "p95_ms": 84.59742572158575
+        }
+      },
+      "median_paired_gain_ms": {
+        "pdl": 0.38679875433444977,
+        "prefetch": 0.7572546601295471
+      },
+      "faster_rounds": {
+        "pdl": 15,
+        "prefetch": 15
+      },
+      "scale_preload_vs_pdl_gain_ms": 0.36105141043663025,
+      "graph_medians_ms": {
+        "control": 2.1108454132080077,
+        "pdl": 2.1020314788818357,
+        "prefetch": 2.0944927978515624
+      },
+      "graph_paired_gains_ms": {
+        "pdl": 0.008725585937499947,
+        "prefetch": 0.017127304077148464
+      },
+      "stages_ms": {
+        "control": {
+          "prepare": 1.096472144126892,
+          "prefill": 9.211728349328041,
+          "initial_decode": 2.135923132300377,
+          "first_codec": 4.7694239765405655
+        },
+        "pdl": {
+          "prepare": 1.0959673672914505,
+          "prefill": 9.208712726831436,
+          "initial_decode": 2.1284501999616623,
+          "first_codec": 4.760824143886566
+        },
+        "prefetch": {
+          "prepare": 1.087157055735588,
+          "prefill": 9.209224954247475,
+          "initial_decode": 2.1154675632715225,
+          "first_codec": 4.761720076203346
+        }
+      }
+    },
+    "v2": {
+      "ttfa": {
+        "control": {
+          "median_ms": 84.22409929335117,
+          "p95_ms": 89.41122256219386
+        },
+        "pdl": {
+          "median_ms": 83.90689641237259,
+          "p95_ms": 84.43802017718554
+        },
+        "prefetch": {
+          "median_ms": 83.46598409116268,
+          "p95_ms": 83.98358523845673
+        }
+      },
+      "median_paired_gain_ms": {
+        "pdl": 0.3239493817090988,
+        "prefetch": 0.6394907832145691
+      },
+      "faster_rounds": {
+        "pdl": 14,
+        "prefetch": 15
+      },
+      "scale_preload_vs_pdl_gain_ms": 0.36866776645183563,
+      "graph_medians_ms": {
+        "control": 2.1116375732421875,
+        "pdl": 2.1020665740966797,
+        "prefetch": 2.094809112548828
+      },
+      "graph_paired_gains_ms": {
+        "pdl": 0.010110244750976438,
+        "prefetch": 0.016662445068359233
+      },
+      "stages_ms": {
+        "control": {
+          "prepare": 1.0931044816970825,
+          "prefill": 9.202400222420692,
+          "initial_decode": 2.1370407193899155,
+          "first_codec": 4.7693997621536255
+        },
+        "pdl": {
+          "prepare": 1.0784249752759933,
+          "prefill": 9.20366495847702,
+          "initial_decode": 2.131987363100052,
+          "first_codec": 4.766838625073433
+        },
+        "prefetch": {
+          "prepare": 1.0887235403060913,
+          "prefill": 9.202554821968079,
+          "initial_decode": 2.1157898008823395,
+          "first_codec": 4.765685647726059
+        }
+      }
+    }
+  },
+  "http": {
+    "method": "Sequential temporary servers, exact BF16 scales control then projection PDL with scale preloads; identical text/reference/seeds 501-520, all 32 codebooks. No concurrent GPU test.",
+    "all_20_full_pcm_streams_exact": true,
+    "control_ttfa": {
+      "median_ms": 88.30437902361155,
+      "p95_ms": 90.32733356580138,
+      "min_ms": 87.76388131082058,
+      "samples_ms": [
+        88.51731196045876,
+        88.4670838713646,
+        88.10019679367542,
+        88.31680752336979,
+        87.76388131082058,
+        88.06111849844456,
+        88.16804923117161,
+        88.229950517416,
+        87.77545392513275,
+        88.4269904345274,
+        88.28470669686794,
+        88.34873884916306,
+        88.25181610882282,
+        89.47936818003654,
+        88.16251158714294,
+        89.78579752147198,
+        88.2919505238533,
+        88.36839534342289,
+        92.44975633919239,
+        90.21562710404396
+      ]
+    },
+    "pdl_ttfa": {
+      "median_ms": 87.58565410971642,
+      "p95_ms": 87.9212660714984,
+      "min_ms": 86.82458102703094,
+      "samples_ms": [
+        86.98638528585434,
+        87.84614130854607,
+        87.36274018883705,
+        87.38153614103794,
+        86.82458102703094,
+        87.83203549683094,
+        87.5663198530674,
+        87.138332426548,
+        87.91851811110973,
+        87.60498836636543,
+        87.97347731888294,
+        87.33261004090309,
+        87.22062408924103,
+        87.8987554460764,
+        87.62053400278091,
+        87.61505968868732,
+        87.19191513955593,
+        87.7155102789402,
+        87.14127540588379,
+        87.83606812357903
+      ]
+    },
+    "control_fresh_single_ms": 130.73984161019325,
+    "pdl_fresh_single_ms": 129.80707176029682,
+    "control_cancellation_statuses": [
+      429,
+      200
+    ],
+    "pdl_cancellation_statuses": [
+      429,
+      200
+    ],
+    "temporary_servers_stopped": true
+  },
+  "http_stages_file": "http_projection_pdl_stage_summary_v1.json",
+  "regression": {
+    "candidate": "optimization/results/all32_gptq_dp4a_projection_pdl_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pdl_pb128_160_256_512.json",
+    "control": "optimization/results/all32_gptq_dp4a_short_scales_v1_b32w4_fr_recip_qf_ag_gu_nl8_packed_db_aq_na_guq_scaled_np_sscale_pb128_160_256_512.json",
+    "all_36_step_diagnostics_exact": true,
+    "saved_wav_byte_exact": true,
+    "sha256": "b2ba92da2b6dfd4fc71a144fe384f4a294cd3fc7f729b99e727abbef26510ec7",
+    "ttfa": {
+      "median_ms": 84.60490591824055,
+      "p95_ms": 84.76158492267132,
+      "min_ms": 84.38097685575485,
+      "samples_ms": [
+        84.60490591824055,
+        84.78624932467937,
+        84.40861478447914,
+        84.66292731463909,
+        84.38097685575485
+      ]
+    },
+    "decode": {
+      "median_ms": 2.1321969106793404,
+      "p95_ms": 2.137577533721924,
+      "min_ms": 2.1220017224550247,
+      "samples_ms": [
+        2.1337848156690598,
+        2.137552946805954,
+        2.131592482328415,
+        2.138044685125351,
+        2.12852843105793,
+        2.133859321475029,
+        2.134084701538086,
+        2.1220017224550247,
+        2.132270485162735,
+        2.1345578134059906,
+        2.124156802892685,
+        2.1352581679821014,
+        2.132182940840721,
+        2.1320227533578873,
+        2.123601734638214,
+        2.1341145038604736,
+        2.1319277584552765,
+        2.130594104528427,
+        2.128656953573227,
+        2.1322108805179596
+      ]
+    },
+    "projection_pdl": {
+      "norm_trigger": 1,
+      "projection_trigger": 3,
+      "scale_prefetch": true
+    },
+    "scope": "Independent five-request benchmark without head prefixes; CLI and diagnostic regression check, not a paired speedup estimate."
+  },
+  "codegen_and_timeline_file": "projection_pdl_audit_v1/summary.json",
+  "profile_limitation": "PDL duration sums include dependency waits and double-count overlapping intervals; no revised serialized GPU-time percentage is claimed.",
+  "rejected": "Hints after normalization and whole-matrix preloads. Up all-preload uses 255 registers and reports n_spills=212.",
+  "reports": [
+    "optimization/REPORT_PROJECTION_PDL.md"
+  ],
+  "source_archive": "projection_pdl_sources.tar.gz",
+  "source_hashes": "projection_pdl_source_hashes.json",
+  "prior_harness_file": "projection_pdl_paired_v1_source.py",
+  "prior_harness_sha256": "7f51f984e885afcd6e766d9fea2645fc45c96effc3d2239ccb7e78d9be59c54a",
+  "limitations": [
+    "Warm cached-reference tests exclude registration.",
+    "Fresh-reference results are single observations.",
+    "Exactness is relative to calibrated G32, not original BF16.",
+    "Four reused voices/two small suites are not broad human acceptance.",
+    "Sequential HTTP includes scheduling variation.",
+    "All original supervisor services remain unchanged."
+  ]
+}

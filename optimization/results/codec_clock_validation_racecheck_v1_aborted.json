@@ -1,0 +1,6 @@
+{
+  "status": "terminated_by_harness_owner",
+  "completed_validation": false,
+  "reason": "Broad racecheck spent more than three minutes in unchanged library kernels before first case completed. Narrowed subsequent race instrumentation to the changed rotary/cache kernels; numerical/counter/cache tests still execute the complete codec.",
+  "timestamp": "2026-09-20T08:50:14.252978+00:00"
+}

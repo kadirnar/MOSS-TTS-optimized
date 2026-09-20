@@ -1,0 +1,21 @@
+{
+  "previous_result": "all32_none_post_epilogue_regression_fr_fg.json",
+  "current_result": "all32_none_post_gateup_quant_regression_fr_fg.json",
+  "validation_exact": true,
+  "wav_exact": true,
+  "current_wav_sha256": "3c804227cd9e023a34fde616fccd6eaa0f0289712cd0116ae988cf6ee27f5a3a",
+  "ttfa": {
+    "median_ms": 172.8642974048853,
+    "p95_ms": 173.95051755011082,
+    "min_ms": 171.09058424830437,
+    "samples_ms": [
+      173.28047193586826,
+      174.11802895367146,
+      172.8295162320137,
+      172.8642974048853,
+      171.09058424830437
+    ]
+  },
+  "codebooks": 32,
+  "torch_version": "2.9.1+cu128"
+}

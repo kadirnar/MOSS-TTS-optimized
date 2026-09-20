@@ -1,0 +1,40 @@
+{
+  "method": "Sequential temporary loopback servers, identical current source/runtime, 20 complete requests per configuration; paired seeds 501-520, same registered reference/text, all 32 codebooks. Native vector CUDA attention vs preceding Triton attention, both fused output quantization.",
+  "configs": {
+    "native": {
+      "http_median_ms": 95.53852304816246,
+      "http_p95_ms": 97.55261968821287,
+      "fresh_reference_single_ms": 135.0926123559475,
+      "registration_http_ms": 37.28714771568775,
+      "cancellation_statuses": [
+        429,
+        200
+      ],
+      "all_complete": true,
+      "engine_median_ms": 91.01718664169312,
+      "prepare_median_ms": 1.444447785615921,
+      "prefill_median_ms": 9.21875424683094,
+      "initial_decode_median_ms": 2.3358711041510105,
+      "first_codec_median_ms": 4.779601469635963
+    },
+    "control": {
+      "http_median_ms": 95.83592880517244,
+      "http_p95_ms": 96.85048088431358,
+      "fresh_reference_single_ms": 136.09218783676624,
+      "registration_http_ms": 35.60713306069374,
+      "cancellation_statuses": [
+        429,
+        200
+      ],
+      "all_complete": true,
+      "engine_median_ms": 92.17877872288227,
+      "prepare_median_ms": 1.0854555293917656,
+      "prefill_median_ms": 9.206284768879414,
+      "initial_decode_median_ms": 2.3907008580863476,
+      "first_codec_median_ms": 4.771258682012558
+    }
+  },
+  "all_20_full_pcm_streams_exact": true,
+  "http_median_gain_ms": 0.29740575700998306,
+  "benchmark_sha256": "8c207fd1954f67e8661420e5eac885d11d5bc7a22cc73ed41394467db4394367"
+}

@@ -1,0 +1,51 @@
+{
+  "trace": "optimization/results/qkv_cluster_profile_v2_trace.json",
+  "kernel_events": 12101,
+  "groups": {
+    "other": {
+      "calls": 4973,
+      "sum_us": 22006.207,
+      "median_us": 1.696
+    },
+    "fused_qkv_preparation": {
+      "calls": 1188,
+      "sum_us": 11474.607,
+      "median_us": 9.569
+    },
+    "attention": {
+      "calls": 2376,
+      "sum_us": 9580.538,
+      "median_us": 4.128
+    },
+    "attention_output": {
+      "calls": 1188,
+      "sum_us": 6120.013,
+      "median_us": 5.088
+    },
+    "mlp_gate_up": {
+      "calls": 1188,
+      "sum_us": 22911.878,
+      "median_us": 19.072
+    },
+    "mlp_down": {
+      "calls": 1188,
+      "sum_us": 30660.879,
+      "median_us": 25.537
+    }
+  },
+  "intervals_us": {
+    "no_kernel": 24430.8017578125,
+    "other": 22006.17578125,
+    "fused_qkv_preparation": 10505.1494140625,
+    "attention+fused_qkv_preparation": 933.748046875,
+    "attention": 4966.9775390625,
+    "attention+attention_output": 2634.951171875,
+    "attention_output": 3459.4150390625,
+    "mlp_gate_up": 2239.6142578125,
+    "mlp_down+mlp_gate_up": 20646.59765625,
+    "mlp_down": 9978.57421875,
+    "fused_qkv_preparation+mlp_down": 35.6953125,
+    "attention_output+mlp_gate_up": 25.64453125
+  },
+  "scope": "Post-timing 34-step request. Kernel resident intervals include dependency waits and overlap; not utilization or an arithmetic lower bound. Fusion changes which stage contains head normalization/RoPE/cache writes."
+}

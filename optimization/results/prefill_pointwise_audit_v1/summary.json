@@ -1,0 +1,83 @@
+{
+  "prefill_activation": {
+    "registers": 18,
+    "spills": 0,
+    "shared_bytes": 0,
+    "cubin_sha256": "bf3a1f5f257d4277cf03685b0f3058de7a45d77ae9dda95cc756439b59376cee",
+    "pdl_waits_in_ptx": 0,
+    "pdl_launches_in_ptx": 0,
+    "bulk_hints_in_ptx": 0
+  },
+  "prefill_residual_norm": {
+    "registers": 55,
+    "spills": 0,
+    "shared_bytes": 16,
+    "cubin_sha256": "0524e3ec3773245375595309823760f3f3704d504cf22d00d99a456661ded471",
+    "pdl_waits_in_ptx": 0,
+    "pdl_launches_in_ptx": 0,
+    "bulk_hints_in_ptx": 0
+  },
+  "control_up": {
+    "registers": 162,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "cubin_sha256": "bbef1d847e2f2c19b07ec36ec3d4bd2293dbdea5b26b9d420a13746f42680407",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 2
+  },
+  "split_up": {
+    "registers": 192,
+    "spills": 0,
+    "shared_bytes": 64,
+    "cubin_sha256": "c5a2285d9cb339d5a670a2ef91e43ebe057fde01f70ac0af810ffd8566bdead9",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 2
+  },
+  "split_normalizer": {
+    "registers": 56,
+    "spills": 0,
+    "shared_bytes": 16,
+    "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 0
+  },
+  "split_cap168_up": {
+    "registers": 167,
+    "spills": 0,
+    "shared_bytes": 64,
+    "cubin_sha256": "441bf04d975fcd6feb12eea5b3053c3f042ce11b3b689ef631f81bb555f093c9",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 2
+  },
+  "split_cap168_normalizer": {
+    "registers": 56,
+    "spills": 0,
+    "shared_bytes": 16,
+    "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 0
+  },
+  "split_cap128_up": {
+    "registers": 128,
+    "spills": 64,
+    "shared_bytes": 64,
+    "cubin_sha256": "9e7b8ce704cf05c2b8ece1499cb758da77e94fd7537c1d4afbf378df520fcfae",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 2
+  },
+  "split_cap128_normalizer": {
+    "registers": 56,
+    "spills": 0,
+    "shared_bytes": 16,
+    "cubin_sha256": "10763e3fcb2308ab9db8020c44742aed98c3be5e3a914204eeae62c1d846eed7",
+    "pdl_waits_in_ptx": 1,
+    "pdl_launches_in_ptx": 1,
+    "bulk_hints_in_ptx": 0
+  }
+}

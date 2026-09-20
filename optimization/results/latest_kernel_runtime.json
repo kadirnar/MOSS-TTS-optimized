@@ -1,0 +1,15 @@
+{
+  "torch": "2.14.0+cu130",
+  "torch_path": "/venv/moss-kernels-latest/lib/python3.12/site-packages/torch/__init__.py",
+  "triton": "3.8.0",
+  "triton_path": "/venv/moss-kernels-latest/lib/python3.12/site-packages/triton/__init__.py",
+  "torchvision": "0.29.0+cu130",
+  "torchaudio": "2.11.0+cu130",
+  "transformers": "5.14.1",
+  "cuda": "13.0",
+  "cudnn": 92400,
+  "device": "NVIDIA H200 NVL",
+  "smoke_matmul": true,
+  "base_runtime_pth": "/venv/moss-vllm/lib/python3.12/site-packages",
+  "note": "Isolated Torch/Triton/torchvision and matching CUDA dependencies; other packages imported from existing runtime. This is not a vLLM engine upgrade."
+}
